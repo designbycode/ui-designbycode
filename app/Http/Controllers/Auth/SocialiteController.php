@@ -17,7 +17,7 @@ class SocialiteController extends Controller
 
     public function handleProviderCallback(string $provider)
     {
-        $socialUser = Socialite::driver($provider)->user();
+        $socialUser = Socialite::driver($provider)->stateless()->user();
 
         $social = Social::where('provider', $provider)
             ->where('provider_id', $socialUser->getId())

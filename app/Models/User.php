@@ -19,27 +19,16 @@ class User extends Authenticatable
     /** @use HasFactory<UserFactory> */
     use HasFactory, Notifiable, TwoFactorAuthenticatable;
 
-
-    /**
-     * @return HasMany
-     */
     public function socials(): HasMany
     {
         return $this->hasMany(Social::class);
     }
 
-    /**
-     * @param string $provider
-     * @return bool
-     */
     public function hasLinkedProvider(string $provider): bool
     {
         return $this->socials()->where('provider', $provider)->exists();
     }
 
-    /**
-     * @return HasMany
-     */
     public function connectedAccounts(): HasMany
     {
         return $this->socials();

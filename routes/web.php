@@ -4,7 +4,6 @@ use App\Http\Controllers\Auth\SocialiteController;
 use App\Http\Controllers\Dashboard\DashboardIndexController;
 use App\Http\Controllers\HomePageIndexController;
 use Illuminate\Support\Facades\Route;
-use Laravel\Fortify\Features;
 
 Route::get('/', HomePageIndexController::class)->name('home');
 
