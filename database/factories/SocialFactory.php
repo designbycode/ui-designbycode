@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Social;
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -18,7 +19,10 @@ class SocialFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'user_id' => User::factory(),
+            'provider' => 'github',
+            'provider_id' => (string) $this->faker->unique()->randomNumber(),
+            'avatar' => $this->faker->imageUrl(),
         ];
     }
 }
