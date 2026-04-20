@@ -1,0 +1,3238 @@
+{
+    "$schema": "https://ui.shadcn.com/schema/registry.json",
+    "name": "designbycode",
+    "homepage": "https://ui.designbycode.co.za",
+    "items": [
+        {
+            "name": "font-inter",
+            "type": "registry:font",
+            "meta": {
+                "category": "fonts",
+                "version": "1.0.0"
+            },
+            "font": {
+                "family": "'Inter Variable', sans-serif",
+                "provider": "google",
+                "import": "Inter",
+                "variable": "--font-sans",
+                "subsets": ["latin"],
+                "dependency": "@fontsource-variable/inter"
+            }
+        },
+        {
+            "name": "font-bebas-neue",
+            "type": "registry:font",
+            "meta": {
+                "category": "fonts",
+                "version": "1.0.0"
+            },
+            "font": {
+                "family": "'Bebas Neue', sans-serif",
+                "provider": "google",
+                "import": "BebasNeue",
+                "variable": "--font-bebas-neue",
+                "subsets": ["latin"],
+                "dependency": "@fontsource/bebas-neue"
+            }
+        },
+        {
+            "name": "font-playfair-display",
+            "type": "registry:font",
+            "meta": {
+                "category": "fonts",
+                "version": "1.0.0"
+            },
+            "font": {
+                "family": "'Playfair Display Variable', sans-serif",
+                "provider": "google",
+                "import": "PlayfairDisplay",
+                "variable": "--font-playfair-display",
+                "subsets": ["latin"],
+                "dependency": "@fontsource-variable/playfair-display"
+            }
+        },
+        {
+            "name": "font-caveat",
+            "type": "registry:font",
+            "meta": {
+                "category": "fonts",
+                "version": "1.0.0"
+            },
+            "font": {
+                "family": "'Caveat Variable', cursive",
+                "provider": "google",
+                "import": "Caveat",
+                "variable": "--font-caveat",
+                "subsets": ["latin"],
+                "dependency": "@fontsource-variable/caveat"
+            }
+        },
+        {
+            "name": "font-press-start-2p",
+            "type": "registry:font",
+            "meta": {
+                "category": "fonts",
+                "version": "1.0.0"
+            },
+            "font": {
+                "family": "'Press Start 2P', system-ui",
+                "provider": "google",
+                "import": "PressStart2P",
+                "variable": "--font-press-start-2p",
+                "subsets": ["latin"],
+                "dependency": "@fontsource/press-start-2p"
+            }
+        },
+        {
+            "name": "animate-bounce",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-bounce": "bounce 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes bounce": {
+                        "0%, 20%, 50%, 80%, 100%": {
+                            "transform": "translateY(0)"
+                        },
+                        "40%": { "transform": "translateY(-30px)" },
+                        "60%": { "transform": "translateY(-15px)" }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-pulse",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-pulse": "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes pulse": {
+                        "0%, 100%": { "opacity": "1" },
+                        "50%": { "opacity": "0.5" }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-flash",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-flash": "flash 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes flash": {
+                        "0%, 50%, 100%": { "opacity": "1" },
+                        "25%, 75%": { "opacity": "0" }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-wobble",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-wobble": "wobble 1s ease-in-out"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes wobble": {
+                        "0%, 100%": { "transform": "translateX(0%)" },
+                        "15%": {
+                            "transform": "translateX(-25%) rotate(-5deg)"
+                        },
+                        "30%": { "transform": "translateX(20%) rotate(3deg)" },
+                        "45%": {
+                            "transform": "translateX(-15%) rotate(-3deg)"
+                        },
+                        "60%": { "transform": "translateX(10%) rotate(2deg)" },
+                        "75%": { "transform": "translateX(-5%) rotate(-1deg)" }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-rubber-band",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-rubber-band": "rubberBand 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes rubberBand": {
+                        "0%": { "transform": "scale3d(1, 1, 1)" },
+                        "30%": { "transform": "scale3d(1.25, 0.75, 1)" },
+                        "40%": { "transform": "scale3d(0.75, 1.25, 1)" },
+                        "50%": { "transform": "scale3d(1.15, 0.85, 1)" },
+                        "65%": { "transform": "scale3d(0.95, 1.05, 1)" },
+                        "75%": { "transform": "scale3d(1.05, 0.95, 1)" },
+                        "100%": { "transform": "scale3d(1, 1, 1)" }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-shake",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-shake": "shake 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes shake": {
+                        "0%, 100%": { "transform": "translateX(0)" },
+                        "10%, 30%, 50%, 70%, 90%": {
+                            "transform": "translateX(-10px)"
+                        },
+                        "20%, 40%, 60%, 80%": {
+                            "transform": "translateX(10px)"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-head-shake",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-head-shake": "headShake 1s ease-in-out"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes headShake": {
+                        "0%": { "transform": "translateX(0)" },
+                        "6.5%": {
+                            "transform": "translateX(-6px) rotate(-6deg)"
+                        },
+                        "18.5%": {
+                            "transform": "translateX(5px) rotate(6deg)"
+                        },
+                        "31.5%": {
+                            "transform": "translateX(-3px) rotate(-3deg)"
+                        },
+                        "43.5%": {
+                            "transform": "translateX(2px) rotate(2deg)"
+                        },
+                        "100%": { "transform": "translateX(0)" }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-swing",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-swing": "swing 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes swing": {
+                        "20%": { "transform": "rotate3d(0, 0, 1, 15deg)" },
+                        "40%": { "transform": "rotate3d(0, 0, 1, -10deg)" },
+                        "60%": { "transform": "rotate3d(0, 0, 1, 5deg)" },
+                        "80%": { "transform": "rotate3d(0, 0, 1, -5deg)" },
+                        "100%": { "transform": "rotate3d(0, 0, 1, 0deg)" }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-tada",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-tada": "tada 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes tada": {
+                        "0%, 100%": { "transform": "scale3d(1, 1, 1)" },
+                        "10%, 20%": {
+                            "transform": "scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg)"
+                        },
+                        "30%, 50%, 70%, 90%": {
+                            "transform": "scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)"
+                        },
+                        "40%, 60%, 80%": {
+                            "transform": "scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-jello",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-jello": "jello 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes jello": {
+                        "0%": { "transform": "scale3d(1, 1, 1)" },
+                        "30%": { "transform": "scale3d(1.25, 0.75, 1)" },
+                        "40%": { "transform": "scale3d(0.75, 1.25, 1)" },
+                        "50%": { "transform": "scale3d(1.15, 0.85, 1)" },
+                        "65%": { "transform": "scale3d(0.95, 1.05, 1)" },
+                        "75%": { "transform": "scale3d(1.05, 0.95, 1)" },
+                        "100%": { "transform": "scale3d(1, 1, 1)" }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-heart-beat",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-heart-beat": "heartBeat 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes heartBeat": {
+                        "0%": { "transform": "scale(1)" },
+                        "14%": { "transform": "scale(1.3)" },
+                        "28%": { "transform": "scale(1)" },
+                        "42%": { "transform": "scale(1.3)" },
+                        "70%": { "transform": "scale(1)" }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-flip",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-flip": "flip 1s ease-in-out"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes flip": {
+                        "0%": {
+                            "transform": "perspective(400px) rotate3d(0, 1, 0, -360deg)",
+                            "animation-timing-function": "ease-out"
+                        },
+                        "40%": {
+                            "transform": "perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg)",
+                            "animation-timing-function": "ease-out"
+                        },
+                        "50%": {
+                            "transform": "perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg)",
+                            "animation-timing-function": "ease-in"
+                        },
+                        "80%": {
+                            "transform": "perspective(400px) scale3d(0.95, 0.95, 0.95)",
+                            "animation-timing-function": "ease-in"
+                        },
+                        "100%": {
+                            "transform": "perspective(400px) scale3d(1, 1, 1)",
+                            "animation-timing-function": "ease-in"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-flip-in-x",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-flip-in-x": "flipInX 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes flipInX": {
+                        "0%": {
+                            "transform": "perspective(400px) rotate3d(1, 0, 0, 90deg)",
+                            "opacity": "0"
+                        },
+                        "40%": {
+                            "transform": "perspective(400px) rotate3d(1, 0, 0, -20deg)",
+                            "animation-timing-function": "ease-out"
+                        },
+                        "60%": {
+                            "transform": "perspective(400px) rotate3d(1, 0, 0, 10deg)",
+                            "opacity": "1"
+                        },
+                        "80%": {
+                            "transform": "perspective(400px) rotate3d(1, 0, 0, -5deg)"
+                        },
+                        "100%": { "transform": "perspective(400px)" }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-flip-in-y",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-flip-in-y": "flipInY 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes flipInY": {
+                        "0%": {
+                            "transform": "perspective(400px) rotate3d(0, 1, 0, 90deg)",
+                            "opacity": "0"
+                        },
+                        "40%": {
+                            "transform": "perspective(400px) rotate3d(0, 1, 0, -20deg)",
+                            "animation-timing-function": "ease-out"
+                        },
+                        "60%": {
+                            "transform": "perspective(400px) rotate3d(0, 1, 0, 10deg)",
+                            "opacity": "1"
+                        },
+                        "80%": {
+                            "transform": "perspective(400px) rotate3d(0, 1, 0, -5deg)"
+                        },
+                        "100%": { "transform": "perspective(400px)" }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-flip-out-x",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-flip-out-x": "flipOutX 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes flipOutX": {
+                        "0%": { "transform": "perspective(400px)" },
+                        "30%": {
+                            "transform": "perspective(400px) rotate3d(1, 0, 0, -20deg)",
+                            "opacity": "1"
+                        },
+                        "100%": {
+                            "transform": "perspective(400px) rotate3d(1, 0, 0, 90deg)",
+                            "opacity": "0"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-flip-out-y",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-flip-out-y": "flipOutY 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes flipOutY": {
+                        "0%": { "transform": "perspective(400px)" },
+                        "30%": {
+                            "transform": "perspective(400px) rotate3d(0, 1, 0, -15deg)",
+                            "opacity": "1"
+                        },
+                        "100%": {
+                            "transform": "perspective(400px) rotate3d(0, 1, 0, 90deg)",
+                            "opacity": "0"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-fade-in",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-fade-in": "fadeIn 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes fadeIn": {
+                        "0%": { "opacity": "0" },
+                        "100%": { "opacity": "1" }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-fade-in-down",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-fade-in-down": "fadeInDown 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes fadeInDown": {
+                        "0%": {
+                            "opacity": "0",
+                            "transform": "translate3d(0, -100%, 0)"
+                        },
+                        "100%": {
+                            "opacity": "1",
+                            "transform": "translate3d(0, 0, 0)"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-fade-in-down-big",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-fade-in-down-big": "fadeInDownBig 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes fadeInDownBig": {
+                        "0%": {
+                            "opacity": "0",
+                            "transform": "translate3d(0, -2000px, 0)"
+                        },
+                        "100%": {
+                            "opacity": "1",
+                            "transform": "translate3d(0, 0, 0)"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-fade-in-left",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-fade-in-left": "fadeInLeft 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes fadeInLeft": {
+                        "0%": {
+                            "opacity": "0",
+                            "transform": "translate3d(-100%, 0, 0)"
+                        },
+                        "100%": {
+                            "opacity": "1",
+                            "transform": "translate3d(0, 0, 0)"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-fade-in-left-big",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-fade-in-left-big": "fadeInLeftBig 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes fadeInLeftBig": {
+                        "0%": {
+                            "opacity": "0",
+                            "transform": "translate3d(-2000px, 0, 0)"
+                        },
+                        "100%": {
+                            "opacity": "1",
+                            "transform": "translate3d(0, 0, 0)"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-fade-in-right",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-fade-in-right": "fadeInRight 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes fadeInRight": {
+                        "0%": {
+                            "opacity": "0",
+                            "transform": "translate3d(100%, 0, 0)"
+                        },
+                        "100%": {
+                            "opacity": "1",
+                            "transform": "translate3d(0, 0, 0)"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-fade-in-right-big",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-fade-in-right-big": "fadeInRightBig 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes fadeInRightBig": {
+                        "0%": {
+                            "opacity": "0",
+                            "transform": "translate3d(2000px, 0, 0)"
+                        },
+                        "100%": {
+                            "opacity": "1",
+                            "transform": "translate3d(0, 0, 0)"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-fade-in-up",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-fade-in-up": "fadeInUp 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes fadeInUp": {
+                        "0%": {
+                            "opacity": "0",
+                            "transform": "translate3d(0, 100%, 0)"
+                        },
+                        "100%": {
+                            "opacity": "1",
+                            "transform": "translate3d(0, 0, 0)"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-fade-in-up-big",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-fade-in-up-big": "fadeInUpBig 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes fadeInUpBig": {
+                        "0%": {
+                            "opacity": "0",
+                            "transform": "translate3d(0, 2000px, 0)"
+                        },
+                        "100%": {
+                            "opacity": "1",
+                            "transform": "translate3d(0, 0, 0)"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-fade-out",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-fade-out": "fadeOut 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes fadeOut": {
+                        "0%": { "opacity": "1" },
+                        "100%": { "opacity": "0" }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-fade-out-down",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-fade-out-down": "fadeOutDown 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes fadeOutDown": {
+                        "0%": { "opacity": "1" },
+                        "100%": {
+                            "opacity": "0",
+                            "transform": "translate3d(0, 100%, 0)"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-fade-out-down-big",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-fade-out-down-big": "fadeOutDownBig 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes fadeOutDownBig": {
+                        "0%": { "opacity": "1" },
+                        "100%": {
+                            "opacity": "0",
+                            "transform": "translate3d(0, 2000px, 0)"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-fade-out-left",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-fade-out-left": "fadeOutLeft 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes fadeOutLeft": {
+                        "0%": { "opacity": "1" },
+                        "100%": {
+                            "opacity": "0",
+                            "transform": "translate3d(-100%, 0, 0)"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-fade-out-left-big",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-fade-out-left-big": "fadeOutLeftBig 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes fadeOutLeftBig": {
+                        "0%": { "opacity": "1" },
+                        "100%": {
+                            "opacity": "0",
+                            "transform": "translate3d(-2000px, 0, 0)"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-fade-out-right",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-fade-out-right": "fadeOutRight 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes fadeOutRight": {
+                        "0%": { "opacity": "1" },
+                        "100%": {
+                            "opacity": "0",
+                            "transform": "translate3d(100%, 0, 0)"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-fade-out-right-big",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-fade-out-right-big": "fadeOutRightBig 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes fadeOutRightBig": {
+                        "0%": { "opacity": "1" },
+                        "100%": {
+                            "opacity": "0",
+                            "transform": "translate3d(2000px, 0, 0)"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-fade-out-up",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-fade-out-up": "fadeOutUp 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes fadeOutUp": {
+                        "0%": { "opacity": "1" },
+                        "100%": {
+                            "opacity": "0",
+                            "transform": "translate3d(0, -100%, 0)"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-fade-out-up-big",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-fade-out-up-big": "fadeOutUpBig 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes fadeOutUpBig": {
+                        "0%": { "opacity": "1" },
+                        "100%": {
+                            "opacity": "0",
+                            "transform": "translate3d(0, -2000px, 0)"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-slide-in-down",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-slide-in-down": "slideInDown 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes slideInDown": {
+                        "0%": {
+                            "transform": "translate3d(0, -100%, 0)",
+                            "visibility": "visible"
+                        },
+                        "100%": { "transform": "translate3d(0, 0, 0)" }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-slide-in-left",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-slide-in-left": "slideInLeft 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes slideInLeft": {
+                        "0%": {
+                            "transform": "translate3d(-100%, 0, 0)",
+                            "visibility": "visible"
+                        },
+                        "100%": { "transform": "translate3d(0, 0, 0)" }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-slide-in-right",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-slide-in-right": "slideInRight 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes slideInRight": {
+                        "0%": {
+                            "transform": "translate3d(100%, 0, 0)",
+                            "visibility": "visible"
+                        },
+                        "100%": { "transform": "translate3d(0, 0, 0)" }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-slide-in-up",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-slide-in-up": "slideInUp 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes slideInUp": {
+                        "0%": {
+                            "transform": "translate3d(0, 100%, 0)",
+                            "visibility": "visible"
+                        },
+                        "100%": { "transform": "translate3d(0, 0, 0)" }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-slide-out-down",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-slide-out-down": "slideOutDown 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes slideOutDown": {
+                        "0%": { "transform": "translate3d(0, 0, 0)" },
+                        "100%": {
+                            "transform": "translate3d(0, 100%, 0)",
+                            "visibility": "hidden"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-slide-out-left",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-slide-out-left": "slideOutLeft 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes slideOutLeft": {
+                        "0%": { "transform": "translate3d(0, 0, 0)" },
+                        "100%": {
+                            "transform": "translate3d(-100%, 0, 0)",
+                            "visibility": "hidden"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-slide-out-right",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-slide-out-right": "slideOutRight 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes slideOutRight": {
+                        "0%": { "transform": "translate3d(0, 0, 0)" },
+                        "100%": {
+                            "transform": "translate3d(100%, 0, 0)",
+                            "visibility": "hidden"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-slide-out-up",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-slide-out-up": "slideOutUp 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes slideOutUp": {
+                        "0%": { "transform": "translate3d(0, 0, 0)" },
+                        "100%": {
+                            "transform": "translate3d(0, -100%, 0)",
+                            "visibility": "hidden"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-zoom-in",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-zoom-in": "zoomIn 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes zoomIn": {
+                        "0%": {
+                            "opacity": "0",
+                            "transform": "scale3d(0.3, 0.3, 0.3)"
+                        },
+                        "50%": { "opacity": "1" }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-zoom-in-down",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-zoom-in-down": "zoomInDown 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes zoomInDown": {
+                        "0%": {
+                            "opacity": "0",
+                            "transform": "scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0)",
+                            "animation-timing-function": "cubic-bezier(0.55, 0.055, 0.675, 0.19)"
+                        },
+                        "60%": {
+                            "opacity": "1",
+                            "transform": "scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0)",
+                            "animation-timing-function": "cubic-bezier(0.175, 0.885, 0.32, 1)"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-zoom-in-left",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-zoom-in-left": "zoomInLeft 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes zoomInLeft": {
+                        "0%": {
+                            "opacity": "0",
+                            "transform": "scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0)",
+                            "animation-timing-function": "cubic-bezier(0.55, 0.055, 0.675, 0.19)"
+                        },
+                        "60%": {
+                            "opacity": "1",
+                            "transform": "scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0)",
+                            "animation-timing-function": "cubic-bezier(0.175, 0.885, 0.32, 1)"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-zoom-in-right",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-zoom-in-right": "zoomInRight 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes zoomInRight": {
+                        "0%": {
+                            "opacity": "0",
+                            "transform": "scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0)",
+                            "animation-timing-function": "cubic-bezier(0.55, 0.055, 0.675, 0.19)"
+                        },
+                        "60%": {
+                            "opacity": "1",
+                            "transform": "scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0)",
+                            "animation-timing-function": "cubic-bezier(0.175, 0.885, 0.32, 1)"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-zoom-in-up",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-zoom-in-up": "zoomInUp 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes zoomInUp": {
+                        "0%": {
+                            "opacity": "0",
+                            "transform": "scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0)",
+                            "animation-timing-function": "cubic-bezier(0.55, 0.055, 0.675, 0.19)"
+                        },
+                        "60%": {
+                            "opacity": "1",
+                            "transform": "scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0)",
+                            "animation-timing-function": "cubic-bezier(0.175, 0.885, 0.32, 1)"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-zoom-out",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-zoom-out": "zoomOut 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes zoomOut": {
+                        "0%": { "opacity": "1" },
+                        "50%": {
+                            "opacity": "0",
+                            "transform": "scale3d(0.3, 0.3, 0.3)"
+                        },
+                        "100%": { "opacity": "0" }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-zoom-out-down",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-zoom-out-down": "zoomOutDown 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes zoomOutDown": {
+                        "40%": {
+                            "opacity": "1",
+                            "transform": "scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0)",
+                            "animation-timing-function": "cubic-bezier(0.55, 0.055, 0.675, 0.19)"
+                        },
+                        "100%": {
+                            "opacity": "0",
+                            "transform": "scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0)",
+                            "transform-origin": "center bottom"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-zoom-out-left",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-zoom-out-left": "zoomOutLeft 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes zoomOutLeft": {
+                        "40%": {
+                            "opacity": "1",
+                            "transform": "scale3d(0.475, 0.475, 0.475) translate3d(42px, 0, 0)"
+                        },
+                        "100%": {
+                            "opacity": "0",
+                            "transform": "scale(0.1) translate3d(-1000px, 0, 0)",
+                            "transform-origin": "left center"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-zoom-out-right",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-zoom-out-right": "zoomOutRight 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes zoomOutRight": {
+                        "40%": {
+                            "opacity": "1",
+                            "transform": "scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0)"
+                        },
+                        "100%": {
+                            "opacity": "0",
+                            "transform": "scale(0.1) translate3d(1000px, 0, 0)",
+                            "transform-origin": "right center"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-zoom-out-up",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-zoom-out-up": "zoomOutUp 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes zoomOutUp": {
+                        "40%": {
+                            "opacity": "1",
+                            "transform": "scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0)",
+                            "animation-timing-function": "cubic-bezier(0.55, 0.055, 0.675, 0.19)"
+                        },
+                        "100%": {
+                            "opacity": "0",
+                            "transform": "scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0)",
+                            "transform-origin": "center bottom"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-rotate-in",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-rotate-in": "rotateIn 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes rotateIn": {
+                        "0%": {
+                            "transform": "rotate3d(0, 0, 1, -200deg)",
+                            "opacity": "0"
+                        },
+                        "100%": {
+                            "transform": "rotate3d(0, 0, 1, 0deg)",
+                            "opacity": "1"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-rotate-out",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-rotate-out": "rotateOut 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes rotateOut": {
+                        "0%": {
+                            "transform": "rotate3d(0, 0, 1, 0deg)",
+                            "opacity": "1"
+                        },
+                        "100%": {
+                            "transform": "rotate3d(0, 0, 1, 200deg)",
+                            "opacity": "0"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-roll-in",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-roll-in": "rollIn 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes rollIn": {
+                        "0%": {
+                            "opacity": "0",
+                            "transform": "translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg)"
+                        },
+                        "100%": {
+                            "opacity": "1",
+                            "transform": "translate3d(0, 0, 0) rotate3d(0, 0, 1, 0deg)"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-roll-out",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-roll-out": "rollOut 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes rollOut": {
+                        "0%": {
+                            "opacity": "1",
+                            "transform": "translate3d(0, 0, 0) rotate3d(0, 0, 1, 0deg)"
+                        },
+                        "100%": {
+                            "opacity": "0",
+                            "transform": "translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg)"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-light-speed-in",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-light-speed-in": "lightSpeedInRight 1s ease-out"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes lightSpeedInRight": {
+                        "0%": {
+                            "transform": "translate3d(100%, 0, 0) skewX(-30deg)",
+                            "opacity": "0"
+                        },
+                        "60%": { "transform": "skewX(20deg)", "opacity": "1" },
+                        "80%": { "transform": "skewX(-5deg)", "opacity": "1" },
+                        "100%": {
+                            "transform": "translate3d(0, 0, 0)",
+                            "opacity": "1"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-light-speed-out",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-light-speed-out": "lightSpeedOutLeft 1s ease-in"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes lightSpeedOutLeft": {
+                        "0%": { "opacity": "1" },
+                        "100%": {
+                            "transform": "translate3d(-100%, 0, 0) skewX(30deg)",
+                            "opacity": "0"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-jack-in-box",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-jack-in-box": "jackInTheBox 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes jackInTheBox": {
+                        "0%": {
+                            "opacity": "0",
+                            "transform": "scale(0.1) rotate(0deg)"
+                        },
+                        "50%": { "transform": "scale(1.05) rotate(10deg)" },
+                        "70%": { "transform": "scale(0.9) rotate(-3deg)" },
+                        "100%": {
+                            "opacity": "1",
+                            "transform": "scale(1) rotate(0deg)"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-hinge",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-hinge": "hinge 2s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes hinge": {
+                        "0%": {
+                            "transform": "rotate3d(0, 0, 1, 0deg)",
+                            "transform-origin": "top left",
+                            "animation-timing-function": "ease-in-out"
+                        },
+                        "20%, 60%": {
+                            "transform": "rotate3d(0, 0, 1, 80deg)",
+                            "transform-origin": "top left",
+                            "animation-timing-function": "ease-in-out"
+                        },
+                        "40%, 80%": {
+                            "transform": "rotate3d(0, 0, 1, 60deg)",
+                            "transform-origin": "top left",
+                            "animation-timing-function": "ease-in-out"
+                        },
+                        "100%": {
+                            "transform": "rotate3d(0, 0, 1, 90deg)",
+                            "transform-origin": "top left",
+                            "opacity": "0"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-bounce-in",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-bounce-in": "bounceIn 0.75s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes bounceIn": {
+                        "0%": {
+                            "opacity": "0",
+                            "transform": "scale3d(0.3, 0.3, 0.3)"
+                        },
+                        "20%": { "transform": "scale3d(1.1, 1.1, 1.1)" },
+                        "40%": { "transform": "scale3d(0.9, 0.9, 0.9)" },
+                        "60%": {
+                            "opacity": "1",
+                            "transform": "scale3d(1.03, 1.03, 1.03)"
+                        },
+                        "80%": { "transform": "scale3d(0.97, 0.97, 0.97)" },
+                        "100%": {
+                            "opacity": "1",
+                            "transform": "scale3d(1, 1, 1)"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-bounce-in-down",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-bounce-in-down": "bounceInDown 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes bounceInDown": {
+                        "0%": {
+                            "opacity": "0",
+                            "transform": "translate3d(0, -3000px, 0) scaleY(3)"
+                        },
+                        "60%": {
+                            "opacity": "1",
+                            "transform": "translate3d(0, 25px, 0) scaleY(0.9)"
+                        },
+                        "75%": {
+                            "transform": "translate3d(0, -10px, 0) scaleY(0.95)"
+                        },
+                        "90%": {
+                            "transform": "translate3d(0, 5px, 0) scaleY(0.985)"
+                        },
+                        "100%": { "transform": "translate3d(0, 0, 0)" }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-bounce-in-left",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-bounce-in-left": "bounceInLeft 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes bounceInLeft": {
+                        "0%": {
+                            "opacity": "0",
+                            "transform": "translate3d(-3000px, 0, 0) scaleX(3)"
+                        },
+                        "60%": {
+                            "opacity": "1",
+                            "transform": "translate3d(25px, 0, 0) scaleX(1)"
+                        },
+                        "75%": {
+                            "transform": "translate3d(-10px, 0, 0) scaleX(0.98)"
+                        },
+                        "90%": {
+                            "transform": "translate3d(5px, 0, 0) scaleX(0.995)"
+                        },
+                        "100%": { "transform": "translate3d(0, 0, 0)" }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-bounce-in-right",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-bounce-in-right": "bounceInRight 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes bounceInRight": {
+                        "0%": {
+                            "opacity": "0",
+                            "transform": "translate3d(3000px, 0, 0) scaleX(3)"
+                        },
+                        "60%": {
+                            "opacity": "1",
+                            "transform": "translate3d(-25px, 0, 0) scaleX(1)"
+                        },
+                        "75%": {
+                            "transform": "translate3d(10px, 0, 0) scaleX(0.98)"
+                        },
+                        "90%": {
+                            "transform": "translate3d(-5px, 0, 0) scaleX(0.995)"
+                        },
+                        "100%": { "transform": "translate3d(0, 0, 0)" }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-bounce-in-up",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-bounce-in-up": "bounceInUp 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes bounceInUp": {
+                        "0%": {
+                            "opacity": "0",
+                            "transform": "translate3d(0, 3000px, 0) scaleY(5)"
+                        },
+                        "60%": {
+                            "opacity": "1",
+                            "transform": "translate3d(0, -20px, 0) scaleY(0.9)"
+                        },
+                        "75%": {
+                            "transform": "translate3d(0, 10px, 0) scaleY(0.95)"
+                        },
+                        "90%": {
+                            "transform": "translate3d(0, -5px, 0) scaleY(0.985)"
+                        },
+                        "100%": { "transform": "translate3d(0, 0, 0)" }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-bounce-out",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-bounce-out": "bounceOut 0.75s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes bounceOut": {
+                        "20%": { "transform": "scale3d(0.9, 0.9, 0.9)" },
+                        "50%, 55%": {
+                            "opacity": "1",
+                            "transform": "scale3d(1.1, 1.1, 1.1)"
+                        },
+                        "100%": {
+                            "opacity": "0",
+                            "transform": "scale3d(0.3, 0.3, 0.3)"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-bounce-out-down",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-bounce-out-down": "bounceOutDown 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes bounceOutDown": {
+                        "20%": {
+                            "transform": "translate3d(0, 10px, 0) scaleY(0.985)"
+                        },
+                        "40%, 45%": {
+                            "opacity": "1",
+                            "transform": "translate3d(0, -20px, 0) scaleY(0.9)"
+                        },
+                        "100%": {
+                            "opacity": "0",
+                            "transform": "translate3d(0, 2000px, 0) scaleY(3)"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-bounce-out-left",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-bounce-out-left": "bounceOutLeft 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes bounceOutLeft": {
+                        "20%": {
+                            "opacity": "1",
+                            "transform": "translate3d(20px, 0, 0) scaleX(0.9)"
+                        },
+                        "100%": {
+                            "opacity": "0",
+                            "transform": "translate3d(-2000px, 0, 0) scaleX(2)"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-bounce-out-right",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-bounce-out-right": "bounceOutRight 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes bounceOutRight": {
+                        "20%": {
+                            "opacity": "1",
+                            "transform": "translate3d(-20px, 0, 0) scaleX(0.9)"
+                        },
+                        "100%": {
+                            "opacity": "0",
+                            "transform": "translate3d(2000px, 0, 0) scaleX(2)"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-bounce-out-up",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-bounce-out-up": "bounceOutUp 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes bounceOutUp": {
+                        "20%": {
+                            "transform": "translate3d(0, -10px, 0) scaleY(0.985)"
+                        },
+                        "40%, 45%": {
+                            "opacity": "1",
+                            "transform": "translate3d(0, 20px, 0) scaleY(0.9)"
+                        },
+                        "100%": {
+                            "opacity": "0",
+                            "transform": "translate3d(0, -2000px, 0) scaleY(3)"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-back-in-down",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-back-in-down": "backInDown 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes backInDown": {
+                        "0%": {
+                            "transform": "translateY(-1200px) scale(0.7)",
+                            "opacity": "0.7"
+                        },
+                        "80%": {
+                            "transform": "translateY(0px) scale(0.7)",
+                            "opacity": "0.7"
+                        },
+                        "100%": { "transform": "scale(1)", "opacity": "1" }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-back-in-left",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-back-in-left": "backInLeft 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes backInLeft": {
+                        "0%": {
+                            "transform": "translateX(-2000px) scale(0.7)",
+                            "opacity": "0.7"
+                        },
+                        "80%": {
+                            "transform": "translateX(0px) scale(0.7)",
+                            "opacity": "0.7"
+                        },
+                        "100%": { "transform": "scale(1)", "opacity": "1" }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-back-in-right",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-back-in-right": "backInRight 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes backInRight": {
+                        "0%": {
+                            "transform": "translateX(2000px) scale(0.7)",
+                            "opacity": "0.7"
+                        },
+                        "80%": {
+                            "transform": "translateX(0px) scale(0.7)",
+                            "opacity": "0.7"
+                        },
+                        "100%": { "transform": "scale(1)", "opacity": "1" }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-back-in-up",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-back-in-up": "backInUp 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes backInUp": {
+                        "0%": {
+                            "transform": "translateY(1200px) scale(0.7)",
+                            "opacity": "0.7"
+                        },
+                        "80%": {
+                            "transform": "translateY(0px) scale(0.7)",
+                            "opacity": "0.7"
+                        },
+                        "100%": { "transform": "scale(1)", "opacity": "1" }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-back-out-down",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-back-out-down": "backOutDown 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes backOutDown": {
+                        "0%": { "transform": "scale(1)", "opacity": "1" },
+                        "20%": {
+                            "transform": "translateY(0px) scale(0.7)",
+                            "opacity": "0.7"
+                        },
+                        "100%": {
+                            "transform": "translateY(700px) scale(0.7)",
+                            "opacity": "0.7"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-back-out-left",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-back-out-left": "backOutLeft 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes backOutLeft": {
+                        "0%": { "transform": "scale(1)", "opacity": "1" },
+                        "20%": {
+                            "transform": "translateX(0px) scale(0.7)",
+                            "opacity": "0.7"
+                        },
+                        "100%": {
+                            "transform": "translateX(-2000px) scale(0.7)",
+                            "opacity": "0.7"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-back-out-right",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-back-out-right": "backOutRight 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes backOutRight": {
+                        "0%": { "transform": "scale(1)", "opacity": "1" },
+                        "20%": {
+                            "transform": "translateX(0px) scale(0.7)",
+                            "opacity": "0.7"
+                        },
+                        "100%": {
+                            "transform": "translateX(2000px) scale(0.7)",
+                            "opacity": "0.7"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-back-out-up",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-back-out-up": "backOutUp 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes backOutUp": {
+                        "0%": { "transform": "scale(1)", "opacity": "1" },
+                        "20%": {
+                            "transform": "translateY(0px) scale(0.7)",
+                            "opacity": "0.7"
+                        },
+                        "100%": {
+                            "transform": "translateY(-700px) scale(0.7)",
+                            "opacity": "0.7"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-rotate-in-down-left",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-rotate-in-down-left": "rotateInDownLeft 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes rotateInDownLeft": {
+                        "0%": {
+                            "transform": "rotate3d(0, 0, 1, -45deg)",
+                            "opacity": "0",
+                            "transform-origin": "left bottom"
+                        },
+                        "100%": {
+                            "transform": "rotate3d(0, 0, 1, 0deg)",
+                            "opacity": "1",
+                            "transform-origin": "left bottom"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-rotate-in-down-right",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-rotate-in-down-right": "rotateInDownRight 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes rotateInDownRight": {
+                        "0%": {
+                            "transform": "rotate3d(0, 0, 1, 45deg)",
+                            "opacity": "0",
+                            "transform-origin": "right bottom"
+                        },
+                        "100%": {
+                            "transform": "rotate3d(0, 0, 1, 0deg)",
+                            "opacity": "1",
+                            "transform-origin": "right bottom"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-rotate-in-up-left",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-rotate-in-up-left": "rotateInUpLeft 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes rotateInUpLeft": {
+                        "0%": {
+                            "transform": "rotate3d(0, 0, 1, 45deg)",
+                            "opacity": "0",
+                            "transform-origin": "left bottom"
+                        },
+                        "100%": {
+                            "transform": "rotate3d(0, 0, 1, 0deg)",
+                            "opacity": "1",
+                            "transform-origin": "left bottom"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-rotate-in-up-right",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-rotate-in-up-right": "rotateInUpRight 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes rotateInUpRight": {
+                        "0%": {
+                            "transform": "rotate3d(0, 0, 1, -90deg)",
+                            "opacity": "0",
+                            "transform-origin": "right bottom"
+                        },
+                        "100%": {
+                            "transform": "rotate3d(0, 0, 1, 0deg)",
+                            "opacity": "1",
+                            "transform-origin": "right bottom"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-rotate-out-down-left",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-rotate-out-down-left": "rotateOutDownLeft 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes rotateOutDownLeft": {
+                        "0%": {
+                            "opacity": "1",
+                            "transform-origin": "left bottom"
+                        },
+                        "100%": {
+                            "transform": "rotate3d(0, 0, 1, 45deg)",
+                            "opacity": "0",
+                            "transform-origin": "left bottom"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-rotate-out-down-right",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-rotate-out-down-right": "rotateOutDownRight 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes rotateOutDownRight": {
+                        "0%": {
+                            "opacity": "1",
+                            "transform-origin": "right bottom"
+                        },
+                        "100%": {
+                            "transform": "rotate3d(0, 0, 1, -45deg)",
+                            "opacity": "0",
+                            "transform-origin": "right bottom"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-rotate-out-up-left",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-rotate-out-up-left": "rotateOutUpLeft 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes rotateOutUpLeft": {
+                        "0%": {
+                            "opacity": "1",
+                            "transform-origin": "left bottom"
+                        },
+                        "100%": {
+                            "transform": "rotate3d(0, 0, 1, -45deg)",
+                            "opacity": "0",
+                            "transform-origin": "left bottom"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-rotate-out-up-right",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-rotate-out-up-right": "rotateOutUpRight 1s"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes rotateOutUpRight": {
+                        "0%": {
+                            "opacity": "1",
+                            "transform-origin": "right bottom"
+                        },
+                        "100%": {
+                            "transform": "rotate3d(0, 0, 1, 90deg)",
+                            "opacity": "0",
+                            "transform-origin": "right bottom"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-float",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-float": "float 3s ease-in-out infinite"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes float": {
+                        "0%, 100%": { "transform": "translateY(0)" },
+                        "50%": { "transform": "translateY(-20px)" }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-spin",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-spin": "spin 1s linear infinite"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes spin": {
+                        "0%": { "transform": "rotate(0deg)" },
+                        "100%": { "transform": "rotate(360deg)" }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-wiggle",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-wiggle": "wiggle 0.8s ease-in-out infinite"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes wiggle": {
+                        "0%, 100%": { "transform": "rotate(-3deg)" },
+                        "50%": { "transform": "rotate(3deg)" }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-ping",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-ping": "ping 1s cubic-bezier(0, 0, 0.2, 1) infinite"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes ping": {
+                        "75%, 100%": { "transform": "scale(2)", "opacity": "0" }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-blur-in",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-blur-in": "blurIn 0.6s ease-out"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes blurIn": {
+                        "0%": { "filter": "blur(12px)", "opacity": "0" },
+                        "100%": { "filter": "blur(0px)", "opacity": "1" }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-blur-out",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-blur-out": "blurOut 0.6s ease-in"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes blurOut": {
+                        "0%": { "filter": "blur(0px)", "opacity": "1" },
+                        "100%": { "filter": "blur(12px)", "opacity": "0" }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-glitch",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-glitch": "glitch 0.6s steps(1) infinite"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes glitch": {
+                        "0%, 100%": { "transform": "translate(0)" },
+                        "20%": { "transform": "translate(-3px, 2px)" },
+                        "40%": { "transform": "translate(-3px, -2px)" },
+                        "60%": { "transform": "translate(3px, 2px)" },
+                        "80%": { "transform": "translate(3px, -2px)" }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-pop",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-pop": "pop 0.4s cubic-bezier(0.26, 0.53, 0.74, 1.48)"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes pop": {
+                        "0%": { "transform": "scale(0.8)", "opacity": "0" },
+                        "70%": { "transform": "scale(1.1)" },
+                        "100%": { "transform": "scale(1)", "opacity": "1" }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-compress",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-compress": "compress 0.5s ease-in-out"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes compress": {
+                        "0%, 100%": { "transform": "scaleY(1)" },
+                        "50%": { "transform": "scaleY(0.5)" }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-expand",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-expand": "expand 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275)"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes expand": {
+                        "0%": { "transform": "scale(0)", "opacity": "0" },
+                        "100%": { "transform": "scale(1)", "opacity": "1" }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-drop",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-drop": "drop 0.6s ease-out"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes drop": {
+                        "0%": {
+                            "transform": "translateY(-200px)",
+                            "opacity": "0"
+                        },
+                        "60%": {
+                            "transform": "translateY(15px)",
+                            "opacity": "1"
+                        },
+                        "80%": { "transform": "translateY(-8px)" },
+                        "100%": { "transform": "translateY(0)" }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-sway",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-sway": "sway 2s ease-in-out infinite"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes sway": {
+                        "0%, 100%": {
+                            "transform": "rotate(-5deg)",
+                            "transform-origin": "top center"
+                        },
+                        "50%": {
+                            "transform": "rotate(5deg)",
+                            "transform-origin": "top center"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-ken-burns",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-ken-burns": "kenBurns 8s ease-in-out infinite alternate"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes kenBurns": {
+                        "0%": { "transform": "scale(1) translate(0, 0)" },
+                        "100%": {
+                            "transform": "scale(1.15) translate(-2%, -2%)"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-tilt",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-tilt": "tilt 1.5s ease-in-out infinite alternate"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes tilt": {
+                        "0%": {
+                            "transform": "perspective(400px) rotateY(0deg)"
+                        },
+                        "100%": {
+                            "transform": "perspective(400px) rotateY(15deg)"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-all",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "title": "Animate All",
+            "description": "Install all 103 animation utilities",
+            "registryDependencies": [
+                "https://ui.designbycode.co.za/r/animate-bounce.json",
+                "https://ui.designbycode.co.za/r/animate-pulse.json",
+                "https://ui.designbycode.co.za/r/animate-flash.json",
+                "https://ui.designbycode.co.za/r/animate-wobble.json",
+                "https://ui.designbycode.co.za/r/animate-rubber-band.json",
+                "https://ui.designbycode.co.za/r/animate-shake.json",
+                "https://ui.designbycode.co.za/r/animate-head-shake.json",
+                "https://ui.designbycode.co.za/r/animate-swing.json",
+                "https://ui.designbycode.co.za/r/animate-tada.json",
+                "https://ui.designbycode.co.za/r/animate-jello.json",
+                "https://ui.designbycode.co.za/r/animate-heart-beat.json",
+                "https://ui.designbycode.co.za/r/animate-flip.json",
+                "https://ui.designbycode.co.za/r/animate-flip-in-x.json",
+                "https://ui.designbycode.co.za/r/animate-flip-in-y.json",
+                "https://ui.designbycode.co.za/r/animate-flip-out-x.json",
+                "https://ui.designbycode.co.za/r/animate-flip-out-y.json",
+                "https://ui.designbycode.co.za/r/animate-fade-in.json",
+                "https://ui.designbycode.co.za/r/animate-fade-in-down.json",
+                "https://ui.designbycode.co.za/r/animate-fade-in-down-big.json",
+                "https://ui.designbycode.co.za/r/animate-fade-in-left.json",
+                "https://ui.designbycode.co.za/r/animate-fade-in-left-big.json",
+                "https://ui.designbycode.co.za/r/animate-fade-in-right.json",
+                "https://ui.designbycode.co.za/r/animate-fade-in-right-big.json",
+                "https://ui.designbycode.co.za/r/animate-fade-in-up.json",
+                "https://ui.designbycode.co.za/r/animate-fade-in-up-big.json",
+                "https://ui.designbycode.co.za/r/animate-fade-out.json",
+                "https://ui.designbycode.co.za/r/animate-fade-out-down.json",
+                "https://ui.designbycode.co.za/r/animate-fade-out-down-big.json",
+                "https://ui.designbycode.co.za/r/animate-fade-out-left.json",
+                "https://ui.designbycode.co.za/r/animate-fade-out-left-big.json",
+                "https://ui.designbycode.co.za/r/animate-fade-out-right.json",
+                "https://ui.designbycode.co.za/r/animate-fade-out-right-big.json",
+                "https://ui.designbycode.co.za/r/animate-fade-out-up.json",
+                "https://ui.designbycode.co.za/r/animate-fade-out-up-big.json",
+                "https://ui.designbycode.co.za/r/animate-slide-in-down.json",
+                "https://ui.designbycode.co.za/r/animate-slide-in-left.json",
+                "https://ui.designbycode.co.za/r/animate-slide-in-right.json",
+                "https://ui.designbycode.co.za/r/animate-slide-in-up.json",
+                "https://ui.designbycode.co.za/r/animate-slide-out-down.json",
+                "https://ui.designbycode.co.za/r/animate-slide-out-left.json",
+                "https://ui.designbycode.co.za/r/animate-slide-out-right.json",
+                "https://ui.designbycode.co.za/r/animate-slide-out-up.json",
+                "https://ui.designbycode.co.za/r/animate-zoom-in.json",
+                "https://ui.designbycode.co.za/r/animate-zoom-in-down.json",
+                "https://ui.designbycode.co.za/r/animate-zoom-in-left.json",
+                "https://ui.designbycode.co.za/r/animate-zoom-in-right.json",
+                "https://ui.designbycode.co.za/r/animate-zoom-in-up.json",
+                "https://ui.designbycode.co.za/r/animate-zoom-out.json",
+                "https://ui.designbycode.co.za/r/animate-zoom-out-down.json",
+                "https://ui.designbycode.co.za/r/animate-zoom-out-left.json",
+                "https://ui.designbycode.co.za/r/animate-zoom-out-right.json",
+                "https://ui.designbycode.co.za/r/animate-zoom-out-up.json",
+                "https://ui.designbycode.co.za/r/animate-rotate-in.json",
+                "https://ui.designbycode.co.za/r/animate-rotate-out.json",
+                "https://ui.designbycode.co.za/r/animate-roll-in.json",
+                "https://ui.designbycode.co.za/r/animate-roll-out.json",
+                "https://ui.designbycode.co.za/r/animate-light-speed-in.json",
+                "https://ui.designbycode.co.za/r/animate-light-speed-out.json",
+                "https://ui.designbycode.co.za/r/animate-jack-in-box.json",
+                "https://ui.designbycode.co.za/r/animate-hinge.json",
+                "https://ui.designbycode.co.za/r/animate-bounce-in.json",
+                "https://ui.designbycode.co.za/r/animate-bounce-in-down.json",
+                "https://ui.designbycode.co.za/r/animate-bounce-in-left.json",
+                "https://ui.designbycode.co.za/r/animate-bounce-in-right.json",
+                "https://ui.designbycode.co.za/r/animate-bounce-in-up.json",
+                "https://ui.designbycode.co.za/r/animate-bounce-out.json",
+                "https://ui.designbycode.co.za/r/animate-bounce-out-down.json",
+                "https://ui.designbycode.co.za/r/animate-bounce-out-left.json",
+                "https://ui.designbycode.co.za/r/animate-bounce-out-right.json",
+                "https://ui.designbycode.co.za/r/animate-bounce-out-up.json",
+                "https://ui.designbycode.co.za/r/animate-back-in-down.json",
+                "https://ui.designbycode.co.za/r/animate-back-in-left.json",
+                "https://ui.designbycode.co.za/r/animate-back-in-right.json",
+                "https://ui.designbycode.co.za/r/animate-back-in-up.json",
+                "https://ui.designbycode.co.za/r/animate-back-out-down.json",
+                "https://ui.designbycode.co.za/r/animate-back-out-left.json",
+                "https://ui.designbycode.co.za/r/animate-back-out-right.json",
+                "https://ui.designbycode.co.za/r/animate-back-out-up.json",
+                "https://ui.designbycode.co.za/r/animate-rotate-in-down-left.json",
+                "https://ui.designbycode.co.za/r/animate-rotate-in-down-right.json",
+                "https://ui.designbycode.co.za/r/animate-rotate-in-up-left.json",
+                "https://ui.designbycode.co.za/r/animate-rotate-in-up-right.json",
+                "https://ui.designbycode.co.za/r/animate-rotate-out-down-left.json",
+                "https://ui.designbycode.co.za/r/animate-rotate-out-down-right.json",
+                "https://ui.designbycode.co.za/r/animate-rotate-out-up-left.json",
+                "https://ui.designbycode.co.za/r/animate-rotate-out-up-right.json",
+                "https://ui.designbycode.co.za/r/animate-float.json",
+                "https://ui.designbycode.co.za/r/animate-spin.json",
+                "https://ui.designbycode.co.za/r/animate-wiggle.json",
+                "https://ui.designbycode.co.za/r/animate-ping.json",
+                "https://ui.designbycode.co.za/r/animate-blur-in.json",
+                "https://ui.designbycode.co.za/r/animate-blur-out.json",
+                "https://ui.designbycode.co.za/r/animate-glitch.json",
+                "https://ui.designbycode.co.za/r/animate-pop.json",
+                "https://ui.designbycode.co.za/r/animate-compress.json",
+                "https://ui.designbycode.co.za/r/animate-expand.json",
+                "https://ui.designbycode.co.za/r/animate-drop.json",
+                "https://ui.designbycode.co.za/r/animate-sway.json",
+                "https://ui.designbycode.co.za/r/animate-ken-burns.json",
+                "https://ui.designbycode.co.za/r/animate-tilt.json"
+            ]
+        },
+        {
+            "name": "use-headroom",
+            "path": "resources/js/registry/new-york/hooks/use-headroom.ts",
+            "type": "registry:hook",
+            "meta": {
+                "category": "hooks",
+                "version": "1.0.0"
+            },
+            "title": "Use Headroom",
+            "author": "designbycode",
+            "registryDependencies": [],
+            "dependencies": ["react"],
+            "devDependencies": [],
+            "component": "useHeadroom",
+            "files": [
+                {
+                    "path": "resources/js/registry/new-york/hooks/use-headroom.ts",
+                    "type": "registry:hook"
+                }
+            ]
+        },
+        {
+            "name": "use-hover",
+            "path": "resources/js/registry/new-york/hooks/use-hover.tsx",
+            "type": "registry:hook",
+            "meta": {
+                "category": "hooks",
+                "version": "1.0.0"
+            },
+            "title": "Use Hover",
+            "author": "designbycode",
+            "registryDependencies": [],
+            "dependencies": ["react"],
+            "devDependencies": [],
+            "component": "useHover",
+            "files": [
+                {
+                    "path": "resources/js/registry/new-york/hooks/use-hover.tsx",
+                    "type": "registry:hook"
+                }
+            ]
+        },
+        {
+            "name": "text-animator",
+            "path": "resources/js/registry/new-york/components/ui/animations/text-animator.tsx",
+            "type": "registry:ui",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "title": "Text Animator",
+            "author": "designbycode",
+            "registryDependencies": [],
+            "dependencies": ["gsap", "@gsap/react"],
+            "component": "TextAnimator",
+            "files": [
+                {
+                    "path": "resources/js/registry/new-york/components/ui/animations/text-animator.tsx",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "use-dark-mode",
+            "path": "resources/js/registry/new-york/hooks/use-dark-mode.ts",
+            "type": "registry:hook",
+            "meta": {
+                "category": "hooks",
+                "version": "1.0.0"
+            },
+            "title": "Use Dark Mode",
+            "author": "designbycode",
+            "registryDependencies": [],
+            "dependencies": ["react"],
+            "devDependencies": [],
+            "component": "useDarkMode",
+            "files": [
+                {
+                    "path": "resources/js/registry/new-york/hooks/use-dark-mode.ts",
+                    "type": "registry:hook"
+                }
+            ]
+        },
+        {
+            "name": "animated-tabs",
+            "path": "resources/js/registry/new-york/components/ui/motion/animated-tabs.tsx",
+            "type": "registry:ui",
+            "meta": {
+                "category": "components",
+                "version": "1.0.0"
+            },
+            "title": "Animated Tabs",
+            "author": "designbycode",
+            "registryDependencies": [],
+            "dependencies": ["framer-motion", "clsx", "tailwind-merge"],
+            "component": "AnimatedTabs",
+            "files": [
+                {
+                    "path": "resources/js/registry/new-york/components/ui/tabs/animated-tabs.tsx",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "pixel-canvas",
+            "path": "resources/js/registry/new-york/components/ui/canvas/pixel-canvas.tsx",
+            "type": "registry:ui",
+            "meta": {
+                "category": "components",
+                "version": "1.0.0"
+            },
+            "title": "Pixel Canvas",
+            "author": "designbycode",
+            "registryDependencies": [],
+            "dependencies": [],
+            "component": "PixelCanvas",
+            "files": [
+                {
+                    "path": "resources/js/registry/new-york/components/ui/canvas/pixel-canvas.tsx",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "waves-three",
+            "path": "resources/js/registry/new-york/components/ui/threejs/waves-three.tsx",
+            "type": "registry:ui",
+            "meta": {
+                "category": "components",
+                "version": "1.0.0"
+            },
+            "title": "Waves Three",
+            "author": "designbycode",
+            "registryDependencies": [],
+            "dependencies": ["three", "clsx", "tailwind-merge"],
+            "component": "WavesThree",
+            "files": [
+                {
+                    "path": "resources/js/registry/new-york/components/ui/threejs/waves-three.tsx",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "use-headroom",
+            "path": "resources/js/registry/new-york/hooks/use-headroom.ts",
+            "type": "registry:hook",
+            "meta": {
+                "category": "hooks",
+                "version": "1.0.0"
+            },
+            "title": "Use Headroom",
+            "author": "designbycode",
+            "registryDependencies": [],
+            "dependencies": ["react"],
+            "devDependencies": [],
+            "component": "useHeadroom",
+            "files": [
+                {
+                    "path": "resources/js/registry/new-york/hooks/use-headroom.ts",
+                    "type": "registry:hook"
+                }
+            ]
+        },
+        {
+            "name": "animate-ring",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-ring": "ring 0.5s ease-in-out"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes ring": {
+                        "0%, 100%": {
+                            "transform": "rotate(0deg)"
+                        },
+                        "10%, 30%": {
+                            "transform": "rotate(15deg)"
+                        },
+                        "20%, 40%": {
+                            "transform": "rotate(-15deg)"
+                        },
+                        "50%, 70%": {
+                            "transform": "rotate(10deg)"
+                        },
+                        "60%, 80%": {
+                            "transform": "rotate(-10deg)"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-alarm",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-alarm": "alarm 0.8s ease-in-out"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes alarm": {
+                        "0%, 100%": {
+                            "transform": "rotate(0deg) scale(1)"
+                        },
+                        "10%, 30%": {
+                            "transform": "rotate(-25deg) scale(1.05)"
+                        },
+                        "20%, 40%": {
+                            "transform": "rotate(25deg) scale(1.05)"
+                        },
+                        "50%, 70%": {
+                            "transform": "rotate(-15deg) scale(1.02)"
+                        },
+                        "60%, 80%": {
+                            "transform": "rotate(15deg) scale(1.02)"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "animate-bell",
+            "type": "registry:style",
+            "meta": {
+                "category": "animations",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--animate-bell": "bell 1s ease-in-out"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@keyframes bell": {
+                        "0%": { "transform": "rotate(0)" },
+                        "10%": { "transform": "rotate(15deg)" },
+                        "20%": { "transform": "rotate(-15deg)" },
+                        "30%": { "transform": "rotate(10deg)" },
+                        "40%": { "transform": "rotate(-10deg)" },
+                        "50%": { "transform": "rotate(0)" },
+                        "100%": { "transform": "rotate(0)" }
+                    }
+                }
+            }
+        },
+        {
+            "name": "glow-stack",
+            "path": "resources/js/registry/new-york/components/ui/glow/glow-stack.tsx",
+            "type": "registry:ui",
+            "meta": {
+                "category": "components",
+                "version": "1.0.0"
+            },
+            "title": "Glow Stack",
+            "author": "designbycode",
+            "registryDependencies": [],
+            "dependencies": ["react", "clsx", "tailwind-merge"],
+            "component": "GlowStack",
+            "files": [
+                {
+                    "path": "resources/js/registry/new-york/components/ui/glow/glow-stack.tsx",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "glow-radial",
+            "path": "resources/js/registry/new-york/components/ui/glow/glow-radial.tsx",
+            "type": "registry:ui",
+            "meta": {
+                "category": "components",
+                "version": "1.0.0"
+            },
+            "title": "Glow Radial",
+            "author": "designbycode",
+            "registryDependencies": [
+                "https://ui.designbycode.co.za/r/glow-stack.json"
+            ],
+            "dependencies": ["react", "clsx", "tailwind-merge"],
+            "component": "GlowRadial",
+            "files": [
+                {
+                    "path": "resources/js/registry/new-york/components/ui/glow/glow-radial.tsx",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
+            "name": "glow-geometry",
+            "path": "resources/js/registry/new-york/lib/glow-geometry.ts",
+            "type": "registry:lib",
+            "meta": {
+                "category": "lib",
+                "version": "1.0.0"
+            },
+            "title": "Glow Geometry",
+            "author": "designbycode",
+            "registryDependencies": [],
+            "dependencies": [],
+            "files": [
+                {
+                    "path": "resources/js/registry/new-york/lib/glow-geometry.ts",
+                    "type": "registry:lib"
+                }
+            ]
+        },
+        {
+            "name": "pixel-canvas",
+            "path": "resources/js/registry/new-york/lib/pixel-canvas.ts",
+            "type": "registry:lib",
+            "meta": {
+                "category": "lib",
+                "version": "1.0.0"
+            },
+            "title": "Pixel Canvas",
+            "author": "designbycode",
+            "registryDependencies": [],
+            "dependencies": [],
+            "files": [
+                {
+                    "path": "resources/js/registry/new-york/lib/pixel-canvas.ts",
+                    "type": "registry:lib"
+                }
+            ]
+        },
+        {
+            "name": "use-pixel-canvas",
+            "path": "resources/js/registry/new-york/hooks/use-pixel-canvas.ts",
+            "type": "registry:hook",
+            "meta": {
+                "category": "hooks",
+                "version": "1.0.0"
+            },
+            "title": "Use Pixel Canvas",
+            "author": "designbycode",
+            "registryDependencies": [
+                "https://ui.designbycode.co.za/r/pixel-canvas.json"
+            ],
+            "dependencies": ["react"],
+            "component": "usePixelCanvas",
+            "files": [
+                {
+                    "path": "resources/js/registry/new-york/hooks/use-pixel-canvas.ts",
+                    "type": "registry:hook"
+                }
+            ]
+        }
+    ]
+}
