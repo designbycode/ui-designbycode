@@ -6,7 +6,10 @@ import { useId, useState } from 'react';
 
 import { cn } from '@/lib/utils';
 
-export type AnimatedTabsProps = HTMLAttributes<HTMLDivElement> & {
+export type AnimatedTabsProps = Omit<
+    HTMLAttributes<HTMLDivElement>,
+    'onChange'
+> & {
     tabs: {
         id: string;
         label: ReactNode;
@@ -36,24 +39,27 @@ export function AnimatedTabs({
     inactiveTabClassName,
     indicatorClassName,
     contentClassName,
-    showContent = true,
+    showContent = false,
     ...props
 }: AnimatedTabsProps) {
     const id = useId();
-    const defaultIndex = defaultValue
-        ? tabs.findIndex((t) => t.id === defaultValue)
-        : 0;
-    const [activeIndex, setActiveIndex] = useState(
-        defaultIndex >= 0 ? defaultIndex : 0,
+
+    const resolveIndex = (tabId?: string) => {
+        if (!tabId) {
+            return 0;
+        }
+
+        const idx = tabs.findIndex((t) => t.id === tabId);
+
+        return idx >= 0 ? idx : 0;
+    };
+
+    const [activeIndex, setActiveIndex] = useState(() =>
+        resolveIndex(defaultValue),
     );
 
     const isControlled = value !== undefined;
-    const activeTabIndex = isControlled
-        ? Math.max(
-              0,
-              tabs.findIndex((t) => t.id === value),
-          )
-        : activeIndex;
+    const activeTabIndex = isControlled ? resolveIndex(value) : activeIndex;
     const activeTab = tabs[activeTabIndex] ?? tabs[0];
 
     const handleChange = (index: number) => {
@@ -67,29 +73,36 @@ export function AnimatedTabs({
     return (
         <div className={cn('w-full', className)} {...props}>
             <div
+                role="tablist"
                 className={cn(
-                    'relative flex items-center gap-1',
+                    'flex items-center gap-1 rounded-md border border-border bg-background p-1',
                     tabsClassName,
                 )}
             >
                 {tabs.map((tab, index) => (
-                    <motion.button
+                    <button
                         key={tab.id}
+                        role="tab"
+                        aria-selected={activeTabIndex === index}
+                        aria-controls={`${id}-panel-${tab.id}`}
+                        id={`${id}-tab-${tab.id}`}
                         onClick={() => handleChange(index)}
                         className={cn(
-                            'relative z-10 flex-1 rounded-sm px-2 py-1 text-xs font-medium transition-colors',
+                            'relative rounded-sm px-4 py-2 text-xs font-medium transition focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1 focus-visible:outline-none',
                             tabClassName,
                             activeTabIndex === index
-                                ? activeTabClassName
-                                : inactiveTabClassName,
+                                ? cn('text-foreground', activeTabClassName)
+                                : cn(
+                                      'text-muted-foreground hover:text-foreground',
+                                      inactiveTabClassName,
+                                  ),
                         )}
                     >
-                        <span className="relative z-10">{tab.label}</span>
                         {activeTabIndex === index && (
                             <motion.div
                                 layoutId={`${id}-indicator`}
                                 className={cn(
-                                    'absolute inset-0 rounded-sm',
+                                    'absolute inset-0 rounded-sm bg-muted',
                                     indicatorClassName,
                                 )}
                                 transition={{
@@ -99,11 +112,18 @@ export function AnimatedTabs({
                                 }}
                             />
                         )}
-                    </motion.button>
+                        <span className="relative z-10">{tab.label}</span>
+                    </button>
                 ))}
             </div>
-            {showContent && activeTab.content && (
-                <div className={cn('mt-4', contentClassName)}>
+
+            {showContent && activeTab?.content && (
+                <div
+                    role="tabpanel"
+                    id={`${id}-panel-${activeTab.id}`}
+                    aria-labelledby={`${id}-tab-${activeTab.id}`}
+                    className={cn('mt-4', contentClassName)}
+                >
                     <motion.div
                         key={activeTab.id}
                         initial={{ opacity: 0, y: 4 }}

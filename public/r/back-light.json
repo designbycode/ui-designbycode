@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "back-light",
+  "title": "Back Light",
+  "author": "designbycode",
+  "dependencies": [
+    "react",
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [
+    "https://ui.designbycode.co.za/r/glow-stack.json"
+  ],
+  "files": [
+    {
+      "path": "resources/js/registry/new-york/components/ui/glow/back-light.tsx",
+      "content": "import type { ReactNode } from 'react';\nimport { useId } from 'react';\nimport { cn } from '@/lib/utils';\n\ntype BackLightProps = {\n    children?: ReactNode;\n    className?: string;\n    blur?: number;\n    intensity?: number;\n    saturation?: number;\n    opacity?: number;\n};\n\nexport function BackLight({\n    blur = 20,\n    intensity = 1,\n    saturation = 4,\n    opacity = 0.6,\n    children,\n    className,\n}: BackLightProps) {\n    const id = useId();\n\n    return (\n        <div className={cn('relative', className)}>\n            <svg width=\"0\" height=\"0\" aria-hidden=\"true\">\n                <filter id={id} x=\"-50%\" y=\"-50%\" width=\"200%\" height=\"200%\">\n                    <feGaussianBlur stdDeviation={blur} result=\"blur\" />\n                    <feColorMatrix\n                        in=\"blur\"\n                        type=\"matrix\"\n                        values={`\n              ${saturation} 0 0 0 0\n              0 ${saturation} 0 0 0\n              0 0 ${saturation} 0 0\n              0 0 0 ${intensity} 0\n            `}\n                    />\n                </filter>\n            </svg>\n\n            {/* Glow layer */}\n            <div\n                style={{\n                    position: 'absolute',\n                    inset: 0,\n                    filter: `url(#${id})`,\n                    opacity,\n                    pointerEvents: 'none',\n                    willChange: 'filter',\n                    transform: 'translateZ(0)',\n                }}\n            >\n                {children}\n            </div>\n\n            {/* Actual content */}\n            <div style={{ position: 'relative' }}>{children}</div>\n        </div>\n    );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "category": "components",
+    "version": "1.0.0"
+  },
+  "type": "registry:ui"
+}

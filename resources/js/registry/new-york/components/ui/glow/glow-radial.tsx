@@ -77,7 +77,10 @@ export function GlowRadial({
     return (
         <Comp
             ref={ref}
-            className={cn('relative isolate rounded-[inherit]', className)}
+            className={cn(
+                'absolute inset-0 isolate z-10 rounded-[inherit]',
+                className,
+            )}
             style={style}
             {...props}
         >
