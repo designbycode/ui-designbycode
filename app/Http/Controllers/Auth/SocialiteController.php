@@ -17,16 +17,16 @@ class SocialiteController extends Controller
 
     public function handleProviderCallback(string $provider)
     {
-        $socialUser = Socialite::driver($provider)->stateless()->user();
+        $socialUser = Socialite::driver($provider)->user();
 
         $social = Social::where('provider', $provider)
             ->where('provider_id', $socialUser->getId())
             ->first();
 
-        if (! $social) {
+        if (!$social) {
             $user = User::where('email', $socialUser->getEmail())->first();
 
-            if (! $user) {
+            if (!$user) {
                 $user = User::create([
                     'name' => $socialUser->getName() ?? $socialUser->getNickname(),
                     'email' => $socialUser->getEmail(),
