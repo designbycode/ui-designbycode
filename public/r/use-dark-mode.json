@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "use-dark-mode",
+  "title": "Use Dark Mode",
+  "author": "designbycode",
+  "dependencies": [
+    "react"
+  ],
+  "devDependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "resources/js/registry/new-york/hooks/use-dark-mode.ts",
+      "content": "import { useSyncExternalStore } from 'react';\n\nfunction getSnapshot(): boolean {\n    return document.documentElement.classList.contains('dark');\n}\n\nfunction subscribe(callback: () => void): () => void {\n    const observer = new MutationObserver(callback);\n\n    observer.observe(document.documentElement, {\n        attributes: true,\n        attributeFilter: ['class'],\n    });\n\n    return () => {\n        observer.disconnect();\n    };\n}\n\nfunction useDarkMode(): boolean {\n    return useSyncExternalStore(subscribe, getSnapshot, getSnapshot);\n}\n\nexport default useDarkMode;\n",
+      "type": "registry:hook"
+    }
+  ],
+  "meta": {
+    "category": "hooks",
+    "version": "1.0.0"
+  },
+  "type": "registry:hook"
+}

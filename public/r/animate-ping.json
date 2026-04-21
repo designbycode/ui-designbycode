@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animate-ping",
+  "cssVars": {
+    "theme": {
+      "--animate-ping": "ping 1s cubic-bezier(0, 0, 0.2, 1) infinite"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      "@keyframes ping": {
+        "75%, 100%": {
+          "transform": "scale(2)",
+          "opacity": "0"
+        }
+      }
+    }
+  },
+  "meta": {
+    "category": "animations",
+    "version": "1.0.0"
+  },
+  "type": "registry:style"
+}

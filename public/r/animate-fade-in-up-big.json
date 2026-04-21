@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animate-fade-in-up-big",
+  "cssVars": {
+    "theme": {
+      "--animate-fade-in-up-big": "fadeInUpBig 1s"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      "@keyframes fadeInUpBig": {
+        "0%": {
+          "opacity": "0",
+          "transform": "translate3d(0, 2000px, 0)"
+        },
+        "100%": {
+          "opacity": "1",
+          "transform": "translate3d(0, 0, 0)"
+        }
+      }
+    }
+  },
+  "meta": {
+    "category": "animations",
+    "version": "1.0.0"
+  },
+  "type": "registry:style"
+}

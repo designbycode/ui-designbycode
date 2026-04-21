@@ -1,0 +1,34 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animate-drop",
+  "cssVars": {
+    "theme": {
+      "--animate-drop": "drop 0.6s ease-out"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      "@keyframes drop": {
+        "0%": {
+          "transform": "translateY(-200px)",
+          "opacity": "0"
+        },
+        "60%": {
+          "transform": "translateY(15px)",
+          "opacity": "1"
+        },
+        "80%": {
+          "transform": "translateY(-8px)"
+        },
+        "100%": {
+          "transform": "translateY(0)"
+        }
+      }
+    }
+  },
+  "meta": {
+    "category": "animations",
+    "version": "1.0.0"
+  },
+  "type": "registry:style"
+}

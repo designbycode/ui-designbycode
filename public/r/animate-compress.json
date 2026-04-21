@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animate-compress",
+  "cssVars": {
+    "theme": {
+      "--animate-compress": "compress 0.5s ease-in-out"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      "@keyframes compress": {
+        "0%, 100%": {
+          "transform": "scaleY(1)"
+        },
+        "50%": {
+          "transform": "scaleY(0.5)"
+        }
+      }
+    }
+  },
+  "meta": {
+    "category": "animations",
+    "version": "1.0.0"
+  },
+  "type": "registry:style"
+}

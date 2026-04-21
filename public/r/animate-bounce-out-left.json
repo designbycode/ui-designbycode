@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animate-bounce-out-left",
+  "cssVars": {
+    "theme": {
+      "--animate-bounce-out-left": "bounceOutLeft 1s"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      "@keyframes bounceOutLeft": {
+        "20%": {
+          "opacity": "1",
+          "transform": "translate3d(20px, 0, 0) scaleX(0.9)"
+        },
+        "100%": {
+          "opacity": "0",
+          "transform": "translate3d(-2000px, 0, 0) scaleX(2)"
+        }
+      }
+    }
+  },
+  "meta": {
+    "category": "animations",
+    "version": "1.0.0"
+  },
+  "type": "registry:style"
+}

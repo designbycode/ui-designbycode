@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animate-pulse",
+  "cssVars": {
+    "theme": {
+      "--animate-pulse": "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      "@keyframes pulse": {
+        "0%, 100%": {
+          "opacity": "1"
+        },
+        "50%": {
+          "opacity": "0.5"
+        }
+      }
+    }
+  },
+  "meta": {
+    "category": "animations",
+    "version": "1.0.0"
+  },
+  "type": "registry:style"
+}

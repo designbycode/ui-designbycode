@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animate-zoom-out-left",
+  "cssVars": {
+    "theme": {
+      "--animate-zoom-out-left": "zoomOutLeft 1s"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      "@keyframes zoomOutLeft": {
+        "40%": {
+          "opacity": "1",
+          "transform": "scale3d(0.475, 0.475, 0.475) translate3d(42px, 0, 0)"
+        },
+        "100%": {
+          "opacity": "0",
+          "transform": "scale(0.1) translate3d(-1000px, 0, 0)",
+          "transform-origin": "left center"
+        }
+      }
+    }
+  },
+  "meta": {
+    "category": "animations",
+    "version": "1.0.0"
+  },
+  "type": "registry:style"
+}

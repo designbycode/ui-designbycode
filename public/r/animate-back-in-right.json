@@ -1,0 +1,32 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animate-back-in-right",
+  "cssVars": {
+    "theme": {
+      "--animate-back-in-right": "backInRight 1s"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      "@keyframes backInRight": {
+        "0%": {
+          "transform": "translateX(2000px) scale(0.7)",
+          "opacity": "0.7"
+        },
+        "80%": {
+          "transform": "translateX(0px) scale(0.7)",
+          "opacity": "0.7"
+        },
+        "100%": {
+          "transform": "scale(1)",
+          "opacity": "1"
+        }
+      }
+    }
+  },
+  "meta": {
+    "category": "animations",
+    "version": "1.0.0"
+  },
+  "type": "registry:style"
+}

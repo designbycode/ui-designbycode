@@ -1,0 +1,36 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animate-light-speed-in",
+  "cssVars": {
+    "theme": {
+      "--animate-light-speed-in": "lightSpeedInRight 1s ease-out"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      "@keyframes lightSpeedInRight": {
+        "0%": {
+          "transform": "translate3d(100%, 0, 0) skewX(-30deg)",
+          "opacity": "0"
+        },
+        "60%": {
+          "transform": "skewX(20deg)",
+          "opacity": "1"
+        },
+        "80%": {
+          "transform": "skewX(-5deg)",
+          "opacity": "1"
+        },
+        "100%": {
+          "transform": "translate3d(0, 0, 0)",
+          "opacity": "1"
+        }
+      }
+    }
+  },
+  "meta": {
+    "category": "animations",
+    "version": "1.0.0"
+  },
+  "type": "registry:style"
+}

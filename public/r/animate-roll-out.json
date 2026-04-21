@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animate-roll-out",
+  "cssVars": {
+    "theme": {
+      "--animate-roll-out": "rollOut 1s"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      "@keyframes rollOut": {
+        "0%": {
+          "opacity": "1",
+          "transform": "translate3d(0, 0, 0) rotate3d(0, 0, 1, 0deg)"
+        },
+        "100%": {
+          "opacity": "0",
+          "transform": "translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg)"
+        }
+      }
+    }
+  },
+  "meta": {
+    "category": "animations",
+    "version": "1.0.0"
+  },
+  "type": "registry:style"
+}

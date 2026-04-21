@@ -1,0 +1,38 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animate-flip-in-y",
+  "cssVars": {
+    "theme": {
+      "--animate-flip-in-y": "flipInY 1s"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      "@keyframes flipInY": {
+        "0%": {
+          "transform": "perspective(400px) rotate3d(0, 1, 0, 90deg)",
+          "opacity": "0"
+        },
+        "40%": {
+          "transform": "perspective(400px) rotate3d(0, 1, 0, -20deg)",
+          "animation-timing-function": "ease-out"
+        },
+        "60%": {
+          "transform": "perspective(400px) rotate3d(0, 1, 0, 10deg)",
+          "opacity": "1"
+        },
+        "80%": {
+          "transform": "perspective(400px) rotate3d(0, 1, 0, -5deg)"
+        },
+        "100%": {
+          "transform": "perspective(400px)"
+        }
+      }
+    }
+  },
+  "meta": {
+    "category": "animations",
+    "version": "1.0.0"
+  },
+  "type": "registry:style"
+}

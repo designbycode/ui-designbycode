@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animate-wiggle",
+  "cssVars": {
+    "theme": {
+      "--animate-wiggle": "wiggle 0.8s ease-in-out infinite"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      "@keyframes wiggle": {
+        "0%, 100%": {
+          "transform": "rotate(-3deg)"
+        },
+        "50%": {
+          "transform": "rotate(3deg)"
+        }
+      }
+    }
+  },
+  "meta": {
+    "category": "animations",
+    "version": "1.0.0"
+  },
+  "type": "registry:style"
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animate-fade-in",
+  "cssVars": {
+    "theme": {
+      "--animate-fade-in": "fadeIn 1s"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      "@keyframes fadeIn": {
+        "0%": {
+          "opacity": "0"
+        },
+        "100%": {
+          "opacity": "1"
+        }
+      }
+    }
+  },
+  "meta": {
+    "category": "animations",
+    "version": "1.0.0"
+  },
+  "type": "registry:style"
+}

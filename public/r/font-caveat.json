@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "font-caveat",
+  "meta": {
+    "category": "fonts",
+    "version": "1.0.0"
+  },
+  "type": "registry:font",
+  "font": {
+    "family": "'Caveat Variable', cursive",
+    "provider": "google",
+    "import": "Caveat",
+    "variable": "--font-caveat",
+    "subsets": [
+      "latin"
+    ],
+    "dependency": "@fontsource-variable/caveat"
+  }
+}

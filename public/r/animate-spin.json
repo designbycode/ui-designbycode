@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animate-spin",
+  "cssVars": {
+    "theme": {
+      "--animate-spin": "spin 1s linear infinite"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      "@keyframes spin": {
+        "0%": {
+          "transform": "rotate(0deg)"
+        },
+        "100%": {
+          "transform": "rotate(360deg)"
+        }
+      }
+    }
+  },
+  "meta": {
+    "category": "animations",
+    "version": "1.0.0"
+  },
+  "type": "registry:style"
+}

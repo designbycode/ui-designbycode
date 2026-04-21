@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "font-bebas-neue",
+  "meta": {
+    "category": "fonts",
+    "version": "1.0.0"
+  },
+  "type": "registry:font",
+  "font": {
+    "family": "'Bebas Neue', sans-serif",
+    "provider": "google",
+    "import": "BebasNeue",
+    "variable": "--font-bebas-neue",
+    "subsets": [
+      "latin"
+    ],
+    "dependency": "@fontsource/bebas-neue"
+  }
+}

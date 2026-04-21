@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animate-fade-out-down-big",
+  "cssVars": {
+    "theme": {
+      "--animate-fade-out-down-big": "fadeOutDownBig 1s"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      "@keyframes fadeOutDownBig": {
+        "0%": {
+          "opacity": "1"
+        },
+        "100%": {
+          "opacity": "0",
+          "transform": "translate3d(0, 2000px, 0)"
+        }
+      }
+    }
+  },
+  "meta": {
+    "category": "animations",
+    "version": "1.0.0"
+  },
+  "type": "registry:style"
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animate-rotate-out-down-left",
+  "cssVars": {
+    "theme": {
+      "--animate-rotate-out-down-left": "rotateOutDownLeft 1s"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      "@keyframes rotateOutDownLeft": {
+        "0%": {
+          "opacity": "1",
+          "transform-origin": "left bottom"
+        },
+        "100%": {
+          "transform": "rotate3d(0, 0, 1, 45deg)",
+          "opacity": "0",
+          "transform-origin": "left bottom"
+        }
+      }
+    }
+  },
+  "meta": {
+    "category": "animations",
+    "version": "1.0.0"
+  },
+  "type": "registry:style"
+}

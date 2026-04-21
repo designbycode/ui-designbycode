@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animate-slide-out-up",
+  "cssVars": {
+    "theme": {
+      "--animate-slide-out-up": "slideOutUp 1s"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      "@keyframes slideOutUp": {
+        "0%": {
+          "transform": "translate3d(0, 0, 0)"
+        },
+        "100%": {
+          "transform": "translate3d(0, -100%, 0)",
+          "visibility": "hidden"
+        }
+      }
+    }
+  },
+  "meta": {
+    "category": "animations",
+    "version": "1.0.0"
+  },
+  "type": "registry:style"
+}

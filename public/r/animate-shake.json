@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animate-shake",
+  "cssVars": {
+    "theme": {
+      "--animate-shake": "shake 1s"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      "@keyframes shake": {
+        "0%, 100%": {
+          "transform": "translateX(0)"
+        },
+        "10%, 30%, 50%, 70%, 90%": {
+          "transform": "translateX(-10px)"
+        },
+        "20%, 40%, 60%, 80%": {
+          "transform": "translateX(10px)"
+        }
+      }
+    }
+  },
+  "meta": {
+    "category": "animations",
+    "version": "1.0.0"
+  },
+  "type": "registry:style"
+}

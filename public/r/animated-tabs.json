@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animated-tabs",
+  "title": "Animated Tabs",
+  "author": "designbycode",
+  "dependencies": [
+    "framer-motion",
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "resources/js/registry/new-york/components/ui/tabs/animated-tabs.tsx",
+      "content": "'use client';\n\nimport { motion } from 'framer-motion';\nimport type { HTMLAttributes, ReactNode } from 'react';\nimport { useId, useState } from 'react';\n\nimport { cn } from '@/lib/utils';\n\nexport type AnimatedTabsProps = HTMLAttributes<HTMLDivElement> & {\n    tabs: {\n        id: string;\n        label: ReactNode;\n        content?: ReactNode;\n    }[];\n    value?: string;\n    defaultValue?: string;\n    onChange?: (tabId: string) => void;\n    tabsClassName?: string;\n    tabClassName?: string;\n    activeTabClassName?: string;\n    inactiveTabClassName?: string;\n    indicatorClassName?: string;\n    contentClassName?: string;\n    showContent?: boolean;\n};\n\nexport function AnimatedTabs({\n    tabs,\n    value,\n    defaultValue,\n    onChange,\n    className,\n    tabsClassName,\n    tabClassName,\n    activeTabClassName,\n    inactiveTabClassName,\n    indicatorClassName,\n    contentClassName,\n    showContent = true,\n    ...props\n}: AnimatedTabsProps) {\n    const id = useId();\n    const defaultIndex = defaultValue\n        ? tabs.findIndex((t) => t.id === defaultValue)\n        : 0;\n    const [activeIndex, setActiveIndex] = useState(\n        defaultIndex >= 0 ? defaultIndex : 0,\n    );\n\n    const isControlled = value !== undefined;\n    const activeTabIndex = isControlled\n        ? Math.max(\n              0,\n              tabs.findIndex((t) => t.id === value),\n          )\n        : activeIndex;\n    const activeTab = tabs[activeTabIndex] ?? tabs[0];\n\n    const handleChange = (index: number) => {\n        if (!isControlled) {\n            setActiveIndex(index);\n        }\n\n        onChange?.(tabs[index].id);\n    };\n\n    return (\n        <div className={cn('w-full', className)} {...props}>\n            <div\n                className={cn(\n                    'relative flex items-center gap-1',\n                    tabsClassName,\n                )}\n            >\n                {tabs.map((tab, index) => (\n                    <motion.button\n                        key={tab.id}\n                        onClick={() => handleChange(index)}\n                        className={cn(\n                            'relative z-10 flex-1 rounded-sm px-2 py-1 text-xs font-medium transition-colors',\n                            tabClassName,\n                            activeTabIndex === index\n                                ? activeTabClassName\n                                : inactiveTabClassName,\n                        )}\n                    >\n                        <span className=\"relative z-10\">{tab.label}</span>\n                        {activeTabIndex === index && (\n                            <motion.div\n                                layoutId={`${id}-indicator`}\n                                className={cn(\n                                    'absolute inset-0 rounded-sm',\n                                    indicatorClassName,\n                                )}\n                                transition={{\n                                    type: 'spring',\n                                    stiffness: 500,\n                                    damping: 30,\n                                }}\n                            />\n                        )}\n                    </motion.button>\n                ))}\n            </div>\n            {showContent && activeTab.content && (\n                <div className={cn('mt-4', contentClassName)}>\n                    <motion.div\n                        key={activeTab.id}\n                        initial={{ opacity: 0, y: 4 }}\n                        animate={{ opacity: 1, y: 0 }}\n                        exit={{ opacity: 0, y: -4 }}\n                        transition={{ duration: 0.2 }}\n                    >\n                        {activeTab.content}\n                    </motion.div>\n                </div>\n            )}\n        </div>\n    );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "category": "components",
+    "version": "1.0.0"
+  },
+  "type": "registry:ui"
+}

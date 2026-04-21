@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animate-ken-burns",
+  "cssVars": {
+    "theme": {
+      "--animate-ken-burns": "kenBurns 8s ease-in-out infinite alternate"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      "@keyframes kenBurns": {
+        "0%": {
+          "transform": "scale(1) translate(0, 0)"
+        },
+        "100%": {
+          "transform": "scale(1.15) translate(-2%, -2%)"
+        }
+      }
+    }
+  },
+  "meta": {
+    "category": "animations",
+    "version": "1.0.0"
+  },
+  "type": "registry:style"
+}

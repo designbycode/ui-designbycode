@@ -1,0 +1,30 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animate-zoom-out",
+  "cssVars": {
+    "theme": {
+      "--animate-zoom-out": "zoomOut 1s"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      "@keyframes zoomOut": {
+        "0%": {
+          "opacity": "1"
+        },
+        "50%": {
+          "opacity": "0",
+          "transform": "scale3d(0.3, 0.3, 0.3)"
+        },
+        "100%": {
+          "opacity": "0"
+        }
+      }
+    }
+  },
+  "meta": {
+    "category": "animations",
+    "version": "1.0.0"
+  },
+  "type": "registry:style"
+}

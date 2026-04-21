@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "glow-stack",
+  "title": "Glow Stack",
+  "author": "designbycode",
+  "dependencies": [
+    "react",
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "resources/js/registry/new-york/components/ui/glow/glow-stack.tsx",
+      "content": "'use client';\nimport { createContext, useContext, useEffect, useRef, useState } from 'react';\nimport type { ReactNode } from 'react';\n\ninterface MouseGlowContext {\n    position: { x: number; y: number };\n    radius: number;\n}\nexport const GlowContext = createContext<MouseGlowContext>({\n    position: { x: -9999, y: -9999 },\n    radius: 100,\n});\nexport const useGlowStack = (): MouseGlowContext => {\n    const context = useContext(GlowContext);\n\n    return context ?? { position: { x: -9999, y: -9999 }, radius: 100 };\n};\n\ninterface GlowStackProps {\n    children: ReactNode;\n    radius?: number;\n    className?: string;\n}\n\nexport function GlowStack({\n    children,\n    radius = 100,\n    className,\n}: GlowStackProps) {\n    const [pos, setPos] = useState({ x: -9999, y: -9999 });\n    const rafRef = useRef<number>(0);\n\n    useEffect(() => {\n        const onMove = (e: MouseEvent) => {\n            cancelAnimationFrame(rafRef.current);\n            rafRef.current = requestAnimationFrame(() =>\n                setPos({ x: e.clientX, y: e.clientY }),\n            );\n        };\n\n        window.addEventListener('mousemove', onMove, { passive: true });\n\n        return () => {\n            window.removeEventListener('mousemove', onMove);\n            cancelAnimationFrame(rafRef.current);\n        };\n    }, []);\n\n    return (\n        <GlowContext.Provider value={{ position: pos, radius }}>\n            <div className={className}>{children}</div>\n        </GlowContext.Provider>\n    );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "category": "components",
+    "version": "1.0.0"
+  },
+  "type": "registry:ui"
+}

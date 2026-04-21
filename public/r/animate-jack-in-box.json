@@ -1,0 +1,34 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animate-jack-in-box",
+  "cssVars": {
+    "theme": {
+      "--animate-jack-in-box": "jackInTheBox 1s"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      "@keyframes jackInTheBox": {
+        "0%": {
+          "opacity": "0",
+          "transform": "scale(0.1) rotate(0deg)"
+        },
+        "50%": {
+          "transform": "scale(1.05) rotate(10deg)"
+        },
+        "70%": {
+          "transform": "scale(0.9) rotate(-3deg)"
+        },
+        "100%": {
+          "opacity": "1",
+          "transform": "scale(1) rotate(0deg)"
+        }
+      }
+    }
+  },
+  "meta": {
+    "category": "animations",
+    "version": "1.0.0"
+  },
+  "type": "registry:style"
+}

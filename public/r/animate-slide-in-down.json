@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animate-slide-in-down",
+  "cssVars": {
+    "theme": {
+      "--animate-slide-in-down": "slideInDown 1s"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      "@keyframes slideInDown": {
+        "0%": {
+          "transform": "translate3d(0, -100%, 0)",
+          "visibility": "visible"
+        },
+        "100%": {
+          "transform": "translate3d(0, 0, 0)"
+        }
+      }
+    }
+  },
+  "meta": {
+    "category": "animations",
+    "version": "1.0.0"
+  },
+  "type": "registry:style"
+}

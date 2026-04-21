@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animate-blur-out",
+  "cssVars": {
+    "theme": {
+      "--animate-blur-out": "blurOut 0.6s ease-in"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      "@keyframes blurOut": {
+        "0%": {
+          "filter": "blur(0px)",
+          "opacity": "1"
+        },
+        "100%": {
+          "filter": "blur(12px)",
+          "opacity": "0"
+        }
+      }
+    }
+  },
+  "meta": {
+    "category": "animations",
+    "version": "1.0.0"
+  },
+  "type": "registry:style"
+}

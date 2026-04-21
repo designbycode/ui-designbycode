@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animate-fade-out",
+  "cssVars": {
+    "theme": {
+      "--animate-fade-out": "fadeOut 1s"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      "@keyframes fadeOut": {
+        "0%": {
+          "opacity": "1"
+        },
+        "100%": {
+          "opacity": "0"
+        }
+      }
+    }
+  },
+  "meta": {
+    "category": "animations",
+    "version": "1.0.0"
+  },
+  "type": "registry:style"
+}

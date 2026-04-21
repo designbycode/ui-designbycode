@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "font-press-start-2p",
+  "meta": {
+    "category": "fonts",
+    "version": "1.0.0"
+  },
+  "type": "registry:font",
+  "font": {
+    "family": "'Press Start 2P', system-ui",
+    "provider": "google",
+    "import": "PressStart2P",
+    "variable": "--font-press-start-2p",
+    "subsets": [
+      "latin"
+    ],
+    "dependency": "@fontsource/press-start-2p"
+  }
+}

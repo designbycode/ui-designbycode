@@ -2,7 +2,7 @@ import type { ReactNode } from 'react';
 import { useId } from 'react';
 import { cn } from '@/lib/utils';
 
-type BackDropLightProps = {
+type BackLightProps = {
     children?: ReactNode;
     className?: string;
     blur?: number;
@@ -11,14 +11,14 @@ type BackDropLightProps = {
     opacity?: number;
 };
 
-export function BackDropLight({
+export function BackLight({
     blur = 20,
     intensity = 1,
     saturation = 4,
     opacity = 0.6,
     children,
     className,
-}: BackDropLightProps) {
+}: BackLightProps) {
     const id = useId();
 
     return (

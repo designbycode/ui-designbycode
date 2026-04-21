@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "font-playfair-display",
+  "meta": {
+    "category": "fonts",
+    "version": "1.0.0"
+  },
+  "type": "registry:font",
+  "font": {
+    "family": "'Playfair Display Variable', sans-serif",
+    "provider": "google",
+    "import": "PlayfairDisplay",
+    "variable": "--font-playfair-display",
+    "subsets": [
+      "latin"
+    ],
+    "dependency": "@fontsource-variable/playfair-display"
+  }
+}

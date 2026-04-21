@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animate-glitch",
+  "cssVars": {
+    "theme": {
+      "--animate-glitch": "glitch 0.6s steps(1) infinite"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      "@keyframes glitch": {
+        "0%, 100%": {
+          "transform": "translate(0)"
+        },
+        "20%": {
+          "transform": "translate(-3px, 2px)"
+        },
+        "40%": {
+          "transform": "translate(-3px, -2px)"
+        },
+        "60%": {
+          "transform": "translate(3px, 2px)"
+        },
+        "80%": {
+          "transform": "translate(3px, -2px)"
+        }
+      }
+    }
+  },
+  "meta": {
+    "category": "animations",
+    "version": "1.0.0"
+  },
+  "type": "registry:style"
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animate-pop",
+  "cssVars": {
+    "theme": {
+      "--animate-pop": "pop 0.4s cubic-bezier(0.26, 0.53, 0.74, 1.48)"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      "@keyframes pop": {
+        "0%": {
+          "transform": "scale(0.8)",
+          "opacity": "0"
+        },
+        "70%": {
+          "transform": "scale(1.1)"
+        },
+        "100%": {
+          "transform": "scale(1)",
+          "opacity": "1"
+        }
+      }
+    }
+  },
+  "meta": {
+    "category": "animations",
+    "version": "1.0.0"
+  },
+  "type": "registry:style"
+}

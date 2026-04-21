@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animate-rotate-in",
+  "cssVars": {
+    "theme": {
+      "--animate-rotate-in": "rotateIn 1s"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      "@keyframes rotateIn": {
+        "0%": {
+          "transform": "rotate3d(0, 0, 1, -200deg)",
+          "opacity": "0"
+        },
+        "100%": {
+          "transform": "rotate3d(0, 0, 1, 0deg)",
+          "opacity": "1"
+        }
+      }
+    }
+  },
+  "meta": {
+    "category": "animations",
+    "version": "1.0.0"
+  },
+  "type": "registry:style"
+}

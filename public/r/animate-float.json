@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animate-float",
+  "cssVars": {
+    "theme": {
+      "--animate-float": "float 3s ease-in-out infinite"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      "@keyframes float": {
+        "0%, 100%": {
+          "transform": "translateY(0)"
+        },
+        "50%": {
+          "transform": "translateY(-20px)"
+        }
+      }
+    }
+  },
+  "meta": {
+    "category": "animations",
+    "version": "1.0.0"
+  },
+  "type": "registry:style"
+}

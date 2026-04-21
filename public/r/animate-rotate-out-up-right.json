@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animate-rotate-out-up-right",
+  "cssVars": {
+    "theme": {
+      "--animate-rotate-out-up-right": "rotateOutUpRight 1s"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      "@keyframes rotateOutUpRight": {
+        "0%": {
+          "opacity": "1",
+          "transform-origin": "right bottom"
+        },
+        "100%": {
+          "transform": "rotate3d(0, 0, 1, 90deg)",
+          "opacity": "0",
+          "transform-origin": "right bottom"
+        }
+      }
+    }
+  },
+  "meta": {
+    "category": "animations",
+    "version": "1.0.0"
+  },
+  "type": "registry:style"
+}

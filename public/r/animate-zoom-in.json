@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animate-zoom-in",
+  "cssVars": {
+    "theme": {
+      "--animate-zoom-in": "zoomIn 1s"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      "@keyframes zoomIn": {
+        "0%": {
+          "opacity": "0",
+          "transform": "scale3d(0.3, 0.3, 0.3)"
+        },
+        "50%": {
+          "opacity": "1"
+        }
+      }
+    }
+  },
+  "meta": {
+    "category": "animations",
+    "version": "1.0.0"
+  },
+  "type": "registry:style"
+}

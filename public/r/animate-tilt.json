@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animate-tilt",
+  "cssVars": {
+    "theme": {
+      "--animate-tilt": "tilt 1.5s ease-in-out infinite alternate"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      "@keyframes tilt": {
+        "0%": {
+          "transform": "perspective(400px) rotateY(0deg)"
+        },
+        "100%": {
+          "transform": "perspective(400px) rotateY(15deg)"
+        }
+      }
+    }
+  },
+  "meta": {
+    "category": "animations",
+    "version": "1.0.0"
+  },
+  "type": "registry:style"
+}

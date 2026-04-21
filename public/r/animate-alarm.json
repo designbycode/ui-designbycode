@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animate-alarm",
+  "cssVars": {
+    "theme": {
+      "--animate-alarm": "alarm 0.8s ease-in-out"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      "@keyframes alarm": {
+        "0%, 100%": {
+          "transform": "rotate(0deg) scale(1)"
+        },
+        "10%, 30%": {
+          "transform": "rotate(-25deg) scale(1.05)"
+        },
+        "20%, 40%": {
+          "transform": "rotate(25deg) scale(1.05)"
+        },
+        "50%, 70%": {
+          "transform": "rotate(-15deg) scale(1.02)"
+        },
+        "60%, 80%": {
+          "transform": "rotate(15deg) scale(1.02)"
+        }
+      }
+    }
+  },
+  "meta": {
+    "category": "animations",
+    "version": "1.0.0"
+  },
+  "type": "registry:style"
+}

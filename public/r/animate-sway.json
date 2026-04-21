@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animate-sway",
+  "cssVars": {
+    "theme": {
+      "--animate-sway": "sway 2s ease-in-out infinite"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      "@keyframes sway": {
+        "0%, 100%": {
+          "transform": "rotate(-5deg)",
+          "transform-origin": "top center"
+        },
+        "50%": {
+          "transform": "rotate(5deg)",
+          "transform-origin": "top center"
+        }
+      }
+    }
+  },
+  "meta": {
+    "category": "animations",
+    "version": "1.0.0"
+  },
+  "type": "registry:style"
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "glow-geometry",
+  "title": "Glow Geometry",
+  "author": "designbycode",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "resources/js/registry/new-york/lib/glow-geometry.ts",
+      "content": "export interface Point {\n    x: number;\n    y: number;\n}\nexport interface Rect {\n    left: number;\n    right: number;\n    top: number;\n    bottom: number;\n}\n\nexport const isCircleOverlappingRect = (p: Point, r: number, rect: Rect) =>\n    p.x + r >= rect.left &&\n    p.x - r <= rect.right &&\n    p.y + r >= rect.top &&\n    p.y - r <= rect.bottom;\n\nexport const isPointInRect = (p: Point, rect: Rect) =>\n    p.x >= rect.left &&\n    p.x <= rect.right &&\n    p.y >= rect.top &&\n    p.y <= rect.bottom;\n\nexport const toElementSpace = (p: Point, rect: Rect): Point => ({\n    x: p.x - rect.left,\n    y: p.y - rect.top,\n});\n",
+      "type": "registry:lib"
+    }
+  ],
+  "meta": {
+    "category": "lib",
+    "version": "1.0.0"
+  },
+  "type": "registry:lib"
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animate-flash",
+  "cssVars": {
+    "theme": {
+      "--animate-flash": "flash 1s"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      "@keyframes flash": {
+        "0%, 50%, 100%": {
+          "opacity": "1"
+        },
+        "25%, 75%": {
+          "opacity": "0"
+        }
+      }
+    }
+  },
+  "meta": {
+    "category": "animations",
+    "version": "1.0.0"
+  },
+  "type": "registry:style"
+}

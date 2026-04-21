@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "use-hover",
+  "title": "Use Hover",
+  "author": "designbycode",
+  "dependencies": [
+    "react"
+  ],
+  "devDependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "resources/js/registry/new-york/hooks/use-hover.tsx",
+      "content": "import { useCallback, useState } from 'react';\n\nexport function useHover() {\n    const [isHovered, setIsHovered] = useState(false);\n\n    const hoverRef = useCallback((node: HTMLElement | null) => {\n        if (!node) {\n            return;\n        }\n\n        node.onmouseenter = () => setIsHovered(true);\n        node.onmouseleave = () => setIsHovered(false);\n    }, []);\n\n    return { isHovered, hoverRef };\n}\n",
+      "type": "registry:hook"
+    }
+  ],
+  "meta": {
+    "category": "hooks",
+    "version": "1.0.0"
+  },
+  "type": "registry:hook"
+}
