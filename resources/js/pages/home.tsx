@@ -1,21 +1,17 @@
 import { Head } from '@inertiajs/react';
-
+import Wrapper from '@/components/wrapper';
+import MainHero from '@/layouts/main/main-hero';
 
 export default function Home() {
     return (
-            <>
-            <Head title="Home" />
-            <div className="flex flex-col items-center justify-center px-6 py-20 lg:px-8">
-                <div className="text-center">
-                    <h1 className="text-4xl font-medium tracking-tight lg:text-6xl">
-                        Welcome to UI.DesignByCode
-                    </h1>
-                    <p className="mt-6 text-lg text-[#706f6c] dark:text-[#A1A09A]">
-                        Build beautiful user interfaces with Laravel and React.
-                    </p>
-                </div>
-            </div>
-            </>
+        <div className="min-h-screen pt-18">
+            <Head title="Home">
+                <meta name="description" content="Your page description" />
+            </Head>
+            <Wrapper>
+                <MainHero />
+            </Wrapper>
+        </div>
     );
 }
 

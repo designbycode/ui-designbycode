@@ -1,16 +1,23 @@
 import AppLogoIcon from '@/components/app-logo-icon';
+import { cn } from '@/lib/utils';
 
-export default function AppLogo() {
+export default function AppLogo({
+    className,
+    ...props
+}: {
+    className?: string;
+}) {
     return (
-        <>
-            <div className="flex aspect-square size-8 items-center justify-center rounded-md bg-sidebar-primary text-sidebar-primary-foreground">
-                <AppLogoIcon className="size-5 fill-current text-white dark:text-black" />
-            </div>
-            <div className="ml-1 grid flex-1 text-left text-sm">
-                <span className="mb-0.5 truncate leading-tight font-semibold">
-                    Laravel Starter Kit
-                </span>
-            </div>
-        </>
+        <div
+            {...props}
+            className={cn(
+                'flex items-center space-x-1 text-xl tracking-tight focus:outline-offset-4',
+                className,
+            )}
+        >
+            <AppLogoIcon />
+
+            <span className="text-md">designbycode</span>
+        </div>
     );
 }
