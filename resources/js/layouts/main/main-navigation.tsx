@@ -1,6 +1,7 @@
 import { Link } from '@inertiajs/react';
 import { Crown } from 'lucide-react';
 import AppLogo from '@/components/app-logo';
+import ThemeToggle from '@/components/theme-toggle';
 import { Button } from '@/components/ui/button';
 import {
     NavigationMenu,
@@ -15,7 +16,6 @@ import type { UseHeadroomOptions } from '@/registry/new-york/hooks/use-headroom'
 import useHeadroom from '@/registry/new-york/hooks/use-headroom';
 import { home } from '@/routes';
 import { provider } from '@/routes/auth';
-import ThemeToggle from '@/components/theme-toggle';
 
 const links = [
     {

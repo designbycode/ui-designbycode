@@ -9,7 +9,7 @@ export default function AppLogoIcon({
     return (
         <span
             className={cn(
-                `text-md grid size-7 place-content-center rounded-sm bg-foreground font-semibold text-background`,
+                `text-md grid size-8 place-content-center rounded-sm bg-foreground font-semibold text-background`,
                 className,
             )}
             {...props}

@@ -67,7 +67,7 @@ function PricingTable({ className, ...props }: React.ComponentProps<"div">) {
                         content: null,
                     },
                 ]}
-                tabsClassName="flex border border-border items-center gap-1 rounded-md bg-background p-1"
+                tabsClassName=" border border-border items-center gap-1 rounded-md p-1"
                 tabClassName="flex-1"
             />
 

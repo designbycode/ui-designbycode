@@ -1,3 +1,5 @@
+import type { Roles } from '@/types/roles';
+
 export type User = {
     id: number;
     name: string;
@@ -7,6 +9,7 @@ export type User = {
     two_factor_enabled?: boolean;
     created_at: string;
     updated_at: string;
+    roles?: Roles;
     [key: string]: unknown;
 };
 
