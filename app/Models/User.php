@@ -24,6 +24,11 @@ class User extends Authenticatable
         return $this->socials()->where('provider', $provider)->exists();
     }
 
+    public function isSuperAdmin(): bool
+    {
+        return $this->hasRole('super-admin');
+    }
+
     public function socials(): HasMany
     {
         return $this->hasMany(Social::class);

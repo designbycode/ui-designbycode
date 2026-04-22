@@ -1,6 +1,6 @@
 import { Link, usePage } from '@inertiajs/react';
-import { useState } from 'react';
 import { ChevronsUpDown, LayoutGrid, Settings } from 'lucide-react';
+import { useState } from 'react';
 import AppLogo from '@/components/app-logo';
 import {
     DropdownMenu,
@@ -14,9 +14,9 @@ import {
     useSidebar,
 } from '@/components/ui/sidebar';
 import { useIsMobile } from '@/hooks/use-mobile';
-import { useSidebarStore } from '@/store/use-sidebar-store';
 import { dashboard } from '@/routes';
 import admin from '@/routes/admin';
+import { useSidebarStore } from '@/store/use-sidebar-store';
 
 export function AppLogoDropdown() {
     const { auth } = usePage().props;
@@ -25,11 +25,7 @@ export function AppLogoDropdown() {
     const { setActiveSection } = useSidebarStore();
     const [open, setOpen] = useState(false);
 
-    const isSuperAdmin = auth.user?.roles?.some(
-        (role: { name: string }) => role.name === 'super-admin',
-    );
-
-    if (!isSuperAdmin) {
+    if (!auth.isSuperAdmin) {
         return (
             <SidebarMenuButton size="lg" asChild>
                 <Link href={dashboard()} prefetch>

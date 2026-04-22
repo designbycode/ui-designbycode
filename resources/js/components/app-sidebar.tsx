@@ -13,10 +13,10 @@ import {
     SidebarMenu,
     SidebarMenuItem
 } from '@/components/ui/sidebar';
-import { useSidebarStore } from '@/store/use-sidebar-store';
 import { dashboard } from '@/routes';
 import admin from '@/routes/admin';
 import { index as usersIndex } from '@/routes/admin/users';
+import { useSidebarStore } from '@/store/use-sidebar-store';
 import type { NavItem } from '@/types';
 
 const footerNavItems: NavItem[] = [
@@ -28,11 +28,7 @@ const footerNavItems: NavItem[] = [
 
 export function AppSidebar() {
     const { auth } = usePage().props;
-    const { activeSection, setActiveSection } = useSidebarStore();
-
-    const isSuperAdmin = auth.user?.roles?.some(
-        (role: { name: string }) => role.name === 'super-admin',
-    );
+    const { activeSection } = useSidebarStore();
 
     const platformNavItems: NavItem[] = [
         {
@@ -71,7 +67,7 @@ export function AppSidebar() {
                         <NavMain items={platformNavItems} />
                     </SidebarGroup>
                 )}
-                {activeSection === 'admin' && isSuperAdmin && (
+                {activeSection === 'admin' && auth.isSuperAdmin && (
                     <SidebarGroup className="px-2 py-0">
                         <NavMain items={adminNavItems} />
                     </SidebarGroup>
