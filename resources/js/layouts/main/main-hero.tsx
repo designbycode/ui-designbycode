@@ -3,13 +3,9 @@ import { Button } from '@/components/ui/button';
 import TextAnimator from '@/registry/new-york/components/ui/animations/text-animator';
 import { GlowRadial } from '@/registry/new-york/components/ui/glow/glow-radial';
 import WavesThree from '@/registry/new-york/components/ui/threejs/waves-three';
-import useDarkMode from '@/registry/new-york/hooks/use-dark-mode';
 
 export default function MainHero() {
-    const isDark = useDarkMode();
-    const colors = isDark
-        ? ['rgba(255, 255, 255, 0.25)', 'rgba(255, 255, 255, 0.25)']
-        : ['rgba(0, 0, 0, 0.25)', 'rgba(0, 0, 0, 0.25)'];
+    const colors = `var(--primary)`;
 
     return (
         <div className={`relative mt-4 rounded-2xl`}>
@@ -48,25 +44,19 @@ export default function MainHero() {
                         <Button className={`relative`}>
                             <GlowRadial
                                 size={150}
-                                colors={[
-                                    `oklch(66.6% 0.179 58.318), transparent`,
-                                ]}
+                                colors={[`var(--primary), transparent`]}
                                 borderWidth={3}
                                 className={`absolute -inset-1 blur-xs`}
                             />
                             <GlowRadial
                                 size={150}
-                                colors={[
-                                    `oklch(66.6% 0.179 58.318), transparent`,
-                                ]}
+                                colors={[`var(--primary), transparent`]}
                                 borderWidth={2}
                                 className={`absolute -inset-0.5`}
                             />
                             <GlowRadial
                                 size={150}
-                                colors={[
-                                    `oklch(66.6% 0.179 58.318), transparent`,
-                                ]}
+                                colors={[`var(--primary), transparent`]}
                                 borderWidth={2}
                                 className={`absolute -inset-1.5 mix-blend-color-dodge blur-xs`}
                             />

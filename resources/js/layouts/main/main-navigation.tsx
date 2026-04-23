@@ -16,6 +16,8 @@ import type { UseHeadroomOptions } from '@/registry/new-york/hooks/use-headroom'
 import useHeadroom from '@/registry/new-york/hooks/use-headroom';
 import { home } from '@/routes';
 import { provider } from '@/routes/auth';
+import { index as animationsIndex } from '@/routes/docs/animations/index';
+import { index as docs } from '@/routes/docs/index';
 
 const links = [
     {
@@ -24,8 +26,13 @@ const links = [
     },
 
     {
+        title: 'Docs',
+        href: docs.url(),
+    },
+
+    {
         title: 'Animations',
-        href: '#',
+        href: animationsIndex.url(),
     },
 ];
 
@@ -91,25 +98,16 @@ const MainNavigation = ({ className }: { className?: string }) => {
                                     >
                                         <GlowRadial
                                             size={150}
-                                            colors={[
-                                                `oklch(66.6% 0.179 58.318), transparent`,
-                                            ]}
                                             borderWidth={3}
                                             className={`absolute -inset-1 blur-xs`}
                                         />
                                         <GlowRadial
                                             size={150}
-                                            colors={[
-                                                `oklch(66.6% 0.179 58.318), transparent`,
-                                            ]}
                                             borderWidth={2}
                                             className={`absolute -inset-0.5`}
                                         />
                                         <GlowRadial
                                             size={150}
-                                            colors={[
-                                                `oklch(66.6% 0.179 58.318), transparent`,
-                                            ]}
                                             borderWidth={2}
                                             className={`absolute -inset-1.5 mix-blend-color-dodge blur-xs`}
                                         />

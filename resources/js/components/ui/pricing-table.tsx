@@ -80,7 +80,7 @@ function PricingTable({ className, ...props }: React.ComponentProps<"div">) {
                             // tier.mostPopular && "border-primary shadow-md"
                         )}
                     >
-                        <GlowRadial colors={tier.mostPopular ? ["var(--color-amber-500)", "transparent"] : ["var(--color-primary)", "transparent"]} className={`-inset-1`} />
+                        <GlowRadial className={`-inset-1`} />
                         <CardHeader>
                             <CardTitle>{tier.name}</CardTitle>
                             <CardDescription>
