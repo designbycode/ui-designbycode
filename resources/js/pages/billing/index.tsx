@@ -1,6 +1,5 @@
-import { Form, Head, Link } from '@inertiajs/react';
+import { Form, Head } from '@inertiajs/react';
 import { CreditCard, Download, Pause, Play, X } from 'lucide-react';
-import { useEffect } from 'react';
 import BillingController from '@/actions/App/Http/Controllers/Billing/BillingController';
 import { Button } from '@/components/ui/button';
 import {
@@ -74,7 +73,6 @@ interface BillingProps {
     upcomingInvoice: UpcomingInvoice | null;
     customer: Customer;
     plans: Plans;
-    checkout?: Record<string, unknown>;
 }
 
 function formatCurrency(amount: string, currency: string = 'USD'): string {
@@ -137,47 +135,12 @@ export default function Billing({
     upcomingInvoice,
     customer,
     plans,
-    checkout,
 }: BillingProps) {
     const currentPlanName = subscription?.price_id
         ? getPlanName(subscription.price_id, plans)
         : null;
     const isPaused = subscription?.status === 'paused';
     const isCanceled = subscription?.ends_at !== null;
-
-    useEffect(() => {
-        if (
-            checkout &&
-            typeof window !== 'undefined' &&
-            (
-                window as {
-                    Paddle?: {
-                        Initialize: (options: unknown) => void;
-                        Checkout: {
-                            open: (options: { token: string }) => void;
-                        };
-                    };
-                }
-            ).Paddle
-        ) {
-            const Paddle = (
-                window as {
-                    Paddle?: {
-                        Initialize: (options: unknown) => void;
-                        Checkout: {
-                            open: (options: { token: string }) => void;
-                        };
-                    };
-                }
-            ).Paddle!;
-            Paddle.Initialize({
-                token: import.meta.env.VITE_PADDLE_CLIENT_TOKEN,
-            });
-            Paddle.Checkout.open({
-                token: (checkout.settings as { token?: string })?.token || '',
-            });
-        }
-    }, [checkout]);
 
     return (
         <div className="flex h-full flex-1 flex-col gap-4 overflow-x-auto rounded-xl p-4">
@@ -272,7 +235,8 @@ export default function Billing({
                             ) : (
                                 <div className="space-y-4">
                                     <p className="text-sm text-muted-foreground">
-                                        You don't have an active subscription.
+                                        You don&apos;t have an active
+                                        subscription.
                                     </p>
                                     <div className="flex flex-wrap gap-4">
                                         <Form
@@ -561,18 +525,14 @@ export default function Billing({
                                                     </span>
                                                 </TableCell>
                                                 <TableCell className="text-right">
-                                                    <Button
-                                                        asChild
-                                                        variant="ghost"
-                                                        size="sm"
+                                                    <a
+                                                        href={invoice.url}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className="font-mediumring-offset-background inline-flex items-center justify-center rounded-md p-2 text-sm transition-colors hover:bg-accent hover:text-accent-foreground"
                                                     >
-                                                        <Link
-                                                            href={invoice.url}
-                                                            target="_blank"
-                                                        >
-                                                            <Download className="size-4" />
-                                                        </Link>
-                                                    </Button>
+                                                        <Download className="size-4" />
+                                                    </a>
                                                 </TableCell>
                                             </TableRow>
                                         ))}

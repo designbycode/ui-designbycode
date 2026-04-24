@@ -18,6 +18,7 @@ Route::get('/docs/animations', AnimationsIndexController::class)->name('docs.ani
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('dashboard', DashboardIndexController::class)->name('dashboard');
+    Route::get('subscribe', [SubscriptionController::class, 'checkout'])->name('subscribe');
 
     Route::get('billing', [BillingController::class, 'index'])->name('billing.index');
     Route::get('billing/subscribe', [BillingController::class, 'subscribe'])->name('billing.subscribe');
