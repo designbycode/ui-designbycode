@@ -248,10 +248,26 @@
     --animate-tilt: tilt 1.5s ease-in-out infinite alternate;
     --font-bebas-neue: 'Bebas Neue', sans-serif;
     --font-playfair-display: 'Playfair Display Variable', sans-serif;
+
+    --animate-rr: rr 6s infinite linear;
 }
 
 @layer utilities {
 
+    @property --rr {
+        syntax: "<angle>";
+        initial-value: 0deg;
+        inherits: false;
+    }
+
+    @keyframes rr {
+        0% {
+            --r: 0deg
+        }
+        100% {
+            --rr: 360deg;
+        }
+    }
     @keyframes bounce {
         0%, 20%, 50%, 80%, 100% {
             transform: translateY(0);

@@ -25,7 +25,13 @@ declare global {
 export default function Subscribe({ checkout }: SubscribeProps) {
     const handleSubscribe = () => {
         if (window.Paddle) {
-            window.Paddle.Checkout.open(checkout as Record<string, unknown>);
+            window.Paddle.Checkout.open({
+                ...(checkout as Record<string, unknown>),
+                settings: {
+                    ...(checkout.settings || {}),
+                    displayMode: 'overlay',
+                },
+            });
         }
     };
 
