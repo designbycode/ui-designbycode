@@ -1,9 +1,9 @@
+import { Link } from '@inertiajs/react';
 import { Breadcrumbs } from '@/components/breadcrumbs';
+import { Card, CardContent } from '@/components/ui/card';
 import Wrapper from '@/components/wrapper';
 import { cn } from '@/lib/utils';
 import type { BreadcrumbItem } from '@/types';
-import { Link } from '@inertiajs/react';
-import { Card, CardContent } from '@/components/ui/card';
 
 export interface DocsLayoutProps {
     className?: string;

@@ -15,7 +15,7 @@ const tiers = [
         yearlyPrice: "$0",
         description: "Essential components for hobby projects",
         features: [
-            "10 free components",
+            "Basic free components",
             "Basic usage examples",
             "Community support",
             "MIT license",
@@ -26,16 +26,15 @@ const tiers = [
     {
         name: "Premium",
         id: "premium",
-        monthlyPrice: "$5",
-        yearlyPrice: "$50",
+        monthlyPrice: "$9",
+        yearlyPrice: "$90",
         description: "Full access to all components and future releases",
         features: [
             "Unlimited components",
             "Advanced components",
             "Priority email support",
             "Commercial license",
-            "Early access to new components",
-            "Figma source files",
+            "Support for v0.dev"
         ],
         cta: "Subscribe Now",
         mostPopular: true,

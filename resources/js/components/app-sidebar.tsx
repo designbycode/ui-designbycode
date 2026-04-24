@@ -1,5 +1,5 @@
 import { usePage } from '@inertiajs/react';
-import { LayoutGrid, Users } from 'lucide-react';
+import { CreditCard, LayoutGrid, Users } from 'lucide-react';
 import { AppLogoDropdown } from '@/components/app-logo-dropdown';
 import { NavFooter } from '@/components/nav-footer';
 import { NavMain } from '@/components/nav-main';
@@ -11,11 +11,12 @@ import {
     SidebarGroup,
     SidebarHeader,
     SidebarMenu,
-    SidebarMenuItem
+    SidebarMenuItem,
 } from '@/components/ui/sidebar';
 import { dashboard } from '@/routes';
 import admin from '@/routes/admin';
 import { index as usersIndex } from '@/routes/admin/users';
+import billing from '@/routes/billing';
 import { useSidebarStore } from '@/store/use-sidebar-store';
 import type { NavItem } from '@/types';
 
@@ -35,6 +36,11 @@ export function AppSidebar() {
             title: 'Dashboard',
             href: dashboard(),
             icon: LayoutGrid,
+        },
+        {
+            title: 'Billing',
+            href: billing.index.url(),
+            icon: CreditCard,
         },
     ];
 
