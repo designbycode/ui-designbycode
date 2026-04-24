@@ -66,6 +66,12 @@ class BillingController extends Controller
 
         $user = $request->user();
 
+        // Ensure user is created as Paddle customer first
+        if (! $user->paddle_id) {
+            $user->createAsCustomer();
+            $user->refresh();
+        }
+
         $plan = $request->input('plan');
         $priceId = $plan === 'yearly'
             ? config('subscription.yearly_price_id')
