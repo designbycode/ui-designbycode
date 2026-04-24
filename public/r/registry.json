@@ -3291,6 +3291,32 @@
                     "type": "registry:ui"
                 }
             ]
+        },
+        {
+            "name": "button-particles",
+            "path": "resources/js/registry/new-york/components/ui/buttons/button-particles.tsx",
+            "type": "registry:ui",
+            "meta": {
+                "category": "components",
+                "version": "1.0.0"
+            },
+            "title": "Button Particles",
+            "author": "designbycode",
+            "registryDependencies": [],
+            "dependencies": [
+                "react",
+                "clsx",
+                "tailwind-merge",
+                "@radix-ui/react-slot",
+                "class-variance-authority"
+            ],
+            "component": "ButtonParticles",
+            "files": [
+                {
+                    "path": "resources/js/registry/new-york/components/ui/buttons/button-particles.tsx",
+                    "type": "registry:ui"
+                }
+            ]
         }
     ]
 }

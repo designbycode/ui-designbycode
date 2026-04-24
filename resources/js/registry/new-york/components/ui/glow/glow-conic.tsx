@@ -3,10 +3,15 @@ import { cn } from '@/lib/utils';
 
 export interface GlowConicProps {
     className?: string;
+    style?: React.CSSProperties;
     [key: string]: unknown;
 }
 
-export default function GlowConic({ className, ...props }: GlowConicProps) {
+export default function GlowConic({
+    className,
+    style,
+    ...props
+}: GlowConicProps) {
     useEffect(() => {
         if (typeof CSS !== 'undefined' && CSS.registerProperty) {
             CSS.registerProperty({
@@ -27,12 +32,13 @@ export default function GlowConic({ className, ...props }: GlowConicProps) {
             )}
             style={{
                 background:
-                    'repeating-conic-gradient(from var(--glow-conic-angle), transparent 10%, var(--conic-color) 20%, transparent 50%)',
+                    'repeating-conic-gradient(from var(--glow-conic-angle), var(--conic-color) 0%, transparent 50%)',
                 mask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0) border-box',
                 maskComposite: 'exclude' as const,
                 WebkitMask:
                     'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0) border-box',
                 WebkitMaskComposite: 'xor' as const,
+                ...style,
             }}
         ></div>
     );

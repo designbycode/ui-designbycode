@@ -3,6 +3,7 @@ import { PackageManagerSelect } from '@/components/ui/package-manager-select';
 import { PricingTable } from '@/components/ui/pricing-table';
 import Wrapper from '@/components/wrapper';
 import MainHero from '@/layouts/main/main-hero';
+import { ButtonParticles } from '@/registry/new-york/components/ui/buttons/button-particles';
 import GlowConic from '@/registry/new-york/components/ui/glow/glow-conic';
 
 export default function Home() {
@@ -28,7 +29,61 @@ export default function Home() {
 
                 <div className="relative w-full rounded-lg bg-primary/10 p-4 text-muted-foreground">
                     Subscribed: {auth?.user?.subscribed ? 'Yes' : 'No'}
-                    <GlowConic className={`p-px`} />
+                    <GlowConic
+                        style={
+                            {
+                                '--conic-color': 'var(--color-red-400)',
+                            } as React.CSSProperties
+                        }
+                        className={`p-px`}
+                    />
+                    <div className="flex flex-wrap gap-4">
+                        <ButtonParticles
+                            colors={['var(--primary)', 'var(--color-muted)']}
+                            size="lg"
+                            particles={15}
+                            variant="default"
+                            particle="burst"
+                        >
+                            Burst
+                        </ButtonParticles>
+                        <ButtonParticles
+                            size="lg"
+                            variant="secondary"
+                            particle="sparkle"
+                        >
+                            Sparkle
+                        </ButtonParticles>
+                        <ButtonParticles
+                            size="lg"
+                            variant="outline"
+                            particle="confetti"
+                        >
+                            Confetti
+                        </ButtonParticles>
+                        <ButtonParticles
+                            particles={5}
+                            size="lg"
+                            variant="ghost"
+                            particle="vburst"
+                        >
+                            V-Burst
+                        </ButtonParticles>
+                        <ButtonParticles
+                            size="lg"
+                            variant="link"
+                            particle="hburst"
+                        >
+                            H-Burst
+                        </ButtonParticles>
+                        <ButtonParticles
+                            size="lg"
+                            variant="default"
+                            particle="spiral"
+                        >
+                            Spiral
+                        </ButtonParticles>
+                    </div>
                 </div>
 
                 <PricingTable className="my-16" />

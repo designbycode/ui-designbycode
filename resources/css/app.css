@@ -248,7 +248,9 @@
     --animate-tilt: tilt 1.5s ease-in-out infinite alternate;
     --font-bebas-neue: 'Bebas Neue', sans-serif;
     --font-playfair-display: 'Playfair Display Variable', sans-serif;
-
+    --conic-color: var(--color-primary);
+    --animate-glow-conic: glow-conic 3s linear infinite;
+    --color-conic-color: var(--conic-color);
 
 }
 
@@ -1578,10 +1580,10 @@
 
     @keyframes glow-conic {
         0% {
-            --glow-conic-angle: 0deg;
+    --glow-conic-angle: 0deg;
         }
         100% {
-            --glow-conic-angle: 360deg;
+    --glow-conic-angle: 360deg;
         }
     }
 
