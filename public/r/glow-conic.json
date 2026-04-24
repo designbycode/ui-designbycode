@@ -21,7 +21,7 @@
   "cssVars": {
     "theme": {
       "--conic-color": "var(--color-primary)",
-      "--animate-glow-conic": "glow-conic 3s ease-in-out"
+      "--animate-glow-conic": "glow-conic 3s linear infinite"
     }
   },
   "css": {
