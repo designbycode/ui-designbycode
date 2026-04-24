@@ -1,5 +1,6 @@
 import { Form, Head, Link } from '@inertiajs/react';
 import { CreditCard, Download, Pause, Play, X } from 'lucide-react';
+import { useEffect } from 'react';
 import BillingController from '@/actions/App/Http/Controllers/Billing/BillingController';
 import { Button } from '@/components/ui/button';
 import {
@@ -73,6 +74,7 @@ interface BillingProps {
     upcomingInvoice: UpcomingInvoice | null;
     customer: Customer;
     plans: Plans;
+    checkout?: Record<string, unknown>;
 }
 
 function formatCurrency(amount: string, currency: string = 'USD'): string {
@@ -135,12 +137,47 @@ export default function Billing({
     upcomingInvoice,
     customer,
     plans,
+    checkout,
 }: BillingProps) {
     const currentPlanName = subscription?.price_id
         ? getPlanName(subscription.price_id, plans)
         : null;
     const isPaused = subscription?.status === 'paused';
     const isCanceled = subscription?.ends_at !== null;
+
+    useEffect(() => {
+        if (
+            checkout &&
+            typeof window !== 'undefined' &&
+            (
+                window as {
+                    Paddle?: {
+                        Initialize: (options: unknown) => void;
+                        Checkout: {
+                            open: (options: { token: string }) => void;
+                        };
+                    };
+                }
+            ).Paddle
+        ) {
+            const Paddle = (
+                window as {
+                    Paddle?: {
+                        Initialize: (options: unknown) => void;
+                        Checkout: {
+                            open: (options: { token: string }) => void;
+                        };
+                    };
+                }
+            ).Paddle!;
+            Paddle.Initialize({
+                token: import.meta.env.VITE_PADDLE_CLIENT_TOKEN,
+            });
+            Paddle.Checkout.open({
+                token: (checkout.settings as { token?: string })?.token || '',
+            });
+        }
+    }, [checkout]);
 
     return (
         <div className="flex h-full flex-1 flex-col gap-4 overflow-x-auto rounded-xl p-4">
@@ -239,8 +276,8 @@ export default function Billing({
                                     </p>
                                     <div className="flex flex-wrap gap-4">
                                         <Form
-                                            action={BillingController.switchPlan.post()}
-                                            method="post"
+                                            action={BillingController.subscribe.get()}
+                                            method="get"
                                         >
                                             <input
                                                 type="hidden"
@@ -253,8 +290,8 @@ export default function Billing({
                                         </Form>
 
                                         <Form
-                                            action={BillingController.switchPlan.post()}
-                                            method="post"
+                                            action={BillingController.subscribe.get()}
+                                            method="get"
                                         >
                                             <input
                                                 type="hidden"

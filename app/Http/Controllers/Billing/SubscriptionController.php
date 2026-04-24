@@ -15,7 +15,7 @@ class SubscriptionController extends Controller
             : config('subscription.monthly_price_id');
 
         $checkout = $request->user()->subscribe($priceId, 'default')
-            ->returnTo(route('dashboard'));
+            ->returnTo(route('billing.index'));
 
         return Inertia::render('subscribe', [
             'checkout' => $checkout->options(),

@@ -4,7 +4,6 @@ use App\Http\Controllers\Admin\DashboardIndexController as AdminDashboardControl
 use App\Http\Controllers\Admin\UsersController;
 use App\Http\Controllers\Auth\SocialiteController;
 use App\Http\Controllers\Billing\BillingController;
-use App\Http\Controllers\Billing\SubscriptionController;
 use App\Http\Controllers\Dashboard\DashboardIndexController;
 use App\Http\Controllers\Docs\Animations\AnimationsIndexController;
 use App\Http\Controllers\Docs\DocumentationIndexController;
@@ -19,9 +18,9 @@ Route::get('/docs/animations', AnimationsIndexController::class)->name('docs.ani
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('dashboard', DashboardIndexController::class)->name('dashboard');
-    Route::get('subscribe', [SubscriptionController::class, 'checkout'])->name('subscribe');
 
     Route::get('billing', [BillingController::class, 'index'])->name('billing.index');
+    Route::get('billing/subscribe', [BillingController::class, 'subscribe'])->name('billing.subscribe');
     Route::post('billing/update-payment-method', [BillingController::class, 'updatePaymentMethod'])->name('billing.update-payment-method');
     Route::post('billing/switch-plan', [BillingController::class, 'switchPlan'])->name('billing.switch-plan');
     Route::post('billing/pause', [BillingController::class, 'pause'])->name('billing.pause');
