@@ -27,7 +27,7 @@ export default function Home() {
                 />
 
                 <div className="relative w-full rounded-lg bg-primary/10 p-4 text-muted-foreground">
-                    Subscribed: {auth.user.subscribed ? 'Yes' : 'No'}
+                    Subscribed: {auth?.user?.subscribed ? 'Yes' : 'No'}
                     <GlowConic className={`p-px`} />
                 </div>
 
