@@ -1576,5 +1576,13 @@
         }
     }
 
- 
+    @keyframes glow-conic {
+        0% {
+            --glow-conic-angle: 0deg;
+        }
+        100% {
+            --glow-conic-angle: 360deg;
+        }
+    }
+
 }
