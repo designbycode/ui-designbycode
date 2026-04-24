@@ -29,7 +29,7 @@ export default function Subscribe({ checkout }: SubscribeProps) {
                 ...(checkout as Record<string, unknown>),
                 settings: {
                     ...(checkout.settings || {}),
-                    displayMode: 'inline',
+                    displayMode: 'overlay',
                 },
             });
         }

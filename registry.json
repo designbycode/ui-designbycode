@@ -3175,6 +3175,46 @@
             ]
         },
         {
+            "name": "glow-conic",
+            "path": "resources/js/registry/new-york/components/ui/glow/glow-conic.tsx",
+            "type": "registry:ui",
+            "meta": {
+                "category": "components",
+                "version": "1.0.0"
+            },
+            "title": "Glow Conic",
+            "author": "designbycode",
+            "registryDependencies": [
+                "https://ui.designbycode.co.za/r/glow-stack.json"
+            ],
+            "cssVars": {
+                "theme": {
+                    "--animate-glow-conic": "bell 1s ease-in-out"
+                }
+            },
+            "css": {
+                "@layer utilities": {
+                    "@property --glow-conic-angle": {
+                        "syntax": "'<angle>'",
+                        "initialValue": "0deg",
+                        "inherits": "false"
+                    },
+                    "@keyframes glow-conic": {
+                        "0%": { "--glow-conic-angle": "0deg" },
+                        "100%": { "--glow-conic-angle": "360deg" }
+                    }
+                }
+            },
+            "dependencies": ["react", "clsx", "tailwind-merge"],
+            "component": "GlowConic",
+            "files": [
+                {
+                    "path": "resources/js/registry/new-york/components/ui/glow/glow-conic.tsx",
+                    "type": "registry:ui"
+                }
+            ]
+        },
+        {
             "name": "glow-geometry",
             "path": "resources/js/registry/new-york/lib/glow-geometry.ts",
             "type": "registry:lib",

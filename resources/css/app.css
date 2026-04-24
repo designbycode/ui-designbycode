@@ -248,10 +248,25 @@
     --animate-tilt: tilt 1.5s ease-in-out infinite alternate;
     --font-bebas-neue: 'Bebas Neue', sans-serif;
     --font-playfair-display: 'Playfair Display Variable', sans-serif;
-    
+    --animate-glow-conic: glow-conic 5s linear infinite;
 }
 
 @layer utilities {
+
+    @property --glow-conic-angle {
+        syntax: '<angle>';
+        initial-value: 0deg;
+        inherits: false;
+    }
+
+    @keyframes glow-conic {
+        0% {
+            --glow-conic-angle: 0deg;
+        }
+        100% {
+            --glow-conic-angle: 360deg;
+        }
+    }
 
     @keyframes bounce {
         0%, 20%, 50%, 80%, 100% {

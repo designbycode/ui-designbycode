@@ -1,0 +1,48 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "glow-conic",
+  "title": "Glow Conic",
+  "author": "designbycode",
+  "dependencies": [
+    "react",
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [
+    "https://ui.designbycode.co.za/r/glow-stack.json"
+  ],
+  "files": [
+    {
+      "path": "resources/js/registry/new-york/components/ui/glow/glow-conic.tsx",
+      "content": "import { cn } from '@/lib/utils';\n\nexport interface GlowConicProps {\n    className?: string;\n    [key: string]: unknown;\n}\n\nexport default function GlowConic({ className, ...props }: GlowConicProps) {\n    return (\n        <div\n            {...props}\n            className={cn(\n                'absolute inset-0 animate-glow-conic rounded-[inherit] p-px',\n                className,\n            )}\n            style={{\n                background:\n                    'repeating-conic-gradient(from var(--glow-conic-angle), transparent 10%, var(--conic-color) 20%, transparent 50%)',\n                mask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0) border-box',\n                maskComposite: 'exclude' as const,\n                WebkitMask:\n                    'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0) border-box',\n                WebkitMaskComposite: 'xor' as const,\n            }}\n        ></div>\n    );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "cssVars": {
+    "theme": {
+      "--animate-glow-conic": "bell 1s ease-in-out"
+    }
+  },
+  "css": {
+    "@layer utilities": {
+      "@property --glow-conic-angle": {
+        "syntax": "'<angle>'",
+        "initialValue": "0deg",
+        "inherits": "false"
+      },
+      "@keyframes glow-conic": {
+        "0%": {
+          "--glow-conic-angle": "0deg"
+        },
+        "100%": {
+          "--glow-conic-angle": "360deg"
+        }
+      }
+    }
+  },
+  "meta": {
+    "category": "components",
+    "version": "1.0.0"
+  },
+  "type": "registry:ui"
+}
