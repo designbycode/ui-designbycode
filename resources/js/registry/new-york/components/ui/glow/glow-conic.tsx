@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { cn } from '@/lib/utils';
 
 export interface GlowConicProps {
@@ -6,6 +7,17 @@ export interface GlowConicProps {
 }
 
 export default function GlowConic({ className, ...props }: GlowConicProps) {
+    useEffect(() => {
+        if (typeof CSS !== 'undefined' && CSS.registerProperty) {
+            CSS.registerProperty({
+                name: '--glow-conic-angle',
+                syntax: '<angle>',
+                initialValue: '0deg',
+                inherits: false,
+            });
+        }
+    }, []);
+
     return (
         <div
             {...props}

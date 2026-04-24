@@ -253,11 +253,6 @@
 
 @layer utilities {
 
-    @property --glow-conic-angle {
-        syntax: '<angle>';
-        initial-value: 0deg;
-        inherits: false;
-    }
 
     @keyframes glow-conic {
         0% {

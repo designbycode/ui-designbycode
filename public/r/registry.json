@@ -3189,16 +3189,12 @@
             ],
             "cssVars": {
                 "theme": {
-                    "--animate-glow-conic": "bell 1s ease-in-out"
+                    "--conic-color": "var(--color-primary)",
+                    "--animate-glow-conic": "glow-conic 3s ease-in-out"
                 }
             },
             "css": {
                 "@layer utilities": {
-                    "@property --glow-conic-angle": {
-                        "syntax": "'<angle>'",
-                        "initialValue": "0deg",
-                        "inherits": "false"
-                    },
                     "@keyframes glow-conic": {
                         "0%": { "--glow-conic-angle": "0deg" },
                         "100%": { "--glow-conic-angle": "360deg" }
