@@ -237,11 +237,38 @@ export default function Billing({
                                     <p className="text-sm text-muted-foreground">
                                         You don't have an active subscription.
                                     </p>
-                                    <Button asChild>
-                                        <Link href={dashboard()}>
-                                            Go to Dashboard
-                                        </Link>
-                                    </Button>
+                                    <div className="flex flex-wrap gap-4">
+                                        <Form
+                                            action={BillingController.switchPlan.post()}
+                                            method="post"
+                                        >
+                                            <input
+                                                type="hidden"
+                                                name="plan"
+                                                value="monthly"
+                                            />
+                                            <Button type="submit">
+                                                Subscribe Monthly
+                                            </Button>
+                                        </Form>
+
+                                        <Form
+                                            action={BillingController.switchPlan.post()}
+                                            method="post"
+                                        >
+                                            <input
+                                                type="hidden"
+                                                name="plan"
+                                                value="yearly"
+                                            />
+                                            <Button
+                                                type="submit"
+                                                variant="outline"
+                                            >
+                                                Subscribe Yearly
+                                            </Button>
+                                        </Form>
+                                    </div>
                                 </div>
                             )}
                         </CardContent>
