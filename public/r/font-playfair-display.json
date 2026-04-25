@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "font-playfair-display",
+  "title": "Fonts Playfair Display",
+  "author": "designbycode",
   "meta": {
     "category": "fonts",
     "version": "1.0.0"

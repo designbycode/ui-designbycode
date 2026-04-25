@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-fade-out-up",
+  "title": "Animate Fade Out Up",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-fade-out-up": "fadeOutUp 1s"

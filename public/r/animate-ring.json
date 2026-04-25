@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-ring",
+  "title": "Animate Ring",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-ring": "ring 0.5s ease-in-out"

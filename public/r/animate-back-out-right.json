@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-back-out-right",
+  "title": "Animate Back Out Right",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-back-out-right": "backOutRight 1s"

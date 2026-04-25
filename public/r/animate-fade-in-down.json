@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-fade-in-down",
+  "title": "Animate Fade In Down",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-fade-in-down": "fadeInDown 1s"

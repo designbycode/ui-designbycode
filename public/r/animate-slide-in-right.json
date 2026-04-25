@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-slide-in-right",
+  "title": "Animate Slide In Right",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-slide-in-right": "slideInRight 1s"

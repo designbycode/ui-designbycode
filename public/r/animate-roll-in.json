@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-roll-in",
+  "title": "Animate Roll In",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-roll-in": "rollIn 1s"

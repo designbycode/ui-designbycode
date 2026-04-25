@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-back-out-down",
+  "title": "Animate Back Out Down",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-back-out-down": "backOutDown 1s"

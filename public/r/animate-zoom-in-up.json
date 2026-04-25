@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-zoom-in-up",
+  "title": "Animate Zoom In Up",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-zoom-in-up": "zoomInUp 1s"

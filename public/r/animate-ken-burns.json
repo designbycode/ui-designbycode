@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-ken-burns",
+  "title": "Animate Ken Burns",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-ken-burns": "kenBurns 8s ease-in-out infinite alternate"

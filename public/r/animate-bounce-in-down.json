@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-bounce-in-down",
+  "title": "Animate Bounce In Down",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-bounce-in-down": "bounceInDown 1s"

@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-back-out-up",
+  "title": "Animate Back Out Up",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-back-out-up": "backOutUp 1s"

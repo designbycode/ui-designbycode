@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-blur-out",
+  "title": "Animate Blur Out",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-blur-out": "blurOut 0.6s ease-in"

@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-bounce-out",
+  "title": "Animate Bounce Out",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-bounce-out": "bounceOut 0.75s"

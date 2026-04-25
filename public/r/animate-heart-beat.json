@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-heart-beat",
+  "title": "Animate Heart Beat",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-heart-beat": "heartBeat 1s"

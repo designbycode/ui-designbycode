@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-tilt",
+  "title": "Animate Tilt",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-tilt": "tilt 1.5s ease-in-out infinite alternate"

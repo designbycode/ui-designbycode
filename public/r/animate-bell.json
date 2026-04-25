@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-bell",
+  "title": "Animate Bell",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-bell": "bell 1s ease-in-out"

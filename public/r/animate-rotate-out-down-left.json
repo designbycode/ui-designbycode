@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-rotate-out-down-left",
+  "title": "Animate Rotate Out Down Left",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-rotate-out-down-left": "rotateOutDownLeft 1s"

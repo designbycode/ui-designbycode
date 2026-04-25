@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-flip-in-y",
+  "title": "Animate Flip In Y",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-flip-in-y": "flipInY 1s"

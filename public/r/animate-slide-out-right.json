@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-slide-out-right",
+  "title": "Animate Slide Out Right",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-slide-out-right": "slideOutRight 1s"

@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-fade-out-left",
+  "title": "Animate Fade Out Left",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-fade-out-left": "fadeOutLeft 1s"

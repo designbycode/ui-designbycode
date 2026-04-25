@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-slide-out-down",
+  "title": "Animate Slide Out Down",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-slide-out-down": "slideOutDown 1s"

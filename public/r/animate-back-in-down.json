@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-back-in-down",
+  "title": "Animate Back In Down",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-back-in-down": "backInDown 1s"

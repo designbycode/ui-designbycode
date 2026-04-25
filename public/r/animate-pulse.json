@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-pulse",
+  "title": "Animate Pulse",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-pulse": "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite"

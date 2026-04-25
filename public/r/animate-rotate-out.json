@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-rotate-out",
+  "title": "Animate Rotate Out",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-rotate-out": "rotateOut 1s"

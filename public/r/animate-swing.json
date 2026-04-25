@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-swing",
+  "title": "Animate Swing",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-swing": "swing 1s"

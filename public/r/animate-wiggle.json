@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-wiggle",
+  "title": "Animate Wiggle",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-wiggle": "wiggle 0.8s ease-in-out infinite"

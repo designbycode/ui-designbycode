@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-slide-in-down",
+  "title": "Animate Slide In Down",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-slide-in-down": "slideInDown 1s"

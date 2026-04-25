@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-fade-out-down-big",
+  "title": "Animate Fade Out Down Big",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-fade-out-down-big": "fadeOutDownBig 1s"

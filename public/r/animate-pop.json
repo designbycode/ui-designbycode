@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-pop",
+  "title": "Animate Pop",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-pop": "pop 0.4s cubic-bezier(0.26, 0.53, 0.74, 1.48)"

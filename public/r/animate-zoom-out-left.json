@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-zoom-out-left",
+  "title": "Animate Zoom Out Left",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-zoom-out-left": "zoomOutLeft 1s"

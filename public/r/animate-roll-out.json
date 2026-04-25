@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-roll-out",
+  "title": "Animate Roll Out",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-roll-out": "rollOut 1s"

@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-fade-out-right-big",
+  "title": "Animate Fade Out Right Big",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-fade-out-right-big": "fadeOutRightBig 1s"

@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-rotate-out-up-right",
+  "title": "Animate Rotate Out Up Right",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-rotate-out-up-right": "rotateOutUpRight 1s"

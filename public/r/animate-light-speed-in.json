@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-light-speed-in",
+  "title": "Animate Light Speed In",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-light-speed-in": "lightSpeedInRight 1s ease-out"

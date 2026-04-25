@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-ping",
+  "title": "Animate Ping",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-ping": "ping 1s cubic-bezier(0, 0, 0.2, 1) infinite"

@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-back-in-left",
+  "title": "Animate Back In Left",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-back-in-left": "backInLeft 1s"

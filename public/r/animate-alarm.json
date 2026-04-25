@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-alarm",
+  "title": "Animate Alarm",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-alarm": "alarm 0.8s ease-in-out"

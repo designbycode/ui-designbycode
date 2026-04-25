@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-flip-out-x",
+  "title": "Animate Flip Out X",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-flip-out-x": "flipOutX 1s"

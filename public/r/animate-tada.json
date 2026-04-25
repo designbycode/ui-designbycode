@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-tada",
+  "title": "Animate Tada",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-tada": "tada 1s"

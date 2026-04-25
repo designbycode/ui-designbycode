@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-wobble",
+  "title": "Animate Wobble",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-wobble": "wobble 1s ease-in-out"

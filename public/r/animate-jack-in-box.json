@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-jack-in-box",
+  "title": "Animate Jack In Box",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-jack-in-box": "jackInTheBox 1s"

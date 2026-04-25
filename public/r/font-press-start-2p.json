@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "font-press-start-2p",
+  "title": "Fonts Press Start 2p",
+  "author": "designbycode",
   "meta": {
     "category": "fonts",
     "version": "1.0.0"

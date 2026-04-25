@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-compress",
+  "title": "Animate Compress",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-compress": "compress 0.5s ease-in-out"

@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-rubber-band",
+  "title": "Animate Rubber Band",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-rubber-band": "rubberBand 1s"

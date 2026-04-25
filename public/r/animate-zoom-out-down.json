@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-zoom-out-down",
+  "title": "Animate Zoom Out Down",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-zoom-out-down": "zoomOutDown 1s"

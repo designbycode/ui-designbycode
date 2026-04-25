@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-jello",
+  "title": "Animate Jello",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-jello": "jello 1s"

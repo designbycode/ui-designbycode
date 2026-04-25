@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-bounce-out-left",
+  "title": "Animate Bounce Out Left",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-bounce-out-left": "bounceOutLeft 1s"

@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-sway",
+  "title": "Animate Sway",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-sway": "sway 2s ease-in-out infinite"

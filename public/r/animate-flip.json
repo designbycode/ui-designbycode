@@ -1,6 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "animate-flip",
+  "title": "Animate Flip",
+  "author": "designbycode",
   "cssVars": {
     "theme": {
       "--animate-flip": "flip 1s ease-in-out"
