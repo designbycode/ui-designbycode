@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "font-caveat",
-  "title": "Fonts Caveat",
+  "title": "Font Caveat",
   "author": "designbycode",
   "meta": {
     "category": "fonts",

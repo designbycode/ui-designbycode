@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "font-inter",
-  "title": "Fonts Inter",
+  "title": "Font Inter",
   "author": "designbycode",
   "meta": {
     "category": "fonts",

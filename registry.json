@@ -15,12 +15,28 @@
                 "provider": "google",
                 "import": "Inter",
                 "variable": "--font-sans",
-                "subsets": [
-                    "latin"
-                ],
+                "subsets": ["latin"],
                 "dependency": "@fontsource-variable/inter"
             },
-            "title": "Fonts Inter",
+            "title": "Font Inter",
+            "author": "designbycode"
+        },
+        {
+            "name": "font-fira-mono",
+            "type": "registry:font",
+            "meta": {
+                "category": "fonts",
+                "version": "1.0.0"
+            },
+            "font": {
+                "family": "'Fira Mono', monospace",
+                "provider": "google",
+                "import": "FiraMono",
+                "variable": "--font-sans",
+                "subsets": ["latin"],
+                "dependency": "@fontsource/fira-mono"
+            },
+            "title": "Font Fira Mono",
             "author": "designbycode"
         },
         {
@@ -35,12 +51,10 @@
                 "provider": "google",
                 "import": "BebasNeue",
                 "variable": "--font-bebas-neue",
-                "subsets": [
-                    "latin"
-                ],
+                "subsets": ["latin"],
                 "dependency": "@fontsource/bebas-neue"
             },
-            "title": "Fonts Bebas Neue",
+            "title": "Font Bebas Neue",
             "author": "designbycode"
         },
         {
@@ -55,12 +69,10 @@
                 "provider": "google",
                 "import": "PlayfairDisplay",
                 "variable": "--font-playfair-display",
-                "subsets": [
-                    "latin"
-                ],
+                "subsets": ["latin"],
                 "dependency": "@fontsource-variable/playfair-display"
             },
-            "title": "Fonts Playfair Display",
+            "title": "Font Playfair Display",
             "author": "designbycode"
         },
         {
@@ -75,12 +87,10 @@
                 "provider": "google",
                 "import": "Caveat",
                 "variable": "--font-caveat",
-                "subsets": [
-                    "latin"
-                ],
+                "subsets": ["latin"],
                 "dependency": "@fontsource-variable/caveat"
             },
-            "title": "Fonts Caveat",
+            "title": "Font Caveat",
             "author": "designbycode"
         },
         {
@@ -95,9 +105,7 @@
                 "provider": "google",
                 "import": "PressStart2P",
                 "variable": "--font-press-start-2p",
-                "subsets": [
-                    "latin"
-                ],
+                "subsets": ["latin"],
                 "dependency": "@fontsource/press-start-2p"
             },
             "title": "Fonts Press Start 2p",
@@ -3349,9 +3357,7 @@
             "title": "Use Headroom",
             "author": "designbycode",
             "registryDependencies": [],
-            "dependencies": [
-                "react"
-            ],
+            "dependencies": ["react"],
             "devDependencies": [],
             "component": "useHeadroom",
             "files": [
@@ -3372,9 +3378,7 @@
             "title": "Use Hover",
             "author": "designbycode",
             "registryDependencies": [],
-            "dependencies": [
-                "react"
-            ],
+            "dependencies": ["react"],
             "devDependencies": [],
             "component": "useHover",
             "files": [
@@ -3395,10 +3399,7 @@
             "title": "Text Animator",
             "author": "designbycode",
             "registryDependencies": [],
-            "dependencies": [
-                "gsap",
-                "@gsap/react"
-            ],
+            "dependencies": ["gsap", "@gsap/react"],
             "component": "TextAnimator",
             "files": [
                 {
@@ -3418,9 +3419,7 @@
             "title": "Use Dark Mode",
             "author": "designbycode",
             "registryDependencies": [],
-            "dependencies": [
-                "react"
-            ],
+            "dependencies": ["react"],
             "devDependencies": [],
             "component": "useDarkMode",
             "files": [
@@ -3441,11 +3440,7 @@
             "title": "Animated Tabs",
             "author": "designbycode",
             "registryDependencies": [],
-            "dependencies": [
-                "framer-motion",
-                "clsx",
-                "tailwind-merge"
-            ],
+            "dependencies": ["framer-motion", "clsx", "tailwind-merge"],
             "component": "AnimatedTabs",
             "files": [
                 {
@@ -3485,11 +3480,7 @@
             "title": "Waves Three",
             "author": "designbycode",
             "registryDependencies": [],
-            "dependencies": [
-                "three",
-                "clsx",
-                "tailwind-merge"
-            ],
+            "dependencies": ["three", "clsx", "tailwind-merge"],
             "component": "WavesThree",
             "files": [
                 {
@@ -3509,9 +3500,7 @@
             "title": "Use Headroom",
             "author": "designbycode",
             "registryDependencies": [],
-            "dependencies": [
-                "react"
-            ],
+            "dependencies": ["react"],
             "devDependencies": [],
             "component": "useHeadroom",
             "files": [
@@ -3646,11 +3635,7 @@
             "title": "Glow Stack",
             "author": "designbycode",
             "registryDependencies": [],
-            "dependencies": [
-                "react",
-                "clsx",
-                "tailwind-merge"
-            ],
+            "dependencies": ["react", "clsx", "tailwind-merge"],
             "component": "GlowStack",
             "files": [
                 {
@@ -3672,11 +3657,7 @@
             "registryDependencies": [
                 "https://ui.designbycode.co.za/r/glow-stack.json"
             ],
-            "dependencies": [
-                "react",
-                "clsx",
-                "tailwind-merge"
-            ],
+            "dependencies": ["react", "clsx", "tailwind-merge"],
             "component": "GlowRadial",
             "files": [
                 {
@@ -3716,11 +3697,7 @@
                     }
                 }
             },
-            "dependencies": [
-                "react",
-                "clsx",
-                "tailwind-merge"
-            ],
+            "dependencies": ["react", "clsx", "tailwind-merge"],
             "component": "GlowConic",
             "files": [
                 {
@@ -3780,9 +3757,7 @@
             "registryDependencies": [
                 "https://ui.designbycode.co.za/r/pixel-canvas.json"
             ],
-            "dependencies": [
-                "react"
-            ],
+            "dependencies": ["react"],
             "component": "usePixelCanvas",
             "files": [
                 {
@@ -3804,11 +3779,7 @@
             "registryDependencies": [
                 "https://ui.designbycode.co.za/r/glow-stack.json"
             ],
-            "dependencies": [
-                "react",
-                "clsx",
-                "tailwind-merge"
-            ],
+            "dependencies": ["react", "clsx", "tailwind-merge"],
             "component": "BackLight",
             "files": [
                 {
@@ -3842,6 +3813,124 @@
                     "type": "registry:ui"
                 }
             ]
+        },
+        {
+            "name": "theme-boho",
+            "type": "registry:style",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
+            "registryDependencies": [
+                "https://ui.designbycode.co.za/r/font-inter.json",
+                "https://ui.designbycode.co.za/r/font-fira-mono.json",
+                "https://ui.designbycode.co.za/r/font-playfair-display.json"
+            ],
+            "cssVars": {
+                "theme": {
+                    "font-sans": "Inter, sans-serif",
+                    "font-serif": "Playfair Display, serif",
+                    "font-mono": "Fira Code, monospace",
+                    "radius": "1rem",
+                    "shadow-color": "hsl(30 40% 40%)",
+                    "shadow-opacity": "0.18",
+                    "shadow-blur": "12px",
+                    "shadow-spread": "4px",
+                    "shadow-offset-x": "2px",
+                    "shadow-offset-y": "2px"
+                },
+                "light": {
+                    "background": "oklch(0.97 0.02 85)",
+                    "foreground": "oklch(0.35 0.04 70)",
+                    "card": "oklch(0.99 0.01 85)",
+                    "card-foreground": "oklch(0.35 0.04 70)",
+                    "popover": "oklch(0.99 0.01 85)",
+                    "popover-foreground": "oklch(0.35 0.04 70)",
+                    "primary": "oklch(0.62 0.14 40)",
+                    "primary-foreground": "oklch(0.98 0.01 85)",
+                    "secondary": "oklch(0.92 0.04 80)",
+                    "secondary-foreground": "oklch(0.40 0.05 70)",
+                    "muted": "oklch(0.94 0.02 80)",
+                    "muted-foreground": "oklch(0.55 0.03 70)",
+                    "accent": "oklch(0.72 0.08 140)",
+                    "accent-foreground": "oklch(0.25 0.03 140)",
+                    "destructive": "oklch(0.60 0.20 30)",
+                    "destructive-foreground": "oklch(0.98 0.01 85)",
+                    "border": "oklch(0.88 0.02 80)",
+                    "input": "oklch(0.88 0.02 80)",
+                    "ring": "oklch(0.62 0.14 40)",
+                    "chart-1": "oklch(0.62 0.14 40)",
+                    "chart-2": "oklch(0.72 0.08 140)",
+                    "chart-3": "oklch(0.70 0.10 60)",
+                    "chart-4": "oklch(0.55 0.07 30)",
+                    "chart-5": "oklch(0.50 0.05 90)",
+                    "radius": "1rem",
+                    "sidebar": "oklch(0.95 0.02 85)",
+                    "sidebar-foreground": "oklch(0.35 0.04 70)",
+                    "sidebar-primary": "oklch(0.62 0.14 40)",
+                    "sidebar-primary-foreground": "oklch(0.98 0.01 85)",
+                    "sidebar-accent": "oklch(0.72 0.08 140)",
+                    "sidebar-accent-foreground": "oklch(0.25 0.03 140)",
+                    "sidebar-border": "oklch(0.88 0.02 80)",
+                    "sidebar-ring": "oklch(0.62 0.14 40)",
+                    "font-sans": "Inter, sans-serif",
+                    "font-serif": "Playfair Display, serif",
+                    "font-mono": "Fira Code, monospace",
+                    "shadow-2xs": "0 2px 6px hsl(30 40% 40% / 0.15)",
+                    "shadow-xs": "0 2px 6px hsl(30 40% 40% / 0.15)",
+                    "shadow-sm": "0 2px 6px hsl(30 40% 40% / 0.15)",
+                    "shadow": "0 4px 12px hsl(30 40% 40% / 0.18)",
+                    "shadow-md": "0 8px 20px hsl(30 40% 40% / 0.2)",
+                    "shadow-lg": "0 12px 30px hsl(30 40% 40% / 0.25)",
+                    "shadow-xl": "0 20px 50px hsl(30 40% 40% / 0.3)",
+                    "shadow-2xl": "0 20px 50px hsl(30 40% 40% / 0.3)"
+                },
+                "dark": {
+                    "background": "oklch(0.22 0.03 80)",
+                    "foreground": "oklch(0.92 0.02 85)",
+                    "card": "oklch(0.26 0.03 80)",
+                    "card-foreground": "oklch(0.92 0.02 85)",
+                    "popover": "oklch(0.26 0.03 80)",
+                    "popover-foreground": "oklch(0.92 0.02 85)",
+                    "primary": "oklch(0.70 0.14 40)",
+                    "primary-foreground": "oklch(0.15 0.02 80)",
+                    "secondary": "oklch(0.30 0.03 80)",
+                    "secondary-foreground": "oklch(0.90 0.02 85)",
+                    "muted": "oklch(0.28 0.02 80)",
+                    "muted-foreground": "oklch(0.75 0.02 85)",
+                    "accent": "oklch(0.65 0.08 140)",
+                    "accent-foreground": "oklch(0.20 0.02 140)",
+                    "destructive": "oklch(0.65 0.18 30)",
+                    "destructive-foreground": "oklch(0.95 0.01 85)",
+                    "border": "oklch(0.35 0.02 80)",
+                    "input": "oklch(0.35 0.02 80)",
+                    "ring": "oklch(0.70 0.14 40)",
+                    "sidebar": "oklch(0.22 0.03 80)",
+                    "sidebar-foreground": "oklch(0.92 0.02 85)",
+                    "sidebar-primary": "oklch(0.70 0.14 40)",
+                    "sidebar-primary-foreground": "oklch(0.15 0.02 80)",
+                    "sidebar-accent": "oklch(0.65 0.08 140)",
+                    "sidebar-accent-foreground": "oklch(0.20 0.02 140)",
+                    "sidebar-border": "oklch(0.35 0.02 80)",
+                    "sidebar-ring": "oklch(0.70 0.14 40)",
+                    "font-sans": "Inter, sans-serif",
+                    "font-serif": "Playfair Display, serif",
+                    "font-mono": "Fira Code, monospace"
+                }
+            },
+            "css": {
+                "@layer base": {
+                    "body": {
+                        "background": "var(--background)",
+                        "color": "var(--foreground)"
+                    },
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
+                }
+            },
+            "title": "Theme Boho",
+            "author": "designbycode"
         }
     ]
 }
