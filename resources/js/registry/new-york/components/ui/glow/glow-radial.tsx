@@ -3,11 +3,7 @@ import type { HTMLAttributes, ReactNode } from 'react';
 import { useEffect, useRef, useState } from 'react';
 import { cn } from '@/lib/utils';
 import { useGlowStack } from '@/registry/new-york/components/ui/glow/glow-stack';
-import {
-    isCircleOverlappingRect,
-    isPointInRect,
-    toElementSpace,
-} from '@/registry/new-york/lib/glow-geometry';
+import { isCircleOverlappingRect, isPointInRect, toElementSpace } from '@/registry/new-york/lib/glow-geometry';
 
 const BORDER_MASK = {
     padding: '2px',
@@ -79,6 +75,7 @@ export function GlowRadial({
             ref={ref}
             className={cn(
                 'absolute inset-0 isolate z-10 rounded-[inherit]',
+                children ? 'pointer-events-auto' : 'pointer-events-none',
                 className,
             )}
             style={style}
@@ -88,7 +85,7 @@ export function GlowRadial({
             <div
                 aria-hidden
                 className={cn(
-                    'pointer-events-none absolute inset-0 z-10 rounded-[inherit] transition-opacity duration-300',
+                    'pointer-events-none! absolute inset-0 z-10 rounded-[inherit] transition-opacity duration-300',
                     near ? 'opacity-100' : 'opacity-0',
                 )}
                 style={{ ...borderMask, background: gradient }}
@@ -97,7 +94,7 @@ export function GlowRadial({
             <div
                 aria-hidden
                 className={cn(
-                    'pointer-events-none absolute inset-0 rounded-[inherit] blur-2xl transition-opacity duration-300',
+                    'pointer-events-none! absolute inset-0 rounded-[inherit] blur-2xl transition-opacity duration-300',
                     near ? 'opacity-10' : 'opacity-0',
                 )}
                 style={{ ...borderMask, background: gradient }}
@@ -106,7 +103,7 @@ export function GlowRadial({
             <div
                 aria-hidden
                 className={cn(
-                    'pointer-events-none absolute inset-0 rounded-[inherit] transition-opacity duration-300',
+                    'pointer-events-none! absolute inset-0 rounded-[inherit] transition-opacity duration-300',
                     over ? 'opacity-5' : 'opacity-0',
                 )}
                 style={{ background: gradient }}

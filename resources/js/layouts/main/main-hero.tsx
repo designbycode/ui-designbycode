@@ -1,6 +1,6 @@
 import { Crown } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 import TextAnimator from '@/registry/new-york/components/ui/animations/text-animator';
+import { ButtonParticles } from '@/registry/new-york/components/ui/buttons/button-particles';
 import { GlowRadial } from '@/registry/new-york/components/ui/glow/glow-radial';
 import WavesThree from '@/registry/new-york/components/ui/threejs/waves-three';
 
@@ -16,9 +16,18 @@ export default function MainHero() {
                 className={`absolute -inset-2 opacity-25 blur-xs`}
             />
             <div
-                className={`bg-mute/20 relative isolate grid min-h-100 w-full place-content-center overflow-clip rounded-[inherit] border border-border`}
+                className={`bg-mute/20 relative isolate grid min-h-120 w-full place-content-center overflow-clip rounded-[inherit] border border-border`}
             >
                 <div className={`space-y-3 p-6`}>
+                    <div className="flex translate-y-6 justify-center">
+                        <TextAnimator
+                            animation={`particles`}
+                            splitBy={`words`}
+                            className={`font-mono tracking-wide text-balance md:text-2xl`}
+                        >
+                            copy it, paste it, ship it
+                        </TextAnimator>
+                    </div>
                     <h1 className="text-center text-5xl font-black tracking-tighter text-balance md:text-7xl">
                         <span>Components</span>
                         <span
@@ -34,14 +43,17 @@ export default function MainHero() {
                     </h1>
 
                     <p
-                        className={`mx-auto max-w-xl text-center tracking-wide text-balance md:text-lg`}
+                        className={`mx-auto max-w-3xl text-center tracking-wide text-balance md:text-lg`}
                     >
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Accusamus dignissimos exercitationem, nulla
-                        pariatur sed vel!
+                        We are a team of passionate designers and developers
+                        dedicated to creating beautiful and functional user
+                        interfaces.
                     </p>
+
                     <div className="group flex justify-center space-x-4">
-                        <Button className={`relative`}>
+                        <ButtonParticles
+                            colors={['var(--primary)', 'var(--color-muted)']}
+                        >
                             <GlowRadial
                                 size={150}
                                 colors={[`var(--primary), transparent`]}
@@ -62,8 +74,12 @@ export default function MainHero() {
                             />
                             <Crown className="group-hover:text-brand size-4" />
                             <span>Premium Components</span>
-                        </Button>
-                        <Button className={`relative`} variant="secondary">
+                        </ButtonParticles>
+                        <ButtonParticles
+                            colors={['var(--primary)', 'var(--color-muted)']}
+                            className={`relative`}
+                            variant="secondary"
+                        >
                             <GlowRadial
                                 colors={colors}
                                 size={150}
@@ -83,7 +99,7 @@ export default function MainHero() {
                                 className={`absolute -inset-1.5 mix-blend-color-dodge blur-xs`}
                             />
                             View Components
-                        </Button>
+                        </ButtonParticles>
                     </div>
                 </div>
 

@@ -141,7 +141,7 @@
     }
 
     body {
-        @apply bg-background text-foreground;
+        @apply bg-background text-foreground selection:bg-primary/60 selection:text-primary-foreground/60;
     }
 }
 
@@ -1580,10 +1580,10 @@
 
     @keyframes glow-conic {
         0% {
-    --glow-conic-angle: 0deg;
+            --glow-conic-angle: 0deg;
         }
         100% {
-    --glow-conic-angle: 360deg;
+            --glow-conic-angle: 360deg;
         }
     }
 

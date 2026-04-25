@@ -1,3 +1,4 @@
+import { PlaceholderPattern } from '@/components/ui/placeholder-pattern';
 import MainFooter from '@/layouts/main/main-footer';
 import MainNavigation from '@/layouts/main/main-navigation';
 import { GlowStack } from '@/registry/new-york/components/ui/glow/glow-stack';
@@ -10,8 +11,10 @@ export default function MainLayout({
     // const { auth } = usePage().props;
 
     return (
-        <GlowStack>
+        <GlowStack className={`relative`}>
             <div className="min-h-screen">
+                <PlaceholderPattern className="fixed inset-y-0 left-0 h-full w-2 border-r border-border stroke-neutral-900/20 md:w-5 dark:stroke-neutral-100/20" />
+                <PlaceholderPattern className="fixed inset-y-0 right-0 h-full w-2 border-l border-border stroke-neutral-900/20 md:w-5 dark:stroke-neutral-100/20" />
                 <MainNavigation />
                 {/*<header className="flex items-center justify-between px-6 py-4 lg:px-8">*/}
                 {/*    <Link href="/" className="text-xl font-medium">*/}

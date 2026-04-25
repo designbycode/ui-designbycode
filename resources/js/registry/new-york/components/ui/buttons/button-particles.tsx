@@ -2,11 +2,11 @@ import { Slot } from '@radix-ui/react-slot';
 import type { VariantProps } from 'class-variance-authority';
 import { cva } from 'class-variance-authority';
 import * as React from 'react';
-import { useRef, useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { cn } from '@/lib/utils';
 
 const buttonVariants = cva(
-    "relative inline-flex items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-[color,box-shadow] outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+    "relative isolate inline-flex items-center justify-center gap-2 overflow-visible rounded-md text-sm font-medium whitespace-nowrap transition-[color,box-shadow] outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
     {
         variants: {
             variant: {
@@ -71,10 +71,10 @@ function injectParticleStyles(maxIndex: number) {
     if (!css) {
         css = `
         .bp-particle {
-            position: fixed;
+            position: absolute;
             border-radius: 50%;
             pointer-events: none;
-            z-index: 9999;
+            z-index: 99999;
             will-change: transform, opacity;
         }
     `;
@@ -189,10 +189,15 @@ function ButtonParticles({
     }, [particles]);
 
     const createParticle = (
+        buttonEl: HTMLElement,
         originX: number,
         originY: number,
         index: number,
     ) => {
+        if (!buttonEl) {
+            return;
+        }
+
         const el = document.createElement('div');
         el.classList.add('bp-particle');
         el.dataset.idx = String(index);
@@ -222,9 +227,9 @@ function ButtonParticles({
                 el.style.setProperty('--pdx', `${Math.cos(angle) * dist}px`);
                 el.style.setProperty('--pdy', `${Math.sin(angle) * dist}px`);
                 el.style.setProperty('--pdur', `${dur}ms`);
-                el.style.left = `${originX}px`;
-                el.style.top = `${originY}px`;
-                document.body.appendChild(el);
+                el.style.left = `${originX - sz / 2}px`;
+                el.style.top = `${originY - sz / 2}px`;
+                buttonEl.appendChild(el);
                 setTimeout(() => el.remove(), dur + 50);
                 break;
             }
@@ -247,9 +252,9 @@ function ButtonParticles({
                 el.style.setProperty('--pdx', `${dx}px`);
                 el.style.setProperty('--pdy', `${dy}px`);
                 el.style.setProperty('--pdur', `${dur}ms`);
-                el.style.left = `${originX}px`;
-                el.style.top = `${originY}px`;
-                document.body.appendChild(el);
+                el.style.left = `${originX - sz / 2}px`;
+                el.style.top = `${originY - sz / 2}px`;
+                buttonEl.appendChild(el);
                 setTimeout(() => el.remove(), dur + 50);
                 break;
             }
@@ -269,9 +274,9 @@ function ButtonParticles({
                 el.style.setProperty('--pdx', `${dx}px`);
                 el.style.setProperty('--pdy', `${dy}px`);
                 el.style.setProperty('--pdur', `${dur}ms`);
-                el.style.left = `${originX}px`;
-                el.style.top = `${originY}px`;
-                document.body.appendChild(el);
+                el.style.left = `${originX - sz / 2}px`;
+                el.style.top = `${originY - sz / 4}px`;
+                buttonEl.appendChild(el);
                 setTimeout(() => el.remove(), dur + 50);
                 break;
             }
@@ -290,9 +295,9 @@ function ButtonParticles({
                 );
                 el.style.setProperty('--pdy', `${isUp ? -dist : dist}px`);
                 el.style.setProperty('--pdur', `${dur}ms`);
-                el.style.left = `${originX}px`;
-                el.style.top = `${originY}px`;
-                document.body.appendChild(el);
+                el.style.left = `${originX - sz / 2}px`;
+                el.style.top = `${originY - sz / 2}px`;
+                buttonEl.appendChild(el);
                 setTimeout(() => el.remove(), dur + 50);
                 break;
             }
@@ -311,9 +316,9 @@ function ButtonParticles({
                     `${(Math.random() - 0.5) * 40}px`,
                 );
                 el.style.setProperty('--pdur', `${dur}ms`);
-                el.style.left = `${originX}px`;
-                el.style.top = `${originY}px`;
-                document.body.appendChild(el);
+                el.style.left = `${originX - sz / 2}px`;
+                el.style.top = `${originY - sz / 2}px`;
+                buttonEl.appendChild(el);
                 setTimeout(() => el.remove(), dur + 50);
                 break;
             }
@@ -335,9 +340,9 @@ function ButtonParticles({
                     `${Math.sin(baseAngle) * dist}px`,
                 );
                 el.style.setProperty('--pdur', `${dur}ms`);
-                el.style.left = `${originX}px`;
-                el.style.top = `${originY}px`;
-                document.body.appendChild(el);
+                el.style.left = `${originX - sz / 2}px`;
+                el.style.top = `${originY - sz / 2}px`;
+                buttonEl.appendChild(el);
                 setTimeout(() => el.remove(), dur + 50);
                 break;
             }
@@ -355,12 +360,12 @@ function ButtonParticles({
             return;
         }
 
-        const rect = ref.current.getBoundingClientRect();
-        const cx = rect.left + rect.width / 2;
-        const cy = rect.top + rect.height / 2;
+        const cx = ref.current.offsetWidth / 2;
+        const cy = ref.current.offsetHeight / 2;
+        const buttonEl = ref.current;
 
         for (let i = 1; i <= particles; i++) {
-            setTimeout(() => createParticle(cx, cy, i), i * 12);
+            setTimeout(() => createParticle(buttonEl, cx, cy, i), i * 12);
         }
     };
 
