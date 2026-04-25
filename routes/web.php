@@ -31,7 +31,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('billing/invoices/{invoice}', [BillingController::class, 'downloadInvoice'])->name('billing.download-invoice');
 });
 
-Route::middleware(['auth', 'verified', RoleMiddleware::class . ':super-admin'])->as('admin.')->group(function () {
+Route::middleware(['auth', 'verified', RoleMiddleware::class.':super-admin'])->as('admin.')->group(function () {
     Route::get('admin/dashboard', AdminDashboardController::class)->name('dashboard');
 
     Route::resource('admin/users', UsersController::class);
@@ -43,6 +43,6 @@ Route::middleware(['guest'])->group(function () {
     Route::get('auth/{provider}/callback', [SocialiteController::class, 'handleProviderCallback'])->name('auth.callback');
 });
 
-require __DIR__ . '/settings.php';
+require __DIR__.'/settings.php';
 
 Route::post('/paddle/webhook', WebhookController::class);

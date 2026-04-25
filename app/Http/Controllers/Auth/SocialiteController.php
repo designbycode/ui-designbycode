@@ -23,10 +23,10 @@ class SocialiteController extends Controller
             ->where('provider_id', $socialUser->getId())
             ->first();
 
-        if (!$social) {
+        if (! $social) {
             $user = User::where('email', $socialUser->getEmail())->first();
 
-            if (!$user) {
+            if (! $user) {
                 $user = User::create([
                     'name' => $socialUser->getName() ?? $socialUser->getNickname(),
                     'email' => $socialUser->getEmail(),

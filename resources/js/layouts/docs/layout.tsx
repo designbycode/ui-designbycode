@@ -33,7 +33,7 @@ export default function DocsLayout({
     ...props
 }: DocsLayoutProps) {
     return (
-        <Wrapper {...props} className={cn('mt-20', className)}>
+        <Wrapper {...props} className={cn('pt-20', className)}>
             {breadcrumbs && (
                 <div className={`my-4`}>
                     <Breadcrumbs breadcrumbs={breadcrumbs} />

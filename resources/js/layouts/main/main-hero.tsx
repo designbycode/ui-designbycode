@@ -21,9 +21,15 @@ export default function MainHero() {
                 <div className={`flex flex-col space-y-3 p-6`}>
                     <div className="relative mx-auto inline-flex translate-y-6 justify-center rounded-full border border-border px-6 py-1">
                         <TextAnimator
-                            animation={`particles`}
-                            splitBy={`words`}
-                            className={`font-mono tracking-wide text-balance`}
+                            effectColor={[
+                                'oklch(58.5% 0.233 277.117)',
+                                'oklch(58.5% 0.233 277.117)',
+                            ]}
+                            animation={`zap`}
+                            splitBy={`chars`}
+                            yoyo={true}
+                            repeat={-1}
+                            className={`font-mono text-sm tracking-wide text-balance`}
                         >
                             copy it, paste it, ship it
                         </TextAnimator>

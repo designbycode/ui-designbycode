@@ -13,8 +13,8 @@ export default function MainLayout({
     return (
         <GlowStack className={`relative`}>
             <div className="min-h-screen">
-                <PlaceholderPattern className="fixed inset-y-0 left-0 h-full w-2 border-r border-border stroke-neutral-900/20 md:w-5 dark:stroke-neutral-100/20" />
-                <PlaceholderPattern className="fixed inset-y-0 right-0 h-full w-2 border-l border-border stroke-neutral-900/20 md:w-5 dark:stroke-neutral-100/20" />
+                <PlaceholderPattern className="fixed inset-y-0 left-0 h-full w-2 border-r border-border stroke-border md:w-5" />
+                <PlaceholderPattern className="fixed inset-y-0 right-0 h-full w-2 border-l border-border stroke-border md:w-5" />
                 <MainNavigation />
                 {/*<header className="flex items-center justify-between px-6 py-4 lg:px-8">*/}
                 {/*    <Link href="/" className="text-xl font-medium">*/}

@@ -1,12 +1,10 @@
-import { Head, usePage } from '@inertiajs/react';
-import { PackageManagerSelect } from '@/components/ui/package-manager-select';
+import { Head } from '@inertiajs/react';
+import { PackageManagerSearch } from '@/components/ui/package-manager-search';
 import { PricingTable } from '@/components/ui/pricing-table';
 import Wrapper from '@/components/wrapper';
 import MainHero from '@/layouts/main/main-hero';
 
 export default function Home() {
-    const { auth } = usePage().props;
-
     return (
         <div className="min-h-screen pt-18">
             <Head title="Home">
@@ -15,16 +13,10 @@ export default function Home() {
             <Wrapper>
                 <MainHero />
 
-                <PackageManagerSelect
+                <PackageManagerSearch
                     className="my-4"
-                    codes={{
-                        npm: `npm shadcn@latest add https://ui.designbycode.co.za/r/glow-conic.json`,
-                        yarn: `yarn shadcn@latest add https://ui.designbycode.co.za/r/glow-conic.json`,
-                        pnpm: `pnpm shadcn@latest add https://ui.designbycode.co.za/r/glow-conic.json`,
-                        bun: `bunx --bun shadcn@latest add https://ui.designbycode.co.za/r/glow-conic.json`,
-                    }}
+                    defaultRegistry="glow-conic"
                 />
-
                 <PricingTable className="my-16" />
             </Wrapper>
         </div>

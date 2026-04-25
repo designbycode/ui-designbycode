@@ -12,6 +12,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             PermissionSeeder::class,
+            RegistrySeeder::class,
         ]);
 
         $user = User::factory()->create([

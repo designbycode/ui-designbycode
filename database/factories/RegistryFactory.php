@@ -18,7 +18,22 @@ class RegistryFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'name' => 'font-inter',
+            'type' => 'registry:font',
+            'meta' => [
+                'category' => 'fonts',
+                'version' => '1.0.0',
+            ],
+            'font' => [
+                'family' => "'Inter Variable', sans-serif",
+                'provider' => 'google',
+                'import' => 'Inter',
+                'variable' => '--font-sans',
+                'subsets' => ['latin'],
+                'dependency' => '@fontsource-variable/inter',
+            ],
+            'css_vars' => null,
+            'css' => null,
         ];
     }
 }

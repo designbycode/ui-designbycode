@@ -15,9 +15,13 @@
                 "provider": "google",
                 "import": "Inter",
                 "variable": "--font-sans",
-                "subsets": ["latin"],
+                "subsets": [
+                    "latin"
+                ],
                 "dependency": "@fontsource-variable/inter"
-            }
+            },
+            "title": "Fonts Inter",
+            "author": "designbycode"
         },
         {
             "name": "font-bebas-neue",
@@ -31,9 +35,13 @@
                 "provider": "google",
                 "import": "BebasNeue",
                 "variable": "--font-bebas-neue",
-                "subsets": ["latin"],
+                "subsets": [
+                    "latin"
+                ],
                 "dependency": "@fontsource/bebas-neue"
-            }
+            },
+            "title": "Fonts Bebas Neue",
+            "author": "designbycode"
         },
         {
             "name": "font-playfair-display",
@@ -47,9 +55,13 @@
                 "provider": "google",
                 "import": "PlayfairDisplay",
                 "variable": "--font-playfair-display",
-                "subsets": ["latin"],
+                "subsets": [
+                    "latin"
+                ],
                 "dependency": "@fontsource-variable/playfair-display"
-            }
+            },
+            "title": "Fonts Playfair Display",
+            "author": "designbycode"
         },
         {
             "name": "font-caveat",
@@ -63,9 +75,13 @@
                 "provider": "google",
                 "import": "Caveat",
                 "variable": "--font-caveat",
-                "subsets": ["latin"],
+                "subsets": [
+                    "latin"
+                ],
                 "dependency": "@fontsource-variable/caveat"
-            }
+            },
+            "title": "Fonts Caveat",
+            "author": "designbycode"
         },
         {
             "name": "font-press-start-2p",
@@ -79,9 +95,13 @@
                 "provider": "google",
                 "import": "PressStart2P",
                 "variable": "--font-press-start-2p",
-                "subsets": ["latin"],
+                "subsets": [
+                    "latin"
+                ],
                 "dependency": "@fontsource/press-start-2p"
-            }
+            },
+            "title": "Fonts Press Start 2p",
+            "author": "designbycode"
         },
         {
             "name": "animate-bounce",
@@ -101,11 +121,17 @@
                         "0%, 20%, 50%, 80%, 100%": {
                             "transform": "translateY(0)"
                         },
-                        "40%": { "transform": "translateY(-30px)" },
-                        "60%": { "transform": "translateY(-15px)" }
+                        "40%": {
+                            "transform": "translateY(-30px)"
+                        },
+                        "60%": {
+                            "transform": "translateY(-15px)"
+                        }
                     }
                 }
-            }
+            },
+            "title": "Animate Bounce",
+            "author": "designbycode"
         },
         {
             "name": "animate-pulse",
@@ -122,11 +148,17 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes pulse": {
-                        "0%, 100%": { "opacity": "1" },
-                        "50%": { "opacity": "0.5" }
+                        "0%, 100%": {
+                            "opacity": "1"
+                        },
+                        "50%": {
+                            "opacity": "0.5"
+                        }
                     }
                 }
-            }
+            },
+            "title": "Animate Pulse",
+            "author": "designbycode"
         },
         {
             "name": "animate-flash",
@@ -143,11 +175,17 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes flash": {
-                        "0%, 50%, 100%": { "opacity": "1" },
-                        "25%, 75%": { "opacity": "0" }
+                        "0%, 50%, 100%": {
+                            "opacity": "1"
+                        },
+                        "25%, 75%": {
+                            "opacity": "0"
+                        }
                     }
                 }
-            }
+            },
+            "title": "Animate Flash",
+            "author": "designbycode"
         },
         {
             "name": "animate-wobble",
@@ -164,19 +202,29 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes wobble": {
-                        "0%, 100%": { "transform": "translateX(0%)" },
+                        "0%, 100%": {
+                            "transform": "translateX(0%)"
+                        },
                         "15%": {
                             "transform": "translateX(-25%) rotate(-5deg)"
                         },
-                        "30%": { "transform": "translateX(20%) rotate(3deg)" },
+                        "30%": {
+                            "transform": "translateX(20%) rotate(3deg)"
+                        },
                         "45%": {
                             "transform": "translateX(-15%) rotate(-3deg)"
                         },
-                        "60%": { "transform": "translateX(10%) rotate(2deg)" },
-                        "75%": { "transform": "translateX(-5%) rotate(-1deg)" }
+                        "60%": {
+                            "transform": "translateX(10%) rotate(2deg)"
+                        },
+                        "75%": {
+                            "transform": "translateX(-5%) rotate(-1deg)"
+                        }
                     }
                 }
-            }
+            },
+            "title": "Animate Wobble",
+            "author": "designbycode"
         },
         {
             "name": "animate-rubber-band",
@@ -193,16 +241,32 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes rubberBand": {
-                        "0%": { "transform": "scale3d(1, 1, 1)" },
-                        "30%": { "transform": "scale3d(1.25, 0.75, 1)" },
-                        "40%": { "transform": "scale3d(0.75, 1.25, 1)" },
-                        "50%": { "transform": "scale3d(1.15, 0.85, 1)" },
-                        "65%": { "transform": "scale3d(0.95, 1.05, 1)" },
-                        "75%": { "transform": "scale3d(1.05, 0.95, 1)" },
-                        "100%": { "transform": "scale3d(1, 1, 1)" }
+                        "0%": {
+                            "transform": "scale3d(1, 1, 1)"
+                        },
+                        "30%": {
+                            "transform": "scale3d(1.25, 0.75, 1)"
+                        },
+                        "40%": {
+                            "transform": "scale3d(0.75, 1.25, 1)"
+                        },
+                        "50%": {
+                            "transform": "scale3d(1.15, 0.85, 1)"
+                        },
+                        "65%": {
+                            "transform": "scale3d(0.95, 1.05, 1)"
+                        },
+                        "75%": {
+                            "transform": "scale3d(1.05, 0.95, 1)"
+                        },
+                        "100%": {
+                            "transform": "scale3d(1, 1, 1)"
+                        }
                     }
                 }
-            }
+            },
+            "title": "Animate Rubber Band",
+            "author": "designbycode"
         },
         {
             "name": "animate-shake",
@@ -219,7 +283,9 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes shake": {
-                        "0%, 100%": { "transform": "translateX(0)" },
+                        "0%, 100%": {
+                            "transform": "translateX(0)"
+                        },
                         "10%, 30%, 50%, 70%, 90%": {
                             "transform": "translateX(-10px)"
                         },
@@ -228,7 +294,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Shake",
+            "author": "designbycode"
         },
         {
             "name": "animate-head-shake",
@@ -245,7 +313,9 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes headShake": {
-                        "0%": { "transform": "translateX(0)" },
+                        "0%": {
+                            "transform": "translateX(0)"
+                        },
                         "6.5%": {
                             "transform": "translateX(-6px) rotate(-6deg)"
                         },
@@ -258,10 +328,14 @@
                         "43.5%": {
                             "transform": "translateX(2px) rotate(2deg)"
                         },
-                        "100%": { "transform": "translateX(0)" }
+                        "100%": {
+                            "transform": "translateX(0)"
+                        }
                     }
                 }
-            }
+            },
+            "title": "Animate Head Shake",
+            "author": "designbycode"
         },
         {
             "name": "animate-swing",
@@ -278,14 +352,26 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes swing": {
-                        "20%": { "transform": "rotate3d(0, 0, 1, 15deg)" },
-                        "40%": { "transform": "rotate3d(0, 0, 1, -10deg)" },
-                        "60%": { "transform": "rotate3d(0, 0, 1, 5deg)" },
-                        "80%": { "transform": "rotate3d(0, 0, 1, -5deg)" },
-                        "100%": { "transform": "rotate3d(0, 0, 1, 0deg)" }
+                        "20%": {
+                            "transform": "rotate3d(0, 0, 1, 15deg)"
+                        },
+                        "40%": {
+                            "transform": "rotate3d(0, 0, 1, -10deg)"
+                        },
+                        "60%": {
+                            "transform": "rotate3d(0, 0, 1, 5deg)"
+                        },
+                        "80%": {
+                            "transform": "rotate3d(0, 0, 1, -5deg)"
+                        },
+                        "100%": {
+                            "transform": "rotate3d(0, 0, 1, 0deg)"
+                        }
                     }
                 }
-            }
+            },
+            "title": "Animate Swing",
+            "author": "designbycode"
         },
         {
             "name": "animate-tada",
@@ -302,7 +388,9 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes tada": {
-                        "0%, 100%": { "transform": "scale3d(1, 1, 1)" },
+                        "0%, 100%": {
+                            "transform": "scale3d(1, 1, 1)"
+                        },
                         "10%, 20%": {
                             "transform": "scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg)"
                         },
@@ -314,7 +402,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Tada",
+            "author": "designbycode"
         },
         {
             "name": "animate-jello",
@@ -331,16 +421,32 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes jello": {
-                        "0%": { "transform": "scale3d(1, 1, 1)" },
-                        "30%": { "transform": "scale3d(1.25, 0.75, 1)" },
-                        "40%": { "transform": "scale3d(0.75, 1.25, 1)" },
-                        "50%": { "transform": "scale3d(1.15, 0.85, 1)" },
-                        "65%": { "transform": "scale3d(0.95, 1.05, 1)" },
-                        "75%": { "transform": "scale3d(1.05, 0.95, 1)" },
-                        "100%": { "transform": "scale3d(1, 1, 1)" }
+                        "0%": {
+                            "transform": "scale3d(1, 1, 1)"
+                        },
+                        "30%": {
+                            "transform": "scale3d(1.25, 0.75, 1)"
+                        },
+                        "40%": {
+                            "transform": "scale3d(0.75, 1.25, 1)"
+                        },
+                        "50%": {
+                            "transform": "scale3d(1.15, 0.85, 1)"
+                        },
+                        "65%": {
+                            "transform": "scale3d(0.95, 1.05, 1)"
+                        },
+                        "75%": {
+                            "transform": "scale3d(1.05, 0.95, 1)"
+                        },
+                        "100%": {
+                            "transform": "scale3d(1, 1, 1)"
+                        }
                     }
                 }
-            }
+            },
+            "title": "Animate Jello",
+            "author": "designbycode"
         },
         {
             "name": "animate-heart-beat",
@@ -357,14 +463,26 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes heartBeat": {
-                        "0%": { "transform": "scale(1)" },
-                        "14%": { "transform": "scale(1.3)" },
-                        "28%": { "transform": "scale(1)" },
-                        "42%": { "transform": "scale(1.3)" },
-                        "70%": { "transform": "scale(1)" }
+                        "0%": {
+                            "transform": "scale(1)"
+                        },
+                        "14%": {
+                            "transform": "scale(1.3)"
+                        },
+                        "28%": {
+                            "transform": "scale(1)"
+                        },
+                        "42%": {
+                            "transform": "scale(1.3)"
+                        },
+                        "70%": {
+                            "transform": "scale(1)"
+                        }
                     }
                 }
-            }
+            },
+            "title": "Animate Heart Beat",
+            "author": "designbycode"
         },
         {
             "name": "animate-flip",
@@ -403,7 +521,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Flip",
+            "author": "designbycode"
         },
         {
             "name": "animate-flip-in-x",
@@ -435,10 +555,14 @@
                         "80%": {
                             "transform": "perspective(400px) rotate3d(1, 0, 0, -5deg)"
                         },
-                        "100%": { "transform": "perspective(400px)" }
+                        "100%": {
+                            "transform": "perspective(400px)"
+                        }
                     }
                 }
-            }
+            },
+            "title": "Animate Flip In X",
+            "author": "designbycode"
         },
         {
             "name": "animate-flip-in-y",
@@ -470,10 +594,14 @@
                         "80%": {
                             "transform": "perspective(400px) rotate3d(0, 1, 0, -5deg)"
                         },
-                        "100%": { "transform": "perspective(400px)" }
+                        "100%": {
+                            "transform": "perspective(400px)"
+                        }
                     }
                 }
-            }
+            },
+            "title": "Animate Flip In Y",
+            "author": "designbycode"
         },
         {
             "name": "animate-flip-out-x",
@@ -490,7 +618,9 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes flipOutX": {
-                        "0%": { "transform": "perspective(400px)" },
+                        "0%": {
+                            "transform": "perspective(400px)"
+                        },
                         "30%": {
                             "transform": "perspective(400px) rotate3d(1, 0, 0, -20deg)",
                             "opacity": "1"
@@ -501,7 +631,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Flip Out X",
+            "author": "designbycode"
         },
         {
             "name": "animate-flip-out-y",
@@ -518,7 +650,9 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes flipOutY": {
-                        "0%": { "transform": "perspective(400px)" },
+                        "0%": {
+                            "transform": "perspective(400px)"
+                        },
                         "30%": {
                             "transform": "perspective(400px) rotate3d(0, 1, 0, -15deg)",
                             "opacity": "1"
@@ -529,7 +663,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Flip Out Y",
+            "author": "designbycode"
         },
         {
             "name": "animate-fade-in",
@@ -546,11 +682,17 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes fadeIn": {
-                        "0%": { "opacity": "0" },
-                        "100%": { "opacity": "1" }
+                        "0%": {
+                            "opacity": "0"
+                        },
+                        "100%": {
+                            "opacity": "1"
+                        }
                     }
                 }
-            }
+            },
+            "title": "Animate Fade In",
+            "author": "designbycode"
         },
         {
             "name": "animate-fade-in-down",
@@ -577,7 +719,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Fade In Down",
+            "author": "designbycode"
         },
         {
             "name": "animate-fade-in-down-big",
@@ -604,7 +748,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Fade In Down Big",
+            "author": "designbycode"
         },
         {
             "name": "animate-fade-in-left",
@@ -631,7 +777,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Fade In Left",
+            "author": "designbycode"
         },
         {
             "name": "animate-fade-in-left-big",
@@ -658,7 +806,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Fade In Left Big",
+            "author": "designbycode"
         },
         {
             "name": "animate-fade-in-right",
@@ -685,7 +835,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Fade In Right",
+            "author": "designbycode"
         },
         {
             "name": "animate-fade-in-right-big",
@@ -712,7 +864,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Fade In Right Big",
+            "author": "designbycode"
         },
         {
             "name": "animate-fade-in-up",
@@ -739,7 +893,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Fade In Up",
+            "author": "designbycode"
         },
         {
             "name": "animate-fade-in-up-big",
@@ -766,7 +922,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Fade In Up Big",
+            "author": "designbycode"
         },
         {
             "name": "animate-fade-out",
@@ -783,11 +941,17 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes fadeOut": {
-                        "0%": { "opacity": "1" },
-                        "100%": { "opacity": "0" }
+                        "0%": {
+                            "opacity": "1"
+                        },
+                        "100%": {
+                            "opacity": "0"
+                        }
                     }
                 }
-            }
+            },
+            "title": "Animate Fade Out",
+            "author": "designbycode"
         },
         {
             "name": "animate-fade-out-down",
@@ -804,14 +968,18 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes fadeOutDown": {
-                        "0%": { "opacity": "1" },
+                        "0%": {
+                            "opacity": "1"
+                        },
                         "100%": {
                             "opacity": "0",
                             "transform": "translate3d(0, 100%, 0)"
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Fade Out Down",
+            "author": "designbycode"
         },
         {
             "name": "animate-fade-out-down-big",
@@ -828,14 +996,18 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes fadeOutDownBig": {
-                        "0%": { "opacity": "1" },
+                        "0%": {
+                            "opacity": "1"
+                        },
                         "100%": {
                             "opacity": "0",
                             "transform": "translate3d(0, 2000px, 0)"
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Fade Out Down Big",
+            "author": "designbycode"
         },
         {
             "name": "animate-fade-out-left",
@@ -852,14 +1024,18 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes fadeOutLeft": {
-                        "0%": { "opacity": "1" },
+                        "0%": {
+                            "opacity": "1"
+                        },
                         "100%": {
                             "opacity": "0",
                             "transform": "translate3d(-100%, 0, 0)"
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Fade Out Left",
+            "author": "designbycode"
         },
         {
             "name": "animate-fade-out-left-big",
@@ -876,14 +1052,18 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes fadeOutLeftBig": {
-                        "0%": { "opacity": "1" },
+                        "0%": {
+                            "opacity": "1"
+                        },
                         "100%": {
                             "opacity": "0",
                             "transform": "translate3d(-2000px, 0, 0)"
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Fade Out Left Big",
+            "author": "designbycode"
         },
         {
             "name": "animate-fade-out-right",
@@ -900,14 +1080,18 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes fadeOutRight": {
-                        "0%": { "opacity": "1" },
+                        "0%": {
+                            "opacity": "1"
+                        },
                         "100%": {
                             "opacity": "0",
                             "transform": "translate3d(100%, 0, 0)"
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Fade Out Right",
+            "author": "designbycode"
         },
         {
             "name": "animate-fade-out-right-big",
@@ -924,14 +1108,18 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes fadeOutRightBig": {
-                        "0%": { "opacity": "1" },
+                        "0%": {
+                            "opacity": "1"
+                        },
                         "100%": {
                             "opacity": "0",
                             "transform": "translate3d(2000px, 0, 0)"
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Fade Out Right Big",
+            "author": "designbycode"
         },
         {
             "name": "animate-fade-out-up",
@@ -948,14 +1136,18 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes fadeOutUp": {
-                        "0%": { "opacity": "1" },
+                        "0%": {
+                            "opacity": "1"
+                        },
                         "100%": {
                             "opacity": "0",
                             "transform": "translate3d(0, -100%, 0)"
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Fade Out Up",
+            "author": "designbycode"
         },
         {
             "name": "animate-fade-out-up-big",
@@ -972,14 +1164,18 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes fadeOutUpBig": {
-                        "0%": { "opacity": "1" },
+                        "0%": {
+                            "opacity": "1"
+                        },
                         "100%": {
                             "opacity": "0",
                             "transform": "translate3d(0, -2000px, 0)"
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Fade Out Up Big",
+            "author": "designbycode"
         },
         {
             "name": "animate-slide-in-down",
@@ -1000,10 +1196,14 @@
                             "transform": "translate3d(0, -100%, 0)",
                             "visibility": "visible"
                         },
-                        "100%": { "transform": "translate3d(0, 0, 0)" }
+                        "100%": {
+                            "transform": "translate3d(0, 0, 0)"
+                        }
                     }
                 }
-            }
+            },
+            "title": "Animate Slide In Down",
+            "author": "designbycode"
         },
         {
             "name": "animate-slide-in-left",
@@ -1024,10 +1224,14 @@
                             "transform": "translate3d(-100%, 0, 0)",
                             "visibility": "visible"
                         },
-                        "100%": { "transform": "translate3d(0, 0, 0)" }
+                        "100%": {
+                            "transform": "translate3d(0, 0, 0)"
+                        }
                     }
                 }
-            }
+            },
+            "title": "Animate Slide In Left",
+            "author": "designbycode"
         },
         {
             "name": "animate-slide-in-right",
@@ -1048,10 +1252,14 @@
                             "transform": "translate3d(100%, 0, 0)",
                             "visibility": "visible"
                         },
-                        "100%": { "transform": "translate3d(0, 0, 0)" }
+                        "100%": {
+                            "transform": "translate3d(0, 0, 0)"
+                        }
                     }
                 }
-            }
+            },
+            "title": "Animate Slide In Right",
+            "author": "designbycode"
         },
         {
             "name": "animate-slide-in-up",
@@ -1072,10 +1280,14 @@
                             "transform": "translate3d(0, 100%, 0)",
                             "visibility": "visible"
                         },
-                        "100%": { "transform": "translate3d(0, 0, 0)" }
+                        "100%": {
+                            "transform": "translate3d(0, 0, 0)"
+                        }
                     }
                 }
-            }
+            },
+            "title": "Animate Slide In Up",
+            "author": "designbycode"
         },
         {
             "name": "animate-slide-out-down",
@@ -1092,14 +1304,18 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes slideOutDown": {
-                        "0%": { "transform": "translate3d(0, 0, 0)" },
+                        "0%": {
+                            "transform": "translate3d(0, 0, 0)"
+                        },
                         "100%": {
                             "transform": "translate3d(0, 100%, 0)",
                             "visibility": "hidden"
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Slide Out Down",
+            "author": "designbycode"
         },
         {
             "name": "animate-slide-out-left",
@@ -1116,14 +1332,18 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes slideOutLeft": {
-                        "0%": { "transform": "translate3d(0, 0, 0)" },
+                        "0%": {
+                            "transform": "translate3d(0, 0, 0)"
+                        },
                         "100%": {
                             "transform": "translate3d(-100%, 0, 0)",
                             "visibility": "hidden"
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Slide Out Left",
+            "author": "designbycode"
         },
         {
             "name": "animate-slide-out-right",
@@ -1140,14 +1360,18 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes slideOutRight": {
-                        "0%": { "transform": "translate3d(0, 0, 0)" },
+                        "0%": {
+                            "transform": "translate3d(0, 0, 0)"
+                        },
                         "100%": {
                             "transform": "translate3d(100%, 0, 0)",
                             "visibility": "hidden"
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Slide Out Right",
+            "author": "designbycode"
         },
         {
             "name": "animate-slide-out-up",
@@ -1164,14 +1388,18 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes slideOutUp": {
-                        "0%": { "transform": "translate3d(0, 0, 0)" },
+                        "0%": {
+                            "transform": "translate3d(0, 0, 0)"
+                        },
                         "100%": {
                             "transform": "translate3d(0, -100%, 0)",
                             "visibility": "hidden"
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Slide Out Up",
+            "author": "designbycode"
         },
         {
             "name": "animate-zoom-in",
@@ -1192,10 +1420,14 @@
                             "opacity": "0",
                             "transform": "scale3d(0.3, 0.3, 0.3)"
                         },
-                        "50%": { "opacity": "1" }
+                        "50%": {
+                            "opacity": "1"
+                        }
                     }
                 }
-            }
+            },
+            "title": "Animate Zoom In",
+            "author": "designbycode"
         },
         {
             "name": "animate-zoom-in-down",
@@ -1224,7 +1456,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Zoom In Down",
+            "author": "designbycode"
         },
         {
             "name": "animate-zoom-in-left",
@@ -1253,7 +1487,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Zoom In Left",
+            "author": "designbycode"
         },
         {
             "name": "animate-zoom-in-right",
@@ -1282,7 +1518,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Zoom In Right",
+            "author": "designbycode"
         },
         {
             "name": "animate-zoom-in-up",
@@ -1311,7 +1549,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Zoom In Up",
+            "author": "designbycode"
         },
         {
             "name": "animate-zoom-out",
@@ -1328,15 +1568,21 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes zoomOut": {
-                        "0%": { "opacity": "1" },
+                        "0%": {
+                            "opacity": "1"
+                        },
                         "50%": {
                             "opacity": "0",
                             "transform": "scale3d(0.3, 0.3, 0.3)"
                         },
-                        "100%": { "opacity": "0" }
+                        "100%": {
+                            "opacity": "0"
+                        }
                     }
                 }
-            }
+            },
+            "title": "Animate Zoom Out",
+            "author": "designbycode"
         },
         {
             "name": "animate-zoom-out-down",
@@ -1365,7 +1611,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Zoom Out Down",
+            "author": "designbycode"
         },
         {
             "name": "animate-zoom-out-left",
@@ -1393,7 +1641,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Zoom Out Left",
+            "author": "designbycode"
         },
         {
             "name": "animate-zoom-out-right",
@@ -1421,7 +1671,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Zoom Out Right",
+            "author": "designbycode"
         },
         {
             "name": "animate-zoom-out-up",
@@ -1450,7 +1702,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Zoom Out Up",
+            "author": "designbycode"
         },
         {
             "name": "animate-rotate-in",
@@ -1477,7 +1731,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Rotate In",
+            "author": "designbycode"
         },
         {
             "name": "animate-rotate-out",
@@ -1504,7 +1760,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Rotate Out",
+            "author": "designbycode"
         },
         {
             "name": "animate-roll-in",
@@ -1531,7 +1789,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Roll In",
+            "author": "designbycode"
         },
         {
             "name": "animate-roll-out",
@@ -1558,7 +1818,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Roll Out",
+            "author": "designbycode"
         },
         {
             "name": "animate-light-speed-in",
@@ -1579,15 +1841,23 @@
                             "transform": "translate3d(100%, 0, 0) skewX(-30deg)",
                             "opacity": "0"
                         },
-                        "60%": { "transform": "skewX(20deg)", "opacity": "1" },
-                        "80%": { "transform": "skewX(-5deg)", "opacity": "1" },
+                        "60%": {
+                            "transform": "skewX(20deg)",
+                            "opacity": "1"
+                        },
+                        "80%": {
+                            "transform": "skewX(-5deg)",
+                            "opacity": "1"
+                        },
                         "100%": {
                             "transform": "translate3d(0, 0, 0)",
                             "opacity": "1"
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Light Speed In",
+            "author": "designbycode"
         },
         {
             "name": "animate-light-speed-out",
@@ -1604,14 +1874,18 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes lightSpeedOutLeft": {
-                        "0%": { "opacity": "1" },
+                        "0%": {
+                            "opacity": "1"
+                        },
                         "100%": {
                             "transform": "translate3d(-100%, 0, 0) skewX(30deg)",
                             "opacity": "0"
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Light Speed Out",
+            "author": "designbycode"
         },
         {
             "name": "animate-jack-in-box",
@@ -1632,15 +1906,21 @@
                             "opacity": "0",
                             "transform": "scale(0.1) rotate(0deg)"
                         },
-                        "50%": { "transform": "scale(1.05) rotate(10deg)" },
-                        "70%": { "transform": "scale(0.9) rotate(-3deg)" },
+                        "50%": {
+                            "transform": "scale(1.05) rotate(10deg)"
+                        },
+                        "70%": {
+                            "transform": "scale(0.9) rotate(-3deg)"
+                        },
                         "100%": {
                             "opacity": "1",
                             "transform": "scale(1) rotate(0deg)"
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Jack In Box",
+            "author": "designbycode"
         },
         {
             "name": "animate-hinge",
@@ -1679,7 +1959,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Hinge",
+            "author": "designbycode"
         },
         {
             "name": "animate-bounce-in",
@@ -1700,20 +1982,28 @@
                             "opacity": "0",
                             "transform": "scale3d(0.3, 0.3, 0.3)"
                         },
-                        "20%": { "transform": "scale3d(1.1, 1.1, 1.1)" },
-                        "40%": { "transform": "scale3d(0.9, 0.9, 0.9)" },
+                        "20%": {
+                            "transform": "scale3d(1.1, 1.1, 1.1)"
+                        },
+                        "40%": {
+                            "transform": "scale3d(0.9, 0.9, 0.9)"
+                        },
                         "60%": {
                             "opacity": "1",
                             "transform": "scale3d(1.03, 1.03, 1.03)"
                         },
-                        "80%": { "transform": "scale3d(0.97, 0.97, 0.97)" },
+                        "80%": {
+                            "transform": "scale3d(0.97, 0.97, 0.97)"
+                        },
                         "100%": {
                             "opacity": "1",
                             "transform": "scale3d(1, 1, 1)"
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Bounce In",
+            "author": "designbycode"
         },
         {
             "name": "animate-bounce-in-down",
@@ -1744,10 +2034,14 @@
                         "90%": {
                             "transform": "translate3d(0, 5px, 0) scaleY(0.985)"
                         },
-                        "100%": { "transform": "translate3d(0, 0, 0)" }
+                        "100%": {
+                            "transform": "translate3d(0, 0, 0)"
+                        }
                     }
                 }
-            }
+            },
+            "title": "Animate Bounce In Down",
+            "author": "designbycode"
         },
         {
             "name": "animate-bounce-in-left",
@@ -1778,10 +2072,14 @@
                         "90%": {
                             "transform": "translate3d(5px, 0, 0) scaleX(0.995)"
                         },
-                        "100%": { "transform": "translate3d(0, 0, 0)" }
+                        "100%": {
+                            "transform": "translate3d(0, 0, 0)"
+                        }
                     }
                 }
-            }
+            },
+            "title": "Animate Bounce In Left",
+            "author": "designbycode"
         },
         {
             "name": "animate-bounce-in-right",
@@ -1812,10 +2110,14 @@
                         "90%": {
                             "transform": "translate3d(-5px, 0, 0) scaleX(0.995)"
                         },
-                        "100%": { "transform": "translate3d(0, 0, 0)" }
+                        "100%": {
+                            "transform": "translate3d(0, 0, 0)"
+                        }
                     }
                 }
-            }
+            },
+            "title": "Animate Bounce In Right",
+            "author": "designbycode"
         },
         {
             "name": "animate-bounce-in-up",
@@ -1846,10 +2148,14 @@
                         "90%": {
                             "transform": "translate3d(0, -5px, 0) scaleY(0.985)"
                         },
-                        "100%": { "transform": "translate3d(0, 0, 0)" }
+                        "100%": {
+                            "transform": "translate3d(0, 0, 0)"
+                        }
                     }
                 }
-            }
+            },
+            "title": "Animate Bounce In Up",
+            "author": "designbycode"
         },
         {
             "name": "animate-bounce-out",
@@ -1866,7 +2172,9 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes bounceOut": {
-                        "20%": { "transform": "scale3d(0.9, 0.9, 0.9)" },
+                        "20%": {
+                            "transform": "scale3d(0.9, 0.9, 0.9)"
+                        },
                         "50%, 55%": {
                             "opacity": "1",
                             "transform": "scale3d(1.1, 1.1, 1.1)"
@@ -1877,7 +2185,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Bounce Out",
+            "author": "designbycode"
         },
         {
             "name": "animate-bounce-out-down",
@@ -1907,7 +2217,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Bounce Out Down",
+            "author": "designbycode"
         },
         {
             "name": "animate-bounce-out-left",
@@ -1934,7 +2246,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Bounce Out Left",
+            "author": "designbycode"
         },
         {
             "name": "animate-bounce-out-right",
@@ -1961,7 +2275,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Bounce Out Right",
+            "author": "designbycode"
         },
         {
             "name": "animate-bounce-out-up",
@@ -1991,7 +2307,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Bounce Out Up",
+            "author": "designbycode"
         },
         {
             "name": "animate-back-in-down",
@@ -2016,10 +2334,15 @@
                             "transform": "translateY(0px) scale(0.7)",
                             "opacity": "0.7"
                         },
-                        "100%": { "transform": "scale(1)", "opacity": "1" }
+                        "100%": {
+                            "transform": "scale(1)",
+                            "opacity": "1"
+                        }
                     }
                 }
-            }
+            },
+            "title": "Animate Back In Down",
+            "author": "designbycode"
         },
         {
             "name": "animate-back-in-left",
@@ -2044,10 +2367,15 @@
                             "transform": "translateX(0px) scale(0.7)",
                             "opacity": "0.7"
                         },
-                        "100%": { "transform": "scale(1)", "opacity": "1" }
+                        "100%": {
+                            "transform": "scale(1)",
+                            "opacity": "1"
+                        }
                     }
                 }
-            }
+            },
+            "title": "Animate Back In Left",
+            "author": "designbycode"
         },
         {
             "name": "animate-back-in-right",
@@ -2072,10 +2400,15 @@
                             "transform": "translateX(0px) scale(0.7)",
                             "opacity": "0.7"
                         },
-                        "100%": { "transform": "scale(1)", "opacity": "1" }
+                        "100%": {
+                            "transform": "scale(1)",
+                            "opacity": "1"
+                        }
                     }
                 }
-            }
+            },
+            "title": "Animate Back In Right",
+            "author": "designbycode"
         },
         {
             "name": "animate-back-in-up",
@@ -2100,10 +2433,15 @@
                             "transform": "translateY(0px) scale(0.7)",
                             "opacity": "0.7"
                         },
-                        "100%": { "transform": "scale(1)", "opacity": "1" }
+                        "100%": {
+                            "transform": "scale(1)",
+                            "opacity": "1"
+                        }
                     }
                 }
-            }
+            },
+            "title": "Animate Back In Up",
+            "author": "designbycode"
         },
         {
             "name": "animate-back-out-down",
@@ -2120,7 +2458,10 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes backOutDown": {
-                        "0%": { "transform": "scale(1)", "opacity": "1" },
+                        "0%": {
+                            "transform": "scale(1)",
+                            "opacity": "1"
+                        },
                         "20%": {
                             "transform": "translateY(0px) scale(0.7)",
                             "opacity": "0.7"
@@ -2131,7 +2472,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Back Out Down",
+            "author": "designbycode"
         },
         {
             "name": "animate-back-out-left",
@@ -2148,7 +2491,10 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes backOutLeft": {
-                        "0%": { "transform": "scale(1)", "opacity": "1" },
+                        "0%": {
+                            "transform": "scale(1)",
+                            "opacity": "1"
+                        },
                         "20%": {
                             "transform": "translateX(0px) scale(0.7)",
                             "opacity": "0.7"
@@ -2159,7 +2505,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Back Out Left",
+            "author": "designbycode"
         },
         {
             "name": "animate-back-out-right",
@@ -2176,7 +2524,10 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes backOutRight": {
-                        "0%": { "transform": "scale(1)", "opacity": "1" },
+                        "0%": {
+                            "transform": "scale(1)",
+                            "opacity": "1"
+                        },
                         "20%": {
                             "transform": "translateX(0px) scale(0.7)",
                             "opacity": "0.7"
@@ -2187,7 +2538,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Back Out Right",
+            "author": "designbycode"
         },
         {
             "name": "animate-back-out-up",
@@ -2204,7 +2557,10 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes backOutUp": {
-                        "0%": { "transform": "scale(1)", "opacity": "1" },
+                        "0%": {
+                            "transform": "scale(1)",
+                            "opacity": "1"
+                        },
                         "20%": {
                             "transform": "translateY(0px) scale(0.7)",
                             "opacity": "0.7"
@@ -2215,7 +2571,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Back Out Up",
+            "author": "designbycode"
         },
         {
             "name": "animate-rotate-in-down-left",
@@ -2244,7 +2602,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Rotate In Down Left",
+            "author": "designbycode"
         },
         {
             "name": "animate-rotate-in-down-right",
@@ -2273,7 +2633,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Rotate In Down Right",
+            "author": "designbycode"
         },
         {
             "name": "animate-rotate-in-up-left",
@@ -2302,7 +2664,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Rotate In Up Left",
+            "author": "designbycode"
         },
         {
             "name": "animate-rotate-in-up-right",
@@ -2331,7 +2695,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Rotate In Up Right",
+            "author": "designbycode"
         },
         {
             "name": "animate-rotate-out-down-left",
@@ -2359,7 +2725,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Rotate Out Down Left",
+            "author": "designbycode"
         },
         {
             "name": "animate-rotate-out-down-right",
@@ -2387,7 +2755,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Rotate Out Down Right",
+            "author": "designbycode"
         },
         {
             "name": "animate-rotate-out-up-left",
@@ -2415,7 +2785,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Rotate Out Up Left",
+            "author": "designbycode"
         },
         {
             "name": "animate-rotate-out-up-right",
@@ -2443,7 +2815,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Rotate Out Up Right",
+            "author": "designbycode"
         },
         {
             "name": "animate-float",
@@ -2460,11 +2834,17 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes float": {
-                        "0%, 100%": { "transform": "translateY(0)" },
-                        "50%": { "transform": "translateY(-20px)" }
+                        "0%, 100%": {
+                            "transform": "translateY(0)"
+                        },
+                        "50%": {
+                            "transform": "translateY(-20px)"
+                        }
                     }
                 }
-            }
+            },
+            "title": "Animate Float",
+            "author": "designbycode"
         },
         {
             "name": "animate-spin",
@@ -2481,11 +2861,17 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes spin": {
-                        "0%": { "transform": "rotate(0deg)" },
-                        "100%": { "transform": "rotate(360deg)" }
+                        "0%": {
+                            "transform": "rotate(0deg)"
+                        },
+                        "100%": {
+                            "transform": "rotate(360deg)"
+                        }
                     }
                 }
-            }
+            },
+            "title": "Animate Spin",
+            "author": "designbycode"
         },
         {
             "name": "animate-wiggle",
@@ -2502,11 +2888,17 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes wiggle": {
-                        "0%, 100%": { "transform": "rotate(-3deg)" },
-                        "50%": { "transform": "rotate(3deg)" }
+                        "0%, 100%": {
+                            "transform": "rotate(-3deg)"
+                        },
+                        "50%": {
+                            "transform": "rotate(3deg)"
+                        }
                     }
                 }
-            }
+            },
+            "title": "Animate Wiggle",
+            "author": "designbycode"
         },
         {
             "name": "animate-ping",
@@ -2523,10 +2915,15 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes ping": {
-                        "75%, 100%": { "transform": "scale(2)", "opacity": "0" }
+                        "75%, 100%": {
+                            "transform": "scale(2)",
+                            "opacity": "0"
+                        }
                     }
                 }
-            }
+            },
+            "title": "Animate Ping",
+            "author": "designbycode"
         },
         {
             "name": "animate-blur-in",
@@ -2543,11 +2940,19 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes blurIn": {
-                        "0%": { "filter": "blur(12px)", "opacity": "0" },
-                        "100%": { "filter": "blur(0px)", "opacity": "1" }
+                        "0%": {
+                            "filter": "blur(12px)",
+                            "opacity": "0"
+                        },
+                        "100%": {
+                            "filter": "blur(0px)",
+                            "opacity": "1"
+                        }
                     }
                 }
-            }
+            },
+            "title": "Animate Blur In",
+            "author": "designbycode"
         },
         {
             "name": "animate-blur-out",
@@ -2564,11 +2969,19 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes blurOut": {
-                        "0%": { "filter": "blur(0px)", "opacity": "1" },
-                        "100%": { "filter": "blur(12px)", "opacity": "0" }
+                        "0%": {
+                            "filter": "blur(0px)",
+                            "opacity": "1"
+                        },
+                        "100%": {
+                            "filter": "blur(12px)",
+                            "opacity": "0"
+                        }
                     }
                 }
-            }
+            },
+            "title": "Animate Blur Out",
+            "author": "designbycode"
         },
         {
             "name": "animate-glitch",
@@ -2585,14 +2998,26 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes glitch": {
-                        "0%, 100%": { "transform": "translate(0)" },
-                        "20%": { "transform": "translate(-3px, 2px)" },
-                        "40%": { "transform": "translate(-3px, -2px)" },
-                        "60%": { "transform": "translate(3px, 2px)" },
-                        "80%": { "transform": "translate(3px, -2px)" }
+                        "0%, 100%": {
+                            "transform": "translate(0)"
+                        },
+                        "20%": {
+                            "transform": "translate(-3px, 2px)"
+                        },
+                        "40%": {
+                            "transform": "translate(-3px, -2px)"
+                        },
+                        "60%": {
+                            "transform": "translate(3px, 2px)"
+                        },
+                        "80%": {
+                            "transform": "translate(3px, -2px)"
+                        }
                     }
                 }
-            }
+            },
+            "title": "Animate Glitch",
+            "author": "designbycode"
         },
         {
             "name": "animate-pop",
@@ -2609,12 +3034,22 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes pop": {
-                        "0%": { "transform": "scale(0.8)", "opacity": "0" },
-                        "70%": { "transform": "scale(1.1)" },
-                        "100%": { "transform": "scale(1)", "opacity": "1" }
+                        "0%": {
+                            "transform": "scale(0.8)",
+                            "opacity": "0"
+                        },
+                        "70%": {
+                            "transform": "scale(1.1)"
+                        },
+                        "100%": {
+                            "transform": "scale(1)",
+                            "opacity": "1"
+                        }
                     }
                 }
-            }
+            },
+            "title": "Animate Pop",
+            "author": "designbycode"
         },
         {
             "name": "animate-compress",
@@ -2631,11 +3066,17 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes compress": {
-                        "0%, 100%": { "transform": "scaleY(1)" },
-                        "50%": { "transform": "scaleY(0.5)" }
+                        "0%, 100%": {
+                            "transform": "scaleY(1)"
+                        },
+                        "50%": {
+                            "transform": "scaleY(0.5)"
+                        }
                     }
                 }
-            }
+            },
+            "title": "Animate Compress",
+            "author": "designbycode"
         },
         {
             "name": "animate-expand",
@@ -2652,11 +3093,19 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes expand": {
-                        "0%": { "transform": "scale(0)", "opacity": "0" },
-                        "100%": { "transform": "scale(1)", "opacity": "1" }
+                        "0%": {
+                            "transform": "scale(0)",
+                            "opacity": "0"
+                        },
+                        "100%": {
+                            "transform": "scale(1)",
+                            "opacity": "1"
+                        }
                     }
                 }
-            }
+            },
+            "title": "Animate Expand",
+            "author": "designbycode"
         },
         {
             "name": "animate-drop",
@@ -2681,11 +3130,17 @@
                             "transform": "translateY(15px)",
                             "opacity": "1"
                         },
-                        "80%": { "transform": "translateY(-8px)" },
-                        "100%": { "transform": "translateY(0)" }
+                        "80%": {
+                            "transform": "translateY(-8px)"
+                        },
+                        "100%": {
+                            "transform": "translateY(0)"
+                        }
                     }
                 }
-            }
+            },
+            "title": "Animate Drop",
+            "author": "designbycode"
         },
         {
             "name": "animate-sway",
@@ -2712,7 +3167,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Sway",
+            "author": "designbycode"
         },
         {
             "name": "animate-ken-burns",
@@ -2729,13 +3186,17 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes kenBurns": {
-                        "0%": { "transform": "scale(1) translate(0, 0)" },
+                        "0%": {
+                            "transform": "scale(1) translate(0, 0)"
+                        },
                         "100%": {
                             "transform": "scale(1.15) translate(-2%, -2%)"
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Ken Burns",
+            "author": "designbycode"
         },
         {
             "name": "animate-tilt",
@@ -2760,7 +3221,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Tilt",
+            "author": "designbycode"
         },
         {
             "name": "animate-all",
@@ -2872,7 +3335,8 @@
                 "https://ui.designbycode.co.za/r/animate-sway.json",
                 "https://ui.designbycode.co.za/r/animate-ken-burns.json",
                 "https://ui.designbycode.co.za/r/animate-tilt.json"
-            ]
+            ],
+            "author": "designbycode"
         },
         {
             "name": "use-headroom",
@@ -2885,7 +3349,9 @@
             "title": "Use Headroom",
             "author": "designbycode",
             "registryDependencies": [],
-            "dependencies": ["react"],
+            "dependencies": [
+                "react"
+            ],
             "devDependencies": [],
             "component": "useHeadroom",
             "files": [
@@ -2906,7 +3372,9 @@
             "title": "Use Hover",
             "author": "designbycode",
             "registryDependencies": [],
-            "dependencies": ["react"],
+            "dependencies": [
+                "react"
+            ],
             "devDependencies": [],
             "component": "useHover",
             "files": [
@@ -2927,7 +3395,10 @@
             "title": "Text Animator",
             "author": "designbycode",
             "registryDependencies": [],
-            "dependencies": ["gsap", "@gsap/react"],
+            "dependencies": [
+                "gsap",
+                "@gsap/react"
+            ],
             "component": "TextAnimator",
             "files": [
                 {
@@ -2947,7 +3418,9 @@
             "title": "Use Dark Mode",
             "author": "designbycode",
             "registryDependencies": [],
-            "dependencies": ["react"],
+            "dependencies": [
+                "react"
+            ],
             "devDependencies": [],
             "component": "useDarkMode",
             "files": [
@@ -2968,7 +3441,11 @@
             "title": "Animated Tabs",
             "author": "designbycode",
             "registryDependencies": [],
-            "dependencies": ["framer-motion", "clsx", "tailwind-merge"],
+            "dependencies": [
+                "framer-motion",
+                "clsx",
+                "tailwind-merge"
+            ],
             "component": "AnimatedTabs",
             "files": [
                 {
@@ -3008,7 +3485,11 @@
             "title": "Waves Three",
             "author": "designbycode",
             "registryDependencies": [],
-            "dependencies": ["three", "clsx", "tailwind-merge"],
+            "dependencies": [
+                "three",
+                "clsx",
+                "tailwind-merge"
+            ],
             "component": "WavesThree",
             "files": [
                 {
@@ -3028,7 +3509,9 @@
             "title": "Use Headroom",
             "author": "designbycode",
             "registryDependencies": [],
-            "dependencies": ["react"],
+            "dependencies": [
+                "react"
+            ],
             "devDependencies": [],
             "component": "useHeadroom",
             "files": [
@@ -3070,7 +3553,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Ring",
+            "author": "designbycode"
         },
         {
             "name": "animate-alarm",
@@ -3104,7 +3589,9 @@
                         }
                     }
                 }
-            }
+            },
+            "title": "Animate Alarm",
+            "author": "designbycode"
         },
         {
             "name": "animate-bell",
@@ -3121,16 +3608,32 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes bell": {
-                        "0%": { "transform": "rotate(0)" },
-                        "10%": { "transform": "rotate(15deg)" },
-                        "20%": { "transform": "rotate(-15deg)" },
-                        "30%": { "transform": "rotate(10deg)" },
-                        "40%": { "transform": "rotate(-10deg)" },
-                        "50%": { "transform": "rotate(0)" },
-                        "100%": { "transform": "rotate(0)" }
+                        "0%": {
+                            "transform": "rotate(0)"
+                        },
+                        "10%": {
+                            "transform": "rotate(15deg)"
+                        },
+                        "20%": {
+                            "transform": "rotate(-15deg)"
+                        },
+                        "30%": {
+                            "transform": "rotate(10deg)"
+                        },
+                        "40%": {
+                            "transform": "rotate(-10deg)"
+                        },
+                        "50%": {
+                            "transform": "rotate(0)"
+                        },
+                        "100%": {
+                            "transform": "rotate(0)"
+                        }
                     }
                 }
-            }
+            },
+            "title": "Animate Bell",
+            "author": "designbycode"
         },
         {
             "name": "glow-stack",
@@ -3143,7 +3646,11 @@
             "title": "Glow Stack",
             "author": "designbycode",
             "registryDependencies": [],
-            "dependencies": ["react", "clsx", "tailwind-merge"],
+            "dependencies": [
+                "react",
+                "clsx",
+                "tailwind-merge"
+            ],
             "component": "GlowStack",
             "files": [
                 {
@@ -3165,7 +3672,11 @@
             "registryDependencies": [
                 "https://ui.designbycode.co.za/r/glow-stack.json"
             ],
-            "dependencies": ["react", "clsx", "tailwind-merge"],
+            "dependencies": [
+                "react",
+                "clsx",
+                "tailwind-merge"
+            ],
             "component": "GlowRadial",
             "files": [
                 {
@@ -3196,12 +3707,20 @@
             "css": {
                 "@layer utilities": {
                     "@keyframes glow-conic": {
-                        "0%": { "--glow-conic-angle": "0deg" },
-                        "100%": { "--glow-conic-angle": "360deg" }
+                        "0%": {
+                            "--glow-conic-angle": "0deg"
+                        },
+                        "100%": {
+                            "--glow-conic-angle": "360deg"
+                        }
                     }
                 }
             },
-            "dependencies": ["react", "clsx", "tailwind-merge"],
+            "dependencies": [
+                "react",
+                "clsx",
+                "tailwind-merge"
+            ],
             "component": "GlowConic",
             "files": [
                 {
@@ -3261,7 +3780,9 @@
             "registryDependencies": [
                 "https://ui.designbycode.co.za/r/pixel-canvas.json"
             ],
-            "dependencies": ["react"],
+            "dependencies": [
+                "react"
+            ],
             "component": "usePixelCanvas",
             "files": [
                 {
@@ -3283,7 +3804,11 @@
             "registryDependencies": [
                 "https://ui.designbycode.co.za/r/glow-stack.json"
             ],
-            "dependencies": ["react", "clsx", "tailwind-merge"],
+            "dependencies": [
+                "react",
+                "clsx",
+                "tailwind-merge"
+            ],
             "component": "BackLight",
             "files": [
                 {
