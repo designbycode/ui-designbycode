@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\DashboardIndexController as AdminDashboardControl
 use App\Http\Controllers\Admin\UsersController;
 use App\Http\Controllers\Auth\SocialiteController;
 use App\Http\Controllers\Billing\BillingController;
+use App\Http\Controllers\Billing\SubscriptionController;
 use App\Http\Controllers\Dashboard\DashboardIndexController;
 use App\Http\Controllers\Docs\Animations\AnimationsIndexController;
 use App\Http\Controllers\Docs\DocumentationIndexController;
