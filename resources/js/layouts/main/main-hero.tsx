@@ -16,17 +16,34 @@ export default function MainHero() {
                 className={`absolute -inset-2 opacity-25 blur-xs`}
             />
             <div
-                className={`bg-mute/20 relative isolate grid min-h-120 w-full place-content-center overflow-clip rounded-[inherit] border border-border`}
+                className={`bg-mute/20 relative isolate flex min-h-120 w-full items-center justify-center overflow-clip rounded-[inherit] border border-border`}
             >
-                <div className={`space-y-3 p-6`}>
-                    <div className="flex translate-y-6 justify-center">
+                <div className={`flex flex-col space-y-3 p-6`}>
+                    <div className="relative mx-auto inline-flex translate-y-6 justify-center rounded-full border border-border px-6 py-1">
                         <TextAnimator
                             animation={`particles`}
                             splitBy={`words`}
-                            className={`font-mono tracking-wide text-balance md:text-2xl`}
+                            className={`font-mono tracking-wide text-balance`}
                         >
                             copy it, paste it, ship it
                         </TextAnimator>
+                        <GlowRadial
+                            size={150}
+                            borderWidth={2}
+                            colors={[
+                                'var(--color-cyan-500)',
+                                'var(--color-indigo-500)',
+                            ]}
+                        />
+                        <GlowRadial
+                            size={150}
+                            borderWidth={4}
+                            className={`blur`}
+                            colors={[
+                                'var(--color-cyan-500)',
+                                'var(--color-indigo-500)',
+                            ]}
+                        />
                     </div>
                     <h1 className="text-center text-5xl font-black tracking-tighter text-balance md:text-7xl">
                         <span>Components</span>
