@@ -12,7 +12,7 @@
     "family": "'Playfair Display Variable', sans-serif",
     "provider": "google",
     "import": "PlayfairDisplay",
-    "variable": "--font-playfair-display",
+    "variable": "--font-playfair-display-serif",
     "subsets": [
       "latin"
     ],

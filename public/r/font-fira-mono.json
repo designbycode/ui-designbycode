@@ -12,7 +12,7 @@
     "family": "'Fira Mono', monospace",
     "provider": "google",
     "import": "FiraMono",
-    "variable": "--font-sans",
+    "variable": "--font-fira-mono",
     "subsets": [
       "latin"
     ],

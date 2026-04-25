@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "font-inter",
-  "title": "Font Inter",
+  "name": "font-ibm-plex-sans",
+  "title": "Font IBM Plex Sans",
   "author": "designbycode",
   "meta": {
     "category": "fonts",
@@ -9,13 +9,13 @@
   },
   "type": "registry:font",
   "font": {
-    "family": "'Inter Variable', sans-serif",
+    "family": "'IBM Plex Sans', sans-serif",
     "provider": "google",
-    "import": "Inter",
-    "variable": "--font-inter",
+    "import": "IBM Plex Sans",
+    "variable": "--font-ibm-plex-sans",
     "subsets": [
       "latin"
     ],
-    "dependency": "@fontsource-variable/inter"
+    "dependency": "@fontsource/ibm-plex-sans"
   }
 }

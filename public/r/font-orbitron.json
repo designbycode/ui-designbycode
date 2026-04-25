@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "font-inter",
-  "title": "Font Inter",
+  "name": "font-orbitron",
+  "title": "Font Orbitron",
   "author": "designbycode",
   "meta": {
     "category": "fonts",
@@ -9,13 +9,13 @@
   },
   "type": "registry:font",
   "font": {
-    "family": "'Inter Variable', sans-serif",
+    "family": "'Orbitron', sans-serif",
     "provider": "google",
-    "import": "Inter",
-    "variable": "--font-inter",
+    "import": "Orbitron",
+    "variable": "--font-orbitron-serif",
     "subsets": [
       "latin"
     ],
-    "dependency": "@fontsource-variable/inter"
+    "dependency": "@fontsource/orbitron"
   }
 }

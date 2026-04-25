@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "font-inter",
-  "title": "Font Inter",
+  "name": "font-roboto-slab",
+  "title": "Font Roboto Slab",
   "author": "designbycode",
   "meta": {
     "category": "fonts",
@@ -9,13 +9,13 @@
   },
   "type": "registry:font",
   "font": {
-    "family": "'Inter Variable', sans-serif",
+    "family": "'Roboto Slab', serif",
     "provider": "google",
-    "import": "Inter",
-    "variable": "--font-inter",
+    "import": "Roboto Slab",
+    "variable": "--font-roboto-slab",
     "subsets": [
       "latin"
     ],
-    "dependency": "@fontsource-variable/inter"
+    "dependency": "@fontsource/roboto-slab"
   }
 }
