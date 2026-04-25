@@ -4,11 +4,17 @@
         "laravel-boost": {
             "type": "local",
             "enabled": true,
-            "command": [
-                "php",
-                "artisan",
-                "boost:mcp"
-            ]
+            "command": ["php", "artisan", "boost:mcp"]
+        },
+        "paddle": {
+            "type": "local",
+            "enabled": true,
+            "command": ["npx", "-y", "@paddle/paddle-mcp"],
+            "environment": {
+                "PADDLE_API_KEY": "${PADDLE_API_KEY}",
+                "PADDLE_ENVIRONMENT": "sandbox",
+                "PADDLE_TOOLS": "non-destructive"
+            }
         }
     }
 }
