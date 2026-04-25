@@ -1,0 +1,58 @@
+/* 🏠 Guest Haven - Travel/Home Sharing Inspired */
+/* Warm Hospitality Mode */
+:root {
+    --background: oklch(0.98 0.02 85);
+    --foreground: oklch(0.28 0.04 70);
+
+    --card: oklch(1 0 0);
+    --card-foreground: oklch(0.28 0.04 70);
+
+    --popover: oklch(1 0 0);
+    --popover-foreground: oklch(0.28 0.04 70);
+
+    --primary: oklch(0.65 0.22 10); /* Airbnb coral */
+    --primary-foreground: oklch(1 0 0);
+
+    --secondary: oklch(0.95 0.04 85);
+    --secondary-foreground: oklch(0.35 0.04 70);
+
+    --muted: oklch(0.96 0.02 85);
+    --muted-foreground: oklch(0.55 0.03 70);
+
+    --accent: oklch(0.7 0.15 140); /* Sage green */
+    --accent-foreground: oklch(0.98 0.01 285);
+
+    --destructive: oklch(0.6 0.2 25);
+    --destructive-foreground: oklch(1 0 0);
+
+    --border: oklch(0.9 0.02 85);
+    --input: oklch(0.9 0.02 85);
+    --ring: oklch(0.65 0.22 10);
+
+    --chart-1: oklch(0.65 0.22 10);
+    --chart-2: oklch(0.7 0.15 140);
+    --chart-3: oklch(0.55 0.12 250);
+    --chart-4: oklch(0.8 0.1 60);
+    --chart-5: oklch(0.45 0.1 300);
+
+    --sidebar: oklch(0.96 0.02 85);
+    --sidebar-foreground: oklch(0.28 0.04 70);
+    --sidebar-primary: oklch(0.65 0.22 10);
+    --sidebar-primary-foreground: oklch(1 0 0);
+    --sidebar-accent: oklch(0.7 0.15 140);
+    --sidebar-accent-foreground: oklch(0.98 0.01 285);
+    --sidebar-border: oklch(0.9 0.02 85);
+    --sidebar-ring: oklch(0.65 0.22 10);
+
+    --font-sans: 'Inter', sans-serif;
+    --font-serif: 'Caveat', cursive;
+    --font-mono: 'Fira Code', monospace;
+
+    --radius: 1.25rem;
+
+    --shadow-sm: 0 2px 8px hsl(0 0% 0% / 0.08);
+    --shadow: 0 4px 16px hsl(0 0% 0% / 0.1);
+    --shadow-md: 0 8px 24px hsl(0 0% 0% / 0.12);
+    --shadow-lg: 0 12px 40px hsl(0 0% 0% / 0.15);
+    --shadow-xl: 0 20px 60px hsl(0 0% 0% / 0.18);
+}

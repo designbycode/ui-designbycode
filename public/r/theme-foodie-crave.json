@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "theme-foodie-crave",
+  "title": "Theme Foodie Crave",
+  "author": "designbycode",
+  "registryDependencies": [
+    "https://ui.designbycode.co.za/r/font-inter.json",
+    "https://ui.designbycode.co.za/r/font-caveat.json",
+    "https://ui.designbycode.co.za/r/font-fira-mono.json"
+  ],
+  "css": {
+    "@layer base": {
+      "body": {
+        "background": "var(--background)",
+        "color": "var(--foreground)"
+      },
+      "*": {
+        "border-color": "var(--border)"
+      }
+    }
+  },
+  "meta": {
+    "category": "styles",
+    "version": "1.0.0"
+  },
+  "type": "registry:style"
+}

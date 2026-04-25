@@ -1,0 +1,58 @@
+/* 💻 Maker Market - Creator Economy Inspired */
+/* Minimal Black Mode */
+:root {
+    --background: oklch(0.05 0.01 285);
+    --foreground: oklch(0.95 0.01 285);
+
+    --card: oklch(0.08 0.01 285);
+    --card-foreground: oklch(0.95 0.01 285);
+
+    --popover: oklch(0.1 0.01 285);
+    --popover-foreground: oklch(0.95 0.01 285);
+
+    --primary: oklch(0.95 0.01 285);
+    --primary-foreground: oklch(0.08 0.01 285);
+
+    --secondary: oklch(0.18 0.02 285);
+    --secondary-foreground: oklch(0.85 0.02 285);
+
+    --muted: oklch(0.15 0.02 285);
+    --muted-foreground: oklch(0.6 0.02 285);
+
+    --accent: oklch(0.75 0.2 330); /* Pink */
+    --accent-foreground: oklch(0.08 0.01 285);
+
+    --destructive: oklch(0.6 0.22 25);
+    --destructive-foreground: oklch(0.95 0.01 285);
+
+    --border: oklch(0.25 0.02 285);
+    --input: oklch(0.25 0.02 285);
+    --ring: oklch(0.95 0.01 285);
+
+    --chart-1: oklch(0.95 0.01 285);
+    --chart-2: oklch(0.75 0.2 330);
+    --chart-3: oklch(0.65 0.18 200);
+    --chart-4: oklch(0.8 0.15 140);
+    --chart-5: oklch(0.55 0.15 260);
+
+    --sidebar: oklch(0.06 0.01 285);
+    --sidebar-foreground: oklch(0.95 0.01 285);
+    --sidebar-primary: oklch(0.95 0.01 285);
+    --sidebar-primary-foreground: oklch(0.08 0.01 285);
+    --sidebar-accent: oklch(0.75 0.2 330);
+    --sidebar-accent-foreground: oklch(0.08 0.01 285);
+    --sidebar-border: oklch(0.25 0.02 285);
+    --sidebar-ring: oklch(0.95 0.01 285);
+
+    --font-sans: 'IBM Plex Sans', sans-serif;
+    --font-serif: 'IBM Plex Sans', sans-serif;
+    --font-mono: 'IBM Plex Mono', monospace;
+
+    --radius: 0.25rem;
+
+    --shadow-sm: 0 1px 2px hsl(0 0% 0% / 0.3);
+    --shadow: 0 2px 4px hsl(0 0% 0% / 0.4);
+    --shadow-md: 0 4px 8px hsl(0 0% 0% / 0.5);
+    --shadow-lg: 0 6px 16px hsl(0 0% 0% / 0.6);
+    --shadow-xl: 0 10px 30px hsl(0 0% 0% / 0.7);
+}

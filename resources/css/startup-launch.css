@@ -1,0 +1,57 @@
+/* 🚀 Startup Launch - SaaS Mode */
+:root {
+    --background: oklch(0.99 0.01 260);
+    --foreground: oklch(0.18 0.04 260);
+
+    --card: oklch(1 0 0);
+    --card-foreground: oklch(0.18 0.04 260);
+
+    --popover: oklch(1 0 0);
+    --popover-foreground: oklch(0.18 0.04 260);
+
+    --primary: oklch(0.65 0.22 265); /* Violet */
+    --primary-foreground: oklch(1 0 0);
+
+    --secondary: oklch(0.94 0.02 260);
+    --secondary-foreground: oklch(0.4 0.04 260);
+
+    --muted: oklch(0.96 0.01 260);
+    --muted-foreground: oklch(0.55 0.03 260);
+
+    --accent: oklch(0.72 0.2 150); /* Teal */
+    --accent-foreground: oklch(1 0 0);
+
+    --destructive: oklch(0.6 0.22 25);
+    --destructive-foreground: oklch(1 0 0);
+
+    --border: oklch(0.9 0.02 260);
+    --input: oklch(0.9 0.02 260);
+    --ring: oklch(0.65 0.22 265);
+
+    --chart-1: oklch(0.65 0.22 265);
+    --chart-2: oklch(0.72 0.2 150);
+    --chart-3: oklch(0.75 0.18 40);
+    --chart-4: oklch(0.6 0.15 280);
+    --chart-5: oklch(0.55 0.12 200);
+
+    --sidebar: oklch(0.97 0.01 260);
+    --sidebar-foreground: oklch(0.18 0.04 260);
+    --sidebar-primary: oklch(0.65 0.22 265);
+    --sidebar-primary-foreground: oklch(1 0 0);
+    --sidebar-accent: oklch(0.72 0.2 150);
+    --sidebar-accent-foreground: oklch(1 0 0);
+    --sidebar-border: oklch(0.9 0.02 260);
+    --sidebar-ring: oklch(0.65 0.22 265);
+
+    --font-sans: 'Inter', sans-serif;
+    --font-serif: 'Inter', sans-serif;
+    --font-mono: 'Fira Code', monospace;
+
+    --radius: 0.75rem;
+
+    --shadow-sm: 0 2px 6px hsl(265 15% 90% / 0.15);
+    --shadow: 0 4px 12px hsl(265 15% 90% / 0.2);
+    --shadow-md: 0 6px 20px hsl(265 15% 90% / 0.25);
+    --shadow-lg: 0 10px 30px hsl(265 15% 90% / 0.3);
+    --shadow-xl: 0 15px 50px hsl(265 15% 90% / 0.35);
+}

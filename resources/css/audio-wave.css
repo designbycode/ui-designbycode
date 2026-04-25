@@ -1,0 +1,51 @@
+/* 🎵 Audio Wave - Music Streaming Inspired */
+/* Light Mode */
+:root {
+    --background: oklch(0.08 0.02 285);
+    --foreground: oklch(0.98 0.01 285);
+
+    --primary: oklch(0.72 0.25 145); /* Spotify green */
+    --primary-foreground: oklch(0.08 0.02 285);
+
+    --secondary: oklch(0.25 0.02 285);
+    --secondary-foreground: oklch(0.95 0.01 285);
+
+    --muted: oklch(0.18 0.02 285);
+    --muted-foreground: oklch(0.7 0.02 285);
+
+    --accent: oklch(0.75 0.22 330); /* Pink accent */
+    --accent-foreground: oklch(0.08 0.02 285);
+
+    --destructive: oklch(0.65 0.22 25);
+    --destructive-foreground: oklch(0.98 0.01 285);
+
+    --border: oklch(0.25 0.02 285);
+    --ring: oklch(0.72 0.25 145);
+
+    --chart-1: oklch(0.72 0.25 145);
+    --chart-2: oklch(0.75 0.22 330);
+    --chart-3: oklch(0.65 0.18 260);
+    --chart-4: oklch(0.8 0.2 40);
+    --chart-5: oklch(0.55 0.15 200);
+
+    --sidebar: oklch(0.12 0.02 285);
+    --sidebar-foreground: oklch(0.98 0.01 285);
+    --sidebar-primary: oklch(0.72 0.25 145);
+    --sidebar-primary-foreground: oklch(0.08 0.02 285);
+    --sidebar-accent: oklch(0.75 0.22 330);
+    --sidebar-accent-foreground: oklch(0.08 0.02 285);
+    --sidebar-border: oklch(0.25 0.02 285);
+    --sidebar-ring: oklch(0.72 0.25 145);
+
+    --font-sans: 'Inter', sans-serif;
+    --font-serif: 'Bebas Neue', sans-serif;
+    --font-mono: 'Fira Code', monospace;
+
+    --radius: 0.5rem;
+
+    --shadow-sm: 0 2px 8px hsl(145 60% 20% / 0.3);
+    --shadow: 0 4px 16px hsl(145 60% 20% / 0.4);
+    --shadow-md: 0 8px 24px hsl(145 60% 20% / 0.5);
+    --shadow-lg: 0 12px 40px hsl(145 60% 20% / 0.6);
+    --shadow-xl: 0 20px 60px hsl(145 60% 20% / 0.7);
+}

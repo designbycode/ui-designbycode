@@ -1,0 +1,62 @@
+/* 🎮 Esports Arena - Gaming Mode */
+:root {
+    --background: oklch(0.08 0.02 285);
+    --foreground: oklch(0.95 0.01 285);
+
+    --card: oklch(0.12 0.02 285);
+    --card-foreground: oklch(0.95 0.01 285);
+
+    --popover: oklch(0.15 0.02 285);
+    --popover-foreground: oklch(0.95 0.01 285);
+
+    --primary: oklch(0.7 0.28 25); /* Red */
+    --primary-foreground: oklch(0.95 0.01 285);
+
+    --secondary: oklch(0.22 0.03 285);
+    --secondary-foreground: oklch(0.9 0.02 285);
+
+    --muted: oklch(0.15 0.02 285);
+    --muted-foreground: oklch(0.6 0.02 285);
+
+    --accent: oklch(0.75 0.25 320); /* Pink */
+    --accent-foreground: oklch(0.08 0.02 285);
+
+    --destructive: oklch(0.65 0.28 25);
+    --destructive-foreground: oklch(0.95 0.01 285);
+
+    --border: oklch(0.28 0.03 285);
+    --input: oklch(0.28 0.03 285);
+    --ring: oklch(0.7 0.28 25);
+
+    --chart-1: oklch(0.7 0.28 25);
+    --chart-2: oklch(0.75 0.25 320);
+    --chart-3: oklch(0.65 0.2 180);
+    --chart-4: oklch(0.8 0.22 60);
+    --chart-5: oklch(0.55 0.18 260);
+
+    --sidebar: oklch(0.05 0.02 285);
+    --sidebar-foreground: oklch(0.95 0.01 285);
+    --sidebar-primary: oklch(0.7 0.28 25);
+    --sidebar-primary-foreground: oklch(0.95 0.01 285);
+    --sidebar-accent: oklch(0.75 0.25 320);
+    --sidebar-accent-foreground: oklch(0.08 0.02 285);
+    --sidebar-border: oklch(0.28 0.03 285);
+    --sidebar-ring: oklch(0.7 0.28 25);
+
+    --font-sans: 'Orbitron', sans-serif;
+    --font-serif: 'Bebas Neue', sans-serif;
+    --font-mono: 'IBM Plex Mono', monospace;
+
+    --radius: 0.125rem;
+
+    /* RGB glow */
+    --shadow-sm: 0 0 8px oklch(0.7 0.28 25 / 0.4);
+    --shadow:
+        0 0 16px oklch(0.7 0.28 25 / 0.5), 0 0 16px oklch(0.75 0.25 320 / 0.3);
+    --shadow-md:
+        0 0 24px oklch(0.7 0.28 25 / 0.6), 0 0 24px oklch(0.75 0.25 320 / 0.4);
+    --shadow-lg:
+        0 0 40px oklch(0.7 0.28 25 / 0.7), 0 0 40px oklch(0.75 0.25 320 / 0.5);
+    --shadow-xl:
+        0 0 60px oklch(0.7 0.28 25 / 0.8), 0 0 60px oklch(0.75 0.25 320 / 0.6);
+}

@@ -1,0 +1,58 @@
+/* 👥 Friend Grid - Social Network Inspired */
+/* Facebook-style Mode */
+:root {
+    --background: oklch(0.94 0.02 285);
+    --foreground: oklch(0.2 0.03 285);
+
+    --card: oklch(1 0 0);
+    --card-foreground: oklch(0.2 0.03 285);
+
+    --popover: oklch(1 0 0);
+    --popover-foreground: oklch(0.2 0.03 285);
+
+    --primary: oklch(0.6 0.22 265); /* Facebook blue */
+    --primary-foreground: oklch(1 0 0);
+
+    --secondary: oklch(0.92 0.02 285);
+    --secondary-foreground: oklch(0.4 0.04 285);
+
+    --muted: oklch(0.95 0.02 285);
+    --muted-foreground: oklch(0.55 0.03 285);
+
+    --accent: oklch(0.65 0.2 140); /* Green */
+    --accent-foreground: oklch(1 0 0);
+
+    --destructive: oklch(0.6 0.22 25);
+    --destructive-foreground: oklch(1 0 0);
+
+    --border: oklch(0.88 0.02 285);
+    --input: oklch(0.88 0.02 285);
+    --ring: oklch(0.6 0.22 265);
+
+    --chart-1: oklch(0.6 0.22 265);
+    --chart-2: oklch(0.65 0.2 140);
+    --chart-3: oklch(0.7 0.18 330);
+    --chart-4: oklch(0.55 0.15 40);
+    --chart-5: oklch(0.5 0.12 260);
+
+    --sidebar: oklch(0.98 0.01 285);
+    --sidebar-foreground: oklch(0.2 0.03 285);
+    --sidebar-primary: oklch(0.6 0.22 265);
+    --sidebar-primary-foreground: oklch(1 0 0);
+    --sidebar-accent: oklch(0.65 0.2 140);
+    --sidebar-accent-foreground: oklch(1 0 0);
+    --sidebar-border: oklch(0.88 0.02 285);
+    --sidebar-ring: oklch(0.6 0.22 265);
+
+    --font-sans: 'Inter', sans-serif;
+    --font-serif: 'Inter', sans-serif;
+    --font-mono: 'Fira Code', monospace;
+
+    --radius: 0.75rem;
+
+    --shadow-sm: 0 1px 2px hsl(0 0% 0% / 0.05);
+    --shadow: 0 2px 6px hsl(0 0% 0% / 0.08);
+    --shadow-md: 0 4px 10px hsl(0 0% 0% / 0.1);
+    --shadow-lg: 0 6px 16px hsl(0 0% 0% / 0.12);
+    --shadow-xl: 0 10px 30px hsl(0 0% 0% / 0.15);
+}

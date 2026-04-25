@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "theme-maker-market",
+  "title": "Theme Maker Market",
+  "author": "designbycode",
+  "registryDependencies": [
+    "https://ui.designbycode.co.za/r/font-ibm-plex-sans.json",
+    "https://ui.designbycode.co.za/r/font-ibm-plex-mono.json"
+  ],
+  "css": {
+    "@layer base": {
+      "body": {
+        "background": "var(--background)",
+        "color": "var(--foreground)"
+      },
+      "*": {
+        "border-color": "var(--border)"
+      }
+    }
+  },
+  "meta": {
+    "category": "styles",
+    "version": "1.0.0"
+  },
+  "type": "registry:style"
+}

@@ -1,0 +1,57 @@
+/* 🍔 Foodie Crave - Food Delivery Mode */
+:root {
+    --background: oklch(0.98 0.02 60);
+    --foreground: oklch(0.25 0.04 60);
+
+    --card: oklch(1 0 0);
+    --card-foreground: oklch(0.25 0.04 60);
+
+    --popover: oklch(1 0 0);
+    --popover-foreground: oklch(0.25 0.04 60);
+
+    --primary: oklch(0.65 0.22 25); /* Orange red */
+    --primary-foreground: oklch(1 0 0);
+
+    --secondary: oklch(0.92 0.04 60);
+    --secondary-foreground: oklch(0.38 0.04 60);
+
+    --muted: oklch(0.95 0.02 60);
+    --muted-foreground: oklch(0.55 0.03 60);
+
+    --accent: oklch(0.7 0.18 140); /* Green */
+    --accent-foreground: oklch(1 0 0);
+
+    --destructive: oklch(0.6 0.2 25);
+    --destructive-foreground: oklch(1 0 0);
+
+    --border: oklch(0.88 0.03 60);
+    --input: oklch(0.88 0.03 60);
+    --ring: oklch(0.65 0.22 25);
+
+    --chart-1: oklch(0.65 0.22 25);
+    --chart-2: oklch(0.7 0.18 140);
+    --chart-3: oklch(0.75 0.15 40);
+    --chart-4: oklch(0.8 0.12 60);
+    --chart-5: oklch(0.55 0.12 280);
+
+    --sidebar: oklch(0.96 0.02 60);
+    --sidebar-foreground: oklch(0.25 0.04 60);
+    --sidebar-primary: oklch(0.65 0.22 25);
+    --sidebar-primary-foreground: oklch(1 0 0);
+    --sidebar-accent: oklch(0.7 0.18 140);
+    --sidebar-accent-foreground: oklch(1 0 0);
+    --sidebar-border: oklch(0.88 0.03 60);
+    --sidebar-ring: oklch(0.65 0.22 25);
+
+    --font-sans: 'Inter', sans-serif;
+    --font-serif: 'Caveat', cursive;
+    --font-mono: 'Fira Code', monospace;
+
+    --radius: 1rem;
+
+    --shadow-sm: 0 2px 6px hsl(20 40% 80% / 0.2);
+    --shadow: 0 4px 12px hsl(20 40% 80% / 0.25);
+    --shadow-md: 0 6px 18px hsl(20 40% 80% / 0.3);
+    --shadow-lg: 0 10px 30px hsl(20 40% 80% / 0.35);
+    --shadow-xl: 0 15px 45px hsl(20 40% 80% / 0.4);
+}

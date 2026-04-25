@@ -1,0 +1,57 @@
+/* 🎹 LoFi Chill - Relaxed Study Mode */
+:root {
+    --background: oklch(0.92 0.04 60);
+    --foreground: oklch(0.3 0.04 60);
+
+    --card: oklch(0.96 0.03 60);
+    --card-foreground: oklch(0.3 0.04 60);
+
+    --popover: oklch(0.96 0.03 60);
+    --popover-foreground: oklch(0.3 0.04 60);
+
+    --primary: oklch(0.55 0.1 25); /* Warm orange */
+    --primary-foreground: oklch(0.96 0.02 60);
+
+    --secondary: oklch(0.85 0.05 60);
+    --secondary-foreground: oklch(0.4 0.04 60);
+
+    --muted: oklch(0.9 0.03 60);
+    --muted-foreground: oklch(0.55 0.03 60);
+
+    --accent: oklch(0.65 0.12 140); /* Sage green */
+    --accent-foreground: oklch(0.25 0.03 60);
+
+    --destructive: oklch(0.55 0.15 25);
+    --destructive-foreground: oklch(0.96 0.02 60);
+
+    --border: oklch(0.82 0.04 60);
+    --input: oklch(0.82 0.04 60);
+    --ring: oklch(0.55 0.1 25);
+
+    --chart-1: oklch(0.55 0.1 25);
+    --chart-2: oklch(0.65 0.12 140);
+    --chart-3: oklch(0.7 0.08 200);
+    --chart-4: oklch(0.6 0.1 50);
+    --chart-5: oklch(0.5 0.08 280);
+
+    --sidebar: oklch(0.94 0.03 60);
+    --sidebar-foreground: oklch(0.3 0.04 60);
+    --sidebar-primary: oklch(0.55 0.1 25);
+    --sidebar-primary-foreground: oklch(0.96 0.02 60);
+    --sidebar-accent: oklch(0.65 0.12 140);
+    --sidebar-accent-foreground: oklch(0.25 0.03 60);
+    --sidebar-border: oklch(0.82 0.04 60);
+    --sidebar-ring: oklch(0.55 0.1 25);
+
+    --font-sans: 'Inter', sans-serif;
+    --font-serif: 'Caveat', cursive;
+    --font-mono: 'Fira Code', monospace;
+
+    --radius: 0.75rem;
+
+    --shadow-sm: 0 1px 3px hsl(30 30% 80% / 0.3);
+    --shadow: 0 2px 6px hsl(30 30% 80% / 0.4);
+    --shadow-md: 0 4px 10px hsl(30 30% 80% / 0.5);
+    --shadow-lg: 0 6px 16px hsl(30 30% 80% / 0.6);
+    --shadow-xl: 0 10px 30px hsl(30 30% 80% / 0.7);
+}
