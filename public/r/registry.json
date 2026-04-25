@@ -4821,7 +4821,7 @@
             "registryDependencies": [
                 "https://ui.designbycode.co.za/r/font-inter.json",
                 "https://ui.designbycode.co.za/r/font-playfair-display.json",
-                "https://ui.designbycode.co.za/r/font-fira-code.json"
+                "https://ui.designbycode.co.za/r/font-fira-mono.json"
             ]
         },
         {
@@ -5036,7 +5036,7 @@
                 "https://ui.designbycode.co.za/r/font-inter.json",
                 "https://ui.designbycode.co.za/r/font-sf-pro-display.json",
                 "https://ui.designbycode.co.za/r/font-playfair-display.json",
-                "https://ui.designbycode.co.za/r/font-fira-code.json"
+                "https://ui.designbycode.co.za/r/font-fira-mono.json"
             ]
         }
     ]
