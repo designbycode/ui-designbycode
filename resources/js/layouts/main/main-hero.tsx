@@ -51,7 +51,7 @@ export default function MainHero() {
                             ]}
                         />
                     </div>
-                    <h1 className="text-center text-5xl font-black tracking-tighter text-balance md:text-7xl">
+                    <h1 className="text-center text-5xl font-bold tracking-tighter text-balance md:text-7xl">
                         <span>Components</span>
                         <span
                             className={`inline-block translate-y-4 font-playfair-display text-9xl font-medium italic opacity-50`}

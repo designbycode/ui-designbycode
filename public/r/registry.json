@@ -15,7 +15,9 @@
                 "provider": "google",
                 "import": "Inter",
                 "variable": "--font-inter",
-                "subsets": ["latin"],
+                "subsets": [
+                    "latin"
+                ],
                 "dependency": "@fontsource-variable/inter"
             },
             "title": "Font Inter",
@@ -33,7 +35,9 @@
                 "provider": "google",
                 "import": "DM Serif Display",
                 "variable": "--font-dm-serif-display",
-                "subsets": ["latin"],
+                "subsets": [
+                    "latin"
+                ],
                 "dependency": "@fontsource/dm-serif-display"
             },
             "title": "Font DM Serif Display",
@@ -51,7 +55,9 @@
                 "provider": "google",
                 "import": "FiraMono",
                 "variable": "--font-fira-mono",
-                "subsets": ["latin"],
+                "subsets": [
+                    "latin"
+                ],
                 "dependency": "@fontsource/fira-mono"
             },
             "title": "Font Fira Mono",
@@ -69,7 +75,9 @@
                 "provider": "google",
                 "import": "BebasNeue",
                 "variable": "--font-bebas-neue",
-                "subsets": ["latin"],
+                "subsets": [
+                    "latin"
+                ],
                 "dependency": "@fontsource/bebas-neue"
             },
             "title": "Font Bebas Neue",
@@ -87,7 +95,9 @@
                 "provider": "google",
                 "import": "PlayfairDisplay",
                 "variable": "--font-playfair-display-serif",
-                "subsets": ["latin"],
+                "subsets": [
+                    "latin"
+                ],
                 "dependency": "@fontsource-variable/playfair-display"
             },
             "title": "Font Playfair Display",
@@ -105,7 +115,9 @@
                 "provider": "google",
                 "import": "Caveat",
                 "variable": "--font-caveat",
-                "subsets": ["latin"],
+                "subsets": [
+                    "latin"
+                ],
                 "dependency": "@fontsource-variable/caveat"
             },
             "title": "Font Caveat",
@@ -123,7 +135,9 @@
                 "provider": "google",
                 "import": "PressStart2P",
                 "variable": "--font-press-start-2p",
-                "subsets": ["latin"],
+                "subsets": [
+                    "latin"
+                ],
                 "dependency": "@fontsource/press-start-2p"
             },
             "title": "Fonts Press Start 2p",
@@ -141,7 +155,9 @@
                 "provider": "google",
                 "import": "Orbitron",
                 "variable": "--font-orbitron-serif",
-                "subsets": ["latin"],
+                "subsets": [
+                    "latin"
+                ],
                 "dependency": "@fontsource/orbitron"
             },
             "title": "Font Orbitron",
@@ -159,7 +175,9 @@
                 "provider": "google",
                 "import": "IBM Plex Sans",
                 "variable": "--font-ibm-plex-sans",
-                "subsets": ["latin"],
+                "subsets": [
+                    "latin"
+                ],
                 "dependency": "@fontsource/ibm-plex-sans"
             },
             "title": "Font IBM Plex Sans",
@@ -177,7 +195,9 @@
                 "provider": "google",
                 "import": "IBM Plex Mono",
                 "variable": "--font-ibm-plex-mono",
-                "subsets": ["latin"],
+                "subsets": [
+                    "latin"
+                ],
                 "dependency": "@fontsource/ibm-plex-mono"
             },
             "title": "Font IBM Plex Mono",
@@ -195,7 +215,9 @@
                 "provider": "google",
                 "import": "Roboto Slab",
                 "variable": "--font-roboto-slab",
-                "subsets": ["latin"],
+                "subsets": [
+                    "latin"
+                ],
                 "dependency": "@fontsource/roboto-slab"
             },
             "title": "Font Roboto Slab",
@@ -213,7 +235,9 @@
                 "provider": "google",
                 "import": "SF Pro Display",
                 "variable": "--font-sf-pro-display",
-                "subsets": ["latin"],
+                "subsets": [
+                    "latin"
+                ],
                 "dependency": "@fontsource/sf-pro-display"
             },
             "title": "Font SF Pro Display",
@@ -3465,7 +3489,9 @@
             "title": "Use Headroom",
             "author": "designbycode",
             "registryDependencies": [],
-            "dependencies": ["react"],
+            "dependencies": [
+                "react"
+            ],
             "devDependencies": [],
             "component": "useHeadroom",
             "files": [
@@ -3486,7 +3512,9 @@
             "title": "Use Hover",
             "author": "designbycode",
             "registryDependencies": [],
-            "dependencies": ["react"],
+            "dependencies": [
+                "react"
+            ],
             "devDependencies": [],
             "component": "useHover",
             "files": [
@@ -3507,7 +3535,10 @@
             "title": "Text Animator",
             "author": "designbycode",
             "registryDependencies": [],
-            "dependencies": ["gsap", "@gsap/react"],
+            "dependencies": [
+                "gsap",
+                "@gsap/react"
+            ],
             "component": "TextAnimator",
             "files": [
                 {
@@ -3527,7 +3558,9 @@
             "title": "Use Dark Mode",
             "author": "designbycode",
             "registryDependencies": [],
-            "dependencies": ["react"],
+            "dependencies": [
+                "react"
+            ],
             "devDependencies": [],
             "component": "useDarkMode",
             "files": [
@@ -3548,7 +3581,11 @@
             "title": "Animated Tabs",
             "author": "designbycode",
             "registryDependencies": [],
-            "dependencies": ["framer-motion", "clsx", "tailwind-merge"],
+            "dependencies": [
+                "framer-motion",
+                "clsx",
+                "tailwind-merge"
+            ],
             "component": "AnimatedTabs",
             "files": [
                 {
@@ -3588,7 +3625,11 @@
             "title": "Waves Three",
             "author": "designbycode",
             "registryDependencies": [],
-            "dependencies": ["three", "clsx", "tailwind-merge"],
+            "dependencies": [
+                "three",
+                "clsx",
+                "tailwind-merge"
+            ],
             "component": "WavesThree",
             "files": [
                 {
@@ -3608,7 +3649,9 @@
             "title": "Use Headroom",
             "author": "designbycode",
             "registryDependencies": [],
-            "dependencies": ["react"],
+            "dependencies": [
+                "react"
+            ],
             "devDependencies": [],
             "component": "useHeadroom",
             "files": [
@@ -3743,7 +3786,11 @@
             "title": "Glow Stack",
             "author": "designbycode",
             "registryDependencies": [],
-            "dependencies": ["react", "clsx", "tailwind-merge"],
+            "dependencies": [
+                "react",
+                "clsx",
+                "tailwind-merge"
+            ],
             "component": "GlowStack",
             "files": [
                 {
@@ -3765,7 +3812,11 @@
             "registryDependencies": [
                 "https://ui.designbycode.co.za/r/glow-stack.json"
             ],
-            "dependencies": ["react", "clsx", "tailwind-merge"],
+            "dependencies": [
+                "react",
+                "clsx",
+                "tailwind-merge"
+            ],
             "component": "GlowRadial",
             "files": [
                 {
@@ -3805,7 +3856,11 @@
                     }
                 }
             },
-            "dependencies": ["react", "clsx", "tailwind-merge"],
+            "dependencies": [
+                "react",
+                "clsx",
+                "tailwind-merge"
+            ],
             "component": "GlowConic",
             "files": [
                 {
@@ -3865,7 +3920,9 @@
             "registryDependencies": [
                 "https://ui.designbycode.co.za/r/pixel-canvas.json"
             ],
-            "dependencies": ["react"],
+            "dependencies": [
+                "react"
+            ],
             "component": "usePixelCanvas",
             "files": [
                 {
@@ -3887,7 +3944,11 @@
             "registryDependencies": [
                 "https://ui.designbycode.co.za/r/glow-stack.json"
             ],
-            "dependencies": ["react", "clsx", "tailwind-merge"],
+            "dependencies": [
+                "react",
+                "clsx",
+                "tailwind-merge"
+            ],
             "component": "BackLight",
             "files": [
                 {
@@ -3924,7 +3985,7 @@
         },
         {
             "name": "theme-boho",
-            "type": "registry:style",
+            "type": "registry:theme",
             "meta": {
                 "category": "styles",
                 "version": "1.0.0"
@@ -4042,7 +4103,7 @@
         },
         {
             "name": "theme-artistic-gradient",
-            "type": "registry:style",
+            "type": "registry:theme",
             "meta": {
                 "category": "styles",
                 "version": "1.0.0"
@@ -4154,7 +4215,7 @@
         },
         {
             "name": "theme-clay",
-            "type": "registry:style",
+            "type": "registry:theme",
             "meta": {
                 "category": "styles",
                 "version": "1.0.0"
@@ -4266,7 +4327,7 @@
         },
         {
             "name": "theme-cyberpunk",
-            "type": "registry:style",
+            "type": "registry:theme",
             "meta": {
                 "category": "styles",
                 "version": "1.0.0"
@@ -4378,7 +4439,7 @@
         },
         {
             "name": "theme-editorial",
-            "type": "registry:style",
+            "type": "registry:theme",
             "meta": {
                 "category": "styles",
                 "version": "1.0.0"
@@ -4490,7 +4551,7 @@
         },
         {
             "name": "theme-futuristic-ai",
-            "type": "registry:style",
+            "type": "registry:theme",
             "meta": {
                 "category": "styles",
                 "version": "1.0.0"
@@ -4602,7 +4663,7 @@
         },
         {
             "name": "theme-industrial-mechanical",
-            "type": "registry:style",
+            "type": "registry:theme",
             "meta": {
                 "category": "styles",
                 "version": "1.0.0"
@@ -4714,7 +4775,7 @@
         },
         {
             "name": "theme-nature-minimal",
-            "type": "registry:style",
+            "type": "registry:theme",
             "meta": {
                 "category": "styles",
                 "version": "1.0.0"
@@ -4826,7 +4887,7 @@
         },
         {
             "name": "theme-retro-90s-web",
-            "type": "registry:style",
+            "type": "registry:theme",
             "meta": {
                 "category": "styles",
                 "version": "1.0.0"
@@ -4933,7 +4994,7 @@
         },
         {
             "name": "theme-soft-glass",
-            "type": "registry:style",
+            "type": "registry:theme",
             "meta": {
                 "category": "styles",
                 "version": "1.0.0"
@@ -5041,7 +5102,7 @@
         },
         {
             "name": "theme-audio-wave",
-            "type": "registry:style",
+            "type": "registry:theme",
             "meta": {
                 "category": "styles",
                 "version": "1.0.0"
@@ -5083,7 +5144,9 @@
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme Audio Wave",
@@ -5096,15 +5159,20 @@
         },
         {
             "name": "theme-stream-noir",
-            "type": "registry:style",
-            "meta": { "category": "styles", "version": "1.0.0" },
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
             "css": {
                 "@layer base": {
                     "body": {
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme Stream Noir",
@@ -5117,15 +5185,20 @@
         },
         {
             "name": "theme-guest-haven",
-            "type": "registry:style",
-            "meta": { "category": "styles", "version": "1.0.0" },
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
             "css": {
                 "@layer base": {
                     "body": {
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme Guest Haven",
@@ -5138,15 +5211,20 @@
         },
         {
             "name": "theme-quick-find",
-            "type": "registry:style",
-            "meta": { "category": "styles", "version": "1.0.0" },
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
             "css": {
                 "@layer base": {
                     "body": {
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme Quick Find",
@@ -5158,15 +5236,20 @@
         },
         {
             "name": "theme-chirp-feed",
-            "type": "registry:style",
-            "meta": { "category": "styles", "version": "1.0.0" },
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
             "css": {
                 "@layer base": {
                     "body": {
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme Chirp Feed",
@@ -5178,15 +5261,20 @@
         },
         {
             "name": "theme-friend-grid",
-            "type": "registry:style",
-            "meta": { "category": "styles", "version": "1.0.0" },
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
             "css": {
                 "@layer base": {
                     "body": {
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme Friend Grid",
@@ -5198,15 +5286,20 @@
         },
         {
             "name": "theme-maker-market",
-            "type": "registry:style",
-            "meta": { "category": "styles", "version": "1.0.0" },
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
             "css": {
                 "@layer base": {
                     "body": {
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme Maker Market",
@@ -5218,15 +5311,20 @@
         },
         {
             "name": "theme-void-dark",
-            "type": "registry:style",
-            "meta": { "category": "styles", "version": "1.0.0" },
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
             "css": {
                 "@layer base": {
                     "body": {
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme Void Dark",
@@ -5239,15 +5337,20 @@
         },
         {
             "name": "theme-paper-stack",
-            "type": "registry:style",
-            "meta": { "category": "styles", "version": "1.0.0" },
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
             "css": {
                 "@layer base": {
                     "body": {
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme Paper Stack",
@@ -5260,15 +5363,20 @@
         },
         {
             "name": "theme-neon-punk",
-            "type": "registry:style",
-            "meta": { "category": "styles", "version": "1.0.0" },
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
             "css": {
                 "@layer base": {
                     "body": {
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme Neon Punk",
@@ -5280,15 +5388,20 @@
         },
         {
             "name": "theme-ink-bleed",
-            "type": "registry:style",
-            "meta": { "category": "styles", "version": "1.0.0" },
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
             "css": {
                 "@layer base": {
                     "body": {
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme Ink Bleed",
@@ -5300,15 +5413,20 @@
         },
         {
             "name": "theme-glass-frost",
-            "type": "registry:style",
-            "meta": { "category": "styles", "version": "1.0.0" },
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
             "css": {
                 "@layer base": {
                     "body": {
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme Glass Frost",
@@ -5321,15 +5439,20 @@
         },
         {
             "name": "theme-lofi-chill",
-            "type": "registry:style",
-            "meta": { "category": "styles", "version": "1.0.0" },
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
             "css": {
                 "@layer base": {
                     "body": {
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme LoFi Chill",
@@ -5342,15 +5465,20 @@
         },
         {
             "name": "theme-midnight-club",
-            "type": "registry:style",
-            "meta": { "category": "styles", "version": "1.0.0" },
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
             "css": {
                 "@layer base": {
                     "body": {
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme Midnight Club",
@@ -5363,15 +5491,20 @@
         },
         {
             "name": "theme-retro-terminal",
-            "type": "registry:style",
-            "meta": { "category": "styles", "version": "1.0.0" },
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
             "css": {
                 "@layer base": {
                     "body": {
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme Retro Terminal",
@@ -5382,15 +5515,20 @@
         },
         {
             "name": "theme-crypto-labs",
-            "type": "registry:style",
-            "meta": { "category": "styles", "version": "1.0.0" },
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
             "css": {
                 "@layer base": {
                     "body": {
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme Crypto Labs",
@@ -5403,15 +5541,20 @@
         },
         {
             "name": "theme-fintech-pro",
-            "type": "registry:style",
-            "meta": { "category": "styles", "version": "1.0.0" },
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
             "css": {
                 "@layer base": {
                     "body": {
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme Fintech Pro",
@@ -5424,15 +5567,20 @@
         },
         {
             "name": "theme-med-scrubs",
-            "type": "registry:style",
-            "meta": { "category": "styles", "version": "1.0.0" },
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
             "css": {
                 "@layer base": {
                     "body": {
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme Med Scrubs",
@@ -5444,15 +5592,20 @@
         },
         {
             "name": "theme-edugeek",
-            "type": "registry:style",
-            "meta": { "category": "styles", "version": "1.0.0" },
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
             "css": {
                 "@layer base": {
                     "body": {
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme EduGeek",
@@ -5465,15 +5618,20 @@
         },
         {
             "name": "theme-esports-arena",
-            "type": "registry:style",
-            "meta": { "category": "styles", "version": "1.0.0" },
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
             "css": {
                 "@layer base": {
                     "body": {
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme Esports Arena",
@@ -5486,15 +5644,20 @@
         },
         {
             "name": "theme-foodie-crave",
-            "type": "registry:style",
-            "meta": { "category": "styles", "version": "1.0.0" },
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
             "css": {
                 "@layer base": {
                     "body": {
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme Foodie Crave",
@@ -5507,15 +5670,20 @@
         },
         {
             "name": "theme-fashion-avant",
-            "type": "registry:style",
-            "meta": { "category": "styles", "version": "1.0.0" },
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
             "css": {
                 "@layer base": {
                     "body": {
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme Fashion Avant",
@@ -5528,15 +5696,20 @@
         },
         {
             "name": "theme-realty-modern",
-            "type": "registry:style",
-            "meta": { "category": "styles", "version": "1.0.0" },
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
             "css": {
                 "@layer base": {
                     "body": {
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme Realty Modern",
@@ -5549,15 +5722,20 @@
         },
         {
             "name": "theme-startup-launch",
-            "type": "registry:style",
-            "meta": { "category": "styles", "version": "1.0.0" },
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
             "css": {
                 "@layer base": {
                     "body": {
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme Startup Launch",
@@ -5569,15 +5747,20 @@
         },
         {
             "name": "theme-portfolio-light",
-            "type": "registry:style",
-            "meta": { "category": "styles", "version": "1.0.0" },
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
             "css": {
                 "@layer base": {
                     "body": {
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme Portfolio Light",
@@ -5590,15 +5773,20 @@
         },
         {
             "name": "theme-sunset-gradient",
-            "type": "registry:style",
-            "meta": { "category": "styles", "version": "1.0.0" },
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
             "css": {
                 "@layer base": {
                     "body": {
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme Sunset Gradient",
@@ -5611,15 +5799,20 @@
         },
         {
             "name": "theme-ocean-depth",
-            "type": "registry:style",
-            "meta": { "category": "styles", "version": "1.0.0" },
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
             "css": {
                 "@layer base": {
                     "body": {
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme Ocean Depth",
@@ -5632,15 +5825,20 @@
         },
         {
             "name": "theme-monochrome-pro",
-            "type": "registry:style",
-            "meta": { "category": "styles", "version": "1.0.0" },
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
             "css": {
                 "@layer base": {
                     "body": {
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme Monochrome Pro",
@@ -5652,15 +5850,20 @@
         },
         {
             "name": "theme-pastel-dream",
-            "type": "registry:style",
-            "meta": { "category": "styles", "version": "1.0.0" },
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
             "css": {
                 "@layer base": {
                     "body": {
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme Pastel Dream",
@@ -5673,15 +5876,20 @@
         },
         {
             "name": "theme-autumn-grain",
-            "type": "registry:style",
-            "meta": { "category": "styles", "version": "1.0.0" },
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
             "css": {
                 "@layer base": {
                     "body": {
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme Autumn Grain",
@@ -5694,15 +5902,20 @@
         },
         {
             "name": "theme-botanical",
-            "type": "registry:style",
-            "meta": { "category": "styles", "version": "1.0.0" },
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
             "css": {
                 "@layer base": {
                     "body": {
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme Botanical",
@@ -5715,15 +5928,20 @@
         },
         {
             "name": "theme-warehouse",
-            "type": "registry:style",
-            "meta": { "category": "styles", "version": "1.0.0" },
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
             "css": {
                 "@layer base": {
                     "body": {
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme Warehouse",
@@ -5736,15 +5954,20 @@
         },
         {
             "name": "theme-concrete-jungle",
-            "type": "registry:style",
-            "meta": { "category": "styles", "version": "1.0.0" },
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
             "css": {
                 "@layer base": {
                     "body": {
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme Concrete Jungle",
@@ -5757,15 +5980,20 @@
         },
         {
             "name": "theme-mars-colony",
-            "type": "registry:style",
-            "meta": { "category": "styles", "version": "1.0.0" },
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
             "css": {
                 "@layer base": {
                     "body": {
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme Mars Colony",
@@ -5778,15 +6006,20 @@
         },
         {
             "name": "theme-nordic-light",
-            "type": "registry:style",
-            "meta": { "category": "styles", "version": "1.0.0" },
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
             "css": {
                 "@layer base": {
                     "body": {
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme Nordic Light",
@@ -5799,15 +6032,20 @@
         },
         {
             "name": "theme-liquid-elastic",
-            "type": "registry:style",
-            "meta": { "category": "styles", "version": "1.0.0" },
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
             "css": {
                 "@layer base": {
                     "body": {
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme Liquid Elastic",
@@ -5820,15 +6058,20 @@
         },
         {
             "name": "theme-kinetic-type",
-            "type": "registry:style",
-            "meta": { "category": "styles", "version": "1.0.0" },
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
             "css": {
                 "@layer base": {
                     "body": {
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme Kinetic Type",
@@ -5840,15 +6083,20 @@
         },
         {
             "name": "theme-brutalist",
-            "type": "registry:style",
-            "meta": { "category": "styles", "version": "1.0.0" },
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
             "css": {
                 "@layer base": {
                     "body": {
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme Brutalist",
@@ -5860,15 +6108,20 @@
         },
         {
             "name": "theme-ethereal",
-            "type": "registry:style",
-            "meta": { "category": "styles", "version": "1.0.0" },
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
             "css": {
                 "@layer base": {
                     "body": {
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme Ethereal",
@@ -5881,15 +6134,20 @@
         },
         {
             "name": "theme-zinc-stone",
-            "type": "registry:style",
-            "meta": { "category": "styles", "version": "1.0.0" },
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
             "css": {
                 "@layer base": {
                     "body": {
                         "background": "var(--background)",
                         "color": "var(--foreground)"
                     },
-                    "*": { "border-color": "var(--border)" }
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
                 }
             },
             "title": "Theme Zinc Stone",
