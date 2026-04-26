@@ -8,7 +8,7 @@ export default function MainHero() {
     const colors = `var(--primary)`;
 
     return (
-        <div className={`relative mt-4 rounded-2xl`}>
+        <div className={`relative mt-4 rounded-lg`}>
             <GlowRadial colors={colors} className={`absolute inset-0`} />
             <GlowRadial
                 colors={colors}
@@ -22,14 +22,14 @@ export default function MainHero() {
                     <div className="relative mx-auto inline-flex translate-y-6 justify-center rounded-full border border-border px-6 py-1">
                         <TextAnimator
                             effectColor={[
-                                'oklch(58.5% 0.233 277.117)',
-                                'oklch(58.5% 0.233 277.117)',
+                                'var(--color-accent)',
+                                'var(--color-accent)',
                             ]}
                             animation={`zap`}
                             splitBy={`chars`}
                             yoyo={true}
                             repeat={-1}
-                            className={`font-mono text-sm tracking-wide text-balance`}
+                            className={`font-mono text-sm tracking-wide text-balance text-primary`}
                         >
                             copy it, paste it, ship it
                         </TextAnimator>
@@ -37,8 +37,8 @@ export default function MainHero() {
                             size={150}
                             borderWidth={2}
                             colors={[
-                                'var(--color-cyan-500)',
-                                'var(--color-indigo-500)',
+                                'var(--color-accent)',
+                                'var(--color-primary)',
                             ]}
                         />
                         <GlowRadial
@@ -46,8 +46,8 @@ export default function MainHero() {
                             borderWidth={4}
                             className={`blur`}
                             colors={[
-                                'var(--color-cyan-500)',
-                                'var(--color-indigo-500)',
+                                'var(--color-accent)',
+                                'var(--color-primary)',
                             ]}
                         />
                     </div>
