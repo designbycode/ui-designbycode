@@ -15,9 +15,7 @@
                 "provider": "google",
                 "import": "Inter",
                 "variable": "--font-inter",
-                "subsets": [
-                    "latin"
-                ],
+                "subsets": ["latin"],
                 "dependency": "@fontsource-variable/inter"
             },
             "title": "Font Inter",
@@ -35,9 +33,7 @@
                 "provider": "google",
                 "import": "DM Serif Display",
                 "variable": "--font-dm-serif-display",
-                "subsets": [
-                    "latin"
-                ],
+                "subsets": ["latin"],
                 "dependency": "@fontsource/dm-serif-display"
             },
             "title": "Font DM Serif Display",
@@ -55,9 +51,7 @@
                 "provider": "google",
                 "import": "FiraMono",
                 "variable": "--font-fira-mono",
-                "subsets": [
-                    "latin"
-                ],
+                "subsets": ["latin"],
                 "dependency": "@fontsource/fira-mono"
             },
             "title": "Font Fira Mono",
@@ -75,9 +69,7 @@
                 "provider": "google",
                 "import": "BebasNeue",
                 "variable": "--font-bebas-neue",
-                "subsets": [
-                    "latin"
-                ],
+                "subsets": ["latin"],
                 "dependency": "@fontsource/bebas-neue"
             },
             "title": "Font Bebas Neue",
@@ -95,9 +87,7 @@
                 "provider": "google",
                 "import": "PlayfairDisplay",
                 "variable": "--font-playfair-display-serif",
-                "subsets": [
-                    "latin"
-                ],
+                "subsets": ["latin"],
                 "dependency": "@fontsource-variable/playfair-display"
             },
             "title": "Font Playfair Display",
@@ -115,9 +105,7 @@
                 "provider": "google",
                 "import": "Caveat",
                 "variable": "--font-caveat",
-                "subsets": [
-                    "latin"
-                ],
+                "subsets": ["latin"],
                 "dependency": "@fontsource-variable/caveat"
             },
             "title": "Font Caveat",
@@ -135,9 +123,7 @@
                 "provider": "google",
                 "import": "PressStart2P",
                 "variable": "--font-press-start-2p",
-                "subsets": [
-                    "latin"
-                ],
+                "subsets": ["latin"],
                 "dependency": "@fontsource/press-start-2p"
             },
             "title": "Fonts Press Start 2p",
@@ -155,9 +141,7 @@
                 "provider": "google",
                 "import": "Orbitron",
                 "variable": "--font-orbitron-serif",
-                "subsets": [
-                    "latin"
-                ],
+                "subsets": ["latin"],
                 "dependency": "@fontsource/orbitron"
             },
             "title": "Font Orbitron",
@@ -175,9 +159,7 @@
                 "provider": "google",
                 "import": "IBM Plex Sans",
                 "variable": "--font-ibm-plex-sans",
-                "subsets": [
-                    "latin"
-                ],
+                "subsets": ["latin"],
                 "dependency": "@fontsource/ibm-plex-sans"
             },
             "title": "Font IBM Plex Sans",
@@ -195,9 +177,7 @@
                 "provider": "google",
                 "import": "IBM Plex Mono",
                 "variable": "--font-ibm-plex-mono",
-                "subsets": [
-                    "latin"
-                ],
+                "subsets": ["latin"],
                 "dependency": "@fontsource/ibm-plex-mono"
             },
             "title": "Font IBM Plex Mono",
@@ -215,9 +195,7 @@
                 "provider": "google",
                 "import": "Roboto Slab",
                 "variable": "--font-roboto-slab",
-                "subsets": [
-                    "latin"
-                ],
+                "subsets": ["latin"],
                 "dependency": "@fontsource/roboto-slab"
             },
             "title": "Font Roboto Slab",
@@ -235,9 +213,7 @@
                 "provider": "google",
                 "import": "SF Pro Display",
                 "variable": "--font-sf-pro-display",
-                "subsets": [
-                    "latin"
-                ],
+                "subsets": ["latin"],
                 "dependency": "@fontsource/sf-pro-display"
             },
             "title": "Font SF Pro Display",
@@ -3489,9 +3465,7 @@
             "title": "Use Headroom",
             "author": "designbycode",
             "registryDependencies": [],
-            "dependencies": [
-                "react"
-            ],
+            "dependencies": ["react"],
             "devDependencies": [],
             "component": "useHeadroom",
             "files": [
@@ -3512,9 +3486,7 @@
             "title": "Use Hover",
             "author": "designbycode",
             "registryDependencies": [],
-            "dependencies": [
-                "react"
-            ],
+            "dependencies": ["react"],
             "devDependencies": [],
             "component": "useHover",
             "files": [
@@ -3535,10 +3507,7 @@
             "title": "Text Animator",
             "author": "designbycode",
             "registryDependencies": [],
-            "dependencies": [
-                "gsap",
-                "@gsap/react"
-            ],
+            "dependencies": ["gsap", "@gsap/react"],
             "component": "TextAnimator",
             "files": [
                 {
@@ -3558,9 +3527,7 @@
             "title": "Use Dark Mode",
             "author": "designbycode",
             "registryDependencies": [],
-            "dependencies": [
-                "react"
-            ],
+            "dependencies": ["react"],
             "devDependencies": [],
             "component": "useDarkMode",
             "files": [
@@ -3581,11 +3548,7 @@
             "title": "Animated Tabs",
             "author": "designbycode",
             "registryDependencies": [],
-            "dependencies": [
-                "framer-motion",
-                "clsx",
-                "tailwind-merge"
-            ],
+            "dependencies": ["framer-motion", "clsx", "tailwind-merge"],
             "component": "AnimatedTabs",
             "files": [
                 {
@@ -3625,11 +3588,7 @@
             "title": "Waves Three",
             "author": "designbycode",
             "registryDependencies": [],
-            "dependencies": [
-                "three",
-                "clsx",
-                "tailwind-merge"
-            ],
+            "dependencies": ["three", "clsx", "tailwind-merge"],
             "component": "WavesThree",
             "files": [
                 {
@@ -3649,9 +3608,7 @@
             "title": "Use Headroom",
             "author": "designbycode",
             "registryDependencies": [],
-            "dependencies": [
-                "react"
-            ],
+            "dependencies": ["react"],
             "devDependencies": [],
             "component": "useHeadroom",
             "files": [
@@ -3786,11 +3743,7 @@
             "title": "Glow Stack",
             "author": "designbycode",
             "registryDependencies": [],
-            "dependencies": [
-                "react",
-                "clsx",
-                "tailwind-merge"
-            ],
+            "dependencies": ["react", "clsx", "tailwind-merge"],
             "component": "GlowStack",
             "files": [
                 {
@@ -3812,11 +3765,7 @@
             "registryDependencies": [
                 "https://ui.designbycode.co.za/r/glow-stack.json"
             ],
-            "dependencies": [
-                "react",
-                "clsx",
-                "tailwind-merge"
-            ],
+            "dependencies": ["react", "clsx", "tailwind-merge"],
             "component": "GlowRadial",
             "files": [
                 {
@@ -3856,11 +3805,7 @@
                     }
                 }
             },
-            "dependencies": [
-                "react",
-                "clsx",
-                "tailwind-merge"
-            ],
+            "dependencies": ["react", "clsx", "tailwind-merge"],
             "component": "GlowConic",
             "files": [
                 {
@@ -3920,9 +3865,7 @@
             "registryDependencies": [
                 "https://ui.designbycode.co.za/r/pixel-canvas.json"
             ],
-            "dependencies": [
-                "react"
-            ],
+            "dependencies": ["react"],
             "component": "usePixelCanvas",
             "files": [
                 {
@@ -3944,11 +3887,7 @@
             "registryDependencies": [
                 "https://ui.designbycode.co.za/r/glow-stack.json"
             ],
-            "dependencies": [
-                "react",
-                "clsx",
-                "tailwind-merge"
-            ],
+            "dependencies": ["react", "clsx", "tailwind-merge"],
             "component": "BackLight",
             "files": [
                 {
@@ -5101,6 +5040,7 @@
             ]
         },
         {
+            "title": "Theme Audio Wave",
             "name": "theme-audio-wave",
             "type": "registry:theme",
             "meta": {
@@ -5114,28 +5054,83 @@
                     "font-mono": "Fira Code, monospace",
                     "radius": "0.5rem"
                 },
-                "light": {},
+                "light": {
+                    "background": "oklch(0.98 0.01 285)",
+                    "foreground": "oklch(0.2 0.03 285)",
+                    "card": "oklch(1 0 0)",
+                    "card-foreground": "oklch(0.2 0.03 285)",
+                    "popover": "oklch(1 0 0)",
+                    "popover-foreground": "oklch(0.2 0.03 285)",
+                    "primary": "oklch(0.72 0.25 145)",
+                    "primary-foreground": "oklch(1 0 0)",
+                    "secondary": "oklch(0.92 0.04 285)",
+                    "secondary-foreground": "oklch(0.35 0.04 285)",
+                    "muted": "oklch(0.94 0.02 285)",
+                    "muted-foreground": "oklch(0.55 0.03 285)",
+                    "accent": "oklch(0.65 0.2 330)",
+                    "accent-foreground": "oklch(1 0 0)",
+                    "destructive": "oklch(0.6 0.22 25)",
+                    "destructive-foreground": "oklch(1 0 0)",
+                    "border": "oklch(0.9 0.02 285)",
+                    "input": "oklch(0.9 0.02 285)",
+                    "ring": "oklch(0.72 0.25 145)",
+                    "chart-1": "oklch(0.72 0.25 145)",
+                    "chart-2": "oklch(0.65 0.2 330)",
+                    "chart-3": "oklch(0.8 0.15 200)",
+                    "chart-4": "oklch(0.7 0.18 40)",
+                    "chart-5": "oklch(0.55 0.15 260)",
+                    "sidebar": "oklch(0.97 0.01 285)",
+                    "sidebar-foreground": "oklch(0.2 0.03 285)",
+                    "sidebar-primary": "oklch(0.72 0.25 145)",
+                    "sidebar-primary-foreground": "oklch(1 0 0)",
+                    "sidebar-accent": "oklch(0.65 0.2 330)",
+                    "sidebar-accent-foreground": "oklch(1 0 0)",
+                    "sidebar-border": "oklch(0.9 0.02 285)",
+                    "sidebar-ring": "oklch(0.72 0.25 145)",
+                    "shadow-sm": "0 2px 10px hsl(145 80% 50% / 0.06)",
+                    "shadow": "0 8px 24px hsl(145 80% 50% / 0.1)",
+                    "shadow-md": "0 14px 40px hsl(145 80% 50% / 0.14)",
+                    "shadow-lg": "0 20px 60px hsl(145 80% 50% / 0.18)",
+                    "shadow-xl": "0 30px 90px hsl(145 80% 50% / 0.22)"
+                },
                 "dark": {
                     "background": "oklch(0.08 0.02 285)",
                     "foreground": "oklch(0.98 0.01 285)",
-                    "primary": "oklch(0.72 0.25 145)",
+                    "card": "oklch(0.12 0.02 285)",
+                    "card-foreground": "oklch(0.98 0.01 285)",
+                    "popover": "oklch(0.15 0.02 285)",
+                    "popover-foreground": "oklch(0.98 0.01 285)",
+                    "primary": "oklch(0.75 0.28 145)",
                     "primary-foreground": "oklch(0.08 0.02 285)",
-                    "secondary": "oklch(0.25 0.02 285)",
-                    "secondary-foreground": "oklch(0.95 0.01 285)",
+                    "secondary": "oklch(0.25 0.03 285)",
+                    "secondary-foreground": "oklch(0.92 0.02 285)",
                     "muted": "oklch(0.18 0.02 285)",
-                    "muted-foreground": "oklch(0.70 0.02 285)",
-                    "accent": "oklch(0.75 0.22 330)",
+                    "muted-foreground": "oklch(0.7 0.02 285)",
+                    "accent": "oklch(0.72 0.22 330)",
                     "accent-foreground": "oklch(0.08 0.02 285)",
                     "destructive": "oklch(0.65 0.22 25)",
-                    "destructive-foreground": "oklch(0.98 0.01 285)",
-                    "border": "oklch(0.25 0.02 285)",
-                    "input": "oklch(0.25 0.02 285)",
-                    "ring": "oklch(0.72 0.25 145)",
+                    "destructive-foreground": "oklch(0.95 0.02 285)",
+                    "border": "oklch(0.28 0.02 285)",
+                    "input": "oklch(0.28 0.02 285)",
+                    "ring": "oklch(0.75 0.28 145)",
                     "chart-1": "oklch(0.72 0.25 145)",
-                    "chart-2": "oklch(0.75 0.22 330)",
-                    "chart-3": "oklch(0.65 0.18 260)",
-                    "chart-4": "oklch(0.80 0.20 40)",
-                    "chart-5": "oklch(0.55 0.15 200)"
+                    "chart-2": "oklch(0.65 0.2 330)",
+                    "chart-3": "oklch(0.8 0.15 200)",
+                    "chart-4": "oklch(0.7 0.18 40)",
+                    "chart-5": "oklch(0.55 0.15 260)",
+                    "sidebar": "oklch(0.1 0.02 285)",
+                    "sidebar-foreground": "oklch(0.98 0.01 285)",
+                    "sidebar-primary": "oklch(0.75 0.28 145)",
+                    "sidebar-primary-foreground": "oklch(0.08 0.02 285)",
+                    "sidebar-accent": "oklch(0.72 0.22 330)",
+                    "sidebar-accent-foreground": "oklch(0.08 0.02 285)",
+                    "sidebar-border": "oklch(0.28 0.02 285)",
+                    "sidebar-ring": "oklch(0.75 0.28 145)",
+                    "shadow-sm": "0 2px 12px hsl(145 100% 70% / 0.2)",
+                    "shadow": "0 10px 30px hsl(145 100% 60% / 0.25)",
+                    "shadow-md": "0 18px 50px hsl(145 100% 65% / 0.3)",
+                    "shadow-lg": "0 30px 80px hsl(145 100% 70% / 0.35)",
+                    "shadow-xl": "0 50px 120px hsl(145 100% 60% / 0.45)"
                 }
             },
             "css": {
@@ -5149,7 +5144,6 @@
                     }
                 }
             },
-            "title": "Theme Audio Wave",
             "author": "designbycode",
             "registryDependencies": [
                 "https://ui.designbycode.co.za/r/font-inter.json",
@@ -5158,11 +5152,98 @@
             ]
         },
         {
-            "name": "theme-stream-noir",
+            "title": "Theme Audio Wave",
+            "name": "theme-audio-wave",
             "type": "registry:theme",
             "meta": {
                 "category": "styles",
                 "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "font-sans": "Inter, sans-serif",
+                    "font-serif": "Bebas Neue, sans-serif",
+                    "font-mono": "Fira Code, monospace",
+                    "radius": "0.5rem"
+                },
+                "light": {
+                    "background": "oklch(0.98 0.01 285)",
+                    "foreground": "oklch(0.2 0.03 285)",
+                    "card": "oklch(1 0 0)",
+                    "card-foreground": "oklch(0.2 0.03 285)",
+                    "popover": "oklch(1 0 0)",
+                    "popover-foreground": "oklch(0.2 0.03 285)",
+                    "primary": "oklch(0.72 0.25 145)",
+                    "primary-foreground": "oklch(1 0 0)",
+                    "secondary": "oklch(0.92 0.04 285)",
+                    "secondary-foreground": "oklch(0.35 0.04 285)",
+                    "muted": "oklch(0.94 0.02 285)",
+                    "muted-foreground": "oklch(0.55 0.03 285)",
+                    "accent": "oklch(0.65 0.2 330)",
+                    "accent-foreground": "oklch(1 0 0)",
+                    "destructive": "oklch(0.6 0.22 25)",
+                    "destructive-foreground": "oklch(1 0 0)",
+                    "border": "oklch(0.9 0.02 285)",
+                    "input": "oklch(0.9 0.02 285)",
+                    "ring": "oklch(0.72 0.25 145)",
+                    "chart-1": "oklch(0.72 0.25 145)",
+                    "chart-2": "oklch(0.65 0.2 330)",
+                    "chart-3": "oklch(0.8 0.15 200)",
+                    "chart-4": "oklch(0.7 0.18 40)",
+                    "chart-5": "oklch(0.55 0.15 260)",
+                    "sidebar": "oklch(0.97 0.01 285)",
+                    "sidebar-foreground": "oklch(0.2 0.03 285)",
+                    "sidebar-primary": "oklch(0.72 0.25 145)",
+                    "sidebar-primary-foreground": "oklch(1 0 0)",
+                    "sidebar-accent": "oklch(0.65 0.2 330)",
+                    "sidebar-accent-foreground": "oklch(1 0 0)",
+                    "sidebar-border": "oklch(0.9 0.02 285)",
+                    "sidebar-ring": "oklch(0.72 0.25 145)",
+                    "shadow-sm": "0 2px 10px hsl(145 80% 50% / 0.06)",
+                    "shadow": "0 8px 24px hsl(145 80% 50% / 0.1)",
+                    "shadow-md": "0 14px 40px hsl(145 80% 50% / 0.14)",
+                    "shadow-lg": "0 20px 60px hsl(145 80% 50% / 0.18)",
+                    "shadow-xl": "0 30px 90px hsl(145 80% 50% / 0.22)"
+                },
+                "dark": {
+                    "background": "oklch(0.08 0.02 285)",
+                    "foreground": "oklch(0.98 0.01 285)",
+                    "card": "oklch(0.12 0.02 285)",
+                    "card-foreground": "oklch(0.98 0.01 285)",
+                    "popover": "oklch(0.15 0.02 285)",
+                    "popover-foreground": "oklch(0.98 0.01 285)",
+                    "primary": "oklch(0.75 0.28 145)",
+                    "primary-foreground": "oklch(0.08 0.02 285)",
+                    "secondary": "oklch(0.25 0.03 285)",
+                    "secondary-foreground": "oklch(0.92 0.02 285)",
+                    "muted": "oklch(0.18 0.02 285)",
+                    "muted-foreground": "oklch(0.7 0.02 285)",
+                    "accent": "oklch(0.72 0.22 330)",
+                    "accent-foreground": "oklch(0.08 0.02 285)",
+                    "destructive": "oklch(0.65 0.22 25)",
+                    "destructive-foreground": "oklch(0.95 0.02 285)",
+                    "border": "oklch(0.28 0.02 285)",
+                    "input": "oklch(0.28 0.02 285)",
+                    "ring": "oklch(0.75 0.28 145)",
+                    "chart-1": "oklch(0.72 0.25 145)",
+                    "chart-2": "oklch(0.65 0.2 330)",
+                    "chart-3": "oklch(0.8 0.15 200)",
+                    "chart-4": "oklch(0.7 0.18 40)",
+                    "chart-5": "oklch(0.55 0.15 260)",
+                    "sidebar": "oklch(0.1 0.02 285)",
+                    "sidebar-foreground": "oklch(0.98 0.01 285)",
+                    "sidebar-primary": "oklch(0.75 0.28 145)",
+                    "sidebar-primary-foreground": "oklch(0.08 0.02 285)",
+                    "sidebar-accent": "oklch(0.72 0.22 330)",
+                    "sidebar-accent-foreground": "oklch(0.08 0.02 285)",
+                    "sidebar-border": "oklch(0.28 0.02 285)",
+                    "sidebar-ring": "oklch(0.75 0.28 145)",
+                    "shadow-sm": "0 2px 12px hsl(145 100% 70% / 0.2)",
+                    "shadow": "0 10px 30px hsl(145 100% 60% / 0.25)",
+                    "shadow-md": "0 18px 50px hsl(145 100% 65% / 0.3)",
+                    "shadow-lg": "0 30px 80px hsl(145 100% 70% / 0.35)",
+                    "shadow-xl": "0 50px 120px hsl(145 100% 60% / 0.45)"
+                }
             },
             "css": {
                 "@layer base": {
@@ -5175,7 +5256,230 @@
                     }
                 }
             },
+            "author": "designbycode",
+            "registryDependencies": [
+                "https://ui.designbycode.co.za/r/font-inter.json",
+                "https://ui.designbycode.co.za/r/font-bebas-neue.json",
+                "https://ui.designbycode.co.za/r/font-fira-mono.json"
+            ]
+        },
+        {
+            "title": "Theme Audio Wave",
+            "name": "theme-audio-wave",
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "font-sans": "Inter, sans-serif",
+                    "font-serif": "Bebas Neue, sans-serif",
+                    "font-mono": "Fira Code, monospace",
+                    "radius": "0.5rem"
+                },
+                "light": {
+                    "background": "oklch(0.98 0.01 285)",
+                    "foreground": "oklch(0.2 0.03 285)",
+                    "card": "oklch(1 0 0)",
+                    "card-foreground": "oklch(0.2 0.03 285)",
+                    "popover": "oklch(1 0 0)",
+                    "popover-foreground": "oklch(0.2 0.03 285)",
+                    "primary": "oklch(0.72 0.25 145)",
+                    "primary-foreground": "oklch(1 0 0)",
+                    "secondary": "oklch(0.92 0.04 285)",
+                    "secondary-foreground": "oklch(0.35 0.04 285)",
+                    "muted": "oklch(0.94 0.02 285)",
+                    "muted-foreground": "oklch(0.55 0.03 285)",
+                    "accent": "oklch(0.65 0.2 330)",
+                    "accent-foreground": "oklch(1 0 0)",
+                    "destructive": "oklch(0.6 0.22 25)",
+                    "destructive-foreground": "oklch(1 0 0)",
+                    "border": "oklch(0.9 0.02 285)",
+                    "input": "oklch(0.9 0.02 285)",
+                    "ring": "oklch(0.72 0.25 145)",
+                    "chart-1": "oklch(0.72 0.25 145)",
+                    "chart-2": "oklch(0.65 0.2 330)",
+                    "chart-3": "oklch(0.8 0.15 200)",
+                    "chart-4": "oklch(0.7 0.18 40)",
+                    "chart-5": "oklch(0.55 0.15 260)",
+                    "sidebar": "oklch(0.97 0.01 285)",
+                    "sidebar-foreground": "oklch(0.2 0.03 285)",
+                    "sidebar-primary": "oklch(0.72 0.25 145)",
+                    "sidebar-primary-foreground": "oklch(1 0 0)",
+                    "sidebar-accent": "oklch(0.65 0.2 330)",
+                    "sidebar-accent-foreground": "oklch(1 0 0)",
+                    "sidebar-border": "oklch(0.9 0.02 285)",
+                    "sidebar-ring": "oklch(0.72 0.25 145)",
+                    "shadow-sm": "0 2px 10px hsl(145 80% 50% / 0.06)",
+                    "shadow": "0 8px 24px hsl(145 80% 50% / 0.1)",
+                    "shadow-md": "0 14px 40px hsl(145 80% 50% / 0.14)",
+                    "shadow-lg": "0 20px 60px hsl(145 80% 50% / 0.18)",
+                    "shadow-xl": "0 30px 90px hsl(145 80% 50% / 0.22)"
+                },
+                "dark": {
+                    "background": "oklch(0.08 0.02 285)",
+                    "foreground": "oklch(0.98 0.01 285)",
+                    "card": "oklch(0.12 0.02 285)",
+                    "card-foreground": "oklch(0.98 0.01 285)",
+                    "popover": "oklch(0.15 0.02 285)",
+                    "popover-foreground": "oklch(0.98 0.01 285)",
+                    "primary": "oklch(0.75 0.28 145)",
+                    "primary-foreground": "oklch(0.08 0.02 285)",
+                    "secondary": "oklch(0.25 0.03 285)",
+                    "secondary-foreground": "oklch(0.92 0.02 285)",
+                    "muted": "oklch(0.18 0.02 285)",
+                    "muted-foreground": "oklch(0.7 0.02 285)",
+                    "accent": "oklch(0.72 0.22 330)",
+                    "accent-foreground": "oklch(0.08 0.02 285)",
+                    "destructive": "oklch(0.65 0.22 25)",
+                    "destructive-foreground": "oklch(0.95 0.02 285)",
+                    "border": "oklch(0.28 0.02 285)",
+                    "input": "oklch(0.28 0.02 285)",
+                    "ring": "oklch(0.75 0.28 145)",
+                    "chart-1": "oklch(0.72 0.25 145)",
+                    "chart-2": "oklch(0.65 0.2 330)",
+                    "chart-3": "oklch(0.8 0.15 200)",
+                    "chart-4": "oklch(0.7 0.18 40)",
+                    "chart-5": "oklch(0.55 0.15 260)",
+                    "sidebar": "oklch(0.1 0.02 285)",
+                    "sidebar-foreground": "oklch(0.98 0.01 285)",
+                    "sidebar-primary": "oklch(0.75 0.28 145)",
+                    "sidebar-primary-foreground": "oklch(0.08 0.02 285)",
+                    "sidebar-accent": "oklch(0.72 0.22 330)",
+                    "sidebar-accent-foreground": "oklch(0.08 0.02 285)",
+                    "sidebar-border": "oklch(0.28 0.02 285)",
+                    "sidebar-ring": "oklch(0.75 0.28 145)",
+                    "shadow-sm": "0 2px 12px hsl(145 100% 70% / 0.2)",
+                    "shadow": "0 10px 30px hsl(145 100% 60% / 0.25)",
+                    "shadow-md": "0 18px 50px hsl(145 100% 65% / 0.3)",
+                    "shadow-lg": "0 30px 80px hsl(145 100% 70% / 0.35)",
+                    "shadow-xl": "0 50px 120px hsl(145 100% 60% / 0.45)"
+                }
+            },
+            "css": {
+                "@layer base": {
+                    "body": {
+                        "background": "var(--background)",
+                        "color": "var(--foreground)"
+                    },
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
+                }
+            },
+            "author": "designbycode",
+            "registryDependencies": [
+                "https://ui.designbycode.co.za/r/font-inter.json",
+                "https://ui.designbycode.co.za/r/font-bebas-neue.json",
+                "https://ui.designbycode.co.za/r/font-fira-mono.json"
+            ]
+        },
+        {
             "title": "Theme Stream Noir",
+            "name": "theme-stream-noir",
+            "type": "registry:theme",
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "font-sans": "Inter, sans-serif",
+                    "font-serif": "Roboto Slab, serif",
+                    "font-mono": "Fira Code, monospace",
+                    "radius": "0.375rem"
+                },
+                "light": {
+                    "background": "oklch(0.98 0.01 285)",
+                    "foreground": "oklch(0.2 0.03 285)",
+                    "card": "oklch(1 0 0)",
+                    "card-foreground": "oklch(0.2 0.03 285)",
+                    "popover": "oklch(1 0 0)",
+                    "popover-foreground": "oklch(0.2 0.03 285)",
+                    "primary": "oklch(0.65 0.25 25)",
+                    "primary-foreground": "oklch(1 0 0)",
+                    "secondary": "oklch(0.92 0.04 285)",
+                    "secondary-foreground": "oklch(0.35 0.04 285)",
+                    "muted": "oklch(0.94 0.02 285)",
+                    "muted-foreground": "oklch(0.55 0.03 285)",
+                    "accent": "oklch(0.72 0.2 45)",
+                    "accent-foreground": "oklch(0.15 0.02 285)",
+                    "destructive": "oklch(0.6 0.22 25)",
+                    "destructive-foreground": "oklch(1 0 0)",
+                    "border": "oklch(0.9 0.02 285)",
+                    "input": "oklch(0.9 0.02 285)",
+                    "ring": "oklch(0.65 0.25 25)",
+                    "chart-1": "oklch(0.65 0.25 25)",
+                    "chart-2": "oklch(0.72 0.2 45)",
+                    "chart-3": "oklch(0.8 0.15 200)",
+                    "chart-4": "oklch(0.7 0.18 40)",
+                    "chart-5": "oklch(0.55 0.15 260)",
+                    "sidebar": "oklch(0.97 0.01 285)",
+                    "sidebar-foreground": "oklch(0.2 0.03 285)",
+                    "sidebar-primary": "oklch(0.65 0.25 25)",
+                    "sidebar-primary-foreground": "oklch(1 0 0)",
+                    "sidebar-accent": "oklch(0.72 0.2 45)",
+                    "sidebar-accent-foreground": "oklch(0.15 0.02 285)",
+                    "sidebar-border": "oklch(0.9 0.02 285)",
+                    "sidebar-ring": "oklch(0.65 0.25 25)",
+                    "shadow-sm": "0 2px 10px hsl(25 80% 50% / 0.06)",
+                    "shadow": "0 8px 24px hsl(25 80% 50% / 0.1)",
+                    "shadow-md": "0 14px 40px hsl(25 80% 50% / 0.14)",
+                    "shadow-lg": "0 20px 60px hsl(25 80% 50% / 0.18)",
+                    "shadow-xl": "0 30px 90px hsl(25 80% 50% / 0.22)"
+                },
+                "dark": {
+                    "background": "oklch(0.05 0.02 285)",
+                    "foreground": "oklch(0.98 0.01 285)",
+                    "card": "oklch(0.1 0.02 285)",
+                    "card-foreground": "oklch(0.98 0.01 285)",
+                    "popover": "oklch(0.12 0.02 285)",
+                    "popover-foreground": "oklch(0.98 0.01 285)",
+                    "primary": "oklch(0.7 0.28 25)",
+                    "primary-foreground": "oklch(0.95 0.01 285)",
+                    "secondary": "oklch(0.25 0.03 285)",
+                    "secondary-foreground": "oklch(0.9 0.02 285)",
+                    "muted": "oklch(0.18 0.02 285)",
+                    "muted-foreground": "oklch(0.7 0.02 285)",
+                    "accent": "oklch(0.78 0.22 45)",
+                    "accent-foreground": "oklch(0.05 0.02 285)",
+                    "destructive": "oklch(0.65 0.22 25)",
+                    "destructive-foreground": "oklch(0.95 0.02 285)",
+                    "border": "oklch(0.25 0.02 285)",
+                    "input": "oklch(0.25 0.02 285)",
+                    "ring": "oklch(0.7 0.28 25)",
+                    "chart-1": "oklch(0.65 0.25 25)",
+                    "chart-2": "oklch(0.72 0.2 45)",
+                    "chart-3": "oklch(0.8 0.15 200)",
+                    "chart-4": "oklch(0.7 0.18 40)",
+                    "chart-5": "oklch(0.55 0.15 260)",
+                    "sidebar": "oklch(0.08 0.02 285)",
+                    "sidebar-foreground": "oklch(0.98 0.01 285)",
+                    "sidebar-primary": "oklch(0.7 0.28 25)",
+                    "sidebar-primary-foreground": "oklch(0.95 0.01 285)",
+                    "sidebar-accent": "oklch(0.78 0.22 45)",
+                    "sidebar-accent-foreground": "oklch(0.05 0.02 285)",
+                    "sidebar-border": "oklch(0.25 0.02 285)",
+                    "sidebar-ring": "oklch(0.7 0.28 25)",
+                    "shadow-sm": "0 2px 12px hsl(25 100% 70% / 0.2)",
+                    "shadow": "0 10px 30px hsl(25 100% 60% / 0.25)",
+                    "shadow-md": "0 18px 50px hsl(25 100% 65% / 0.3)",
+                    "shadow-lg": "0 30px 80px hsl(25 100% 70% / 0.35)",
+                    "shadow-xl": "0 50px 120px hsl(25 100% 60% / 0.45)"
+                }
+            },
+            "css": {
+                "@layer base": {
+                    "body": {
+                        "background": "var(--background)",
+                        "color": "var(--foreground)"
+                    },
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
+                }
+            },
             "author": "designbycode",
             "registryDependencies": [
                 "https://ui.designbycode.co.za/r/font-inter.json",
@@ -5184,11 +5488,98 @@
             ]
         },
         {
+            "title": "Theme Guest Haven",
             "name": "theme-guest-haven",
             "type": "registry:theme",
             "meta": {
                 "category": "styles",
                 "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "font-sans": "Inter, sans-serif",
+                    "font-serif": "Caveat, cursive",
+                    "font-mono": "Fira Code, monospace",
+                    "radius": "1.25rem"
+                },
+                "light": {
+                    "background": "oklch(0.98 0.02 85)",
+                    "foreground": "oklch(0.28 0.04 70)",
+                    "card": "oklch(1 0 0)",
+                    "card-foreground": "oklch(0.28 0.04 70)",
+                    "popover": "oklch(1 0 0)",
+                    "popover-foreground": "oklch(0.28 0.04 70)",
+                    "primary": "oklch(0.65 0.22 10)",
+                    "primary-foreground": "oklch(1 0 0)",
+                    "secondary": "oklch(0.95 0.04 85)",
+                    "secondary-foreground": "oklch(0.38 0.04 70)",
+                    "muted": "oklch(0.96 0.02 85)",
+                    "muted-foreground": "oklch(0.55 0.03 70)",
+                    "accent": "oklch(0.7 0.15 140)",
+                    "accent-foreground": "oklch(0.98 0.01 285)",
+                    "destructive": "oklch(0.6 0.2 25)",
+                    "destructive-foreground": "oklch(1 0 0)",
+                    "border": "oklch(0.9 0.02 85)",
+                    "input": "oklch(0.9 0.02 85)",
+                    "ring": "oklch(0.65 0.22 10)",
+                    "chart-1": "oklch(0.65 0.22 10)",
+                    "chart-2": "oklch(0.7 0.15 140)",
+                    "chart-3": "oklch(0.78 0.12 200)",
+                    "chart-4": "oklch(0.75 0.1 60)",
+                    "chart-5": "oklch(0.55 0.12 280)",
+                    "sidebar": "oklch(0.96 0.02 85)",
+                    "sidebar-foreground": "oklch(0.28 0.04 70)",
+                    "sidebar-primary": "oklch(0.65 0.22 10)",
+                    "sidebar-primary-foreground": "oklch(1 0 0)",
+                    "sidebar-accent": "oklch(0.7 0.15 140)",
+                    "sidebar-accent-foreground": "oklch(0.98 0.01 285)",
+                    "sidebar-border": "oklch(0.9 0.02 85)",
+                    "sidebar-ring": "oklch(0.65 0.22 10)",
+                    "shadow-sm": "0 2px 10px hsl(10 60% 60% / 0.06)",
+                    "shadow": "0 8px 24px hsl(10 60% 60% / 0.1)",
+                    "shadow-md": "0 14px 40px hsl(10 60% 60% / 0.14)",
+                    "shadow-lg": "0 20px 60px hsl(10 60% 60% / 0.18)",
+                    "shadow-xl": "0 30px 90px hsl(10 60% 60% / 0.22)"
+                },
+                "dark": {
+                    "background": "oklch(0.15 0.03 70)",
+                    "foreground": "oklch(0.95 0.02 85)",
+                    "card": "oklch(0.2 0.03 70)",
+                    "card-foreground": "oklch(0.95 0.02 85)",
+                    "popover": "oklch(0.22 0.03 70)",
+                    "popover-foreground": "oklch(0.95 0.02 85)",
+                    "primary": "oklch(0.72 0.25 10)",
+                    "primary-foreground": "oklch(0.1 0.02 70)",
+                    "secondary": "oklch(0.28 0.04 70)",
+                    "secondary-foreground": "oklch(0.92 0.02 85)",
+                    "muted": "oklch(0.25 0.03 70)",
+                    "muted-foreground": "oklch(0.72 0.02 85)",
+                    "accent": "oklch(0.75 0.18 140)",
+                    "accent-foreground": "oklch(0.15 0.02 70)",
+                    "destructive": "oklch(0.65 0.22 25)",
+                    "destructive-foreground": "oklch(0.95 0.02 85)",
+                    "border": "oklch(0.35 0.03 70)",
+                    "input": "oklch(0.35 0.03 70)",
+                    "ring": "oklch(0.72 0.25 10)",
+                    "chart-1": "oklch(0.65 0.22 10)",
+                    "chart-2": "oklch(0.7 0.15 140)",
+                    "chart-3": "oklch(0.78 0.12 200)",
+                    "chart-4": "oklch(0.75 0.1 60)",
+                    "chart-5": "oklch(0.55 0.12 280)",
+                    "sidebar": "oklch(0.12 0.03 70)",
+                    "sidebar-foreground": "oklch(0.95 0.02 85)",
+                    "sidebar-primary": "oklch(0.72 0.25 10)",
+                    "sidebar-primary-foreground": "oklch(0.1 0.02 70)",
+                    "sidebar-accent": "oklch(0.75 0.18 140)",
+                    "sidebar-accent-foreground": "oklch(0.15 0.02 70)",
+                    "sidebar-border": "oklch(0.35 0.03 70)",
+                    "sidebar-ring": "oklch(0.72 0.25 10)",
+                    "shadow-sm": "0 2px 12px hsl(10 100% 70% / 0.2)",
+                    "shadow": "0 10px 30px hsl(10 100% 60% / 0.25)",
+                    "shadow-md": "0 18px 50px hsl(10 100% 65% / 0.3)",
+                    "shadow-lg": "0 30px 80px hsl(10 100% 70% / 0.35)",
+                    "shadow-xl": "0 50px 120px hsl(10 100% 60% / 0.45)"
+                }
             },
             "css": {
                 "@layer base": {
@@ -5201,7 +5592,6 @@
                     }
                 }
             },
-            "title": "Theme Guest Haven",
             "author": "designbycode",
             "registryDependencies": [
                 "https://ui.designbycode.co.za/r/font-inter.json",
@@ -5210,11 +5600,98 @@
             ]
         },
         {
+            "title": "Theme Quick Find",
             "name": "theme-quick-find",
             "type": "registry:theme",
             "meta": {
                 "category": "styles",
                 "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "font-sans": "Inter, sans-serif",
+                    "font-serif": "Inter, sans-serif",
+                    "font-mono": "Fira Code, monospace",
+                    "radius": "0.5rem"
+                },
+                "light": {
+                    "background": "oklch(1 0 0)",
+                    "foreground": "oklch(0.2 0.04 285)",
+                    "card": "oklch(1 0 0)",
+                    "card-foreground": "oklch(0.2 0.04 285)",
+                    "popover": "oklch(1 0 0)",
+                    "popover-foreground": "oklch(0.2 0.04 285)",
+                    "primary": "oklch(0.6 0.22 265)",
+                    "primary-foreground": "oklch(1 0 0)",
+                    "secondary": "oklch(0.95 0.02 285)",
+                    "secondary-foreground": "oklch(0.4 0.04 285)",
+                    "muted": "oklch(0.96 0.01 285)",
+                    "muted-foreground": "oklch(0.55 0.03 285)",
+                    "accent": "oklch(0.65 0.22 30)",
+                    "accent-foreground": "oklch(1 0 0)",
+                    "destructive": "oklch(0.6 0.25 25)",
+                    "destructive-foreground": "oklch(1 0 0)",
+                    "border": "oklch(0.92 0.02 285)",
+                    "input": "oklch(0.92 0.02 285)",
+                    "ring": "oklch(0.6 0.22 265)",
+                    "chart-1": "oklch(0.6 0.22 265)",
+                    "chart-2": "oklch(0.65 0.22 30)",
+                    "chart-3": "oklch(0.72 0.2 130)",
+                    "chart-4": "oklch(0.65 0.22 50)",
+                    "chart-5": "oklch(0.55 0.18 280)",
+                    "sidebar": "oklch(0.98 0.01 285)",
+                    "sidebar-foreground": "oklch(0.2 0.04 285)",
+                    "sidebar-primary": "oklch(0.6 0.22 265)",
+                    "sidebar-primary-foreground": "oklch(1 0 0)",
+                    "sidebar-accent": "oklch(0.65 0.22 30)",
+                    "sidebar-accent-foreground": "oklch(1 0 0)",
+                    "sidebar-border": "oklch(0.92 0.02 285)",
+                    "sidebar-ring": "oklch(0.6 0.22 265)",
+                    "shadow-sm": "0 2px 10px hsl(265 10% 80% / 0.06)",
+                    "shadow": "0 8px 24px hsl(265 10% 80% / 0.1)",
+                    "shadow-md": "0 14px 40px hsl(265 10% 80% / 0.14)",
+                    "shadow-lg": "0 20px 60px hsl(265 10% 80% / 0.18)",
+                    "shadow-xl": "0 30px 90px hsl(265 10% 80% / 0.22)"
+                },
+                "dark": {
+                    "background": "oklch(0.1 0.02 285)",
+                    "foreground": "oklch(0.95 0.01 285)",
+                    "card": "oklch(0.14 0.02 285)",
+                    "card-foreground": "oklch(0.95 0.01 285)",
+                    "popover": "oklch(0.16 0.02 285)",
+                    "popover-foreground": "oklch(0.95 0.01 285)",
+                    "primary": "oklch(0.68 0.25 265)",
+                    "primary-foreground": "oklch(0.08 0.02 285)",
+                    "secondary": "oklch(0.28 0.03 285)",
+                    "secondary-foreground": "oklch(0.92 0.02 285)",
+                    "muted": "oklch(0.22 0.02 285)",
+                    "muted-foreground": "oklch(0.72 0.02 285)",
+                    "accent": "oklch(0.7 0.25 30)",
+                    "accent-foreground": "oklch(0.08 0.02 285)",
+                    "destructive": "oklch(0.65 0.25 25)",
+                    "destructive-foreground": "oklch(0.95 0.02 285)",
+                    "border": "oklch(0.3 0.02 285)",
+                    "input": "oklch(0.3 0.02 285)",
+                    "ring": "oklch(0.68 0.25 265)",
+                    "chart-1": "oklch(0.6 0.22 265)",
+                    "chart-2": "oklch(0.65 0.22 30)",
+                    "chart-3": "oklch(0.72 0.2 130)",
+                    "chart-4": "oklch(0.65 0.22 50)",
+                    "chart-5": "oklch(0.55 0.18 280)",
+                    "sidebar": "oklch(0.08 0.02 285)",
+                    "sidebar-foreground": "oklch(0.95 0.01 285)",
+                    "sidebar-primary": "oklch(0.68 0.25 265)",
+                    "sidebar-primary-foreground": "oklch(0.08 0.02 285)",
+                    "sidebar-accent": "oklch(0.7 0.25 30)",
+                    "sidebar-accent-foreground": "oklch(0.08 0.02 285)",
+                    "sidebar-border": "oklch(0.3 0.02 285)",
+                    "sidebar-ring": "oklch(0.68 0.25 265)",
+                    "shadow-sm": "0 2px 12px hsl(265 100% 70% / 0.2)",
+                    "shadow": "0 10px 30px hsl(265 100% 60% / 0.25)",
+                    "shadow-md": "0 18px 50px hsl(265 100% 65% / 0.3)",
+                    "shadow-lg": "0 30px 80px hsl(265 100% 70% / 0.35)",
+                    "shadow-xl": "0 50px 120px hsl(265 100% 60% / 0.45)"
+                }
             },
             "css": {
                 "@layer base": {
@@ -5227,7 +5704,6 @@
                     }
                 }
             },
-            "title": "Theme Quick Find",
             "author": "designbycode",
             "registryDependencies": [
                 "https://ui.designbycode.co.za/r/font-inter.json",
@@ -5235,11 +5711,98 @@
             ]
         },
         {
+            "title": "Theme Chirp Feed",
             "name": "theme-chirp-feed",
             "type": "registry:theme",
             "meta": {
                 "category": "styles",
                 "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "font-sans": "Inter, sans-serif",
+                    "font-serif": "IBM Plex Mono, monospace",
+                    "font-mono": "IBM Plex Mono, monospace",
+                    "radius": "1.5rem"
+                },
+                "light": {
+                    "background": "oklch(0.99 0.01 285)",
+                    "foreground": "oklch(0.15 0.03 285)",
+                    "card": "oklch(1 0 0)",
+                    "card-foreground": "oklch(0.15 0.03 285)",
+                    "popover": "oklch(1 0 0)",
+                    "popover-foreground": "oklch(0.15 0.03 285)",
+                    "primary": "oklch(0.65 0.22 210)",
+                    "primary-foreground": "oklch(1 0 0)",
+                    "secondary": "oklch(0.94 0.02 285)",
+                    "secondary-foreground": "oklch(0.45 0.03 285)",
+                    "muted": "oklch(0.96 0.01 285)",
+                    "muted-foreground": "oklch(0.6 0.02 285)",
+                    "accent": "oklch(0.7 0.18 330)",
+                    "accent-foreground": "oklch(1 0 0)",
+                    "destructive": "oklch(0.6 0.22 25)",
+                    "destructive-foreground": "oklch(1 0 0)",
+                    "border": "oklch(0.9 0.02 285)",
+                    "input": "oklch(0.9 0.02 285)",
+                    "ring": "oklch(0.65 0.22 210)",
+                    "chart-1": "oklch(0.65 0.22 210)",
+                    "chart-2": "oklch(0.7 0.18 330)",
+                    "chart-3": "oklch(0.78 0.15 200)",
+                    "chart-4": "oklch(0.72 0.16 40)",
+                    "chart-5": "oklch(0.55 0.15 280)",
+                    "sidebar": "oklch(0.98 0.01 285)",
+                    "sidebar-foreground": "oklch(0.15 0.03 285)",
+                    "sidebar-primary": "oklch(0.65 0.22 210)",
+                    "sidebar-primary-foreground": "oklch(1 0 0)",
+                    "sidebar-accent": "oklch(0.7 0.18 330)",
+                    "sidebar-accent-foreground": "oklch(1 0 0)",
+                    "sidebar-border": "oklch(0.9 0.02 285)",
+                    "sidebar-ring": "oklch(0.65 0.22 210)",
+                    "shadow-sm": "0 2px 10px hsl(210 60% 50% / 0.06)",
+                    "shadow": "0 8px 24px hsl(210 60% 50% / 0.1)",
+                    "shadow-md": "0 14px 40px hsl(210 60% 50% / 0.14)",
+                    "shadow-lg": "0 20px 60px hsl(210 60% 50% / 0.18)",
+                    "shadow-xl": "0 30px 90px hsl(210 60% 50% / 0.22)"
+                },
+                "dark": {
+                    "background": "oklch(0.1 0.02 285)",
+                    "foreground": "oklch(0.95 0.01 285)",
+                    "card": "oklch(0.15 0.02 285)",
+                    "card-foreground": "oklch(0.95 0.01 285)",
+                    "popover": "oklch(0.18 0.02 285)",
+                    "popover-foreground": "oklch(0.95 0.01 285)",
+                    "primary": "oklch(0.72 0.25 210)",
+                    "primary-foreground": "oklch(0.08 0.02 285)",
+                    "secondary": "oklch(0.25 0.03 285)",
+                    "secondary-foreground": "oklch(0.9 0.02 285)",
+                    "muted": "oklch(0.2 0.02 285)",
+                    "muted-foreground": "oklch(0.68 0.02 285)",
+                    "accent": "oklch(0.75 0.2 330)",
+                    "accent-foreground": "oklch(0.08 0.02 285)",
+                    "destructive": "oklch(0.65 0.22 25)",
+                    "destructive-foreground": "oklch(0.95 0.02 285)",
+                    "border": "oklch(0.3 0.02 285)",
+                    "input": "oklch(0.3 0.02 285)",
+                    "ring": "oklch(0.72 0.25 210)",
+                    "chart-1": "oklch(0.65 0.22 210)",
+                    "chart-2": "oklch(0.7 0.18 330)",
+                    "chart-3": "oklch(0.78 0.15 200)",
+                    "chart-4": "oklch(0.72 0.16 40)",
+                    "chart-5": "oklch(0.55 0.15 280)",
+                    "sidebar": "oklch(0.08 0.02 285)",
+                    "sidebar-foreground": "oklch(0.95 0.01 285)",
+                    "sidebar-primary": "oklch(0.72 0.25 210)",
+                    "sidebar-primary-foreground": "oklch(0.08 0.02 285)",
+                    "sidebar-accent": "oklch(0.75 0.2 330)",
+                    "sidebar-accent-foreground": "oklch(0.08 0.02 285)",
+                    "sidebar-border": "oklch(0.3 0.02 285)",
+                    "sidebar-ring": "oklch(0.72 0.25 210)",
+                    "shadow-sm": "0 2px 12px hsl(210 100% 70% / 0.2)",
+                    "shadow": "0 10px 30px hsl(210 100% 60% / 0.25)",
+                    "shadow-md": "0 18px 50px hsl(210 100% 65% / 0.3)",
+                    "shadow-lg": "0 30px 80px hsl(210 100% 70% / 0.35)",
+                    "shadow-xl": "0 50px 120px hsl(210 100% 60% / 0.45)"
+                }
             },
             "css": {
                 "@layer base": {
@@ -5252,7 +5815,6 @@
                     }
                 }
             },
-            "title": "Theme Chirp Feed",
             "author": "designbycode",
             "registryDependencies": [
                 "https://ui.designbycode.co.za/r/font-inter.json",
@@ -5260,11 +5822,98 @@
             ]
         },
         {
+            "title": "Theme Friend Grid",
             "name": "theme-friend-grid",
             "type": "registry:theme",
             "meta": {
                 "category": "styles",
                 "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "font-sans": "Inter, sans-serif",
+                    "font-serif": "Inter, sans-serif",
+                    "font-mono": "Fira Code, monospace",
+                    "radius": "0.75rem"
+                },
+                "light": {
+                    "background": "oklch(0.94 0.02 285)",
+                    "foreground": "oklch(0.2 0.03 285)",
+                    "card": "oklch(1 0 0)",
+                    "card-foreground": "oklch(0.2 0.03 285)",
+                    "popover": "oklch(1 0 0)",
+                    "popover-foreground": "oklch(0.2 0.03 285)",
+                    "primary": "oklch(0.6 0.22 265)",
+                    "primary-foreground": "oklch(1 0 0)",
+                    "secondary": "oklch(0.92 0.02 285)",
+                    "secondary-foreground": "oklch(0.4 0.04 285)",
+                    "muted": "oklch(0.95 0.02 285)",
+                    "muted-foreground": "oklch(0.55 0.03 285)",
+                    "accent": "oklch(0.65 0.2 140)",
+                    "accent-foreground": "oklch(1 0 0)",
+                    "destructive": "oklch(0.6 0.22 25)",
+                    "destructive-foreground": "oklch(1 0 0)",
+                    "border": "oklch(0.88 0.02 285)",
+                    "input": "oklch(0.88 0.02 285)",
+                    "ring": "oklch(0.6 0.22 265)",
+                    "chart-1": "oklch(0.6 0.22 265)",
+                    "chart-2": "oklch(0.65 0.2 140)",
+                    "chart-3": "oklch(0.7 0.18 330)",
+                    "chart-4": "oklch(0.55 0.15 40)",
+                    "chart-5": "oklch(0.5 0.12 260)",
+                    "sidebar": "oklch(0.98 0.01 285)",
+                    "sidebar-foreground": "oklch(0.2 0.03 285)",
+                    "sidebar-primary": "oklch(0.6 0.22 265)",
+                    "sidebar-primary-foreground": "oklch(1 0 0)",
+                    "sidebar-accent": "oklch(0.65 0.2 140)",
+                    "sidebar-accent-foreground": "oklch(1 0 0)",
+                    "sidebar-border": "oklch(0.88 0.02 285)",
+                    "sidebar-ring": "oklch(0.6 0.22 265)",
+                    "shadow-sm": "0 2px 10px hsl(265 10% 80% / 0.06)",
+                    "shadow": "0 8px 24px hsl(265 10% 80% / 0.1)",
+                    "shadow-md": "0 14px 40px hsl(265 10% 80% / 0.14)",
+                    "shadow-lg": "0 20px 60px hsl(265 10% 80% / 0.18)",
+                    "shadow-xl": "0 30px 90px hsl(265 10% 80% / 0.22)"
+                },
+                "dark": {
+                    "background": "oklch(0.12 0.02 285)",
+                    "foreground": "oklch(0.95 0.01 285)",
+                    "card": "oklch(0.16 0.02 285)",
+                    "card-foreground": "oklch(0.95 0.01 285)",
+                    "popover": "oklch(0.18 0.02 285)",
+                    "popover-foreground": "oklch(0.95 0.01 285)",
+                    "primary": "oklch(0.68 0.25 265)",
+                    "primary-foreground": "oklch(0.08 0.02 285)",
+                    "secondary": "oklch(0.28 0.03 285)",
+                    "secondary-foreground": "oklch(0.9 0.02 285)",
+                    "muted": "oklch(0.22 0.02 285)",
+                    "muted-foreground": "oklch(0.7 0.02 285)",
+                    "accent": "oklch(0.72 0.22 140)",
+                    "accent-foreground": "oklch(0.08 0.02 285)",
+                    "destructive": "oklch(0.65 0.22 25)",
+                    "destructive-foreground": "oklch(0.95 0.02 285)",
+                    "border": "oklch(0.32 0.02 285)",
+                    "input": "oklch(0.32 0.02 285)",
+                    "ring": "oklch(0.68 0.25 265)",
+                    "chart-1": "oklch(0.6 0.22 265)",
+                    "chart-2": "oklch(0.65 0.2 140)",
+                    "chart-3": "oklch(0.7 0.18 330)",
+                    "chart-4": "oklch(0.55 0.15 40)",
+                    "chart-5": "oklch(0.5 0.12 260)",
+                    "sidebar": "oklch(0.1 0.02 285)",
+                    "sidebar-foreground": "oklch(0.95 0.01 285)",
+                    "sidebar-primary": "oklch(0.68 0.25 265)",
+                    "sidebar-primary-foreground": "oklch(0.08 0.02 285)",
+                    "sidebar-accent": "oklch(0.72 0.22 140)",
+                    "sidebar-accent-foreground": "oklch(0.08 0.02 285)",
+                    "sidebar-border": "oklch(0.32 0.02 285)",
+                    "sidebar-ring": "oklch(0.68 0.25 265)",
+                    "shadow-sm": "0 2px 12px hsl(265 100% 70% / 0.2)",
+                    "shadow": "0 10px 30px hsl(265 100% 60% / 0.25)",
+                    "shadow-md": "0 18px 50px hsl(265 100% 65% / 0.3)",
+                    "shadow-lg": "0 30px 80px hsl(265 100% 70% / 0.35)",
+                    "shadow-xl": "0 50px 120px hsl(265 100% 60% / 0.45)"
+                }
             },
             "css": {
                 "@layer base": {
@@ -5277,7 +5926,6 @@
                     }
                 }
             },
-            "title": "Theme Friend Grid",
             "author": "designbycode",
             "registryDependencies": [
                 "https://ui.designbycode.co.za/r/font-inter.json",
@@ -5285,11 +5933,101 @@
             ]
         },
         {
+            "title": "Theme Maker Market",
             "name": "theme-maker-market",
             "type": "registry:theme",
             "meta": {
                 "category": "styles",
                 "version": "1.0.0"
+            },
+            "cssVars": {
+                "theme": {
+                    "--font-sans": "'IBM Plex Sans', sans-serif",
+                    "--font-serif": "'IBM Plex Sans', sans-serif",
+                    "--font-mono": "'IBM Plex Mono', monospace",
+                    "--radius-sm": "0.25rem",
+                    "--radius-md": "0.25rem",
+                    "--radius-lg": "0.25rem",
+                    "--radius-xl": "0.5rem"
+                },
+                "light": {
+                    "--background": "oklch(0.98 0.01 285)",
+                    "--foreground": "oklch(0.15 0.01 285)",
+                    "--card": "oklch(0.95 0.01 285)",
+                    "--card-foreground": "oklch(0.15 0.01 285)",
+                    "--popover": "oklch(0.95 0.01 285)",
+                    "--popover-foreground": "oklch(0.15 0.01 285)",
+                    "--primary": "oklch(0.15 0.01 285)",
+                    "--primary-foreground": "oklch(0.98 0.01 285)",
+                    "--secondary": "oklch(0.92 0.02 285)",
+                    "--secondary-foreground": "oklch(0.25 0.02 285)",
+                    "--muted": "oklch(0.9 0.02 285)",
+                    "--muted-foreground": "oklch(0.5 0.02 285)",
+                    "--accent": "oklch(0.85 0.2 330)",
+                    "--accent-foreground": "oklch(0.15 0.01 285)",
+                    "--destructive": "oklch(0.6 0.22 25)",
+                    "--destructive-foreground": "oklch(0.98 0.01 285)",
+                    "--border": "oklch(0.85 0.02 285)",
+                    "--input": "oklch(0.85 0.02 285)",
+                    "--ring": "oklch(0.15 0.01 285)",
+                    "--chart-1": "oklch(0.15 0.01 285)",
+                    "--chart-2": "oklch(0.85 0.2 330)",
+                    "--chart-3": "oklch(0.65 0.18 200)",
+                    "--chart-4": "oklch(0.8 0.15 140)",
+                    "--chart-5": "oklch(0.55 0.15 260)",
+                    "--sidebar": "oklch(0.95 0.01 285)",
+                    "--sidebar-foreground": "oklch(0.15 0.01 285)",
+                    "--sidebar-primary": "oklch(0.15 0.01 285)",
+                    "--sidebar-primary-foreground": "oklch(0.98 0.01 285)",
+                    "--sidebar-accent": "oklch(0.85 0.2 330)",
+                    "--sidebar-accent-foreground": "oklch(0.15 0.01 285)",
+                    "--sidebar-border": "oklch(0.85 0.02 285)",
+                    "--sidebar-ring": "oklch(0.15 0.01 285)",
+                    "--shadow-sm": "0 1px 2px hsl(0 0% 0% / 0.05)",
+                    "--shadow": "0 2px 4px hsl(0 0% 0% / 0.1)",
+                    "--shadow-md": "0 4px 8px hsl(0 0% 0% / 0.15)",
+                    "--shadow-lg": "0 6px 16px hsl(0 0% 0% / 0.2)",
+                    "--shadow-xl": "0 10px 30px hsl(0 0% 0% / 0.25)"
+                },
+                "dark": {
+                    "--background": "oklch(0.05 0.01 285)",
+                    "--foreground": "oklch(0.95 0.01 285)",
+                    "--card": "oklch(0.08 0.01 285)",
+                    "--card-foreground": "oklch(0.95 0.01 285)",
+                    "--popover": "oklch(0.1 0.01 285)",
+                    "--popover-foreground": "oklch(0.95 0.01 285)",
+                    "--primary": "oklch(0.95 0.01 285)",
+                    "--primary-foreground": "oklch(0.08 0.01 285)",
+                    "--secondary": "oklch(0.18 0.02 285)",
+                    "--secondary-foreground": "oklch(0.85 0.02 285)",
+                    "--muted": "oklch(0.15 0.02 285)",
+                    "--muted-foreground": "oklch(0.6 0.02 285)",
+                    "--accent": "oklch(0.75 0.2 330)",
+                    "--accent-foreground": "oklch(0.08 0.01 285)",
+                    "--destructive": "oklch(0.6 0.22 25)",
+                    "--destructive-foreground": "oklch(0.95 0.01 285)",
+                    "--border": "oklch(0.25 0.02 285)",
+                    "--input": "oklch(0.25 0.02 285)",
+                    "--ring": "oklch(0.95 0.01 285)",
+                    "--chart-1": "oklch(0.95 0.01 285)",
+                    "--chart-2": "oklch(0.75 0.2 330)",
+                    "--chart-3": "oklch(0.65 0.18 200)",
+                    "--chart-4": "oklch(0.8 0.15 140)",
+                    "--chart-5": "oklch(0.55 0.15 260)",
+                    "--sidebar": "oklch(0.06 0.01 285)",
+                    "--sidebar-foreground": "oklch(0.95 0.01 285)",
+                    "--sidebar-primary": "oklch(0.95 0.01 285)",
+                    "--sidebar-primary-foreground": "oklch(0.08 0.01 285)",
+                    "--sidebar-accent": "oklch(0.75 0.2 330)",
+                    "--sidebar-accent-foreground": "oklch(0.08 0.01 285)",
+                    "--sidebar-border": "oklch(0.25 0.02 285)",
+                    "--sidebar-ring": "oklch(0.95 0.01 285)",
+                    "--shadow-sm": "0 1px 2px hsl(0 0% 0% / 0.3)",
+                    "--shadow": "0 2px 4px hsl(0 0% 0% / 0.4)",
+                    "--shadow-md": "0 4px 8px hsl(0 0% 0% / 0.5)",
+                    "--shadow-lg": "0 6px 16px hsl(0 0% 0% / 0.6)",
+                    "--shadow-xl": "0 10px 30px hsl(0 0% 0% / 0.7)"
+                }
             },
             "css": {
                 "@layer base": {
@@ -5302,7 +6040,6 @@
                     }
                 }
             },
-            "title": "Theme Maker Market",
             "author": "designbycode",
             "registryDependencies": [
                 "https://ui.designbycode.co.za/r/font-ibm-plex-sans.json",
@@ -5310,12 +6047,102 @@
             ]
         },
         {
+            "title": "Theme Void Dark",
             "name": "theme-void-dark",
             "type": "registry:theme",
             "meta": {
                 "category": "styles",
                 "version": "1.0.0"
             },
+            "cssVars": {
+                "theme": {
+                    "--font-sans": "'Inter', sans-serif",
+                    "--font-serif": "'Orbitron', sans-serif",
+                    "--font-mono": "'Fira Code', monospace",
+                    "--radius-sm": "0.5rem",
+                    "--radius-md": "0.5rem",
+                    "--radius-lg": "0.5rem",
+                    "--radius-xl": "0.75rem"
+                },
+                "light": {
+                    "--background": "oklch(0.98 0.01 285)",
+                    "--foreground": "oklch(0.08 0.01 285)",
+                    "--card": "oklch(0.95 0.01 285)",
+                    "--card-foreground": "oklch(0.08 0.01 285)",
+                    "--popover": "oklch(0.95 0.01 285)",
+                    "--popover-foreground": "oklch(0.08 0.01 285)",
+                    "--primary": "oklch(0.15 0.25 320)",
+                    "--primary-foreground": "oklch(0.98 0.01 285)",
+                    "--secondary": "oklch(0.9 0.02 285)",
+                    "--secondary-foreground": "oklch(0.25 0.02 285)",
+                    "--muted": "oklch(0.92 0.02 285)",
+                    "--muted-foreground": "oklch(0.5 0.02 285)",
+                    "--accent": "oklch(0.2 0.25 180)",
+                    "--accent-foreground": "oklch(0.98 0.01 285)",
+                    "--destructive": "oklch(0.6 0.25 25)",
+                    "--destructive-foreground": "oklch(0.98 0.01 285)",
+                    "--border": "oklch(0.85 0.02 285)",
+                    "--input": "oklch(0.85 0.02 285)",
+                    "--ring": "oklch(0.15 0.25 320)",
+                    "--chart-1": "oklch(0.15 0.25 320)",
+                    "--chart-2": "oklch(0.2 0.25 180)",
+                    "--chart-3": "oklch(0.8 0.22 60)",
+                    "--chart-4": "oklch(0.65 0.25 280)",
+                    "--chart-5": "oklch(0.85 0.18 140)",
+                    "--sidebar": "oklch(0.95 0.01 285)",
+                    "--sidebar-foreground": "oklch(0.08 0.01 285)",
+                    "--sidebar-primary": "oklch(0.15 0.25 320)",
+                    "--sidebar-primary-foreground": "oklch(0.98 0.01 285)",
+                    "--sidebar-accent": "oklch(0.2 0.25 180)",
+                    "--sidebar-accent-foreground": "oklch(0.98 0.01 285)",
+                    "--sidebar-border": "oklch(0.85 0.02 285)",
+                    "--sidebar-ring": "oklch(0.15 0.25 320)",
+                    "--shadow-sm": "0 1px 2px hsl(0 0% 0% / 0.05)",
+                    "--shadow": "0 2px 4px hsl(0 0% 0% / 0.1)",
+                    "--shadow-md": "0 4px 8px hsl(0 0% 0% / 0.15)",
+                    "--shadow-lg": "0 6px 16px hsl(0 0% 0% / 0.2)",
+                    "--shadow-xl": "0 10px 30px hsl(0 0% 0% / 0.25)"
+                },
+                "dark": {
+                    "--background": "oklch(0 0 0)",
+                    "--foreground": "oklch(0.98 0.01 285)",
+                    "--card": "oklch(0.03 0.01 285)",
+                    "--card-foreground": "oklch(0.98 0.01 285)",
+                    "--popover": "oklch(0.05 0.01 285)",
+                    "--popover-foreground": "oklch(0.98 0.01 285)",
+                    "--primary": "oklch(0.75 0.25 320)",
+                    "--primary-foreground": "oklch(0 0 0)",
+                    "--secondary": "oklch(0.15 0.02 285)",
+                    "--secondary-foreground": "oklch(0.9 0.02 285)",
+                    "--muted": "oklch(0.1 0.02 285)",
+                    "--muted-foreground": "oklch(0.55 0.02 285)",
+                    "--accent": "oklch(0.7 0.25 180)",
+                    "--accent-foreground": "oklch(0 0 0)",
+                    "--destructive": "oklch(0.6 0.25 25)",
+                    "--destructive-foreground": "oklch(0.98 0.01 285)",
+                    "--border": "oklch(0.18 0.02 285)",
+                    "--input": "oklch(0.18 0.02 285)",
+                    "--ring": "oklch(0.75 0.25 320)",
+                    "--chart-1": "oklch(0.75 0.25 320)",
+                    "--chart-2": "oklch(0.7 0.25 180)",
+                    "--chart-3": "oklch(0.8 0.22 60)",
+                    "--chart-4": "oklch(0.65 0.25 280)",
+                    "--chart-5": "oklch(0.85 0.18 140)",
+                    "--sidebar": "oklch(0.02 0.01 285)",
+                    "--sidebar-foreground": "oklch(0.98 0.01 285)",
+                    "--sidebar-primary": "oklch(0.75 0.25 320)",
+                    "--sidebar-primary-foreground": "oklch(0 0 0)",
+                    "--sidebar-accent": "oklch(0.7 0.25 180)",
+                    "--sidebar-accent-foreground": "oklch(0 0 0)",
+                    "--sidebar-border": "oklch(0.18 0.02 285)",
+                    "--sidebar-ring": "oklch(0.75 0.25 320)",
+                    "--shadow-sm": "0 0 8px oklch(0.75 0.25 320 / 0.4)",
+                    "--shadow": "0 0 16px oklch(0.75 0.25 320 / 0.5)",
+                    "--shadow-md": "0 0 24px oklch(0.75 0.25 320 / 0.6)",
+                    "--shadow-lg": "0 0 40px oklch(0.75 0.25 320 / 0.7)",
+                    "--shadow-xl": "0 0 60px oklch(0.75 0.25 320 / 0.8)"
+                }
+            },
             "css": {
                 "@layer base": {
                     "body": {
@@ -5327,7 +6154,6 @@
                     }
                 }
             },
-            "title": "Theme Void Dark",
             "author": "designbycode",
             "registryDependencies": [
                 "https://ui.designbycode.co.za/r/font-inter.json",
@@ -5336,12 +6162,102 @@
             ]
         },
         {
+            "title": "Theme Paper Stack",
             "name": "theme-paper-stack",
             "type": "registry:theme",
             "meta": {
                 "category": "styles",
                 "version": "1.0.0"
             },
+            "cssVars": {
+                "theme": {
+                    "--font-sans": "'Inter', sans-serif",
+                    "--font-serif": "'Playfair Display', serif",
+                    "--font-mono": "'Fira Code', monospace",
+                    "--radius-sm": "0.25rem",
+                    "--radius-md": "0.25rem",
+                    "--radius-lg": "0.25rem",
+                    "--radius-xl": "0.5rem"
+                },
+                "light": {
+                    "--background": "oklch(0.98 0.01 60)",
+                    "--foreground": "oklch(0.25 0.04 60)",
+                    "--card": "oklch(0.99 0.01 60)",
+                    "--card-foreground": "oklch(0.25 0.04 60)",
+                    "--popover": "oklch(0.99 0.01 60)",
+                    "--popover-foreground": "oklch(0.25 0.04 60)",
+                    "--primary": "oklch(0.45 0.08 260)",
+                    "--primary-foreground": "oklch(0.98 0.01 60)",
+                    "--secondary": "oklch(0.9 0.02 60)",
+                    "--secondary-foreground": "oklch(0.35 0.04 60)",
+                    "--muted": "oklch(0.94 0.02 60)",
+                    "--muted-foreground": "oklch(0.55 0.03 60)",
+                    "--accent": "oklch(0.7 0.12 25)",
+                    "--accent-foreground": "oklch(0.98 0.01 60)",
+                    "--destructive": "oklch(0.55 0.15 25)",
+                    "--destructive-foreground": "oklch(0.98 0.01 60)",
+                    "--border": "oklch(0.88 0.02 60)",
+                    "--input": "oklch(0.88 0.02 60)",
+                    "--ring": "oklch(0.45 0.08 260)",
+                    "--chart-1": "oklch(0.45 0.08 260)",
+                    "--chart-2": "oklch(0.7 0.12 25)",
+                    "--chart-3": "oklch(0.6 0.1 140)",
+                    "--chart-4": "oklch(0.8 0.08 50)",
+                    "--chart-5": "oklch(0.5 0.08 280)",
+                    "--sidebar": "oklch(0.98 0.01 60)",
+                    "--sidebar-foreground": "oklch(0.25 0.04 60)",
+                    "--sidebar-primary": "oklch(0.45 0.08 260)",
+                    "--sidebar-primary-foreground": "oklch(0.98 0.01 60)",
+                    "--sidebar-accent": "oklch(0.7 0.12 25)",
+                    "--sidebar-accent-foreground": "oklch(0.98 0.01 60)",
+                    "--sidebar-border": "oklch(0.88 0.02 60)",
+                    "--sidebar-ring": "oklch(0.45 0.08 260)",
+                    "--shadow-sm": "0 1px 3px hsl(40 20% 85% / 0.3)",
+                    "--shadow": "0 2px 6px hsl(40 20% 85% / 0.4)",
+                    "--shadow-md": "0 4px 10px hsl(40 20% 85% / 0.5)",
+                    "--shadow-lg": "0 6px 16px hsl(40 20% 85% / 0.6)",
+                    "--shadow-xl": "0 10px 30px hsl(40 20% 85% / 0.7)"
+                },
+                "dark": {
+                    "--background": "oklch(0.15 0.03 60)",
+                    "--foreground": "oklch(0.92 0.02 60)",
+                    "--card": "oklch(0.2 0.03 60)",
+                    "--card-foreground": "oklch(0.92 0.02 60)",
+                    "--popover": "oklch(0.22 0.03 60)",
+                    "--popover-foreground": "oklch(0.92 0.02 60)",
+                    "--primary": "oklch(0.65 0.1 260)",
+                    "--primary-foreground": "oklch(0.98 0.01 60)",
+                    "--secondary": "oklch(0.28 0.04 60)",
+                    "--secondary-foreground": "oklch(0.85 0.02 60)",
+                    "--muted": "oklch(0.22 0.03 60)",
+                    "--muted-foreground": "oklch(0.7 0.03 60)",
+                    "--accent": "oklch(0.75 0.15 25)",
+                    "--accent-foreground": "oklch(0.15 0.03 60)",
+                    "--destructive": "oklch(0.55 0.15 25)",
+                    "--destructive-foreground": "oklch(0.92 0.02 60)",
+                    "--border": "oklch(0.3 0.03 60)",
+                    "--input": "oklch(0.3 0.03 60)",
+                    "--ring": "oklch(0.65 0.1 260)",
+                    "--chart-1": "oklch(0.65 0.1 260)",
+                    "--chart-2": "oklch(0.75 0.15 25)",
+                    "--chart-3": "oklch(0.7 0.1 140)",
+                    "--chart-4": "oklch(0.8 0.08 50)",
+                    "--chart-5": "oklch(0.5 0.08 280)",
+                    "--sidebar": "oklch(0.12 0.02 60)",
+                    "--sidebar-foreground": "oklch(0.92 0.02 60)",
+                    "--sidebar-primary": "oklch(0.65 0.1 260)",
+                    "--sidebar-primary-foreground": "oklch(0.98 0.01 60)",
+                    "--sidebar-accent": "oklch(0.75 0.15 25)",
+                    "--sidebar-accent-foreground": "oklch(0.15 0.03 60)",
+                    "--sidebar-border": "oklch(0.3 0.03 60)",
+                    "--sidebar-ring": "oklch(0.65 0.1 260)",
+                    "--shadow-sm": "0 1px 3px hsl(40 20% 85% / 0.5)",
+                    "--shadow": "0 2px 6px hsl(40 20% 85% / 0.6)",
+                    "--shadow-md": "0 4px 10px hsl(40 20% 85% / 0.7)",
+                    "--shadow-lg": "0 6px 16px hsl(40 20% 85% / 0.8)",
+                    "--shadow-xl": "0 10px 30px hsl(40 20% 85% / 0.9)"
+                }
+            },
             "css": {
                 "@layer base": {
                     "body": {
@@ -5353,7 +6269,6 @@
                     }
                 }
             },
-            "title": "Theme Paper Stack",
             "author": "designbycode",
             "registryDependencies": [
                 "https://ui.designbycode.co.za/r/font-inter.json",
@@ -5362,12 +6277,102 @@
             ]
         },
         {
+            "title": "Theme Neon Punk",
             "name": "theme-neon-punk",
             "type": "registry:theme",
             "meta": {
                 "category": "styles",
                 "version": "1.0.0"
             },
+            "cssVars": {
+                "theme": {
+                    "--font-sans": "'Orbitron', sans-serif",
+                    "--font-serif": "'Orbitron', sans-serif",
+                    "--font-mono": "'IBM Plex Mono', monospace",
+                    "--radius-sm": "0.125rem",
+                    "--radius-md": "0.125rem",
+                    "--radius-lg": "0.125rem",
+                    "--radius-xl": "0.375rem"
+                },
+                "light": {
+                    "--background": "oklch(0.98 0.01 285)",
+                    "--foreground": "oklch(0.1 0.02 285)",
+                    "--card": "oklch(0.98 0.01 285)",
+                    "--card-foreground": "oklch(0.1 0.02 285)",
+                    "--popover": "oklch(0.98 0.01 285)",
+                    "--popover-foreground": "oklch(0.1 0.02 285)",
+                    "--primary": "oklch(0.55 0.28 330)",
+                    "--primary-foreground": "oklch(0.98 0.01 285)",
+                    "--secondary": "oklch(0.92 0.02 285)",
+                    "--secondary-foreground": "oklch(0.25 0.02 285)",
+                    "--muted": "oklch(0.92 0.02 285)",
+                    "--muted-foreground": "oklch(0.5 0.02 285)",
+                    "--accent": "oklch(0.45 0.28 180)",
+                    "--accent-foreground": "oklch(0.98 0.01 285)",
+                    "--destructive": "oklch(0.65 0.28 25)",
+                    "--destructive-foreground": "oklch(0.98 0.01 285)",
+                    "--border": "oklch(0.85 0.02 285)",
+                    "--input": "oklch(0.85 0.02 285)",
+                    "--ring": "oklch(0.55 0.28 330)",
+                    "--chart-1": "oklch(0.55 0.28 330)",
+                    "--chart-2": "oklch(0.45 0.28 180)",
+                    "--chart-3": "oklch(0.85 0.25 60)",
+                    "--chart-4": "oklch(0.65 0.25 280)",
+                    "--chart-5": "oklch(0.6 0.22 160)",
+                    "--sidebar": "oklch(0.95 0.01 285)",
+                    "--sidebar-foreground": "oklch(0.1 0.02 285)",
+                    "--sidebar-primary": "oklch(0.55 0.28 330)",
+                    "--sidebar-primary-foreground": "oklch(0.98 0.01 285)",
+                    "--sidebar-accent": "oklch(0.45 0.28 180)",
+                    "--sidebar-accent-foreground": "oklch(0.98 0.01 285)",
+                    "--sidebar-border": "oklch(0.85 0.02 285)",
+                    "--sidebar-ring": "oklch(0.55 0.28 330)",
+                    "--shadow-sm": "0 1px 2px hsl(0 0% 0% / 0.05)",
+                    "--shadow": "0 2px 4px hsl(0 0% 0% / 0.1)",
+                    "--shadow-md": "0 4px 8px hsl(0 0% 0% / 0.15)",
+                    "--shadow-lg": "0 6px 16px hsl(0 0% 0% / 0.2)",
+                    "--shadow-xl": "0 10px 30px hsl(0 0% 0% / 0.25)"
+                },
+                "dark": {
+                    "--background": "oklch(0.08 0.02 285)",
+                    "--foreground": "oklch(0.95 0.01 285)",
+                    "--card": "oklch(0.12 0.02 285)",
+                    "--card-foreground": "oklch(0.95 0.01 285)",
+                    "--popover": "oklch(0.15 0.02 285)",
+                    "--popover-foreground": "oklch(0.95 0.01 285)",
+                    "--primary": "oklch(0.75 0.28 330)",
+                    "--primary-foreground": "oklch(0.08 0.02 285)",
+                    "--secondary": "oklch(0.2 0.03 285)",
+                    "--secondary-foreground": "oklch(0.9 0.02 285)",
+                    "--muted": "oklch(0.15 0.02 285)",
+                    "--muted-foreground": "oklch(0.6 0.02 285)",
+                    "--accent": "oklch(0.7 0.28 180)",
+                    "--accent-foreground": "oklch(0.08 0.02 285)",
+                    "--destructive": "oklch(0.65 0.28 25)",
+                    "--destructive-foreground": "oklch(0.08 0.02 285)",
+                    "--border": "oklch(0.3 0.03 285)",
+                    "--input": "oklch(0.3 0.03 285)",
+                    "--ring": "oklch(0.75 0.28 330)",
+                    "--chart-1": "oklch(0.75 0.28 330)",
+                    "--chart-2": "oklch(0.7 0.28 180)",
+                    "--chart-3": "oklch(0.85 0.25 60)",
+                    "--chart-4": "oklch(0.65 0.25 280)",
+                    "--chart-5": "oklch(0.6 0.22 160)",
+                    "--sidebar": "oklch(0.05 0.02 285)",
+                    "--sidebar-foreground": "oklch(0.95 0.01 285)",
+                    "--sidebar-primary": "oklch(0.75 0.28 330)",
+                    "--sidebar-primary-foreground": "oklch(0.08 0.02 285)",
+                    "--sidebar-accent": "oklch(0.7 0.28 180)",
+                    "--sidebar-accent-foreground": "oklch(0.08 0.02 285)",
+                    "--sidebar-border": "oklch(0.3 0.03 285)",
+                    "--sidebar-ring": "oklch(0.75 0.28 330)",
+                    "--shadow-sm": "0 0 5px oklch(0.75 0.28 330 / 0.5)",
+                    "--shadow": "0 0 10px oklch(0.75 0.28 330 / 0.6), 0 0 20px oklch(0.7 0.28 180 / 0.3)",
+                    "--shadow-md": "0 0 20px oklch(0.75 0.28 330 / 0.7), 0 0 40px oklch(0.7 0.28 180 / 0.4)",
+                    "--shadow-lg": "0 0 40px oklch(0.75 0.28 330 / 0.8), 0 0 60px oklch(0.7 0.28 180 / 0.5)",
+                    "--shadow-xl": "0 0 60px oklch(0.75 0.28 330 / 0.9), 0 0 100px oklch(0.7 0.28 180 / 0.6)"
+                }
+            },
             "css": {
                 "@layer base": {
                     "body": {
@@ -5379,7 +6384,6 @@
                     }
                 }
             },
-            "title": "Theme Neon Punk",
             "author": "designbycode",
             "registryDependencies": [
                 "https://ui.designbycode.co.za/r/font-orbitron.json",
@@ -5387,12 +6391,102 @@
             ]
         },
         {
+            "title": "Theme Ink Bleed",
             "name": "theme-ink-bleed",
             "type": "registry:theme",
             "meta": {
                 "category": "styles",
                 "version": "1.0.0"
             },
+            "cssVars": {
+                "theme": {
+                    "--font-sans": "'Roboto Slab', serif",
+                    "--font-serif": "'Roboto Slab', serif",
+                    "--font-mono": "'IBM Plex Mono', monospace",
+                    "--radius-sm": "0.125rem",
+                    "--radius-md": "0.125rem",
+                    "--radius-lg": "0.125rem",
+                    "--radius-xl": "0.375rem"
+                },
+                "light": {
+                    "--background": "oklch(0.98 0.01 285)",
+                    "--foreground": "oklch(0.12 0.04 285)",
+                    "--card": "oklch(1 0 0)",
+                    "--card-foreground": "oklch(0.12 0.04 285)",
+                    "--popover": "oklch(1 0 0)",
+                    "--popover-foreground": "oklch(0.12 0.04 285)",
+                    "--primary": "oklch(0.18 0.05 285)",
+                    "--primary-foreground": "oklch(0.98 0.01 285)",
+                    "--secondary": "oklch(0.92 0.02 285)",
+                    "--secondary-foreground": "oklch(0.28 0.04 285)",
+                    "--muted": "oklch(0.94 0.02 285)",
+                    "--muted-foreground": "oklch(0.5 0.03 285)",
+                    "--accent": "oklch(0.72 0.18 330)",
+                    "--accent-foreground": "oklch(0.98 0.01 285)",
+                    "--destructive": "oklch(0.55 0.18 25)",
+                    "--destructive-foreground": "oklch(0.98 0.01 285)",
+                    "--border": "oklch(0.8 0.03 285)",
+                    "--input": "oklch(0.8 0.03 285)",
+                    "--ring": "oklch(0.18 0.05 285)",
+                    "--chart-1": "oklch(0.18 0.05 285)",
+                    "--chart-2": "oklch(0.72 0.18 330)",
+                    "--chart-3": "oklch(0.55 0.15 200)",
+                    "--chart-4": "oklch(0.65 0.12 140)",
+                    "--chart-5": "oklch(0.45 0.1 260)",
+                    "--sidebar": "oklch(0.96 0.01 285)",
+                    "--sidebar-foreground": "oklch(0.12 0.04 285)",
+                    "--sidebar-primary": "oklch(0.18 0.05 285)",
+                    "--sidebar-primary-foreground": "oklch(0.98 0.01 285)",
+                    "--sidebar-accent": "oklch(0.72 0.18 330)",
+                    "--sidebar-accent-foreground": "oklch(0.98 0.01 285)",
+                    "--sidebar-border": "oklch(0.8 0.03 285)",
+                    "--sidebar-ring": "oklch(0.18 0.05 285)",
+                    "--shadow-sm": "0 1px 2px hsl(0 0% 0% / 0.1)",
+                    "--shadow": "0 2px 4px hsl(0 0% 0% / 0.15)",
+                    "--shadow-md": "0 4px 8px hsl(0 0% 0% / 0.2), 0 0 1px hsl(0 0% 0% / 0.3)",
+                    "--shadow-lg": "0 8px 16px hsl(0 0% 0% / 0.25), 0 0 2px hsl(0 0% 0% / 0.35)",
+                    "--shadow-xl": "0 12px 30px hsl(0 0% 0% / 0.3), 0 0 4px hsl(0 0% 0% / 0.4)"
+                },
+                "dark": {
+                    "--background": "oklch(0.12 0.04 285)",
+                    "--foreground": "oklch(0.92 0.02 285)",
+                    "--card": "oklch(0.18 0.04 285)",
+                    "--card-foreground": "oklch(0.92 0.02 285)",
+                    "--popover": "oklch(0.2 0.04 285)",
+                    "--popover-foreground": "oklch(0.92 0.02 285)",
+                    "--primary": "oklch(0.85 0.08 285)",
+                    "--primary-foreground": "oklch(0.12 0.04 285)",
+                    "--secondary": "oklch(0.25 0.04 285)",
+                    "--secondary-foreground": "oklch(0.85 0.02 285)",
+                    "--muted": "oklch(0.22 0.03 285)",
+                    "--muted-foreground": "oklch(0.65 0.03 285)",
+                    "--accent": "oklch(0.78 0.2 330)",
+                    "--accent-foreground": "oklch(0.12 0.04 285)",
+                    "--destructive": "oklch(0.55 0.18 25)",
+                    "--destructive-foreground": "oklch(0.92 0.02 285)",
+                    "--border": "oklch(0.35 0.04 285)",
+                    "--input": "oklch(0.35 0.04 285)",
+                    "--ring": "oklch(0.85 0.08 285)",
+                    "--chart-1": "oklch(0.85 0.08 285)",
+                    "--chart-2": "oklch(0.78 0.2 330)",
+                    "--chart-3": "oklch(0.55 0.15 200)",
+                    "--chart-4": "oklch(0.65 0.12 140)",
+                    "--chart-5": "oklch(0.45 0.1 260)",
+                    "--sidebar": "oklch(0.08 0.03 285)",
+                    "--sidebar-foreground": "oklch(0.92 0.02 285)",
+                    "--sidebar-primary": "oklch(0.85 0.08 285)",
+                    "--sidebar-primary-foreground": "oklch(0.12 0.04 285)",
+                    "--sidebar-accent": "oklch(0.78 0.2 330)",
+                    "--sidebar-accent-foreground": "oklch(0.12 0.04 285)",
+                    "--sidebar-border": "oklch(0.35 0.04 285)",
+                    "--sidebar-ring": "oklch(0.85 0.08 285)",
+                    "--shadow-sm": "0 1px 2px hsl(0 0% 0% / 0.3)",
+                    "--shadow": "0 2px 4px hsl(0 0% 0% / 0.4)",
+                    "--shadow-md": "0 4px 8px hsl(0 0% 0% / 0.5), 0 0 2px hsl(0 0% 0% / 0.6)",
+                    "--shadow-lg": "0 8px 16px hsl(0 0% 0% / 0.6), 0 0 4px hsl(0 0% 0% / 0.7)",
+                    "--shadow-xl": "0 12px 30px hsl(0 0% 0% / 0.7), 0 0 6px hsl(0 0% 0% / 0.8)"
+                }
+            },
             "css": {
                 "@layer base": {
                     "body": {
@@ -5404,7 +6498,6 @@
                     }
                 }
             },
-            "title": "Theme Ink Bleed",
             "author": "designbycode",
             "registryDependencies": [
                 "https://ui.designbycode.co.za/r/font-roboto-slab.json",
@@ -5412,12 +6505,102 @@
             ]
         },
         {
+            "title": "Theme Glass Frost",
             "name": "theme-glass-frost",
             "type": "registry:theme",
             "meta": {
                 "category": "styles",
                 "version": "1.0.0"
             },
+            "cssVars": {
+                "theme": {
+                    "--font-sans": "'Inter', sans-serif",
+                    "--font-serif": "'Playfair Display', serif",
+                    "--font-mono": "'Fira Code', monospace",
+                    "--radius-sm": "1rem",
+                    "--radius-md": "1rem",
+                    "--radius-lg": "1rem",
+                    "--radius-xl": "1.25rem"
+                },
+                "light": {
+                    "--background": "oklch(0.98 0.01 240)",
+                    "--foreground": "oklch(0.25 0.03 240)",
+                    "--card": "oklch(0.98 0.02 240 / 0.5)",
+                    "--card-foreground": "oklch(0.25 0.03 240)",
+                    "--popover": "oklch(0.99 0.02 240 / 0.6)",
+                    "--popover-foreground": "oklch(0.25 0.03 240)",
+                    "--primary": "oklch(0.65 0.15 230)",
+                    "--primary-foreground": "oklch(0.98 0.01 240)",
+                    "--secondary": "oklch(0.95 0.02 240)",
+                    "--secondary-foreground": "oklch(0.35 0.04 240)",
+                    "--muted": "oklch(0.96 0.02 240)",
+                    "--muted-foreground": "oklch(0.55 0.03 240)",
+                    "--accent": "oklch(0.8 0.12 200)",
+                    "--accent-foreground": "oklch(0.2 0.03 240)",
+                    "--destructive": "oklch(0.6 0.18 25)",
+                    "--destructive-foreground": "oklch(0.98 0.01 240)",
+                    "--border": "oklch(0.92 0.02 240 / 0.3)",
+                    "--input": "oklch(0.92 0.02 240 / 0.3)",
+                    "--ring": "oklch(0.65 0.15 230)",
+                    "--chart-1": "oklch(0.65 0.15 230)",
+                    "--chart-2": "oklch(0.8 0.12 200)",
+                    "--chart-3": "oklch(0.7 0.1 260)",
+                    "--chart-4": "oklch(0.6 0.12 150)",
+                    "--chart-5": "oklch(0.55 0.1 280)",
+                    "--sidebar": "oklch(0.97 0.02 240 / 0.6)",
+                    "--sidebar-foreground": "oklch(0.25 0.03 240)",
+                    "--sidebar-primary": "oklch(0.65 0.15 230)",
+                    "--sidebar-primary-foreground": "oklch(0.98 0.01 240)",
+                    "--sidebar-accent": "oklch(0.8 0.12 200)",
+                    "--sidebar-accent-foreground": "oklch(0.2 0.03 240)",
+                    "--sidebar-border": "oklch(0.92 0.02 240 / 0.3)",
+                    "--sidebar-ring": "oklch(0.65 0.15 230)",
+                    "--shadow-sm": "0 2px 8px hsl(200 20% 90% / 0.1)",
+                    "--shadow": "0 4px 16px hsl(200 20% 90% / 0.15)",
+                    "--shadow-md": "0 8px 24px hsl(200 20% 90% / 0.2)",
+                    "--shadow-lg": "0 12px 40px hsl(200 20% 90% / 0.25)",
+                    "--shadow-xl": "0 20px 60px hsl(200 20% 90% / 0.3)"
+                },
+                "dark": {
+                    "--background": "oklch(0.12 0.02 240)",
+                    "--foreground": "oklch(0.85 0.02 240)",
+                    "--card": "oklch(0.2 0.03 240 / 0.6)",
+                    "--card-foreground": "oklch(0.85 0.02 240)",
+                    "--popover": "oklch(0.25 0.03 240 / 0.7)",
+                    "--popover-foreground": "oklch(0.85 0.02 240)",
+                    "--primary": "oklch(0.7 0.15 230)",
+                    "--primary-foreground": "oklch(0.12 0.02 240)",
+                    "--secondary": "oklch(0.25 0.04 240)",
+                    "--secondary-foreground": "oklch(0.85 0.02 240)",
+                    "--muted": "oklch(0.22 0.03 240)",
+                    "--muted-foreground": "oklch(0.7 0.03 240)",
+                    "--accent": "oklch(0.8 0.12 200)",
+                    "--accent-foreground": "oklch(0.12 0.02 240)",
+                    "--destructive": "oklch(0.6 0.18 25)",
+                    "--destructive-foreground": "oklch(0.85 0.02 240)",
+                    "--border": "oklch(0.35 0.04 240 / 0.4)",
+                    "--input": "oklch(0.35 0.04 240 / 0.4)",
+                    "--ring": "oklch(0.7 0.15 230)",
+                    "--chart-1": "oklch(0.7 0.15 230)",
+                    "--chart-2": "oklch(0.8 0.12 200)",
+                    "--chart-3": "oklch(0.7 0.1 260)",
+                    "--chart-4": "oklch(0.6 0.12 150)",
+                    "--chart-5": "oklch(0.55 0.1 280)",
+                    "--sidebar": "oklch(0.08 0.02 240 / 0.7)",
+                    "--sidebar-foreground": "oklch(0.85 0.02 240)",
+                    "--sidebar-primary": "oklch(0.7 0.15 230)",
+                    "--sidebar-primary-foreground": "oklch(0.12 0.02 240)",
+                    "--sidebar-accent": "oklch(0.8 0.12 200)",
+                    "--sidebar-accent-foreground": "oklch(0.12 0.02 240)",
+                    "--sidebar-border": "oklch(0.35 0.04 240 / 0.4)",
+                    "--sidebar-ring": "oklch(0.7 0.15 230)",
+                    "--shadow-sm": "0 2px 8px hsl(200 20% 90% / 0.15)",
+                    "--shadow": "0 4px 16px hsl(200 20% 90% / 0.2)",
+                    "--shadow-md": "0 8px 24px hsl(200 20% 90% / 0.25)",
+                    "--shadow-lg": "0 12px 40px hsl(200 20% 90% / 0.3)",
+                    "--shadow-xl": "0 20px 60px hsl(200 20% 90% / 0.35)"
+                }
+            },
             "css": {
                 "@layer base": {
                     "body": {
@@ -5429,7 +6612,6 @@
                     }
                 }
             },
-            "title": "Theme Glass Frost",
             "author": "designbycode",
             "registryDependencies": [
                 "https://ui.designbycode.co.za/r/font-inter.json",
@@ -5438,12 +6620,102 @@
             ]
         },
         {
+            "title": "Theme LoFi Chill",
             "name": "theme-lofi-chill",
             "type": "registry:theme",
             "meta": {
                 "category": "styles",
                 "version": "1.0.0"
             },
+            "cssVars": {
+                "theme": {
+                    "--font-sans": "'Inter', sans-serif",
+                    "--font-serif": "'Caveat', cursive",
+                    "--font-mono": "'Fira Code', monospace",
+                    "--radius-sm": "0.75rem",
+                    "--radius-md": "0.75rem",
+                    "--radius-lg": "0.75rem",
+                    "--radius-xl": "1rem"
+                },
+                "light": {
+                    "--background": "oklch(0.96 0.02 60)",
+                    "--foreground": "oklch(0.3 0.04 60)",
+                    "--card": "oklch(0.97 0.02 60)",
+                    "--card-foreground": "oklch(0.3 0.04 60)",
+                    "--popover": "oklch(0.97 0.02 60)",
+                    "--popover-foreground": "oklch(0.3 0.04 60)",
+                    "--primary": "oklch(0.55 0.1 25)",
+                    "--primary-foreground": "oklch(0.96 0.02 60)",
+                    "--secondary": "oklch(0.9 0.03 60)",
+                    "--secondary-foreground": "oklch(0.4 0.04 60)",
+                    "--muted": "oklch(0.94 0.02 60)",
+                    "--muted-foreground": "oklch(0.55 0.03 60)",
+                    "--accent": "oklch(0.65 0.12 140)",
+                    "--accent-foreground": "oklch(0.25 0.03 60)",
+                    "--destructive": "oklch(0.55 0.15 25)",
+                    "--destructive-foreground": "oklch(0.96 0.02 60)",
+                    "--border": "oklch(0.88 0.03 60)",
+                    "--input": "oklch(0.88 0.03 60)",
+                    "--ring": "oklch(0.55 0.1 25)",
+                    "--chart-1": "oklch(0.55 0.1 25)",
+                    "--chart-2": "oklch(0.65 0.12 140)",
+                    "--chart-3": "oklch(0.7 0.08 200)",
+                    "--chart-4": "oklch(0.6 0.1 50)",
+                    "--chart-5": "oklch(0.5 0.08 280)",
+                    "--sidebar": "oklch(0.95 0.02 60)",
+                    "--sidebar-foreground": "oklch(0.3 0.04 60)",
+                    "--sidebar-primary": "oklch(0.55 0.1 25)",
+                    "--sidebar-primary-foreground": "oklch(0.96 0.02 60)",
+                    "--sidebar-accent": "oklch(0.65 0.12 140)",
+                    "--sidebar-accent-foreground": "oklch(0.25 0.03 60)",
+                    "--sidebar-border": "oklch(0.88 0.03 60)",
+                    "--sidebar-ring": "oklch(0.55 0.1 25)",
+                    "--shadow-sm": "0 1px 3px hsl(30 30% 80% / 0.2)",
+                    "--shadow": "0 2px 6px hsl(30 30% 80% / 0.3)",
+                    "--shadow-md": "0 4px 10px hsl(30 30% 80% / 0.4)",
+                    "--shadow-lg": "0 6px 16px hsl(30 30% 80% / 0.5)",
+                    "--shadow-xl": "0 10px 30px hsl(30 30% 80% / 0.6)"
+                },
+                "dark": {
+                    "--background": "oklch(0.18 0.04 60)",
+                    "--foreground": "oklch(0.85 0.02 60)",
+                    "--card": "oklch(0.22 0.04 60)",
+                    "--card-foreground": "oklch(0.85 0.02 60)",
+                    "--popover": "oklch(0.25 0.04 60)",
+                    "--popover-foreground": "oklch(0.85 0.02 60)",
+                    "--primary": "oklch(0.7 0.12 25)",
+                    "--primary-foreground": "oklch(0.18 0.04 60)",
+                    "--secondary": "oklch(0.28 0.05 60)",
+                    "--secondary-foreground": "oklch(0.75 0.03 60)",
+                    "--muted": "oklch(0.25 0.04 60)",
+                    "--muted-foreground": "oklch(0.7 0.03 60)",
+                    "--accent": "oklch(0.7 0.15 140)",
+                    "--accent-foreground": "oklch(0.18 0.04 60)",
+                    "--destructive": "oklch(0.55 0.15 25)",
+                    "--destructive-foreground": "oklch(0.85 0.02 60)",
+                    "--border": "oklch(0.38 0.04 60)",
+                    "--input": "oklch(0.38 0.04 60)",
+                    "--ring": "oklch(0.7 0.12 25)",
+                    "--chart-1": "oklch(0.7 0.12 25)",
+                    "--chart-2": "oklch(0.7 0.15 140)",
+                    "--chart-3": "oklch(0.7 0.08 200)",
+                    "--chart-4": "oklch(0.6 0.1 50)",
+                    "--chart-5": "oklch(0.5 0.08 280)",
+                    "--sidebar": "oklch(0.12 0.04 60)",
+                    "--sidebar-foreground": "oklch(0.85 0.02 60)",
+                    "--sidebar-primary": "oklch(0.7 0.12 25)",
+                    "--sidebar-primary-foreground": "oklch(0.18 0.04 60)",
+                    "--sidebar-accent": "oklch(0.7 0.15 140)",
+                    "--sidebar-accent-foreground": "oklch(0.18 0.04 60)",
+                    "--sidebar-border": "oklch(0.38 0.04 60)",
+                    "--sidebar-ring": "oklch(0.7 0.12 25)",
+                    "--shadow-sm": "0 1px 3px hsl(30 30% 80% / 0.3)",
+                    "--shadow": "0 2px 6px hsl(30 30% 80% / 0.4)",
+                    "--shadow-md": "0 4px 10px hsl(30 30% 80% / 0.5)",
+                    "--shadow-lg": "0 6px 16px hsl(30 30% 80% / 0.6)",
+                    "--shadow-xl": "0 10px 30px hsl(30 30% 80% / 0.7)"
+                }
+            },
             "css": {
                 "@layer base": {
                     "body": {
@@ -5455,7 +6727,6 @@
                     }
                 }
             },
-            "title": "Theme LoFi Chill",
             "author": "designbycode",
             "registryDependencies": [
                 "https://ui.designbycode.co.za/r/font-inter.json",
@@ -5464,12 +6735,102 @@
             ]
         },
         {
+            "title": "Theme Midnight Club",
             "name": "theme-midnight-club",
             "type": "registry:theme",
             "meta": {
                 "category": "styles",
                 "version": "1.0.0"
             },
+            "cssVars": {
+                "theme": {
+                    "--font-sans": "'Inter', sans-serif",
+                    "--font-serif": "'Bebas Neue', sans-serif",
+                    "--font-mono": "'Fira Code', monospace",
+                    "--radius-sm": "0.75rem",
+                    "--radius-md": "0.75rem",
+                    "--radius-lg": "0.75rem",
+                    "--radius-xl": "1rem"
+                },
+                "light": {
+                    "--background": "oklch(0.98 0.01 280)",
+                    "--foreground": "oklch(0.15 0.04 280)",
+                    "--card": "oklch(0.98 0.01 280)",
+                    "--card-foreground": "oklch(0.15 0.04 280)",
+                    "--popover": "oklch(0.98 0.01 280)",
+                    "--popover-foreground": "oklch(0.15 0.04 280)",
+                    "--primary": "oklch(0.55 0.28 320)",
+                    "--primary-foreground": "oklch(0.98 0.01 280)",
+                    "--secondary": "oklch(0.92 0.02 280)",
+                    "--secondary-foreground": "oklch(0.3 0.04 280)",
+                    "--muted": "oklch(0.94 0.02 280)",
+                    "--muted-foreground": "oklch(0.5 0.03 280)",
+                    "--accent": "oklch(0.5 0.25 260)",
+                    "--accent-foreground": "oklch(0.98 0.01 280)",
+                    "--destructive": "oklch(0.6 0.25 25)",
+                    "--destructive-foreground": "oklch(0.98 0.01 280)",
+                    "--border": "oklch(0.88 0.02 280)",
+                    "--input": "oklch(0.88 0.02 280)",
+                    "--ring": "oklch(0.55 0.28 320)",
+                    "--chart-1": "oklch(0.55 0.28 320)",
+                    "--chart-2": "oklch(0.5 0.25 260)",
+                    "--chart-3": "oklch(0.65 0.22 180)",
+                    "--chart-4": "oklch(0.8 0.2 40)",
+                    "--chart-5": "oklch(0.55 0.2 300)",
+                    "--sidebar": "oklch(0.95 0.01 280)",
+                    "--sidebar-foreground": "oklch(0.15 0.04 280)",
+                    "--sidebar-primary": "oklch(0.55 0.28 320)",
+                    "--sidebar-primary-foreground": "oklch(0.98 0.01 280)",
+                    "--sidebar-accent": "oklch(0.5 0.25 260)",
+                    "--sidebar-accent-foreground": "oklch(0.98 0.01 280)",
+                    "--sidebar-border": "oklch(0.88 0.02 280)",
+                    "--sidebar-ring": "oklch(0.55 0.28 320)",
+                    "--shadow-sm": "0 1px 3px hsl(280 20% 10% / 0.1)",
+                    "--shadow": "0 2px 6px hsl(280 20% 10% / 0.15)",
+                    "--shadow-md": "0 4px 10px hsl(280 20% 10% / 0.2)",
+                    "--shadow-lg": "0 6px 16px hsl(280 20% 10% / 0.25)",
+                    "--shadow-xl": "0 10px 30px hsl(280 20% 10% / 0.3)"
+                },
+                "dark": {
+                    "--background": "oklch(0.08 0.04 280)",
+                    "--foreground": "oklch(0.92 0.02 280)",
+                    "--card": "oklch(0.12 0.04 280)",
+                    "--card-foreground": "oklch(0.92 0.02 280)",
+                    "--popover": "oklch(0.15 0.04 280)",
+                    "--popover-foreground": "oklch(0.92 0.02 280)",
+                    "--primary": "oklch(0.75 0.28 320)",
+                    "--primary-foreground": "oklch(0.08 0.04 280)",
+                    "--secondary": "oklch(0.25 0.04 280)",
+                    "--secondary-foreground": "oklch(0.85 0.02 280)",
+                    "--muted": "oklch(0.18 0.04 280)",
+                    "--muted-foreground": "oklch(0.65 0.03 280)",
+                    "--accent": "oklch(0.7 0.25 260)",
+                    "--accent-foreground": "oklch(0.92 0.02 280)",
+                    "--destructive": "oklch(0.6 0.25 25)",
+                    "--destructive-foreground": "oklch(0.92 0.02 280)",
+                    "--border": "oklch(0.28 0.04 280)",
+                    "--input": "oklch(0.28 0.04 280)",
+                    "--ring": "oklch(0.75 0.28 320)",
+                    "--chart-1": "oklch(0.75 0.28 320)",
+                    "--chart-2": "oklch(0.7 0.25 260)",
+                    "--chart-3": "oklch(0.65 0.22 180)",
+                    "--chart-4": "oklch(0.8 0.2 40)",
+                    "--chart-5": "oklch(0.55 0.2 300)",
+                    "--sidebar": "oklch(0.06 0.04 280)",
+                    "--sidebar-foreground": "oklch(0.92 0.02 280)",
+                    "--sidebar-primary": "oklch(0.75 0.28 320)",
+                    "--sidebar-primary-foreground": "oklch(0.08 0.04 280)",
+                    "--sidebar-accent": "oklch(0.7 0.25 260)",
+                    "--sidebar-accent-foreground": "oklch(0.92 0.02 280)",
+                    "--sidebar-border": "oklch(0.28 0.04 280)",
+                    "--sidebar-ring": "oklch(0.75 0.28 320)",
+                    "--shadow-sm": "0 0 10px oklch(0.75 0.28 320 / 0.4)",
+                    "--shadow": "0 0 20px oklch(0.75 0.28 320 / 0.5), 0 0 40px oklch(0.7 0.25 260 / 0.3)",
+                    "--shadow-md": "0 0 30px oklch(0.75 0.28 320 / 0.6), 0 0 60px oklch(0.7 0.25 260 / 0.4)",
+                    "--shadow-lg": "0 0 50px oklch(0.75 0.28 320 / 0.7), 0 0 100px oklch(0.7 0.25 260 / 0.5)",
+                    "--shadow-xl": "0 0 80px oklch(0.75 0.28 320 / 0.8), 0 0 150px oklch(0.7 0.25 260 / 0.6)"
+                }
+            },
             "css": {
                 "@layer base": {
                     "body": {
@@ -5481,7 +6842,6 @@
                     }
                 }
             },
-            "title": "Theme Midnight Club",
             "author": "designbycode",
             "registryDependencies": [
                 "https://ui.designbycode.co.za/r/font-inter.json",
@@ -5490,12 +6850,102 @@
             ]
         },
         {
+            "title": "Theme Retro Terminal",
             "name": "theme-retro-terminal",
             "type": "registry:theme",
             "meta": {
                 "category": "styles",
                 "version": "1.0.0"
             },
+            "cssVars": {
+                "theme": {
+                    "--font-sans": "'IBM Plex Mono', monospace",
+                    "--font-serif": "'IBM Plex Mono', monospace",
+                    "--font-mono": "'IBM Plex Mono', monospace",
+                    "--radius-sm": "0",
+                    "--radius-md": "0",
+                    "--radius-lg": "0",
+                    "--radius-xl": "0.25rem"
+                },
+                "light": {
+                    "--background": "oklch(0.98 0.01 140)",
+                    "--foreground": "oklch(0.25 0.08 140)",
+                    "--card": "oklch(0.98 0.01 140)",
+                    "--card-foreground": "oklch(0.25 0.08 140)",
+                    "--popover": "oklch(0.98 0.01 140)",
+                    "--popover-foreground": "oklch(0.25 0.08 140)",
+                    "--primary": "oklch(0.35 0.15 140)",
+                    "--primary-foreground": "oklch(0.98 0.01 140)",
+                    "--secondary": "oklch(0.92 0.02 140)",
+                    "--secondary-foreground": "oklch(0.4 0.06 140)",
+                    "--muted": "oklch(0.94 0.02 140)",
+                    "--muted-foreground": "oklch(0.5 0.05 140)",
+                    "--accent": "oklch(0.55 0.18 40)",
+                    "--accent-foreground": "oklch(0.98 0.01 140)",
+                    "--destructive": "oklch(0.7 0.22 25)",
+                    "--destructive-foreground": "oklch(0.98 0.01 140)",
+                    "--border": "oklch(0.85 0.03 140)",
+                    "--input": "oklch(0.85 0.03 140)",
+                    "--ring": "oklch(0.35 0.15 140)",
+                    "--chart-1": "oklch(0.35 0.15 140)",
+                    "--chart-2": "oklch(0.55 0.18 40)",
+                    "--chart-3": "oklch(0.7 0.18 200)",
+                    "--chart-4": "oklch(0.65 0.15 280)",
+                    "--chart-5": "oklch(0.6 0.15 160)",
+                    "--sidebar": "oklch(0.96 0.01 140)",
+                    "--sidebar-foreground": "oklch(0.25 0.08 140)",
+                    "--sidebar-primary": "oklch(0.35 0.15 140)",
+                    "--sidebar-primary-foreground": "oklch(0.98 0.01 140)",
+                    "--sidebar-accent": "oklch(0.55 0.18 40)",
+                    "--sidebar-accent-foreground": "oklch(0.98 0.01 140)",
+                    "--sidebar-border": "oklch(0.85 0.03 140)",
+                    "--sidebar-ring": "oklch(0.35 0.15 140)",
+                    "--shadow-sm": "0 1px 2px hsl(140 30% 60% / 0.05)",
+                    "--shadow": "0 2px 4px hsl(140 30% 60% / 0.1)",
+                    "--shadow-md": "0 4px 8px hsl(140 30% 60% / 0.15)",
+                    "--shadow-lg": "0 6px 16px hsl(140 30% 60% / 0.2)",
+                    "--shadow-xl": "0 10px 30px hsl(140 30% 60% / 0.25)"
+                },
+                "dark": {
+                    "--background": "oklch(0.05 0.02 140)",
+                    "--foreground": "oklch(0.75 0.2 140)",
+                    "--card": "oklch(0.08 0.02 140)",
+                    "--card-foreground": "oklch(0.75 0.2 140)",
+                    "--popover": "oklch(0.08 0.02 140)",
+                    "--popover-foreground": "oklch(0.75 0.2 140)",
+                    "--primary": "oklch(0.75 0.2 140)",
+                    "--primary-foreground": "oklch(0.08 0.02 140)",
+                    "--secondary": "oklch(0.25 0.04 140)",
+                    "--secondary-foreground": "oklch(0.7 0.15 140)",
+                    "--muted": "oklch(0.15 0.03 140)",
+                    "--muted-foreground": "oklch(0.55 0.1 140)",
+                    "--accent": "oklch(0.8 0.18 40)",
+                    "--accent-foreground": "oklch(0.08 0.02 140)",
+                    "--destructive": "oklch(0.7 0.22 25)",
+                    "--destructive-foreground": "oklch(0.08 0.02 140)",
+                    "--border": "oklch(0.25 0.04 140)",
+                    "--input": "oklch(0.25 0.04 140)",
+                    "--ring": "oklch(0.75 0.2 140)",
+                    "--chart-1": "oklch(0.75 0.2 140)",
+                    "--chart-2": "oklch(0.8 0.18 40)",
+                    "--chart-3": "oklch(0.7 0.18 200)",
+                    "--chart-4": "oklch(0.65 0.15 280)",
+                    "--chart-5": "oklch(0.6 0.15 160)",
+                    "--sidebar": "oklch(0.04 0.02 140)",
+                    "--sidebar-foreground": "oklch(0.75 0.2 140)",
+                    "--sidebar-primary": "oklch(0.75 0.2 140)",
+                    "--sidebar-primary-foreground": "oklch(0.08 0.02 140)",
+                    "--sidebar-accent": "oklch(0.8 0.18 40)",
+                    "--sidebar-accent-foreground": "oklch(0.08 0.02 140)",
+                    "--sidebar-border": "oklch(0.25 0.04 140)",
+                    "--sidebar-ring": "oklch(0.75 0.2 140)",
+                    "--shadow-sm": "0 0 2px oklch(0.75 0.2 140 / 0.3)",
+                    "--shadow": "0 0 4px oklch(0.75 0.2 140 / 0.4)",
+                    "--shadow-md": "0 0 8px oklch(0.75 0.2 140 / 0.5)",
+                    "--shadow-lg": "0 0 16px oklch(0.75 0.2 140 / 0.6)",
+                    "--shadow-xl": "0 0 24px oklch(0.75 0.2 140 / 0.7)"
+                }
+            },
             "css": {
                 "@layer base": {
                     "body": {
@@ -5507,19 +6957,108 @@
                     }
                 }
             },
-            "title": "Theme Retro Terminal",
             "author": "designbycode",
             "registryDependencies": [
                 "https://ui.designbycode.co.za/r/font-ibm-plex-mono.json"
             ]
         },
         {
+            "title": "Theme Crypto Labs",
             "name": "theme-crypto-labs",
             "type": "registry:theme",
             "meta": {
                 "category": "styles",
                 "version": "1.0.0"
             },
+            "cssVars": {
+                "theme": {
+                    "--font-sans": "'Inter', sans-serif",
+                    "--font-serif": "'Orbitron', sans-serif",
+                    "--font-mono": "'IBM Plex Mono', monospace",
+                    "--radius-sm": "0.25rem",
+                    "--radius-md": "0.25rem",
+                    "--radius-lg": "0.25rem",
+                    "--radius-xl": "0.5rem"
+                },
+                "light": {
+                    "--background": "oklch(0.98 0.01 285)",
+                    "--foreground": "oklch(0.15 0.04 285)",
+                    "--card": "oklch(0.98 0.01 285)",
+                    "--card-foreground": "oklch(0.15 0.04 285)",
+                    "--popover": "oklch(0.98 0.01 285)",
+                    "--popover-foreground": "oklch(0.15 0.04 285)",
+                    "--primary": "oklch(0.55 0.25 280)",
+                    "--primary-foreground": "oklch(0.98 0.01 285)",
+                    "--secondary": "oklch(0.92 0.02 285)",
+                    "--secondary-foreground": "oklch(0.3 0.04 285)",
+                    "--muted": "oklch(0.94 0.02 285)",
+                    "--muted-foreground": "oklch(0.5 0.03 285)",
+                    "--accent": "oklch(0.55 0.22 150)",
+                    "--accent-foreground": "oklch(0.98 0.01 285)",
+                    "--destructive": "oklch(0.65 0.25 25)",
+                    "--destructive-foreground": "oklch(0.98 0.01 285)",
+                    "--border": "oklch(0.88 0.02 285)",
+                    "--input": "oklch(0.88 0.02 285)",
+                    "--ring": "oklch(0.55 0.25 280)",
+                    "--chart-1": "oklch(0.55 0.25 280)",
+                    "--chart-2": "oklch(0.55 0.22 150)",
+                    "--chart-3": "oklch(0.8 0.2 40)",
+                    "--chart-4": "oklch(0.65 0.22 320)",
+                    "--chart-5": "oklch(0.6 0.18 200)",
+                    "--sidebar": "oklch(0.96 0.01 285)",
+                    "--sidebar-foreground": "oklch(0.15 0.04 285)",
+                    "--sidebar-primary": "oklch(0.55 0.25 280)",
+                    "--sidebar-primary-foreground": "oklch(0.98 0.01 285)",
+                    "--sidebar-accent": "oklch(0.55 0.22 150)",
+                    "--sidebar-accent-foreground": "oklch(0.98 0.01 285)",
+                    "--sidebar-border": "oklch(0.88 0.02 285)",
+                    "--sidebar-ring": "oklch(0.55 0.25 280)",
+                    "--shadow-sm": "0 1px 2px hsl(280 30% 10% / 0.05)",
+                    "--shadow": "0 2px 4px hsl(280 30% 10% / 0.1)",
+                    "--shadow-md": "0 4px 8px hsl(280 30% 10% / 0.15)",
+                    "--shadow-lg": "0 6px 16px hsl(280 30% 10% / 0.2)",
+                    "--shadow-xl": "0 10px 30px hsl(280 30% 10% / 0.25)"
+                },
+                "dark": {
+                    "--background": "oklch(0.08 0.03 285)",
+                    "--foreground": "oklch(0.92 0.02 285)",
+                    "--card": "oklch(0.12 0.03 285)",
+                    "--card-foreground": "oklch(0.92 0.02 285)",
+                    "--popover": "oklch(0.15 0.03 285)",
+                    "--popover-foreground": "oklch(0.92 0.02 285)",
+                    "--primary": "oklch(0.7 0.25 280)",
+                    "--primary-foreground": "oklch(0.08 0.03 285)",
+                    "--secondary": "oklch(0.2 0.04 285)",
+                    "--secondary-foreground": "oklch(0.85 0.02 285)",
+                    "--muted": "oklch(0.15 0.03 285)",
+                    "--muted-foreground": "oklch(0.6 0.03 285)",
+                    "--accent": "oklch(0.72 0.22 150)",
+                    "--accent-foreground": "oklch(0.08 0.03 285)",
+                    "--destructive": "oklch(0.65 0.25 25)",
+                    "--destructive-foreground": "oklch(0.92 0.02 285)",
+                    "--border": "oklch(0.25 0.04 285)",
+                    "--input": "oklch(0.25 0.04 285)",
+                    "--ring": "oklch(0.7 0.25 280)",
+                    "--chart-1": "oklch(0.7 0.25 280)",
+                    "--chart-2": "oklch(0.72 0.22 150)",
+                    "--chart-3": "oklch(0.8 0.2 40)",
+                    "--chart-4": "oklch(0.65 0.22 320)",
+                    "--chart-5": "oklch(0.6 0.18 200)",
+                    "--sidebar": "oklch(0.05 0.03 285)",
+                    "--sidebar-foreground": "oklch(0.92 0.02 285)",
+                    "--sidebar-primary": "oklch(0.7 0.25 280)",
+                    "--sidebar-primary-foreground": "oklch(0.08 0.03 285)",
+                    "--sidebar-accent": "oklch(0.72 0.22 150)",
+                    "--sidebar-accent-foreground": "oklch(0.08 0.03 285)",
+                    "--sidebar-border": "oklch(0.25 0.04 285)",
+                    "--sidebar-ring": "oklch(0.7 0.25 280)",
+                    "--shadow-sm": "0 0 10px oklch(0.7 0.25 280 / 0.3)",
+                    "--shadow": "0 0 20px oklch(0.7 0.25 280 / 0.4)",
+                    "--shadow-md": "0 0 30px oklch(0.7 0.25 280 / 0.5)",
+                    "--shadow-lg": "0 0 50px oklch(0.7 0.25 280 / 0.6)",
+                    "--shadow-xl": "0 0 80px oklch(0.7 0.25 280 / 0.7)"
+                }
+            },
             "css": {
                 "@layer base": {
                     "body": {
@@ -5531,7 +7070,6 @@
                     }
                 }
             },
-            "title": "Theme Crypto Labs",
             "author": "designbycode",
             "registryDependencies": [
                 "https://ui.designbycode.co.za/r/font-inter.json",
@@ -5540,12 +7078,102 @@
             ]
         },
         {
+            "title": "Theme Fintech Pro",
             "name": "theme-fintech-pro",
             "type": "registry:theme",
             "meta": {
                 "category": "styles",
                 "version": "1.0.0"
             },
+            "cssVars": {
+                "theme": {
+                    "--font-sans": "'Inter', sans-serif",
+                    "--font-serif": "'Playfair Display', serif",
+                    "--font-mono": "'IBM Plex Mono', monospace",
+                    "--radius-sm": "0.25rem",
+                    "--radius-md": "0.25rem",
+                    "--radius-lg": "0.25rem",
+                    "--radius-xl": "0.5rem"
+                },
+                "light": {
+                    "--background": "oklch(0.98 0.01 265)",
+                    "--foreground": "oklch(0.2 0.04 265)",
+                    "--card": "oklch(0.98 0.01 265)",
+                    "--card-foreground": "oklch(0.2 0.04 265)",
+                    "--popover": "oklch(0.98 0.01 265)",
+                    "--popover-foreground": "oklch(0.2 0.04 265)",
+                    "--primary": "oklch(0.55 0.15 265)",
+                    "--primary-foreground": "oklch(0.98 0.01 265)",
+                    "--secondary": "oklch(0.92 0.02 265)",
+                    "--secondary-foreground": "oklch(0.35 0.03 265)",
+                    "--muted": "oklch(0.94 0.02 265)",
+                    "--muted-foreground": "oklch(0.5 0.03 265)",
+                    "--accent": "oklch(0.72 0.18 45)",
+                    "--accent-foreground": "oklch(0.08 0.02 265)",
+                    "--destructive": "oklch(0.6 0.22 25)",
+                    "--destructive-foreground": "oklch(0.98 0.01 265)",
+                    "--border": "oklch(0.88 0.02 265)",
+                    "--input": "oklch(0.88 0.02 265)",
+                    "--ring": "oklch(0.55 0.15 265)",
+                    "--chart-1": "oklch(0.55 0.15 265)",
+                    "--chart-2": "oklch(0.72 0.18 45)",
+                    "--chart-3": "oklch(0.65 0.12 140)",
+                    "--chart-4": "oklch(0.7 0.15 200)",
+                    "--chart-5": "oklch(0.5 0.1 280)",
+                    "--sidebar": "oklch(0.96 0.01 265)",
+                    "--sidebar-foreground": "oklch(0.2 0.04 265)",
+                    "--sidebar-primary": "oklch(0.55 0.15 265)",
+                    "--sidebar-primary-foreground": "oklch(0.98 0.01 265)",
+                    "--sidebar-accent": "oklch(0.72 0.18 45)",
+                    "--sidebar-accent-foreground": "oklch(0.08 0.02 265)",
+                    "--sidebar-border": "oklch(0.88 0.02 265)",
+                    "--sidebar-ring": "oklch(0.55 0.15 265)",
+                    "--shadow-sm": "0 1px 2px hsl(220 30% 10% / 0.05)",
+                    "--shadow": "0 2px 4px hsl(220 30% 10% / 0.1)",
+                    "--shadow-md": "0 4px 8px hsl(220 30% 10% / 0.15)",
+                    "--shadow-lg": "0 6px 16px hsl(220 30% 10% / 0.2)",
+                    "--shadow-xl": "0 10px 30px hsl(220 30% 10% / 0.25)"
+                },
+                "dark": {
+                    "--background": "oklch(0.08 0.02 265)",
+                    "--foreground": "oklch(0.92 0.01 265)",
+                    "--card": "oklch(0.12 0.02 265)",
+                    "--card-foreground": "oklch(0.92 0.01 265)",
+                    "--popover": "oklch(0.15 0.02 265)",
+                    "--popover-foreground": "oklch(0.92 0.01 265)",
+                    "--primary": "oklch(0.55 0.15 265)",
+                    "--primary-foreground": "oklch(0.98 0.01 265)",
+                    "--secondary": "oklch(0.25 0.03 265)",
+                    "--secondary-foreground": "oklch(0.88 0.02 265)",
+                    "--muted": "oklch(0.2 0.02 265)",
+                    "--muted-foreground": "oklch(0.65 0.02 265)",
+                    "--accent": "oklch(0.72 0.18 45)",
+                    "--accent-foreground": "oklch(0.08 0.02 265)",
+                    "--destructive": "oklch(0.6 0.22 25)",
+                    "--destructive-foreground": "oklch(0.98 0.01 265)",
+                    "--border": "oklch(0.3 0.03 265)",
+                    "--input": "oklch(0.3 0.03 265)",
+                    "--ring": "oklch(0.55 0.15 265)",
+                    "--chart-1": "oklch(0.55 0.15 265)",
+                    "--chart-2": "oklch(0.72 0.18 45)",
+                    "--chart-3": "oklch(0.65 0.12 140)",
+                    "--chart-4": "oklch(0.7 0.15 200)",
+                    "--chart-5": "oklch(0.5 0.1 280)",
+                    "--sidebar": "oklch(0.05 0.02 265)",
+                    "--sidebar-foreground": "oklch(0.92 0.01 265)",
+                    "--sidebar-primary": "oklch(0.55 0.15 265)",
+                    "--sidebar-primary-foreground": "oklch(0.98 0.01 265)",
+                    "--sidebar-accent": "oklch(0.72 0.18 45)",
+                    "--sidebar-accent-foreground": "oklch(0.08 0.02 265)",
+                    "--sidebar-border": "oklch(0.3 0.03 265)",
+                    "--sidebar-ring": "oklch(0.55 0.15 265)",
+                    "--shadow-sm": "0 2px 4px hsl(220 30% 10% / 0.3)",
+                    "--shadow": "0 4px 12px hsl(220 30% 10% / 0.4)",
+                    "--shadow-md": "0 8px 20px hsl(220 30% 10% / 0.5)",
+                    "--shadow-lg": "0 12px 30px hsl(220 30% 10% / 0.6)",
+                    "--shadow-xl": "0 20px 50px hsl(220 30% 10% / 0.7)"
+                }
+            },
             "css": {
                 "@layer base": {
                     "body": {
@@ -5557,604 +7185,10 @@
                     }
                 }
             },
-            "title": "Theme Fintech Pro",
             "author": "designbycode",
             "registryDependencies": [
                 "https://ui.designbycode.co.za/r/font-inter.json",
                 "https://ui.designbycode.co.za/r/font-playfair-display.json",
-                "https://ui.designbycode.co.za/r/font-ibm-plex-mono.json"
-            ]
-        },
-        {
-            "name": "theme-med-scrubs",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "title": "Theme Med Scrubs",
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-inter.json",
-                "https://ui.designbycode.co.za/r/font-fira-mono.json"
-            ]
-        },
-        {
-            "name": "theme-edugeek",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "title": "Theme EduGeek",
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-inter.json",
-                "https://ui.designbycode.co.za/r/font-roboto-slab.json",
-                "https://ui.designbycode.co.za/r/font-fira-mono.json"
-            ]
-        },
-        {
-            "name": "theme-esports-arena",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "title": "Theme Esports Arena",
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-orbitron.json",
-                "https://ui.designbycode.co.za/r/font-bebas-neue.json",
-                "https://ui.designbycode.co.za/r/font-ibm-plex-mono.json"
-            ]
-        },
-        {
-            "name": "theme-foodie-crave",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "title": "Theme Foodie Crave",
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-inter.json",
-                "https://ui.designbycode.co.za/r/font-caveat.json",
-                "https://ui.designbycode.co.za/r/font-fira-mono.json"
-            ]
-        },
-        {
-            "name": "theme-fashion-avant",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "title": "Theme Fashion Avant",
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-inter.json",
-                "https://ui.designbycode.co.za/r/font-playfair-display.json",
-                "https://ui.designbycode.co.za/r/font-ibm-plex-mono.json"
-            ]
-        },
-        {
-            "name": "theme-realty-modern",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "title": "Theme Realty Modern",
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-inter.json",
-                "https://ui.designbycode.co.za/r/font-playfair-display.json",
-                "https://ui.designbycode.co.za/r/font-ibm-plex-mono.json"
-            ]
-        },
-        {
-            "name": "theme-startup-launch",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "title": "Theme Startup Launch",
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-inter.json",
-                "https://ui.designbycode.co.za/r/font-fira-mono.json"
-            ]
-        },
-        {
-            "name": "theme-portfolio-light",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "title": "Theme Portfolio Light",
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-inter.json",
-                "https://ui.designbycode.co.za/r/font-playfair-display.json",
-                "https://ui.designbycode.co.za/r/font-ibm-plex-mono.json"
-            ]
-        },
-        {
-            "name": "theme-sunset-gradient",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "title": "Theme Sunset Gradient",
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-inter.json",
-                "https://ui.designbycode.co.za/r/font-playfair-display.json",
-                "https://ui.designbycode.co.za/r/font-fira-mono.json"
-            ]
-        },
-        {
-            "name": "theme-ocean-depth",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "title": "Theme Ocean Depth",
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-inter.json",
-                "https://ui.designbycode.co.za/r/font-playfair-display.json",
-                "https://ui.designbycode.co.za/r/font-fira-mono.json"
-            ]
-        },
-        {
-            "name": "theme-monochrome-pro",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "title": "Theme Monochrome Pro",
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-inter.json",
-                "https://ui.designbycode.co.za/r/font-ibm-plex-mono.json"
-            ]
-        },
-        {
-            "name": "theme-pastel-dream",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "title": "Theme Pastel Dream",
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-inter.json",
-                "https://ui.designbycode.co.za/r/font-caveat.json",
-                "https://ui.designbycode.co.za/r/font-fira-mono.json"
-            ]
-        },
-        {
-            "name": "theme-autumn-grain",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "title": "Theme Autumn Grain",
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-inter.json",
-                "https://ui.designbycode.co.za/r/font-playfair-display.json",
-                "https://ui.designbycode.co.za/r/font-fira-mono.json"
-            ]
-        },
-        {
-            "name": "theme-botanical",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "title": "Theme Botanical",
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-inter.json",
-                "https://ui.designbycode.co.za/r/font-caveat.json",
-                "https://ui.designbycode.co.za/r/font-fira-mono.json"
-            ]
-        },
-        {
-            "name": "theme-warehouse",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "title": "Theme Warehouse",
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-inter.json",
-                "https://ui.designbycode.co.za/r/font-roboto-slab.json",
-                "https://ui.designbycode.co.za/r/font-ibm-plex-mono.json"
-            ]
-        },
-        {
-            "name": "theme-concrete-jungle",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "title": "Theme Concrete Jungle",
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-inter.json",
-                "https://ui.designbycode.co.za/r/font-playfair-display.json",
-                "https://ui.designbycode.co.za/r/font-ibm-plex-mono.json"
-            ]
-        },
-        {
-            "name": "theme-mars-colony",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "title": "Theme Mars Colony",
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-inter.json",
-                "https://ui.designbycode.co.za/r/font-orbitron.json",
-                "https://ui.designbycode.co.za/r/font-ibm-plex-mono.json"
-            ]
-        },
-        {
-            "name": "theme-nordic-light",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "title": "Theme Nordic Light",
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-inter.json",
-                "https://ui.designbycode.co.za/r/font-playfair-display.json",
-                "https://ui.designbycode.co.za/r/font-fira-mono.json"
-            ]
-        },
-        {
-            "name": "theme-liquid-elastic",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "title": "Theme Liquid Elastic",
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-inter.json",
-                "https://ui.designbycode.co.za/r/font-playfair-display.json",
-                "https://ui.designbycode.co.za/r/font-fira-mono.json"
-            ]
-        },
-        {
-            "name": "theme-kinetic-type",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "title": "Theme Kinetic Type",
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-bebas-neue.json",
-                "https://ui.designbycode.co.za/r/font-ibm-plex-mono.json"
-            ]
-        },
-        {
-            "name": "theme-brutalist",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "title": "Theme Brutalist",
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-roboto-slab.json",
-                "https://ui.designbycode.co.za/r/font-ibm-plex-mono.json"
-            ]
-        },
-        {
-            "name": "theme-ethereal",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "title": "Theme Ethereal",
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-inter.json",
-                "https://ui.designbycode.co.za/r/font-playfair-display.json",
-                "https://ui.designbycode.co.za/r/font-fira-mono.json"
-            ]
-        },
-        {
-            "name": "theme-zinc-stone",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "title": "Theme Zinc Stone",
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-inter.json",
-                "https://ui.designbycode.co.za/r/font-roboto-slab.json",
                 "https://ui.designbycode.co.za/r/font-ibm-plex-mono.json"
             ]
         }
