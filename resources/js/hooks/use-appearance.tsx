@@ -12,6 +12,10 @@ export type UseAppearanceReturn = {
 const listeners = new Set<() => void>();
 let currentAppearance: Appearance = 'system';
 
+export function setSsrAppearance(appearance: Appearance): void {
+    currentAppearance = appearance;
+}
+
 const prefersDark = (): boolean => {
     if (typeof window === 'undefined') {
         return false;
@@ -35,6 +39,11 @@ const getStoredAppearance = (): Appearance => {
     }
 
     return (localStorage.getItem('appearance') as Appearance) || 'system';
+};
+
+const getCookieAppearance = (): Appearance => {
+    const match = document.cookie.match(/appearance=([^;]+)/);
+    return (match?.[1] as Appearance) || 'system';
 };
 
 const isDarkMode = (appearance: Appearance): boolean => {
@@ -91,7 +100,7 @@ export function useAppearance(): UseAppearanceReturn {
     const appearance: Appearance = useSyncExternalStore(
         subscribe,
         () => currentAppearance,
-        () => 'system',
+        () => getCookieAppearance(),
     );
 
     const resolvedAppearance: ResolvedAppearance = isDarkMode(appearance)
