@@ -1,28 +1,27 @@
-/* 🌤 LIGHT MODE — Artistic Gradient */
+
 :root {
     --background: oklch(0.98 0.01 260);
     --foreground: oklch(0.20 0.02 260);
 
-    /* cards become soft gradient surfaces */
+
     --card: oklch(1 0 0);
     --card-foreground: oklch(0.20 0.02 260);
 
     --popover: oklch(1 0 0);
     --popover-foreground: oklch(0.20 0.02 260);
 
-    /* primary = violet → blue energy */
+
     --primary: oklch(0.65 0.20 280);
     --primary-foreground: oklch(1 0 0);
 
-    /* secondary = aqua glow */
+
     --secondary: oklch(0.80 0.10 200);
     --secondary-foreground: oklch(0.18 0.02 260);
 
-    /* muted = soft haze */
     --muted: oklch(0.94 0.01 260);
     --muted-foreground: oklch(0.45 0.02 260);
 
-    /* accent = sunset gradient tone */
+
     --accent: oklch(0.75 0.18 40);
     --accent-foreground: oklch(0.15 0.02 260);
 
@@ -33,14 +32,14 @@
     --input: oklch(0.90 0.01 260);
     --ring: oklch(0.65 0.20 280);
 
-    /* charts = expressive palette */
-    --chart-1: oklch(0.65 0.20 280); /* violet */
-    --chart-2: oklch(0.75 0.18 40); /* orange */
-    --chart-3: oklch(0.80 0.10 200); /* aqua */
-    --chart-4: oklch(0.70 0.15 320); /* pink */
-    --chart-5: oklch(0.60 0.12 160); /* green */
 
-    /* sidebar */
+    --chart-1: oklch(0.65 0.20 280);
+    --chart-2: oklch(0.75 0.18 40);
+    --chart-3: oklch(0.80 0.10 200);
+    --chart-4: oklch(0.70 0.15 320);
+    --chart-5: oklch(0.60 0.12 160);
+
+
     --sidebar: oklch(0.97 0.01 260);
     --sidebar-foreground: oklch(0.20 0.02 260);
     --sidebar-primary: oklch(0.65 0.20 280);
@@ -50,15 +49,15 @@
     --sidebar-border: oklch(0.90 0.01 260);
     --sidebar-ring: oklch(0.65 0.20 280);
 
-    /* typography */
+
     --font-sans: "Inter", sans-serif;
     --font-serif: "Playfair Display", serif;
     --font-mono: "Fira Code", monospace;
 
-    /* soft expressive geometry */
+
     --radius: 1rem;
 
-    /* light floating shadows */
+
     --shadow-sm: 0 2px 10px hsl(280 80% 50% / 0.06);
     --shadow: 0 8px 24px hsl(280 80% 50% / 0.10);
     --shadow-md: 0 14px 40px hsl(280 80% 50% / 0.14);
@@ -68,7 +67,7 @@
     --spacing: 0.25rem;
 }
 
-/* 🌙 DARK MODE — Neon Gradient Art */
+
 .dark {
     --background: oklch(0.10 0.02 260);
     --foreground: oklch(0.92 0.02 260);
@@ -79,19 +78,19 @@
     --popover: oklch(0.16 0.02 260);
     --popover-foreground: oklch(0.92 0.02 260);
 
-    /* primary = neon violet */
+
     --primary: oklch(0.75 0.28 280);
     --primary-foreground: oklch(0.10 0.02 260);
 
-    /* secondary = neon cyan */
+
     --secondary: oklch(0.75 0.22 200);
     --secondary-foreground: oklch(0.10 0.02 260);
 
-    /* muted */
+
     --muted: oklch(0.18 0.02 260);
     --muted-foreground: oklch(0.65 0.02 260);
 
-    /* accent = neon pink/orange blend */
+
     --accent: oklch(0.78 0.25 40);
     --accent-foreground: oklch(0.10 0.02 260);
 
@@ -102,7 +101,7 @@
     --input: oklch(0.25 0.02 260);
     --ring: oklch(0.75 0.28 280);
 
-    /* sidebar */
+
     --sidebar: oklch(0.12 0.02 260);
     --sidebar-foreground: oklch(0.92 0.02 260);
     --sidebar-primary: oklch(0.75 0.28 280);
@@ -112,7 +111,7 @@
     --sidebar-border: oklch(0.25 0.02 260);
     --sidebar-ring: oklch(0.75 0.28 280);
 
-    /* stronger glow-based shadows */
+
     --shadow-sm: 0 2px 12px hsl(280 100% 70% / 0.20);
     --shadow: 0 10px 30px hsl(200 100% 60% / 0.25);
     --shadow-md: 0 18px 50px hsl(320 100% 65% / 0.30);
@@ -120,7 +119,7 @@
     --shadow-xl: 0 50px 120px hsl(200 100% 60% / 0.45);
 }
 
-/* 🔌 TOKEN MAPPING */
+
 @theme inline {
     --color-background: var(--background);
     --color-foreground: var(--foreground);
@@ -173,7 +172,7 @@
     --shadow-xl: var(--shadow-xl);
 }
 
-/* 🧩 BASE */
+
 @layer base {
     * {
         @apply border-border outline-ring/40;

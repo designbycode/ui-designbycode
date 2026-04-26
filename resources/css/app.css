@@ -5,6 +5,10 @@
 @import "@fontsource/bebas-neue";
 @import "./prism.css";
 @import "@fontsource-variable/playfair-display";
+@import "@fontsource/orbitron";
+@import "@fontsource/ibm-plex-mono";
+@import "@fontsource-variable/inter";
+@import "@fontsource/fira-mono";
 
 @source '../views';
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
@@ -138,10 +142,13 @@
 @layer base {
     * {
         @apply border-border;
+    border-color: var(--border);
     }
 
     body {
         @apply bg-background text-foreground selection:bg-primary/60 selection:text-primary-foreground/60;
+    background: var(--background);
+    color: var(--foreground);
     }
 }
 
@@ -251,6 +258,10 @@
     --conic-color: var(--color-primary);
     --animate-glow-conic: glow-conic 3s linear infinite;
     --color-conic-color: var(--conic-color);
+    --font-orbitron-serif: 'Orbitron', sans-serif;
+    --font-ibm-plex-mono: 'IBM Plex Mono', monospace;
+    --font-inter: 'Inter Variable', sans-serif;
+    --font-fira-mono: 'Fira Mono', monospace;
 
 }
 
@@ -1588,4 +1599,3 @@
     }
 
 }
-
