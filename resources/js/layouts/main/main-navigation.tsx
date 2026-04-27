@@ -1,6 +1,9 @@
 import { Link } from '@inertiajs/react';
 import { Crown } from 'lucide-react';
+import { useState } from 'react';
 import AppLogo from '@/components/app-logo';
+import PaletteButton from '@/components/palette-button';
+import ThemeSearchDialog from '@/components/theme-search-dialog';
 import ThemeToggle from '@/components/theme-toggle';
 import { Button } from '@/components/ui/button';
 import {
@@ -18,6 +21,7 @@ import { home } from '@/routes';
 import { provider } from '@/routes/auth';
 import { index as animationsIndex } from '@/routes/docs/animations/index';
 import { index as docs } from '@/routes/docs/index';
+import { index as themesIndex } from '@/routes/docs/themes/index';
 
 const links = [
     {
@@ -34,10 +38,15 @@ const links = [
         title: 'Animations',
         href: animationsIndex.url(),
     },
+    {
+        title: 'Themes',
+        href: themesIndex.url(),
+    },
 ];
 
 const MainNavigation = ({ className }: { className?: string }) => {
     const isMobile = useIsMobile();
+    const [paletteOpen, setPaletteOpen] = useState(false);
 
     const { ref, pinned } = useHeadroom({
         enabled: !isMobile,
@@ -49,78 +58,93 @@ const MainNavigation = ({ className }: { className?: string }) => {
     } as UseHeadroomOptions);
 
     return (
-        <div
-            ref={ref}
-            className={cn(
-                `fixed inset-x-0 top-0 z-50 flex h-16 items-center border-b border-border bg-background/75 backdrop-blur-sm transition-transform duration-700`,
-                pinned ? 'translate-y-0' : '-translate-y-16',
-                className,
-            )}
-        >
-            <Wrapper className="flex items-center justify-between">
-                <Link prefetch href={home()}>
-                    <AppLogo />
-                </Link>
+        <>
+            <div
+                ref={ref}
+                className={cn(
+                    `fixed inset-x-0 top-0 z-50 flex h-16 items-center border-b border-border bg-background/75 backdrop-blur-sm transition-transform duration-700`,
+                    pinned ? 'translate-y-0' : '-translate-y-16',
+                    className,
+                )}
+            >
+                <Wrapper className="flex items-center justify-between">
+                    <Link prefetch href={home()}>
+                        <AppLogo />
+                    </Link>
 
-                <div className="hidden items-center space-x-2 md:flex">
-                    <NavigationMenu>
-                        <NavigationMenuList className={`space-x-4 text-sm`}>
-                            {links.map((link) => (
-                                <NavigationMenuItem asChild key={link.title}>
-                                    <Link
-                                        className="text-muted-foreground hover:text-foreground"
-                                        prefetch
-                                        href={link.href}
+                    <div className="hidden items-center space-x-2 md:flex">
+                        <NavigationMenu>
+                            <NavigationMenuList className={`space-x-4 text-sm`}>
+                                {links.map((link) => (
+                                    <NavigationMenuItem
+                                        asChild
+                                        key={link.title}
                                     >
-                                        {link.title}
-                                    </Link>
+                                        <Link
+                                            className="text-muted-foreground hover:text-foreground"
+                                            prefetch
+                                            href={link.href}
+                                        >
+                                            {link.title}
+                                        </Link>
+                                    </NavigationMenuItem>
+                                ))}
+                            </NavigationMenuList>
+                        </NavigationMenu>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                        <NavigationMenu>
+                            <NavigationMenuList
+                                className={`flex items-center space-x-4 text-sm`}
+                            >
+                                <NavigationMenuItem>
+                                    <PaletteButton
+                                        className="grid size-5 place-content-center text-muted-foreground hover:text-foreground"
+                                        onClick={() => setPaletteOpen(true)}
+                                    />
                                 </NavigationMenuItem>
-                            ))}
-                        </NavigationMenuList>
-                    </NavigationMenu>
-                </div>
-                <div className="flex items-center space-x-2">
-                    <NavigationMenu>
-                        <NavigationMenuList
-                            className={`flex items-center space-x-4 text-sm`}
-                        >
-                            <NavigationMenuItem>
-                                <ThemeToggle className="grid size-5 place-content-center text-muted-foreground hover:text-foreground" />
-                            </NavigationMenuItem>
-                            <NavigationMenuItem>
-                                <Button asChild className={`relative`}>
-                                    <a
-                                        href={
-                                            provider({
-                                                provider: 'github',
-                                            }).url
-                                        }
-                                    >
-                                        <GlowRadial
-                                            size={150}
-                                            borderWidth={3}
-                                            className={`absolute -inset-1 blur-xs`}
-                                        />
-                                        <GlowRadial
-                                            size={150}
-                                            borderWidth={2}
-                                            className={`absolute -inset-0.5`}
-                                        />
-                                        <GlowRadial
-                                            size={150}
-                                            borderWidth={2}
-                                            className={`absolute -inset-1.5 mix-blend-color-dodge blur-xs`}
-                                        />
-                                        <Crown className="size-4" />
-                                        <span>Premium</span>
-                                    </a>
-                                </Button>
-                            </NavigationMenuItem>
-                        </NavigationMenuList>
-                    </NavigationMenu>
-                </div>
-            </Wrapper>
-        </div>
+                                <NavigationMenuItem>
+                                    <ThemeToggle className="grid size-5 place-content-center text-muted-foreground hover:text-foreground" />
+                                </NavigationMenuItem>
+                                <NavigationMenuItem>
+                                    <Button asChild className={`relative`}>
+                                        <a
+                                            href={
+                                                provider({
+                                                    provider: 'github',
+                                                }).url
+                                            }
+                                        >
+                                            <GlowRadial
+                                                size={150}
+                                                borderWidth={3}
+                                                className={`absolute -inset-1 blur-xs`}
+                                            />
+                                            <GlowRadial
+                                                size={150}
+                                                borderWidth={2}
+                                                className={`absolute -inset-0.5`}
+                                            />
+                                            <GlowRadial
+                                                size={150}
+                                                borderWidth={2}
+                                                className={`absolute -inset-1.5 mix-blend-color-dodge blur-xs`}
+                                            />
+                                            <Crown className="size-4" />
+                                            <span>Premium</span>
+                                        </a>
+                                    </Button>
+                                </NavigationMenuItem>
+                            </NavigationMenuList>
+                        </NavigationMenu>
+                    </div>
+                </Wrapper>
+            </div>
+            <ThemeSearchDialog
+                open={paletteOpen}
+                onOpenChange={setPaletteOpen}
+            />
+        </>
     );
 };
 

@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "theme-cyberpunk",
-  "title": "Theme Cyberpunk",
+  "title": "Cyberpunk",
   "author": "designbycode",
   "registryDependencies": [
     "https://ui.designbycode.co.za/r/font-inter.json",

@@ -3924,11 +3924,8 @@
         },
         {
             "name": "theme-boho",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
+            "title": "Boho",
+            "author": "designbycode",
             "registryDependencies": [
                 "https://ui.designbycode.co.za/r/font-inter.json",
                 "https://ui.designbycode.co.za/r/font-fira-mono.json",
@@ -3947,43 +3944,60 @@
                     "shadow-offset-x": "2px",
                     "shadow-offset-y": "2px"
                 },
+
                 "light": {
                     "background": "oklch(0.97 0.02 85)",
                     "foreground": "oklch(0.35 0.04 70)",
+
                     "card": "oklch(0.99 0.01 85)",
                     "card-foreground": "oklch(0.35 0.04 70)",
+
                     "popover": "oklch(0.99 0.01 85)",
                     "popover-foreground": "oklch(0.35 0.04 70)",
+
                     "primary": "oklch(0.62 0.14 40)",
                     "primary-foreground": "oklch(0.98 0.01 85)",
+
                     "secondary": "oklch(0.92 0.04 80)",
                     "secondary-foreground": "oklch(0.40 0.05 70)",
+
                     "muted": "oklch(0.94 0.02 80)",
                     "muted-foreground": "oklch(0.55 0.03 70)",
+
                     "accent": "oklch(0.72 0.08 140)",
                     "accent-foreground": "oklch(0.25 0.03 140)",
+
                     "destructive": "oklch(0.60 0.20 30)",
                     "destructive-foreground": "oklch(0.98 0.01 85)",
+
                     "border": "oklch(0.88 0.02 80)",
                     "input": "oklch(0.88 0.02 80)",
                     "ring": "oklch(0.62 0.14 40)",
+
                     "chart-1": "oklch(0.62 0.14 40)",
                     "chart-2": "oklch(0.72 0.08 140)",
                     "chart-3": "oklch(0.70 0.10 60)",
                     "chart-4": "oklch(0.55 0.07 30)",
                     "chart-5": "oklch(0.50 0.05 90)",
+
                     "radius": "1rem",
-                    "sidebar": "oklch(0.95 0.02 85)",
+
+                    "sidebar": "oklch(0.93 0.025 85)",
                     "sidebar-foreground": "oklch(0.35 0.04 70)",
+
                     "sidebar-primary": "oklch(0.62 0.14 40)",
                     "sidebar-primary-foreground": "oklch(0.98 0.01 85)",
+
                     "sidebar-accent": "oklch(0.72 0.08 140)",
                     "sidebar-accent-foreground": "oklch(0.25 0.03 140)",
+
                     "sidebar-border": "oklch(0.88 0.02 80)",
                     "sidebar-ring": "oklch(0.62 0.14 40)",
+
                     "font-sans": "Inter, sans-serif",
                     "font-serif": "Playfair Display, serif",
                     "font-mono": "Fira Code, monospace",
+
                     "shadow-2xs": "0 2px 6px hsl(30 40% 40% / 0.15)",
                     "shadow-xs": "0 2px 6px hsl(30 40% 40% / 0.15)",
                     "shadow-sm": "0 2px 6px hsl(30 40% 40% / 0.15)",
@@ -3993,39 +4007,54 @@
                     "shadow-xl": "0 20px 50px hsl(30 40% 40% / 0.3)",
                     "shadow-2xl": "0 20px 50px hsl(30 40% 40% / 0.3)"
                 },
+
                 "dark": {
                     "background": "oklch(0.22 0.03 80)",
                     "foreground": "oklch(0.92 0.02 85)",
+
                     "card": "oklch(0.26 0.03 80)",
                     "card-foreground": "oklch(0.92 0.02 85)",
+
                     "popover": "oklch(0.26 0.03 80)",
                     "popover-foreground": "oklch(0.92 0.02 85)",
+
                     "primary": "oklch(0.70 0.14 40)",
                     "primary-foreground": "oklch(0.15 0.02 80)",
+
                     "secondary": "oklch(0.30 0.03 80)",
                     "secondary-foreground": "oklch(0.90 0.02 85)",
+
                     "muted": "oklch(0.28 0.02 80)",
                     "muted-foreground": "oklch(0.75 0.02 85)",
+
                     "accent": "oklch(0.65 0.08 140)",
                     "accent-foreground": "oklch(0.20 0.02 140)",
+
                     "destructive": "oklch(0.65 0.18 30)",
                     "destructive-foreground": "oklch(0.95 0.01 85)",
+
                     "border": "oklch(0.35 0.02 80)",
                     "input": "oklch(0.35 0.02 80)",
                     "ring": "oklch(0.70 0.14 40)",
-                    "sidebar": "oklch(0.22 0.03 80)",
+
+                    "sidebar": "oklch(0.26 0.035 80)",
                     "sidebar-foreground": "oklch(0.92 0.02 85)",
+
                     "sidebar-primary": "oklch(0.70 0.14 40)",
                     "sidebar-primary-foreground": "oklch(0.15 0.02 80)",
+
                     "sidebar-accent": "oklch(0.65 0.08 140)",
                     "sidebar-accent-foreground": "oklch(0.20 0.02 140)",
+
                     "sidebar-border": "oklch(0.35 0.02 80)",
                     "sidebar-ring": "oklch(0.70 0.14 40)",
+
                     "font-sans": "Inter, sans-serif",
                     "font-serif": "Playfair Display, serif",
                     "font-mono": "Fira Code, monospace"
                 }
             },
+
             "css": {
                 "@layer base": {
                     "body": {
@@ -4037,11 +4066,173 @@
                     }
                 }
             },
-            "title": "Theme Boho",
-            "author": "designbycode"
+
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
+
+            "type": "registry:theme"
         },
         {
+            "name": "theme-bauhaus",
+            "title": "Bauhaus",
+            "author": "designbycode",
+            "registryDependencies": [
+                "https://ui.designbycode.co.za/r/font-poppins-variable.json",
+                "https://ui.designbycode.co.za/r/font-ibm-plex-mono-variable.json"
+            ],
+            "cssVars": {
+                "theme": {
+                    "font-sans": "PoppinsVariable, sans-serif",
+                    "font-serif": "PoppinsVariable, sans-serif",
+                    "font-mono": "IBMPlexMonoVariable, monospace",
+                    "radius": "0.25rem",
+                    "tracking-tight": "-0.02em",
+                    "tracking-normal": "0em",
+                    "tracking-wide": "0.05em",
+                    "shadow-color": "hsl(0 0% 0%)",
+                    "shadow-opacity": "0.08",
+                    "shadow-blur": "8px",
+                    "shadow-spread": "0px",
+                    "shadow-offset-x": "0",
+                    "shadow-offset-y": "2px"
+                },
+
+                "light": {
+                    "background": "oklch(0.98 0 0)",
+                    "foreground": "oklch(0.2 0 0)",
+
+                    "card": "oklch(0.96 0 0)",
+                    "card-foreground": "oklch(0.2 0 0)",
+
+                    "popover": "oklch(0.99 0 0)",
+                    "popover-foreground": "oklch(0.2 0 0)",
+
+                    "primary": "oklch(0.65 0.22 25)",
+                    "primary-foreground": "oklch(0.98 0 0)",
+
+                    "secondary": "oklch(0.85 0.18 95)",
+                    "secondary-foreground": "oklch(0.2 0 0)",
+
+                    "accent": "oklch(0.65 0.18 240)",
+                    "accent-foreground": "oklch(0.98 0 0)",
+
+                    "muted": "oklch(0.92 0 0)",
+                    "muted-foreground": "oklch(0.45 0 0)",
+
+                    "destructive": "oklch(0.6 0.25 25)",
+                    "destructive-foreground": "oklch(0.98 0 0)",
+
+                    "border": "oklch(0.85 0 0)",
+                    "input": "oklch(0.85 0 0)",
+                    "ring": "oklch(0.65 0.22 25)",
+
+                    "chart-1": "oklch(0.65 0.22 25)",
+                    "chart-2": "oklch(0.85 0.18 95)",
+                    "chart-3": "oklch(0.65 0.18 240)",
+                    "chart-4": "oklch(0.4 0 0)",
+                    "chart-5": "oklch(0.2 0 0)",
+
+                    "radius": "0.25rem",
+
+                    "sidebar": "oklch(0.94 0 0)",
+                    "sidebar-foreground": "oklch(0.2 0 0)",
+
+                    "sidebar-primary": "oklch(0.65 0.22 25)",
+                    "sidebar-primary-foreground": "oklch(0.98 0 0)",
+
+                    "sidebar-accent": "oklch(0.85 0.18 95)",
+                    "sidebar-accent-foreground": "oklch(0.2 0 0)",
+
+                    "sidebar-border": "oklch(0.85 0 0)",
+                    "sidebar-ring": "oklch(0.65 0.22 25)",
+
+                    "font-sans": "PoppinsVariable, sans-serif",
+                    "font-serif": "PoppinsVariable, sans-serif",
+                    "font-mono": "IBMPlexMonoVariable, monospace",
+
+                    "shadow-2xs": "0 1px 2px hsl(0 0% 0% / 0.04)",
+                    "shadow-xs": "0 1px 2px hsl(0 0% 0% / 0.04)",
+                    "shadow-sm": "0 2px 4px hsl(0 0% 0% / 0.06)",
+                    "shadow": "0 4px 8px hsl(0 0% 0% / 0.08)",
+                    "shadow-md": "0 6px 12px hsl(0 0% 0% / 0.1)",
+                    "shadow-lg": "0 10px 20px hsl(0 0% 0% / 0.12)",
+                    "shadow-xl": "0 14px 30px hsl(0 0% 0% / 0.14)",
+                    "shadow-2xl": "0 20px 40px hsl(0 0% 0% / 0.16)"
+                },
+
+                "dark": {
+                    "background": "oklch(0.18 0 0)",
+                    "foreground": "oklch(0.95 0 0)",
+
+                    "card": "oklch(0.22 0 0)",
+                    "card-foreground": "oklch(0.95 0 0)",
+
+                    "popover": "oklch(0.22 0 0)",
+                    "popover-foreground": "oklch(0.95 0 0)",
+
+                    "primary": "oklch(0.7 0.22 25)",
+                    "primary-foreground": "oklch(0.1 0 0)",
+
+                    "secondary": "oklch(0.8 0.18 95)",
+                    "secondary-foreground": "oklch(0.1 0 0)",
+
+                    "accent": "oklch(0.7 0.18 240)",
+                    "accent-foreground": "oklch(0.1 0 0)",
+
+                    "muted": "oklch(0.25 0 0)",
+                    "muted-foreground": "oklch(0.7 0 0)",
+
+                    "destructive": "oklch(0.7 0.25 25)",
+                    "destructive-foreground": "oklch(0.1 0 0)",
+
+                    "border": "oklch(0.3 0 0)",
+                    "input": "oklch(0.3 0 0)",
+                    "ring": "oklch(0.7 0.22 25)",
+
+                    "sidebar": "oklch(0.24 0 0)",
+                    "sidebar-foreground": "oklch(0.95 0 0)",
+
+                    "sidebar-primary": "oklch(0.7 0.22 25)",
+                    "sidebar-primary-foreground": "oklch(0.1 0 0)",
+
+                    "sidebar-accent": "oklch(0.8 0.18 95)",
+                    "sidebar-accent-foreground": "oklch(0.1 0 0)",
+
+                    "sidebar-border": "oklch(0.3 0 0)",
+                    "sidebar-ring": "oklch(0.7 0.22 25)",
+
+                    "font-sans": "PoppinsVariable, sans-serif",
+                    "font-serif": "PoppinsVariable, sans-serif",
+                    "font-mono": "IBMPlexMonoVariable, monospace"
+                }
+            },
+
+            "css": {
+                "@layer base": {
+                    "body": {
+                        "background": "var(--background)",
+                        "color": "var(--foreground)",
+                        "letter-spacing": "var(--tracking-normal)"
+                    },
+                    "*": {
+                        "border-color": "var(--border)"
+                    }
+                }
+            },
+
+            "meta": {
+                "category": "styles",
+                "version": "1.0.0"
+            },
+
+            "type": "registry:theme"
+        },
+        {
+            "$schema": "https://ui.shadcn.com/schema/registry-item.json",
             "name": "theme-artistic-gradient",
+            "title": "Artistic Gradient",
             "type": "registry:theme",
             "meta": {
                 "category": "styles",
@@ -4060,84 +4251,114 @@
                     "radius": "1rem",
                     "shadow-color": "hsl(280 80% 50%)"
                 },
+
                 "light": {
                     "background": "oklch(0.98 0.01 260)",
-                    "foreground": "oklch(0.20 0.02 260)",
+                    "foreground": "oklch(0.18 0.02 260)",
+
                     "card": "oklch(1 0 0)",
-                    "card-foreground": "oklch(0.20 0.02 260)",
+                    "card-foreground": "oklch(0.18 0.02 260)",
+
                     "popover": "oklch(1 0 0)",
-                    "popover-foreground": "oklch(0.20 0.02 260)",
+                    "popover-foreground": "oklch(0.18 0.02 260)",
+
                     "primary": "oklch(0.65 0.20 280)",
                     "primary-foreground": "oklch(1 0 0)",
+
                     "secondary": "oklch(0.80 0.10 200)",
-                    "secondary-foreground": "oklch(0.18 0.02 260)",
+                    "secondary-foreground": "oklch(0.12 0.02 260)",
+
                     "muted": "oklch(0.94 0.01 260)",
-                    "muted-foreground": "oklch(0.45 0.02 260)",
+                    "muted-foreground": "oklch(0.50 0.02 260)",
+
                     "accent": "oklch(0.75 0.18 40)",
-                    "accent-foreground": "oklch(0.15 0.02 260)",
+                    "accent-foreground": "oklch(0.12 0.02 260)",
+
                     "destructive": "oklch(0.60 0.22 25)",
                     "destructive-foreground": "oklch(1 0 0)",
-                    "border": "oklch(0.90 0.01 260)",
-                    "input": "oklch(0.90 0.01 260)",
+
+                    "border": "oklch(0.88 0.01 260)",
+                    "input": "oklch(0.88 0.01 260)",
                     "ring": "oklch(0.65 0.20 280)",
+
                     "chart-1": "oklch(0.65 0.20 280)",
                     "chart-2": "oklch(0.75 0.18 40)",
                     "chart-3": "oklch(0.80 0.10 200)",
                     "chart-4": "oklch(0.70 0.15 320)",
                     "chart-5": "oklch(0.60 0.12 160)",
+
                     "radius": "1rem",
-                    "sidebar": "oklch(0.97 0.01 260)",
-                    "sidebar-foreground": "oklch(0.20 0.02 260)",
+
+                    "sidebar": "oklch(0.95 0.015 260)",
+                    "sidebar-foreground": "oklch(0.18 0.02 260)",
+
                     "sidebar-primary": "oklch(0.65 0.20 280)",
                     "sidebar-primary-foreground": "oklch(1 0 0)",
+
                     "sidebar-accent": "oklch(0.75 0.18 40)",
-                    "sidebar-accent-foreground": "oklch(0.15 0.02 260)",
-                    "sidebar-border": "oklch(0.90 0.01 260)",
+                    "sidebar-accent-foreground": "oklch(0.12 0.02 260)",
+
+                    "sidebar-border": "oklch(0.88 0.01 260)",
                     "sidebar-ring": "oklch(0.65 0.20 280)",
+
                     "font-sans": "Inter, sans-serif",
                     "font-serif": "Playfair Display, serif",
                     "font-mono": "Fira Code, monospace",
+
                     "shadow-sm": "0 2px 10px hsl(280 80% 50% / 0.06)",
                     "shadow": "0 8px 24px hsl(280 80% 50% / 0.10)",
                     "shadow-md": "0 14px 40px hsl(280 80% 50% / 0.14)",
                     "shadow-lg": "0 20px 60px hsl(280 80% 50% / 0.18)",
                     "shadow-xl": "0 30px 90px hsl(280 80% 50% / 0.22)"
                 },
+
                 "dark": {
                     "background": "oklch(0.10 0.02 260)",
-                    "foreground": "oklch(0.92 0.02 260)",
-                    "card": "oklch(0.14 0.02 260)",
-                    "card-foreground": "oklch(0.92 0.02 260)",
-                    "popover": "oklch(0.16 0.02 260)",
-                    "popover-foreground": "oklch(0.92 0.02 260)",
+                    "foreground": "oklch(0.95 0.02 260)",
+
+                    "card": "oklch(0.16 0.02 260)",
+                    "card-foreground": "oklch(0.95 0.02 260)",
+
+                    "popover": "oklch(0.18 0.02 260)",
+                    "popover-foreground": "oklch(0.95 0.02 260)",
+
                     "primary": "oklch(0.75 0.28 280)",
-                    "primary-foreground": "oklch(0.10 0.02 260)",
+                    "primary-foreground": "oklch(0.08 0.02 260)",
+
                     "secondary": "oklch(0.75 0.22 200)",
-                    "secondary-foreground": "oklch(0.10 0.02 260)",
-                    "muted": "oklch(0.18 0.02 260)",
-                    "muted-foreground": "oklch(0.65 0.02 260)",
+                    "secondary-foreground": "oklch(0.08 0.02 260)",
+
+                    "muted": "oklch(0.20 0.02 260)",
+                    "muted-foreground": "oklch(0.72 0.02 260)",
+
                     "accent": "oklch(0.78 0.25 40)",
-                    "accent-foreground": "oklch(0.10 0.02 260)",
+                    "accent-foreground": "oklch(0.08 0.02 260)",
+
                     "destructive": "oklch(0.65 0.22 25)",
-                    "destructive-foreground": "oklch(0.95 0.02 260)",
-                    "border": "oklch(0.25 0.02 260)",
-                    "input": "oklch(0.25 0.02 260)",
+                    "destructive-foreground": "oklch(0.98 0.02 260)",
+
+                    "border": "oklch(0.28 0.02 260)",
+                    "input": "oklch(0.28 0.02 260)",
                     "ring": "oklch(0.75 0.28 280)",
-                    "sidebar": "oklch(0.12 0.02 260)",
-                    "sidebar-foreground": "oklch(0.92 0.02 260)",
+
+                    "sidebar": "oklch(0.14 0.02 260)",
+                    "sidebar-foreground": "oklch(0.95 0.02 260)",
+
                     "sidebar-primary": "oklch(0.75 0.28 280)",
-                    "sidebar-primary-foreground": "oklch(0.10 0.02 260)",
+                    "sidebar-primary-foreground": "oklch(0.08 0.02 260)",
+
                     "sidebar-accent": "oklch(0.78 0.25 40)",
-                    "sidebar-accent-foreground": "oklch(0.10 0.02 260)",
-                    "sidebar-border": "oklch(0.25 0.02 260)",
+                    "sidebar-accent-foreground": "oklch(0.08 0.02 260)",
+
+                    "sidebar-border": "oklch(0.28 0.02 260)",
                     "sidebar-ring": "oklch(0.75 0.28 280)",
-                    "shadow-sm": "0 2px 12px hsl(280 100% 70% / 0.20)",
-                    "shadow": "0 10px 30px hsl(200 100% 60% / 0.25)",
-                    "shadow-md": "0 18px 50px hsl(320 100% 65% / 0.30)",
-                    "shadow-lg": "0 30px 80px hsl(280 100% 70% / 0.35)",
-                    "shadow-xl": "0 50px 120px hsl(200 100% 60% / 0.45)"
+
+                    "font-sans": "Inter, sans-serif",
+                    "font-serif": "Playfair Display, serif",
+                    "font-mono": "Fira Code, monospace"
                 }
             },
+
             "css": {
                 "@layer base": {
                     "body": {
@@ -4148,12 +4369,11 @@
                         "border-color": "var(--border)"
                     }
                 }
-            },
-            "title": "Theme Artistic Gradient",
-            "author": "designbycode"
+            }
         },
         {
             "name": "theme-clay",
+            "title": "Clay",
             "type": "registry:theme",
             "meta": {
                 "category": "styles",
@@ -4174,11 +4394,11 @@
                 },
                 "light": {
                     "background": "oklch(0.92 0.03 40)",
-                    "foreground": "oklch(0.38 0.05 40)",
-                    "card": "oklch(0.95 0.03 40)",
-                    "card-foreground": "oklch(0.38 0.05 40)",
+                    "foreground": "oklch(0.18 0.025 260)",
+                    "card": "oklch(0.15 0.02 260)",
+                    "card-foreground": "oklch(0.18 0.025 260)",
                     "popover": "oklch(0.96 0.03 40)",
-                    "popover-foreground": "oklch(0.38 0.05 40)",
+                    "popover-foreground": "oklch(0.18 0.025 260)",
                     "primary": "oklch(0.75 0.08 30)",
                     "primary-foreground": "oklch(0.98 0.01 40)",
                     "secondary": "oklch(0.88 0.04 50)",
@@ -4198,8 +4418,8 @@
                     "chart-4": "oklch(0.65 0.06 10)",
                     "chart-5": "oklch(0.60 0.05 80)",
                     "radius": "1.5rem",
-                    "sidebar": "oklch(0.93 0.03 40)",
-                    "sidebar-foreground": "oklch(0.38 0.05 40)",
+                    "sidebar": "oklch(0.18 0.025 260)",
+                    "sidebar-foreground": "oklch(0.18 0.025 260)",
                     "sidebar-primary": "oklch(0.75 0.08 30)",
                     "sidebar-primary-foreground": "oklch(0.98 0.01 40)",
                     "sidebar-accent": "oklch(0.85 0.06 60)",
@@ -4261,11 +4481,12 @@
                     }
                 }
             },
-            "title": "Theme Clay",
             "author": "designbycode"
         },
         {
             "name": "theme-cyberpunk",
+            "title": "Cyberpunk",
+
             "type": "registry:theme",
             "meta": {
                 "category": "styles",
@@ -4373,11 +4594,12 @@
                     }
                 }
             },
-            "title": "Theme Cyberpunk",
             "author": "designbycode"
         },
         {
             "name": "theme-editorial",
+            "title": "Editorial",
+
             "type": "registry:theme",
             "meta": {
                 "category": "styles",
@@ -4485,2712 +4707,7 @@
                     }
                 }
             },
-            "title": "Theme Editorial",
             "author": "designbycode"
-        },
-        {
-            "name": "theme-futuristic-ai",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-inter.json",
-                "https://ui.designbycode.co.za/r/font-playfair-display.json",
-                "https://ui.designbycode.co.za/r/font-fira-mono.json"
-            ],
-            "cssVars": {
-                "theme": {
-                    "font-sans": "Inter, sans-serif",
-                    "font-serif": "Playfair Display, serif",
-                    "font-mono": "Fira Code, monospace",
-                    "radius": "0.85rem",
-                    "shadow-color": "hsl(260 80% 50%)"
-                },
-                "light": {
-                    "background": "oklch(0.97 0.01 260)",
-                    "foreground": "oklch(0.28 0.02 260)",
-                    "card": "oklch(1 0 0)",
-                    "card-foreground": "oklch(0.28 0.02 260)",
-                    "popover": "oklch(1 0 0)",
-                    "popover-foreground": "oklch(0.28 0.02 260)",
-                    "primary": "oklch(0.68 0.18 260)",
-                    "primary-foreground": "oklch(0.98 0.01 260)",
-                    "secondary": "oklch(0.92 0.01 260)",
-                    "secondary-foreground": "oklch(0.32 0.02 260)",
-                    "muted": "oklch(0.94 0.01 260)",
-                    "muted-foreground": "oklch(0.55 0.02 260)",
-                    "accent": "oklch(0.72 0.20 300)",
-                    "accent-foreground": "oklch(0.25 0.02 260)",
-                    "destructive": "oklch(0.62 0.20 25)",
-                    "destructive-foreground": "oklch(0.98 0.01 260)",
-                    "border": "oklch(0.88 0.01 260)",
-                    "input": "oklch(0.88 0.01 260)",
-                    "ring": "oklch(0.68 0.18 260)",
-                    "chart-1": "oklch(0.68 0.18 260)",
-                    "chart-2": "oklch(0.72 0.20 300)",
-                    "chart-3": "oklch(0.70 0.16 220)",
-                    "chart-4": "oklch(0.60 0.15 280)",
-                    "chart-5": "oklch(0.55 0.12 320)",
-                    "radius": "0.85rem",
-                    "sidebar": "oklch(0.96 0.01 260)",
-                    "sidebar-foreground": "oklch(0.28 0.02 260)",
-                    "sidebar-primary": "oklch(0.68 0.18 260)",
-                    "sidebar-primary-foreground": "oklch(0.98 0.01 260)",
-                    "sidebar-accent": "oklch(0.72 0.20 300)",
-                    "sidebar-accent-foreground": "oklch(0.25 0.02 260)",
-                    "sidebar-border": "oklch(0.88 0.01 260)",
-                    "sidebar-ring": "oklch(0.68 0.18 260)",
-                    "font-sans": "Inter, sans-serif",
-                    "font-serif": "Playfair Display, serif",
-                    "font-mono": "Fira Code, monospace",
-                    "shadow-sm": "0 2px 6px hsl(260 80% 50% / 0.08)",
-                    "shadow": "0 8px 24px hsl(260 80% 50% / 0.12)",
-                    "shadow-md": "0 12px 32px hsl(260 80% 50% / 0.15)",
-                    "shadow-lg": "0 20px 50px hsl(260 80% 50% / 0.18)",
-                    "shadow-xl": "0 30px 80px hsl(260 80% 50% / 0.22)"
-                },
-                "dark": {
-                    "background": "oklch(0.12 0.02 260)",
-                    "foreground": "oklch(0.92 0.02 260)",
-                    "card": "oklch(0.16 0.02 260)",
-                    "card-foreground": "oklch(0.92 0.02 260)",
-                    "popover": "oklch(0.18 0.02 260)",
-                    "popover-foreground": "oklch(0.92 0.02 260)",
-                    "primary": "oklch(0.75 0.22 260)",
-                    "primary-foreground": "oklch(0.12 0.02 260)",
-                    "secondary": "oklch(0.22 0.02 260)",
-                    "secondary-foreground": "oklch(0.88 0.02 260)",
-                    "muted": "oklch(0.20 0.02 260)",
-                    "muted-foreground": "oklch(0.70 0.02 260)",
-                    "accent": "oklch(0.78 0.24 300)",
-                    "accent-foreground": "oklch(0.10 0.02 260)",
-                    "destructive": "oklch(0.65 0.20 25)",
-                    "destructive-foreground": "oklch(0.95 0.02 260)",
-                    "border": "oklch(0.28 0.02 260)",
-                    "input": "oklch(0.28 0.02 260)",
-                    "ring": "oklch(0.75 0.22 260)",
-                    "sidebar": "oklch(0.14 0.02 260)",
-                    "sidebar-foreground": "oklch(0.92 0.02 260)",
-                    "sidebar-primary": "oklch(0.75 0.22 260)",
-                    "sidebar-primary-foreground": "oklch(0.12 0.02 260)",
-                    "sidebar-accent": "oklch(0.78 0.24 300)",
-                    "sidebar-accent-foreground": "oklch(0.10 0.02 260)",
-                    "sidebar-border": "oklch(0.28 0.02 260)",
-                    "sidebar-ring": "oklch(0.75 0.22 260)",
-                    "shadow-sm": "0 2px 8px hsl(260 100% 70% / 0.15)",
-                    "shadow": "0 10px 30px hsl(260 100% 70% / 0.25)",
-                    "shadow-md": "0 16px 40px hsl(260 100% 70% / 0.35)",
-                    "shadow-lg": "0 24px 60px hsl(260 100% 70% / 0.45)",
-                    "shadow-xl": "0 40px 100px hsl(260 100% 70% / 0.55)"
-                }
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "title": "Theme Futuristic AI",
-            "author": "designbycode"
-        },
-        {
-            "name": "theme-industrial-mechanical",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-ibm-plex-sans.json",
-                "https://ui.designbycode.co.za/r/font-roboto-slab.json",
-                "https://ui.designbycode.co.za/r/font-ibm-plex-mono.json"
-            ],
-            "cssVars": {
-                "theme": {
-                    "font-sans": "IBM Plex Sans, Inter, sans-serif",
-                    "font-serif": "Roboto Slab, serif",
-                    "font-mono": "IBM Plex Mono, monospace",
-                    "radius": "0.375rem",
-                    "shadow-color": "hsl(220 10% 20%)"
-                },
-                "light": {
-                    "background": "oklch(0.96 0.01 95)",
-                    "foreground": "oklch(0.22 0.02 260)",
-                    "card": "oklch(0.99 0.005 95)",
-                    "card-foreground": "oklch(0.22 0.02 260)",
-                    "popover": "oklch(0.99 0.005 95)",
-                    "popover-foreground": "oklch(0.22 0.02 260)",
-                    "primary": "oklch(0.55 0.18 240)",
-                    "primary-foreground": "oklch(0.98 0.01 95)",
-                    "secondary": "oklch(0.88 0.01 240)",
-                    "secondary-foreground": "oklch(0.25 0.02 260)",
-                    "muted": "oklch(0.90 0.01 240)",
-                    "muted-foreground": "oklch(0.45 0.02 260)",
-                    "accent": "oklch(0.70 0.18 55)",
-                    "accent-foreground": "oklch(0.12 0.02 260)",
-                    "destructive": "oklch(0.60 0.25 25)",
-                    "destructive-foreground": "oklch(0.98 0.01 95)",
-                    "border": "oklch(0.82 0.01 240)",
-                    "input": "oklch(0.82 0.01 240)",
-                    "ring": "oklch(0.55 0.18 240)",
-                    "chart-1": "oklch(0.55 0.18 240)",
-                    "chart-2": "oklch(0.70 0.18 55)",
-                    "chart-3": "oklch(0.60 0.20 140)",
-                    "chart-4": "oklch(0.50 0.05 260)",
-                    "chart-5": "oklch(0.75 0.05 95)",
-                    "radius": "0.375rem",
-                    "sidebar": "oklch(0.94 0.01 95)",
-                    "sidebar-foreground": "oklch(0.22 0.02 260)",
-                    "sidebar-primary": "oklch(0.55 0.18 240)",
-                    "sidebar-primary-foreground": "oklch(0.98 0.01 95)",
-                    "sidebar-accent": "oklch(0.70 0.18 55)",
-                    "sidebar-accent-foreground": "oklch(0.12 0.02 260)",
-                    "sidebar-border": "oklch(0.82 0.01 240)",
-                    "sidebar-ring": "oklch(0.55 0.18 240)",
-                    "font-sans": "IBM Plex Sans, Inter, sans-serif",
-                    "font-serif": "Roboto Slab, serif",
-                    "font-mono": "IBM Plex Mono, monospace",
-                    "shadow-sm": "2px 2px 0px hsl(220 10% 20% / 0.10)",
-                    "shadow": "4px 4px 0px hsl(220 10% 20% / 0.15)",
-                    "shadow-md": "6px 6px 0px hsl(220 10% 20% / 0.18)",
-                    "shadow-lg": "8px 8px 0px hsl(220 10% 20% / 0.22)",
-                    "shadow-xl": "12px 12px 0px hsl(220 10% 20% / 0.28)"
-                },
-                "dark": {
-                    "background": "oklch(0.12 0.01 240)",
-                    "foreground": "oklch(0.90 0.01 95)",
-                    "card": "oklch(0.16 0.01 240)",
-                    "card-foreground": "oklch(0.90 0.01 95)",
-                    "popover": "oklch(0.18 0.01 240)",
-                    "popover-foreground": "oklch(0.90 0.01 95)",
-                    "primary": "oklch(0.65 0.22 240)",
-                    "primary-foreground": "oklch(0.10 0.01 240)",
-                    "secondary": "oklch(0.22 0.01 240)",
-                    "secondary-foreground": "oklch(0.88 0.01 95)",
-                    "muted": "oklch(0.20 0.01 240)",
-                    "muted-foreground": "oklch(0.65 0.01 95)",
-                    "accent": "oklch(0.75 0.20 55)",
-                    "accent-foreground": "oklch(0.10 0.01 240)",
-                    "destructive": "oklch(0.65 0.25 25)",
-                    "destructive-foreground": "oklch(0.95 0.01 95)",
-                    "border": "oklch(0.26 0.01 240)",
-                    "input": "oklch(0.26 0.01 240)",
-                    "ring": "oklch(0.65 0.22 240)",
-                    "sidebar": "oklch(0.14 0.01 240)",
-                    "sidebar-foreground": "oklch(0.90 0.01 95)",
-                    "sidebar-primary": "oklch(0.65 0.22 240)",
-                    "sidebar-primary-foreground": "oklch(0.10 0.01 240)",
-                    "sidebar-accent": "oklch(0.75 0.20 55)",
-                    "sidebar-accent-foreground": "oklch(0.10 0.01 240)",
-                    "sidebar-border": "oklch(0.26 0.01 240)",
-                    "sidebar-ring": "oklch(0.65 0.22 240)",
-                    "shadow-sm": "2px 2px 0px hsl(220 20% 80% / 0.08)",
-                    "shadow": "4px 4px 0px hsl(220 20% 80% / 0.12)",
-                    "shadow-md": "6px 6px 0px hsl(220 20% 80% / 0.16)",
-                    "shadow-lg": "8px 8px 0px hsl(220 20% 80% / 0.20)",
-                    "shadow-xl": "12px 12px 0px hsl(220 20% 80% / 0.25)"
-                }
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "title": "Theme Industrial Mechanical",
-            "author": "designbycode"
-        },
-        {
-            "name": "theme-nature-minimal",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "cssVars": {
-                "theme": {
-                    "font-sans": "Inter, sans-serif",
-                    "font-serif": "Playfair Display, serif",
-                    "font-mono": "Fira Code, monospace",
-                    "radius": "0.75rem",
-                    "shadow-color": "hsl(120 20% 20%)"
-                },
-                "light": {
-                    "background": "oklch(0.97 0.02 120)",
-                    "foreground": "oklch(0.32 0.03 120)",
-                    "card": "oklch(0.99 0.01 120)",
-                    "card-foreground": "oklch(0.32 0.03 120)",
-                    "popover": "oklch(0.99 0.01 120)",
-                    "popover-foreground": "oklch(0.32 0.03 120)",
-                    "primary": "oklch(0.58 0.10 140)",
-                    "primary-foreground": "oklch(0.98 0.01 120)",
-                    "secondary": "oklch(0.92 0.02 110)",
-                    "secondary-foreground": "oklch(0.38 0.03 120)",
-                    "muted": "oklch(0.94 0.02 110)",
-                    "muted-foreground": "oklch(0.55 0.02 120)",
-                    "accent": "oklch(0.70 0.08 150)",
-                    "accent-foreground": "oklch(0.25 0.03 140)",
-                    "destructive": "oklch(0.60 0.18 30)",
-                    "destructive-foreground": "oklch(0.98 0.01 120)",
-                    "border": "oklch(0.88 0.02 110)",
-                    "input": "oklch(0.88 0.02 110)",
-                    "ring": "oklch(0.58 0.10 140)",
-                    "chart-1": "oklch(0.58 0.10 140)",
-                    "chart-2": "oklch(0.65 0.08 120)",
-                    "chart-3": "oklch(0.72 0.07 160)",
-                    "chart-4": "oklch(0.50 0.06 100)",
-                    "chart-5": "oklch(0.45 0.05 80)",
-                    "radius": "0.75rem",
-                    "sidebar": "oklch(0.96 0.02 120)",
-                    "sidebar-foreground": "oklch(0.32 0.03 120)",
-                    "sidebar-primary": "oklch(0.58 0.10 140)",
-                    "sidebar-primary-foreground": "oklch(0.98 0.01 120)",
-                    "sidebar-accent": "oklch(0.70 0.08 150)",
-                    "sidebar-accent-foreground": "oklch(0.25 0.03 140)",
-                    "sidebar-border": "oklch(0.88 0.02 110)",
-                    "sidebar-ring": "oklch(0.58 0.10 140)",
-                    "font-sans": "Inter, sans-serif",
-                    "font-serif": "Playfair Display, serif",
-                    "font-mono": "Fira Code, monospace",
-                    "shadow-sm": "0 1px 3px hsl(120 20% 20% / 0.05)",
-                    "shadow": "0 4px 12px hsl(120 20% 20% / 0.08)",
-                    "shadow-md": "0 8px 20px hsl(120 20% 20% / 0.10)",
-                    "shadow-lg": "0 12px 30px hsl(120 20% 20% / 0.12)",
-                    "shadow-xl": "0 20px 50px hsl(120 20% 20% / 0.15)"
-                },
-                "dark": {
-                    "background": "oklch(0.18 0.02 120)",
-                    "foreground": "oklch(0.90 0.02 120)",
-                    "card": "oklch(0.22 0.02 120)",
-                    "card-foreground": "oklch(0.90 0.02 120)",
-                    "popover": "oklch(0.24 0.02 120)",
-                    "popover-foreground": "oklch(0.90 0.02 120)",
-                    "primary": "oklch(0.65 0.10 140)",
-                    "primary-foreground": "oklch(0.15 0.02 120)",
-                    "secondary": "oklch(0.26 0.02 120)",
-                    "secondary-foreground": "oklch(0.85 0.02 120)",
-                    "muted": "oklch(0.24 0.02 120)",
-                    "muted-foreground": "oklch(0.70 0.02 120)",
-                    "accent": "oklch(0.60 0.08 150)",
-                    "accent-foreground": "oklch(0.92 0.02 120)",
-                    "destructive": "oklch(0.65 0.18 30)",
-                    "destructive-foreground": "oklch(0.95 0.02 120)",
-                    "border": "oklch(0.30 0.02 120)",
-                    "input": "oklch(0.30 0.02 120)",
-                    "ring": "oklch(0.65 0.10 140)",
-                    "sidebar": "oklch(0.20 0.02 120)",
-                    "sidebar-foreground": "oklch(0.90 0.02 120)",
-                    "sidebar-primary": "oklch(0.65 0.10 140)",
-                    "sidebar-primary-foreground": "oklch(0.15 0.02 120)",
-                    "sidebar-accent": "oklch(0.60 0.08 150)",
-                    "sidebar-accent-foreground": "oklch(0.92 0.02 120)",
-                    "sidebar-border": "oklch(0.30 0.02 120)",
-                    "sidebar-ring": "oklch(0.65 0.10 140)",
-                    "shadow-sm": "0 1px 3px hsl(120 30% 5% / 0.4)",
-                    "shadow": "0 4px 12px hsl(120 30% 5% / 0.5)",
-                    "shadow-md": "0 8px 20px hsl(120 30% 5% / 0.6)",
-                    "shadow-lg": "0 12px 30px hsl(120 30% 5% / 0.7)",
-                    "shadow-xl": "0 20px 50px hsl(120 30% 5% / 0.8)"
-                }
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "title": "Theme Nature Minimal",
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-inter.json",
-                "https://ui.designbycode.co.za/r/font-playfair-display.json",
-                "https://ui.designbycode.co.za/r/font-fira-mono.json"
-            ]
-        },
-        {
-            "name": "theme-retro-90s-web",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "cssVars": {
-                "theme": {
-                    "font-sans": "Arial, sans-serif",
-                    "font-serif": "Times New Roman, serif",
-                    "font-mono": "Courier New, monospace",
-                    "radius": "0.25rem",
-                    "shadow-color": "hsl(0 0% 0%)"
-                },
-                "light": {
-                    "background": "oklch(0.98 0.01 95)",
-                    "foreground": "oklch(0.20 0.03 260)",
-                    "card": "oklch(1 0 0)",
-                    "card-foreground": "oklch(0.20 0.03 260)",
-                    "popover": "oklch(1 0 0)",
-                    "popover-foreground": "oklch(0.20 0.03 260)",
-                    "primary": "oklch(0.60 0.25 255)",
-                    "primary-foreground": "oklch(1 0 0)",
-                    "secondary": "oklch(0.85 0.18 130)",
-                    "secondary-foreground": "oklch(0.15 0.02 260)",
-                    "muted": "oklch(0.92 0.03 95)",
-                    "muted-foreground": "oklch(0.45 0.03 260)",
-                    "accent": "oklch(0.70 0.28 330)",
-                    "accent-foreground": "oklch(1 0 0)",
-                    "destructive": "oklch(0.60 0.25 25)",
-                    "destructive-foreground": "oklch(1 0 0)",
-                    "border": "oklch(0.85 0.03 95)",
-                    "input": "oklch(0.85 0.03 95)",
-                    "ring": "oklch(0.60 0.25 255)",
-                    "chart-1": "oklch(0.60 0.25 255)",
-                    "chart-2": "oklch(0.85 0.18 130)",
-                    "chart-3": "oklch(0.70 0.28 330)",
-                    "chart-4": "oklch(0.75 0.20 60)",
-                    "chart-5": "oklch(0.55 0.22 200)",
-                    "radius": "0.25rem",
-                    "sidebar": "oklch(0.97 0.01 95)",
-                    "sidebar-foreground": "oklch(0.20 0.03 260)",
-                    "sidebar-primary": "oklch(0.60 0.25 255)",
-                    "sidebar-primary-foreground": "oklch(1 0 0)",
-                    "sidebar-accent": "oklch(0.70 0.28 330)",
-                    "sidebar-accent-foreground": "oklch(1 0 0)",
-                    "sidebar-border": "oklch(0.85 0.03 95)",
-                    "sidebar-ring": "oklch(0.60 0.25 255)",
-                    "font-sans": "Arial, sans-serif",
-                    "font-serif": "Times New Roman, serif",
-                    "font-mono": "Courier New, monospace",
-                    "shadow-sm": "2px 2px 0px hsl(0 0% 0% / 0.10)",
-                    "shadow": "3px 3px 0px hsl(0 0% 0% / 0.15)",
-                    "shadow-md": "4px 4px 0px hsl(0 0% 0% / 0.20)",
-                    "shadow-lg": "6px 6px 0px hsl(0 0% 0% / 0.25)",
-                    "shadow-xl": "8px 8px 0px hsl(0 0% 0% / 0.30)"
-                },
-                "dark": {
-                    "background": "oklch(0.10 0.02 260)",
-                    "foreground": "oklch(0.92 0.02 95)",
-                    "card": "oklch(0.14 0.02 260)",
-                    "card-foreground": "oklch(0.92 0.02 95)",
-                    "popover": "oklch(0.16 0.02 260)",
-                    "popover-foreground": "oklch(0.92 0.02 95)",
-                    "primary": "oklch(0.70 0.30 255)",
-                    "primary-foreground": "oklch(0.05 0.02 260)",
-                    "secondary": "oklch(0.75 0.25 140)",
-                    "secondary-foreground": "oklch(0.05 0.02 260)",
-                    "muted": "oklch(0.18 0.02 260)",
-                    "muted-foreground": "oklch(0.65 0.02 95)",
-                    "accent": "oklch(0.75 0.30 330)",
-                    "accent-foreground": "oklch(0.05 0.02 260)",
-                    "destructive": "oklch(0.65 0.25 25)",
-                    "destructive-foreground": "oklch(0.95 0.02 95)",
-                    "border": "oklch(0.22 0.02 260)",
-                    "input": "oklch(0.22 0.02 260)",
-                    "ring": "oklch(0.70 0.30 255)",
-                    "sidebar": "oklch(0.12 0.02 260)",
-                    "sidebar-foreground": "oklch(0.92 0.02 95)",
-                    "sidebar-primary": "oklch(0.70 0.30 255)",
-                    "sidebar-primary-foreground": "oklch(0.05 0.02 260)",
-                    "sidebar-accent": "oklch(0.75 0.30 330)",
-                    "sidebar-accent-foreground": "oklch(0.05 0.02 260)",
-                    "sidebar-border": "oklch(0.22 0.02 260)",
-                    "sidebar-ring": "oklch(0.70 0.30 255)",
-                    "shadow-sm": "2px 2px 0px hsl(255 100% 60% / 0.25)",
-                    "shadow": "3px 3px 0px hsl(140 100% 60% / 0.25)",
-                    "shadow-md": "4px 4px 0px hsl(330 100% 60% / 0.30)",
-                    "shadow-lg": "6px 6px 0px hsl(255 100% 60% / 0.35)",
-                    "shadow-xl": "8px 8px 0px hsl(140 100% 60% / 0.40)"
-                }
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "title": "Theme Retro 90s Web",
-            "author": "designbycode"
-        },
-        {
-            "name": "theme-soft-glass",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "cssVars": {
-                "theme": {
-                    "font-sans": "Inter, sans-serif",
-                    "font-serif": "DM Serif Display, Playfair Display, serif",
-                    "font-mono": "Fira Code, monospace",
-                    "radius": "1.25rem",
-                    "shadow-color": "hsl(0 0% 0%)"
-                },
-                "light": {
-                    "background": "oklch(0.98 0.01 260)",
-                    "foreground": "oklch(0.28 0.02 260)",
-                    "card": "oklch(1 0 0 / 0.65)",
-                    "card-foreground": "oklch(0.28 0.02 260)",
-                    "popover": "oklch(1 0 0 / 0.75)",
-                    "popover-foreground": "oklch(0.28 0.02 260)",
-                    "primary": "oklch(0.70 0.10 250)",
-                    "primary-foreground": "oklch(1 0 0)",
-                    "secondary": "oklch(0.92 0.01 260)",
-                    "secondary-foreground": "oklch(0.32 0.02 260)",
-                    "muted": "oklch(0.94 0.01 260)",
-                    "muted-foreground": "oklch(0.55 0.02 260)",
-                    "accent": "oklch(0.85 0.04 250)",
-                    "accent-foreground": "oklch(0.30 0.02 260)",
-                    "destructive": "oklch(0.62 0.20 25)",
-                    "destructive-foreground": "oklch(1 0 0)",
-                    "border": "oklch(1 0 0 / 0.4)",
-                    "input": "oklch(1 0 0 / 0.5)",
-                    "ring": "oklch(0.70 0.10 250)",
-                    "chart-1": "oklch(0.70 0.10 250)",
-                    "chart-2": "oklch(0.75 0.08 200)",
-                    "chart-3": "oklch(0.80 0.06 280)",
-                    "chart-4": "oklch(0.65 0.12 230)",
-                    "chart-5": "oklch(0.60 0.10 300)",
-                    "radius": "1.25rem",
-                    "sidebar": "oklch(1 0 0 / 0.6)",
-                    "sidebar-foreground": "oklch(0.28 0.02 260)",
-                    "sidebar-primary": "oklch(0.70 0.10 250)",
-                    "sidebar-primary-foreground": "oklch(1 0 0)",
-                    "sidebar-accent": "oklch(0.85 0.04 250)",
-                    "sidebar-accent-foreground": "oklch(0.30 0.02 260)",
-                    "sidebar-border": "oklch(1 0 0 / 0.4)",
-                    "sidebar-ring": "oklch(0.70 0.10 250)",
-                    "font-sans": "Inter, sans-serif",
-                    "font-serif": "SF Pro Display, Playfair Display, serif",
-                    "font-mono": "Fira Code, monospace",
-                    "shadow-sm": "0 2px 6px hsl(0 0% 0% / 0.05)",
-                    "shadow": "0 10px 30px hsl(0 0% 0% / 0.10)",
-                    "shadow-md": "0 15px 40px hsl(0 0% 0% / 0.12)",
-                    "shadow-lg": "0 25px 60px hsl(0 0% 0% / 0.15)",
-                    "shadow-xl": "0 40px 80px hsl(0 0% 0% / 0.18)"
-                },
-                "dark": {
-                    "background": "oklch(0.14 0.02 260)",
-                    "foreground": "oklch(0.92 0.02 260)",
-                    "card": "oklch(0.22 0.02 260 / 0.6)",
-                    "card-foreground": "oklch(0.92 0.02 260)",
-                    "popover": "oklch(0.24 0.02 260 / 0.7)",
-                    "popover-foreground": "oklch(0.92 0.02 260)",
-                    "primary": "oklch(0.75 0.12 250)",
-                    "primary-foreground": "oklch(0.12 0.02 260)",
-                    "secondary": "oklch(0.26 0.02 260)",
-                    "secondary-foreground": "oklch(0.88 0.02 260)",
-                    "muted": "oklch(0.24 0.02 260)",
-                    "muted-foreground": "oklch(0.70 0.02 260)",
-                    "accent": "oklch(0.65 0.08 250)",
-                    "accent-foreground": "oklch(0.95 0.02 260)",
-                    "destructive": "oklch(0.65 0.20 25)",
-                    "destructive-foreground": "oklch(0.95 0.02 260)",
-                    "border": "oklch(1 0 0 / 0.15)",
-                    "input": "oklch(1 0 0 / 0.2)",
-                    "ring": "oklch(0.75 0.12 250)",
-                    "sidebar": "oklch(0.18 0.02 260 / 0.6)",
-                    "sidebar-foreground": "oklch(0.92 0.02 260)",
-                    "sidebar-primary": "oklch(0.75 0.12 250)",
-                    "sidebar-primary-foreground": "oklch(0.12 0.02 260)",
-                    "sidebar-accent": "oklch(0.65 0.08 250)",
-                    "sidebar-accent-foreground": "oklch(0.95 0.02 260)",
-                    "sidebar-border": "oklch(1 0 0 / 0.15)",
-                    "sidebar-ring": "oklch(0.75 0.12 250)"
-                }
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "title": "Theme Soft Glass",
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-inter.json",
-                "https://ui.designbycode.co.za/r/font-sf-pro-display.json",
-                "https://ui.designbycode.co.za/r/font-playfair-display.json",
-                "https://ui.designbycode.co.za/r/font-fira-mono.json"
-            ]
-        },
-        {
-            "title": "Theme Audio Wave",
-            "name": "theme-audio-wave",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "cssVars": {
-                "theme": {
-                    "font-sans": "Inter, sans-serif",
-                    "font-serif": "Bebas Neue, sans-serif",
-                    "font-mono": "Fira Code, monospace",
-                    "radius": "0.5rem"
-                },
-                "light": {
-                    "background": "oklch(0.98 0.01 285)",
-                    "foreground": "oklch(0.2 0.03 285)",
-                    "card": "oklch(1 0 0)",
-                    "card-foreground": "oklch(0.2 0.03 285)",
-                    "popover": "oklch(1 0 0)",
-                    "popover-foreground": "oklch(0.2 0.03 285)",
-                    "primary": "oklch(0.72 0.25 145)",
-                    "primary-foreground": "oklch(1 0 0)",
-                    "secondary": "oklch(0.92 0.04 285)",
-                    "secondary-foreground": "oklch(0.35 0.04 285)",
-                    "muted": "oklch(0.94 0.02 285)",
-                    "muted-foreground": "oklch(0.55 0.03 285)",
-                    "accent": "oklch(0.65 0.2 330)",
-                    "accent-foreground": "oklch(1 0 0)",
-                    "destructive": "oklch(0.6 0.22 25)",
-                    "destructive-foreground": "oklch(1 0 0)",
-                    "border": "oklch(0.9 0.02 285)",
-                    "input": "oklch(0.9 0.02 285)",
-                    "ring": "oklch(0.72 0.25 145)",
-                    "chart-1": "oklch(0.72 0.25 145)",
-                    "chart-2": "oklch(0.65 0.2 330)",
-                    "chart-3": "oklch(0.8 0.15 200)",
-                    "chart-4": "oklch(0.7 0.18 40)",
-                    "chart-5": "oklch(0.55 0.15 260)",
-                    "sidebar": "oklch(0.97 0.01 285)",
-                    "sidebar-foreground": "oklch(0.2 0.03 285)",
-                    "sidebar-primary": "oklch(0.72 0.25 145)",
-                    "sidebar-primary-foreground": "oklch(1 0 0)",
-                    "sidebar-accent": "oklch(0.65 0.2 330)",
-                    "sidebar-accent-foreground": "oklch(1 0 0)",
-                    "sidebar-border": "oklch(0.9 0.02 285)",
-                    "sidebar-ring": "oklch(0.72 0.25 145)",
-                    "shadow-sm": "0 2px 10px hsl(145 80% 50% / 0.06)",
-                    "shadow": "0 8px 24px hsl(145 80% 50% / 0.1)",
-                    "shadow-md": "0 14px 40px hsl(145 80% 50% / 0.14)",
-                    "shadow-lg": "0 20px 60px hsl(145 80% 50% / 0.18)",
-                    "shadow-xl": "0 30px 90px hsl(145 80% 50% / 0.22)"
-                },
-                "dark": {
-                    "background": "oklch(0.08 0.02 285)",
-                    "foreground": "oklch(0.98 0.01 285)",
-                    "card": "oklch(0.12 0.02 285)",
-                    "card-foreground": "oklch(0.98 0.01 285)",
-                    "popover": "oklch(0.15 0.02 285)",
-                    "popover-foreground": "oklch(0.98 0.01 285)",
-                    "primary": "oklch(0.75 0.28 145)",
-                    "primary-foreground": "oklch(0.08 0.02 285)",
-                    "secondary": "oklch(0.25 0.03 285)",
-                    "secondary-foreground": "oklch(0.92 0.02 285)",
-                    "muted": "oklch(0.18 0.02 285)",
-                    "muted-foreground": "oklch(0.7 0.02 285)",
-                    "accent": "oklch(0.72 0.22 330)",
-                    "accent-foreground": "oklch(0.08 0.02 285)",
-                    "destructive": "oklch(0.65 0.22 25)",
-                    "destructive-foreground": "oklch(0.95 0.02 285)",
-                    "border": "oklch(0.28 0.02 285)",
-                    "input": "oklch(0.28 0.02 285)",
-                    "ring": "oklch(0.75 0.28 145)",
-                    "chart-1": "oklch(0.72 0.25 145)",
-                    "chart-2": "oklch(0.65 0.2 330)",
-                    "chart-3": "oklch(0.8 0.15 200)",
-                    "chart-4": "oklch(0.7 0.18 40)",
-                    "chart-5": "oklch(0.55 0.15 260)",
-                    "sidebar": "oklch(0.1 0.02 285)",
-                    "sidebar-foreground": "oklch(0.98 0.01 285)",
-                    "sidebar-primary": "oklch(0.75 0.28 145)",
-                    "sidebar-primary-foreground": "oklch(0.08 0.02 285)",
-                    "sidebar-accent": "oklch(0.72 0.22 330)",
-                    "sidebar-accent-foreground": "oklch(0.08 0.02 285)",
-                    "sidebar-border": "oklch(0.28 0.02 285)",
-                    "sidebar-ring": "oklch(0.75 0.28 145)",
-                    "shadow-sm": "0 2px 12px hsl(145 100% 70% / 0.2)",
-                    "shadow": "0 10px 30px hsl(145 100% 60% / 0.25)",
-                    "shadow-md": "0 18px 50px hsl(145 100% 65% / 0.3)",
-                    "shadow-lg": "0 30px 80px hsl(145 100% 70% / 0.35)",
-                    "shadow-xl": "0 50px 120px hsl(145 100% 60% / 0.45)"
-                }
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-inter.json",
-                "https://ui.designbycode.co.za/r/font-bebas-neue.json",
-                "https://ui.designbycode.co.za/r/font-fira-mono.json"
-            ]
-        },
-        {
-            "title": "Theme Audio Wave",
-            "name": "theme-audio-wave",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "cssVars": {
-                "theme": {
-                    "font-sans": "Inter, sans-serif",
-                    "font-serif": "Bebas Neue, sans-serif",
-                    "font-mono": "Fira Code, monospace",
-                    "radius": "0.5rem"
-                },
-                "light": {
-                    "background": "oklch(0.98 0.01 285)",
-                    "foreground": "oklch(0.2 0.03 285)",
-                    "card": "oklch(1 0 0)",
-                    "card-foreground": "oklch(0.2 0.03 285)",
-                    "popover": "oklch(1 0 0)",
-                    "popover-foreground": "oklch(0.2 0.03 285)",
-                    "primary": "oklch(0.72 0.25 145)",
-                    "primary-foreground": "oklch(1 0 0)",
-                    "secondary": "oklch(0.92 0.04 285)",
-                    "secondary-foreground": "oklch(0.35 0.04 285)",
-                    "muted": "oklch(0.94 0.02 285)",
-                    "muted-foreground": "oklch(0.55 0.03 285)",
-                    "accent": "oklch(0.65 0.2 330)",
-                    "accent-foreground": "oklch(1 0 0)",
-                    "destructive": "oklch(0.6 0.22 25)",
-                    "destructive-foreground": "oklch(1 0 0)",
-                    "border": "oklch(0.9 0.02 285)",
-                    "input": "oklch(0.9 0.02 285)",
-                    "ring": "oklch(0.72 0.25 145)",
-                    "chart-1": "oklch(0.72 0.25 145)",
-                    "chart-2": "oklch(0.65 0.2 330)",
-                    "chart-3": "oklch(0.8 0.15 200)",
-                    "chart-4": "oklch(0.7 0.18 40)",
-                    "chart-5": "oklch(0.55 0.15 260)",
-                    "sidebar": "oklch(0.97 0.01 285)",
-                    "sidebar-foreground": "oklch(0.2 0.03 285)",
-                    "sidebar-primary": "oklch(0.72 0.25 145)",
-                    "sidebar-primary-foreground": "oklch(1 0 0)",
-                    "sidebar-accent": "oklch(0.65 0.2 330)",
-                    "sidebar-accent-foreground": "oklch(1 0 0)",
-                    "sidebar-border": "oklch(0.9 0.02 285)",
-                    "sidebar-ring": "oklch(0.72 0.25 145)",
-                    "shadow-sm": "0 2px 10px hsl(145 80% 50% / 0.06)",
-                    "shadow": "0 8px 24px hsl(145 80% 50% / 0.1)",
-                    "shadow-md": "0 14px 40px hsl(145 80% 50% / 0.14)",
-                    "shadow-lg": "0 20px 60px hsl(145 80% 50% / 0.18)",
-                    "shadow-xl": "0 30px 90px hsl(145 80% 50% / 0.22)"
-                },
-                "dark": {
-                    "background": "oklch(0.08 0.02 285)",
-                    "foreground": "oklch(0.98 0.01 285)",
-                    "card": "oklch(0.12 0.02 285)",
-                    "card-foreground": "oklch(0.98 0.01 285)",
-                    "popover": "oklch(0.15 0.02 285)",
-                    "popover-foreground": "oklch(0.98 0.01 285)",
-                    "primary": "oklch(0.75 0.28 145)",
-                    "primary-foreground": "oklch(0.08 0.02 285)",
-                    "secondary": "oklch(0.25 0.03 285)",
-                    "secondary-foreground": "oklch(0.92 0.02 285)",
-                    "muted": "oklch(0.18 0.02 285)",
-                    "muted-foreground": "oklch(0.7 0.02 285)",
-                    "accent": "oklch(0.72 0.22 330)",
-                    "accent-foreground": "oklch(0.08 0.02 285)",
-                    "destructive": "oklch(0.65 0.22 25)",
-                    "destructive-foreground": "oklch(0.95 0.02 285)",
-                    "border": "oklch(0.28 0.02 285)",
-                    "input": "oklch(0.28 0.02 285)",
-                    "ring": "oklch(0.75 0.28 145)",
-                    "chart-1": "oklch(0.72 0.25 145)",
-                    "chart-2": "oklch(0.65 0.2 330)",
-                    "chart-3": "oklch(0.8 0.15 200)",
-                    "chart-4": "oklch(0.7 0.18 40)",
-                    "chart-5": "oklch(0.55 0.15 260)",
-                    "sidebar": "oklch(0.1 0.02 285)",
-                    "sidebar-foreground": "oklch(0.98 0.01 285)",
-                    "sidebar-primary": "oklch(0.75 0.28 145)",
-                    "sidebar-primary-foreground": "oklch(0.08 0.02 285)",
-                    "sidebar-accent": "oklch(0.72 0.22 330)",
-                    "sidebar-accent-foreground": "oklch(0.08 0.02 285)",
-                    "sidebar-border": "oklch(0.28 0.02 285)",
-                    "sidebar-ring": "oklch(0.75 0.28 145)",
-                    "shadow-sm": "0 2px 12px hsl(145 100% 70% / 0.2)",
-                    "shadow": "0 10px 30px hsl(145 100% 60% / 0.25)",
-                    "shadow-md": "0 18px 50px hsl(145 100% 65% / 0.3)",
-                    "shadow-lg": "0 30px 80px hsl(145 100% 70% / 0.35)",
-                    "shadow-xl": "0 50px 120px hsl(145 100% 60% / 0.45)"
-                }
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-inter.json",
-                "https://ui.designbycode.co.za/r/font-bebas-neue.json",
-                "https://ui.designbycode.co.za/r/font-fira-mono.json"
-            ]
-        },
-        {
-            "title": "Theme Audio Wave",
-            "name": "theme-audio-wave",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "cssVars": {
-                "theme": {
-                    "font-sans": "Inter, sans-serif",
-                    "font-serif": "Bebas Neue, sans-serif",
-                    "font-mono": "Fira Code, monospace",
-                    "radius": "0.5rem"
-                },
-                "light": {
-                    "background": "oklch(0.98 0.01 285)",
-                    "foreground": "oklch(0.2 0.03 285)",
-                    "card": "oklch(1 0 0)",
-                    "card-foreground": "oklch(0.2 0.03 285)",
-                    "popover": "oklch(1 0 0)",
-                    "popover-foreground": "oklch(0.2 0.03 285)",
-                    "primary": "oklch(0.72 0.25 145)",
-                    "primary-foreground": "oklch(1 0 0)",
-                    "secondary": "oklch(0.92 0.04 285)",
-                    "secondary-foreground": "oklch(0.35 0.04 285)",
-                    "muted": "oklch(0.94 0.02 285)",
-                    "muted-foreground": "oklch(0.55 0.03 285)",
-                    "accent": "oklch(0.65 0.2 330)",
-                    "accent-foreground": "oklch(1 0 0)",
-                    "destructive": "oklch(0.6 0.22 25)",
-                    "destructive-foreground": "oklch(1 0 0)",
-                    "border": "oklch(0.9 0.02 285)",
-                    "input": "oklch(0.9 0.02 285)",
-                    "ring": "oklch(0.72 0.25 145)",
-                    "chart-1": "oklch(0.72 0.25 145)",
-                    "chart-2": "oklch(0.65 0.2 330)",
-                    "chart-3": "oklch(0.8 0.15 200)",
-                    "chart-4": "oklch(0.7 0.18 40)",
-                    "chart-5": "oklch(0.55 0.15 260)",
-                    "sidebar": "oklch(0.97 0.01 285)",
-                    "sidebar-foreground": "oklch(0.2 0.03 285)",
-                    "sidebar-primary": "oklch(0.72 0.25 145)",
-                    "sidebar-primary-foreground": "oklch(1 0 0)",
-                    "sidebar-accent": "oklch(0.65 0.2 330)",
-                    "sidebar-accent-foreground": "oklch(1 0 0)",
-                    "sidebar-border": "oklch(0.9 0.02 285)",
-                    "sidebar-ring": "oklch(0.72 0.25 145)",
-                    "shadow-sm": "0 2px 10px hsl(145 80% 50% / 0.06)",
-                    "shadow": "0 8px 24px hsl(145 80% 50% / 0.1)",
-                    "shadow-md": "0 14px 40px hsl(145 80% 50% / 0.14)",
-                    "shadow-lg": "0 20px 60px hsl(145 80% 50% / 0.18)",
-                    "shadow-xl": "0 30px 90px hsl(145 80% 50% / 0.22)"
-                },
-                "dark": {
-                    "background": "oklch(0.08 0.02 285)",
-                    "foreground": "oklch(0.98 0.01 285)",
-                    "card": "oklch(0.12 0.02 285)",
-                    "card-foreground": "oklch(0.98 0.01 285)",
-                    "popover": "oklch(0.15 0.02 285)",
-                    "popover-foreground": "oklch(0.98 0.01 285)",
-                    "primary": "oklch(0.75 0.28 145)",
-                    "primary-foreground": "oklch(0.08 0.02 285)",
-                    "secondary": "oklch(0.25 0.03 285)",
-                    "secondary-foreground": "oklch(0.92 0.02 285)",
-                    "muted": "oklch(0.18 0.02 285)",
-                    "muted-foreground": "oklch(0.7 0.02 285)",
-                    "accent": "oklch(0.72 0.22 330)",
-                    "accent-foreground": "oklch(0.08 0.02 285)",
-                    "destructive": "oklch(0.65 0.22 25)",
-                    "destructive-foreground": "oklch(0.95 0.02 285)",
-                    "border": "oklch(0.28 0.02 285)",
-                    "input": "oklch(0.28 0.02 285)",
-                    "ring": "oklch(0.75 0.28 145)",
-                    "chart-1": "oklch(0.72 0.25 145)",
-                    "chart-2": "oklch(0.65 0.2 330)",
-                    "chart-3": "oklch(0.8 0.15 200)",
-                    "chart-4": "oklch(0.7 0.18 40)",
-                    "chart-5": "oklch(0.55 0.15 260)",
-                    "sidebar": "oklch(0.1 0.02 285)",
-                    "sidebar-foreground": "oklch(0.98 0.01 285)",
-                    "sidebar-primary": "oklch(0.75 0.28 145)",
-                    "sidebar-primary-foreground": "oklch(0.08 0.02 285)",
-                    "sidebar-accent": "oklch(0.72 0.22 330)",
-                    "sidebar-accent-foreground": "oklch(0.08 0.02 285)",
-                    "sidebar-border": "oklch(0.28 0.02 285)",
-                    "sidebar-ring": "oklch(0.75 0.28 145)",
-                    "shadow-sm": "0 2px 12px hsl(145 100% 70% / 0.2)",
-                    "shadow": "0 10px 30px hsl(145 100% 60% / 0.25)",
-                    "shadow-md": "0 18px 50px hsl(145 100% 65% / 0.3)",
-                    "shadow-lg": "0 30px 80px hsl(145 100% 70% / 0.35)",
-                    "shadow-xl": "0 50px 120px hsl(145 100% 60% / 0.45)"
-                }
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-inter.json",
-                "https://ui.designbycode.co.za/r/font-bebas-neue.json",
-                "https://ui.designbycode.co.za/r/font-fira-mono.json"
-            ]
-        },
-        {
-            "title": "Theme Stream Noir",
-            "name": "theme-stream-noir",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "cssVars": {
-                "theme": {
-                    "font-sans": "Inter, sans-serif",
-                    "font-serif": "Roboto Slab, serif",
-                    "font-mono": "Fira Code, monospace",
-                    "radius": "0.375rem"
-                },
-                "light": {
-                    "background": "oklch(0.98 0.01 285)",
-                    "foreground": "oklch(0.2 0.03 285)",
-                    "card": "oklch(1 0 0)",
-                    "card-foreground": "oklch(0.2 0.03 285)",
-                    "popover": "oklch(1 0 0)",
-                    "popover-foreground": "oklch(0.2 0.03 285)",
-                    "primary": "oklch(0.65 0.25 25)",
-                    "primary-foreground": "oklch(1 0 0)",
-                    "secondary": "oklch(0.92 0.04 285)",
-                    "secondary-foreground": "oklch(0.35 0.04 285)",
-                    "muted": "oklch(0.94 0.02 285)",
-                    "muted-foreground": "oklch(0.55 0.03 285)",
-                    "accent": "oklch(0.72 0.2 45)",
-                    "accent-foreground": "oklch(0.15 0.02 285)",
-                    "destructive": "oklch(0.6 0.22 25)",
-                    "destructive-foreground": "oklch(1 0 0)",
-                    "border": "oklch(0.9 0.02 285)",
-                    "input": "oklch(0.9 0.02 285)",
-                    "ring": "oklch(0.65 0.25 25)",
-                    "chart-1": "oklch(0.65 0.25 25)",
-                    "chart-2": "oklch(0.72 0.2 45)",
-                    "chart-3": "oklch(0.8 0.15 200)",
-                    "chart-4": "oklch(0.7 0.18 40)",
-                    "chart-5": "oklch(0.55 0.15 260)",
-                    "sidebar": "oklch(0.97 0.01 285)",
-                    "sidebar-foreground": "oklch(0.2 0.03 285)",
-                    "sidebar-primary": "oklch(0.65 0.25 25)",
-                    "sidebar-primary-foreground": "oklch(1 0 0)",
-                    "sidebar-accent": "oklch(0.72 0.2 45)",
-                    "sidebar-accent-foreground": "oklch(0.15 0.02 285)",
-                    "sidebar-border": "oklch(0.9 0.02 285)",
-                    "sidebar-ring": "oklch(0.65 0.25 25)",
-                    "shadow-sm": "0 2px 10px hsl(25 80% 50% / 0.06)",
-                    "shadow": "0 8px 24px hsl(25 80% 50% / 0.1)",
-                    "shadow-md": "0 14px 40px hsl(25 80% 50% / 0.14)",
-                    "shadow-lg": "0 20px 60px hsl(25 80% 50% / 0.18)",
-                    "shadow-xl": "0 30px 90px hsl(25 80% 50% / 0.22)"
-                },
-                "dark": {
-                    "background": "oklch(0.05 0.02 285)",
-                    "foreground": "oklch(0.98 0.01 285)",
-                    "card": "oklch(0.1 0.02 285)",
-                    "card-foreground": "oklch(0.98 0.01 285)",
-                    "popover": "oklch(0.12 0.02 285)",
-                    "popover-foreground": "oklch(0.98 0.01 285)",
-                    "primary": "oklch(0.7 0.28 25)",
-                    "primary-foreground": "oklch(0.95 0.01 285)",
-                    "secondary": "oklch(0.25 0.03 285)",
-                    "secondary-foreground": "oklch(0.9 0.02 285)",
-                    "muted": "oklch(0.18 0.02 285)",
-                    "muted-foreground": "oklch(0.7 0.02 285)",
-                    "accent": "oklch(0.78 0.22 45)",
-                    "accent-foreground": "oklch(0.05 0.02 285)",
-                    "destructive": "oklch(0.65 0.22 25)",
-                    "destructive-foreground": "oklch(0.95 0.02 285)",
-                    "border": "oklch(0.25 0.02 285)",
-                    "input": "oklch(0.25 0.02 285)",
-                    "ring": "oklch(0.7 0.28 25)",
-                    "chart-1": "oklch(0.65 0.25 25)",
-                    "chart-2": "oklch(0.72 0.2 45)",
-                    "chart-3": "oklch(0.8 0.15 200)",
-                    "chart-4": "oklch(0.7 0.18 40)",
-                    "chart-5": "oklch(0.55 0.15 260)",
-                    "sidebar": "oklch(0.08 0.02 285)",
-                    "sidebar-foreground": "oklch(0.98 0.01 285)",
-                    "sidebar-primary": "oklch(0.7 0.28 25)",
-                    "sidebar-primary-foreground": "oklch(0.95 0.01 285)",
-                    "sidebar-accent": "oklch(0.78 0.22 45)",
-                    "sidebar-accent-foreground": "oklch(0.05 0.02 285)",
-                    "sidebar-border": "oklch(0.25 0.02 285)",
-                    "sidebar-ring": "oklch(0.7 0.28 25)",
-                    "shadow-sm": "0 2px 12px hsl(25 100% 70% / 0.2)",
-                    "shadow": "0 10px 30px hsl(25 100% 60% / 0.25)",
-                    "shadow-md": "0 18px 50px hsl(25 100% 65% / 0.3)",
-                    "shadow-lg": "0 30px 80px hsl(25 100% 70% / 0.35)",
-                    "shadow-xl": "0 50px 120px hsl(25 100% 60% / 0.45)"
-                }
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-inter.json",
-                "https://ui.designbycode.co.za/r/font-roboto-slab.json",
-                "https://ui.designbycode.co.za/r/font-fira-mono.json"
-            ]
-        },
-        {
-            "title": "Theme Guest Haven",
-            "name": "theme-guest-haven",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "cssVars": {
-                "theme": {
-                    "font-sans": "Inter, sans-serif",
-                    "font-serif": "Caveat, cursive",
-                    "font-mono": "Fira Code, monospace",
-                    "radius": "1.25rem"
-                },
-                "light": {
-                    "background": "oklch(0.98 0.02 85)",
-                    "foreground": "oklch(0.28 0.04 70)",
-                    "card": "oklch(1 0 0)",
-                    "card-foreground": "oklch(0.28 0.04 70)",
-                    "popover": "oklch(1 0 0)",
-                    "popover-foreground": "oklch(0.28 0.04 70)",
-                    "primary": "oklch(0.65 0.22 10)",
-                    "primary-foreground": "oklch(1 0 0)",
-                    "secondary": "oklch(0.95 0.04 85)",
-                    "secondary-foreground": "oklch(0.38 0.04 70)",
-                    "muted": "oklch(0.96 0.02 85)",
-                    "muted-foreground": "oklch(0.55 0.03 70)",
-                    "accent": "oklch(0.7 0.15 140)",
-                    "accent-foreground": "oklch(0.98 0.01 285)",
-                    "destructive": "oklch(0.6 0.2 25)",
-                    "destructive-foreground": "oklch(1 0 0)",
-                    "border": "oklch(0.9 0.02 85)",
-                    "input": "oklch(0.9 0.02 85)",
-                    "ring": "oklch(0.65 0.22 10)",
-                    "chart-1": "oklch(0.65 0.22 10)",
-                    "chart-2": "oklch(0.7 0.15 140)",
-                    "chart-3": "oklch(0.78 0.12 200)",
-                    "chart-4": "oklch(0.75 0.1 60)",
-                    "chart-5": "oklch(0.55 0.12 280)",
-                    "sidebar": "oklch(0.96 0.02 85)",
-                    "sidebar-foreground": "oklch(0.28 0.04 70)",
-                    "sidebar-primary": "oklch(0.65 0.22 10)",
-                    "sidebar-primary-foreground": "oklch(1 0 0)",
-                    "sidebar-accent": "oklch(0.7 0.15 140)",
-                    "sidebar-accent-foreground": "oklch(0.98 0.01 285)",
-                    "sidebar-border": "oklch(0.9 0.02 85)",
-                    "sidebar-ring": "oklch(0.65 0.22 10)",
-                    "shadow-sm": "0 2px 10px hsl(10 60% 60% / 0.06)",
-                    "shadow": "0 8px 24px hsl(10 60% 60% / 0.1)",
-                    "shadow-md": "0 14px 40px hsl(10 60% 60% / 0.14)",
-                    "shadow-lg": "0 20px 60px hsl(10 60% 60% / 0.18)",
-                    "shadow-xl": "0 30px 90px hsl(10 60% 60% / 0.22)"
-                },
-                "dark": {
-                    "background": "oklch(0.15 0.03 70)",
-                    "foreground": "oklch(0.95 0.02 85)",
-                    "card": "oklch(0.2 0.03 70)",
-                    "card-foreground": "oklch(0.95 0.02 85)",
-                    "popover": "oklch(0.22 0.03 70)",
-                    "popover-foreground": "oklch(0.95 0.02 85)",
-                    "primary": "oklch(0.72 0.25 10)",
-                    "primary-foreground": "oklch(0.1 0.02 70)",
-                    "secondary": "oklch(0.28 0.04 70)",
-                    "secondary-foreground": "oklch(0.92 0.02 85)",
-                    "muted": "oklch(0.25 0.03 70)",
-                    "muted-foreground": "oklch(0.72 0.02 85)",
-                    "accent": "oklch(0.75 0.18 140)",
-                    "accent-foreground": "oklch(0.15 0.02 70)",
-                    "destructive": "oklch(0.65 0.22 25)",
-                    "destructive-foreground": "oklch(0.95 0.02 85)",
-                    "border": "oklch(0.35 0.03 70)",
-                    "input": "oklch(0.35 0.03 70)",
-                    "ring": "oklch(0.72 0.25 10)",
-                    "chart-1": "oklch(0.65 0.22 10)",
-                    "chart-2": "oklch(0.7 0.15 140)",
-                    "chart-3": "oklch(0.78 0.12 200)",
-                    "chart-4": "oklch(0.75 0.1 60)",
-                    "chart-5": "oklch(0.55 0.12 280)",
-                    "sidebar": "oklch(0.12 0.03 70)",
-                    "sidebar-foreground": "oklch(0.95 0.02 85)",
-                    "sidebar-primary": "oklch(0.72 0.25 10)",
-                    "sidebar-primary-foreground": "oklch(0.1 0.02 70)",
-                    "sidebar-accent": "oklch(0.75 0.18 140)",
-                    "sidebar-accent-foreground": "oklch(0.15 0.02 70)",
-                    "sidebar-border": "oklch(0.35 0.03 70)",
-                    "sidebar-ring": "oklch(0.72 0.25 10)",
-                    "shadow-sm": "0 2px 12px hsl(10 100% 70% / 0.2)",
-                    "shadow": "0 10px 30px hsl(10 100% 60% / 0.25)",
-                    "shadow-md": "0 18px 50px hsl(10 100% 65% / 0.3)",
-                    "shadow-lg": "0 30px 80px hsl(10 100% 70% / 0.35)",
-                    "shadow-xl": "0 50px 120px hsl(10 100% 60% / 0.45)"
-                }
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-inter.json",
-                "https://ui.designbycode.co.za/r/font-caveat.json",
-                "https://ui.designbycode.co.za/r/font-fira-mono.json"
-            ]
-        },
-        {
-            "title": "Theme Quick Find",
-            "name": "theme-quick-find",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "cssVars": {
-                "theme": {
-                    "font-sans": "Inter, sans-serif",
-                    "font-serif": "Inter, sans-serif",
-                    "font-mono": "Fira Code, monospace",
-                    "radius": "0.5rem"
-                },
-                "light": {
-                    "background": "oklch(1 0 0)",
-                    "foreground": "oklch(0.2 0.04 285)",
-                    "card": "oklch(1 0 0)",
-                    "card-foreground": "oklch(0.2 0.04 285)",
-                    "popover": "oklch(1 0 0)",
-                    "popover-foreground": "oklch(0.2 0.04 285)",
-                    "primary": "oklch(0.6 0.22 265)",
-                    "primary-foreground": "oklch(1 0 0)",
-                    "secondary": "oklch(0.95 0.02 285)",
-                    "secondary-foreground": "oklch(0.4 0.04 285)",
-                    "muted": "oklch(0.96 0.01 285)",
-                    "muted-foreground": "oklch(0.55 0.03 285)",
-                    "accent": "oklch(0.65 0.22 30)",
-                    "accent-foreground": "oklch(1 0 0)",
-                    "destructive": "oklch(0.6 0.25 25)",
-                    "destructive-foreground": "oklch(1 0 0)",
-                    "border": "oklch(0.92 0.02 285)",
-                    "input": "oklch(0.92 0.02 285)",
-                    "ring": "oklch(0.6 0.22 265)",
-                    "chart-1": "oklch(0.6 0.22 265)",
-                    "chart-2": "oklch(0.65 0.22 30)",
-                    "chart-3": "oklch(0.72 0.2 130)",
-                    "chart-4": "oklch(0.65 0.22 50)",
-                    "chart-5": "oklch(0.55 0.18 280)",
-                    "sidebar": "oklch(0.98 0.01 285)",
-                    "sidebar-foreground": "oklch(0.2 0.04 285)",
-                    "sidebar-primary": "oklch(0.6 0.22 265)",
-                    "sidebar-primary-foreground": "oklch(1 0 0)",
-                    "sidebar-accent": "oklch(0.65 0.22 30)",
-                    "sidebar-accent-foreground": "oklch(1 0 0)",
-                    "sidebar-border": "oklch(0.92 0.02 285)",
-                    "sidebar-ring": "oklch(0.6 0.22 265)",
-                    "shadow-sm": "0 2px 10px hsl(265 10% 80% / 0.06)",
-                    "shadow": "0 8px 24px hsl(265 10% 80% / 0.1)",
-                    "shadow-md": "0 14px 40px hsl(265 10% 80% / 0.14)",
-                    "shadow-lg": "0 20px 60px hsl(265 10% 80% / 0.18)",
-                    "shadow-xl": "0 30px 90px hsl(265 10% 80% / 0.22)"
-                },
-                "dark": {
-                    "background": "oklch(0.1 0.02 285)",
-                    "foreground": "oklch(0.95 0.01 285)",
-                    "card": "oklch(0.14 0.02 285)",
-                    "card-foreground": "oklch(0.95 0.01 285)",
-                    "popover": "oklch(0.16 0.02 285)",
-                    "popover-foreground": "oklch(0.95 0.01 285)",
-                    "primary": "oklch(0.68 0.25 265)",
-                    "primary-foreground": "oklch(0.08 0.02 285)",
-                    "secondary": "oklch(0.28 0.03 285)",
-                    "secondary-foreground": "oklch(0.92 0.02 285)",
-                    "muted": "oklch(0.22 0.02 285)",
-                    "muted-foreground": "oklch(0.72 0.02 285)",
-                    "accent": "oklch(0.7 0.25 30)",
-                    "accent-foreground": "oklch(0.08 0.02 285)",
-                    "destructive": "oklch(0.65 0.25 25)",
-                    "destructive-foreground": "oklch(0.95 0.02 285)",
-                    "border": "oklch(0.3 0.02 285)",
-                    "input": "oklch(0.3 0.02 285)",
-                    "ring": "oklch(0.68 0.25 265)",
-                    "chart-1": "oklch(0.6 0.22 265)",
-                    "chart-2": "oklch(0.65 0.22 30)",
-                    "chart-3": "oklch(0.72 0.2 130)",
-                    "chart-4": "oklch(0.65 0.22 50)",
-                    "chart-5": "oklch(0.55 0.18 280)",
-                    "sidebar": "oklch(0.08 0.02 285)",
-                    "sidebar-foreground": "oklch(0.95 0.01 285)",
-                    "sidebar-primary": "oklch(0.68 0.25 265)",
-                    "sidebar-primary-foreground": "oklch(0.08 0.02 285)",
-                    "sidebar-accent": "oklch(0.7 0.25 30)",
-                    "sidebar-accent-foreground": "oklch(0.08 0.02 285)",
-                    "sidebar-border": "oklch(0.3 0.02 285)",
-                    "sidebar-ring": "oklch(0.68 0.25 265)",
-                    "shadow-sm": "0 2px 12px hsl(265 100% 70% / 0.2)",
-                    "shadow": "0 10px 30px hsl(265 100% 60% / 0.25)",
-                    "shadow-md": "0 18px 50px hsl(265 100% 65% / 0.3)",
-                    "shadow-lg": "0 30px 80px hsl(265 100% 70% / 0.35)",
-                    "shadow-xl": "0 50px 120px hsl(265 100% 60% / 0.45)"
-                }
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-inter.json",
-                "https://ui.designbycode.co.za/r/font-fira-mono.json"
-            ]
-        },
-        {
-            "title": "Theme Chirp Feed",
-            "name": "theme-chirp-feed",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "cssVars": {
-                "theme": {
-                    "font-sans": "Inter, sans-serif",
-                    "font-serif": "IBM Plex Mono, monospace",
-                    "font-mono": "IBM Plex Mono, monospace",
-                    "radius": "1.5rem"
-                },
-                "light": {
-                    "background": "oklch(0.99 0.01 285)",
-                    "foreground": "oklch(0.15 0.03 285)",
-                    "card": "oklch(1 0 0)",
-                    "card-foreground": "oklch(0.15 0.03 285)",
-                    "popover": "oklch(1 0 0)",
-                    "popover-foreground": "oklch(0.15 0.03 285)",
-                    "primary": "oklch(0.65 0.22 210)",
-                    "primary-foreground": "oklch(1 0 0)",
-                    "secondary": "oklch(0.94 0.02 285)",
-                    "secondary-foreground": "oklch(0.45 0.03 285)",
-                    "muted": "oklch(0.96 0.01 285)",
-                    "muted-foreground": "oklch(0.6 0.02 285)",
-                    "accent": "oklch(0.7 0.18 330)",
-                    "accent-foreground": "oklch(1 0 0)",
-                    "destructive": "oklch(0.6 0.22 25)",
-                    "destructive-foreground": "oklch(1 0 0)",
-                    "border": "oklch(0.9 0.02 285)",
-                    "input": "oklch(0.9 0.02 285)",
-                    "ring": "oklch(0.65 0.22 210)",
-                    "chart-1": "oklch(0.65 0.22 210)",
-                    "chart-2": "oklch(0.7 0.18 330)",
-                    "chart-3": "oklch(0.78 0.15 200)",
-                    "chart-4": "oklch(0.72 0.16 40)",
-                    "chart-5": "oklch(0.55 0.15 280)",
-                    "sidebar": "oklch(0.98 0.01 285)",
-                    "sidebar-foreground": "oklch(0.15 0.03 285)",
-                    "sidebar-primary": "oklch(0.65 0.22 210)",
-                    "sidebar-primary-foreground": "oklch(1 0 0)",
-                    "sidebar-accent": "oklch(0.7 0.18 330)",
-                    "sidebar-accent-foreground": "oklch(1 0 0)",
-                    "sidebar-border": "oklch(0.9 0.02 285)",
-                    "sidebar-ring": "oklch(0.65 0.22 210)",
-                    "shadow-sm": "0 2px 10px hsl(210 60% 50% / 0.06)",
-                    "shadow": "0 8px 24px hsl(210 60% 50% / 0.1)",
-                    "shadow-md": "0 14px 40px hsl(210 60% 50% / 0.14)",
-                    "shadow-lg": "0 20px 60px hsl(210 60% 50% / 0.18)",
-                    "shadow-xl": "0 30px 90px hsl(210 60% 50% / 0.22)"
-                },
-                "dark": {
-                    "background": "oklch(0.1 0.02 285)",
-                    "foreground": "oklch(0.95 0.01 285)",
-                    "card": "oklch(0.15 0.02 285)",
-                    "card-foreground": "oklch(0.95 0.01 285)",
-                    "popover": "oklch(0.18 0.02 285)",
-                    "popover-foreground": "oklch(0.95 0.01 285)",
-                    "primary": "oklch(0.72 0.25 210)",
-                    "primary-foreground": "oklch(0.08 0.02 285)",
-                    "secondary": "oklch(0.25 0.03 285)",
-                    "secondary-foreground": "oklch(0.9 0.02 285)",
-                    "muted": "oklch(0.2 0.02 285)",
-                    "muted-foreground": "oklch(0.68 0.02 285)",
-                    "accent": "oklch(0.75 0.2 330)",
-                    "accent-foreground": "oklch(0.08 0.02 285)",
-                    "destructive": "oklch(0.65 0.22 25)",
-                    "destructive-foreground": "oklch(0.95 0.02 285)",
-                    "border": "oklch(0.3 0.02 285)",
-                    "input": "oklch(0.3 0.02 285)",
-                    "ring": "oklch(0.72 0.25 210)",
-                    "chart-1": "oklch(0.65 0.22 210)",
-                    "chart-2": "oklch(0.7 0.18 330)",
-                    "chart-3": "oklch(0.78 0.15 200)",
-                    "chart-4": "oklch(0.72 0.16 40)",
-                    "chart-5": "oklch(0.55 0.15 280)",
-                    "sidebar": "oklch(0.08 0.02 285)",
-                    "sidebar-foreground": "oklch(0.95 0.01 285)",
-                    "sidebar-primary": "oklch(0.72 0.25 210)",
-                    "sidebar-primary-foreground": "oklch(0.08 0.02 285)",
-                    "sidebar-accent": "oklch(0.75 0.2 330)",
-                    "sidebar-accent-foreground": "oklch(0.08 0.02 285)",
-                    "sidebar-border": "oklch(0.3 0.02 285)",
-                    "sidebar-ring": "oklch(0.72 0.25 210)",
-                    "shadow-sm": "0 2px 12px hsl(210 100% 70% / 0.2)",
-                    "shadow": "0 10px 30px hsl(210 100% 60% / 0.25)",
-                    "shadow-md": "0 18px 50px hsl(210 100% 65% / 0.3)",
-                    "shadow-lg": "0 30px 80px hsl(210 100% 70% / 0.35)",
-                    "shadow-xl": "0 50px 120px hsl(210 100% 60% / 0.45)"
-                }
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-inter.json",
-                "https://ui.designbycode.co.za/r/font-ibm-plex-mono.json"
-            ]
-        },
-        {
-            "title": "Theme Friend Grid",
-            "name": "theme-friend-grid",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "cssVars": {
-                "theme": {
-                    "font-sans": "Inter, sans-serif",
-                    "font-serif": "Inter, sans-serif",
-                    "font-mono": "Fira Code, monospace",
-                    "radius": "0.75rem"
-                },
-                "light": {
-                    "background": "oklch(0.94 0.02 285)",
-                    "foreground": "oklch(0.2 0.03 285)",
-                    "card": "oklch(1 0 0)",
-                    "card-foreground": "oklch(0.2 0.03 285)",
-                    "popover": "oklch(1 0 0)",
-                    "popover-foreground": "oklch(0.2 0.03 285)",
-                    "primary": "oklch(0.6 0.22 265)",
-                    "primary-foreground": "oklch(1 0 0)",
-                    "secondary": "oklch(0.92 0.02 285)",
-                    "secondary-foreground": "oklch(0.4 0.04 285)",
-                    "muted": "oklch(0.95 0.02 285)",
-                    "muted-foreground": "oklch(0.55 0.03 285)",
-                    "accent": "oklch(0.65 0.2 140)",
-                    "accent-foreground": "oklch(1 0 0)",
-                    "destructive": "oklch(0.6 0.22 25)",
-                    "destructive-foreground": "oklch(1 0 0)",
-                    "border": "oklch(0.88 0.02 285)",
-                    "input": "oklch(0.88 0.02 285)",
-                    "ring": "oklch(0.6 0.22 265)",
-                    "chart-1": "oklch(0.6 0.22 265)",
-                    "chart-2": "oklch(0.65 0.2 140)",
-                    "chart-3": "oklch(0.7 0.18 330)",
-                    "chart-4": "oklch(0.55 0.15 40)",
-                    "chart-5": "oklch(0.5 0.12 260)",
-                    "sidebar": "oklch(0.98 0.01 285)",
-                    "sidebar-foreground": "oklch(0.2 0.03 285)",
-                    "sidebar-primary": "oklch(0.6 0.22 265)",
-                    "sidebar-primary-foreground": "oklch(1 0 0)",
-                    "sidebar-accent": "oklch(0.65 0.2 140)",
-                    "sidebar-accent-foreground": "oklch(1 0 0)",
-                    "sidebar-border": "oklch(0.88 0.02 285)",
-                    "sidebar-ring": "oklch(0.6 0.22 265)",
-                    "shadow-sm": "0 2px 10px hsl(265 10% 80% / 0.06)",
-                    "shadow": "0 8px 24px hsl(265 10% 80% / 0.1)",
-                    "shadow-md": "0 14px 40px hsl(265 10% 80% / 0.14)",
-                    "shadow-lg": "0 20px 60px hsl(265 10% 80% / 0.18)",
-                    "shadow-xl": "0 30px 90px hsl(265 10% 80% / 0.22)"
-                },
-                "dark": {
-                    "background": "oklch(0.12 0.02 285)",
-                    "foreground": "oklch(0.95 0.01 285)",
-                    "card": "oklch(0.16 0.02 285)",
-                    "card-foreground": "oklch(0.95 0.01 285)",
-                    "popover": "oklch(0.18 0.02 285)",
-                    "popover-foreground": "oklch(0.95 0.01 285)",
-                    "primary": "oklch(0.68 0.25 265)",
-                    "primary-foreground": "oklch(0.08 0.02 285)",
-                    "secondary": "oklch(0.28 0.03 285)",
-                    "secondary-foreground": "oklch(0.9 0.02 285)",
-                    "muted": "oklch(0.22 0.02 285)",
-                    "muted-foreground": "oklch(0.7 0.02 285)",
-                    "accent": "oklch(0.72 0.22 140)",
-                    "accent-foreground": "oklch(0.08 0.02 285)",
-                    "destructive": "oklch(0.65 0.22 25)",
-                    "destructive-foreground": "oklch(0.95 0.02 285)",
-                    "border": "oklch(0.32 0.02 285)",
-                    "input": "oklch(0.32 0.02 285)",
-                    "ring": "oklch(0.68 0.25 265)",
-                    "chart-1": "oklch(0.6 0.22 265)",
-                    "chart-2": "oklch(0.65 0.2 140)",
-                    "chart-3": "oklch(0.7 0.18 330)",
-                    "chart-4": "oklch(0.55 0.15 40)",
-                    "chart-5": "oklch(0.5 0.12 260)",
-                    "sidebar": "oklch(0.1 0.02 285)",
-                    "sidebar-foreground": "oklch(0.95 0.01 285)",
-                    "sidebar-primary": "oklch(0.68 0.25 265)",
-                    "sidebar-primary-foreground": "oklch(0.08 0.02 285)",
-                    "sidebar-accent": "oklch(0.72 0.22 140)",
-                    "sidebar-accent-foreground": "oklch(0.08 0.02 285)",
-                    "sidebar-border": "oklch(0.32 0.02 285)",
-                    "sidebar-ring": "oklch(0.68 0.25 265)",
-                    "shadow-sm": "0 2px 12px hsl(265 100% 70% / 0.2)",
-                    "shadow": "0 10px 30px hsl(265 100% 60% / 0.25)",
-                    "shadow-md": "0 18px 50px hsl(265 100% 65% / 0.3)",
-                    "shadow-lg": "0 30px 80px hsl(265 100% 70% / 0.35)",
-                    "shadow-xl": "0 50px 120px hsl(265 100% 60% / 0.45)"
-                }
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-inter.json",
-                "https://ui.designbycode.co.za/r/font-fira-mono.json"
-            ]
-        },
-        {
-            "title": "Theme Maker Market",
-            "name": "theme-maker-market",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "cssVars": {
-                "theme": {
-                    "--font-sans": "'IBM Plex Sans', sans-serif",
-                    "--font-serif": "'IBM Plex Sans', sans-serif",
-                    "--font-mono": "'IBM Plex Mono', monospace",
-                    "--radius-sm": "0.25rem",
-                    "--radius-md": "0.25rem",
-                    "--radius-lg": "0.25rem",
-                    "--radius-xl": "0.5rem"
-                },
-                "light": {
-                    "--background": "oklch(0.98 0.01 285)",
-                    "--foreground": "oklch(0.15 0.01 285)",
-                    "--card": "oklch(0.95 0.01 285)",
-                    "--card-foreground": "oklch(0.15 0.01 285)",
-                    "--popover": "oklch(0.95 0.01 285)",
-                    "--popover-foreground": "oklch(0.15 0.01 285)",
-                    "--primary": "oklch(0.15 0.01 285)",
-                    "--primary-foreground": "oklch(0.98 0.01 285)",
-                    "--secondary": "oklch(0.92 0.02 285)",
-                    "--secondary-foreground": "oklch(0.25 0.02 285)",
-                    "--muted": "oklch(0.9 0.02 285)",
-                    "--muted-foreground": "oklch(0.5 0.02 285)",
-                    "--accent": "oklch(0.85 0.2 330)",
-                    "--accent-foreground": "oklch(0.15 0.01 285)",
-                    "--destructive": "oklch(0.6 0.22 25)",
-                    "--destructive-foreground": "oklch(0.98 0.01 285)",
-                    "--border": "oklch(0.85 0.02 285)",
-                    "--input": "oklch(0.85 0.02 285)",
-                    "--ring": "oklch(0.15 0.01 285)",
-                    "--chart-1": "oklch(0.15 0.01 285)",
-                    "--chart-2": "oklch(0.85 0.2 330)",
-                    "--chart-3": "oklch(0.65 0.18 200)",
-                    "--chart-4": "oklch(0.8 0.15 140)",
-                    "--chart-5": "oklch(0.55 0.15 260)",
-                    "--sidebar": "oklch(0.95 0.01 285)",
-                    "--sidebar-foreground": "oklch(0.15 0.01 285)",
-                    "--sidebar-primary": "oklch(0.15 0.01 285)",
-                    "--sidebar-primary-foreground": "oklch(0.98 0.01 285)",
-                    "--sidebar-accent": "oklch(0.85 0.2 330)",
-                    "--sidebar-accent-foreground": "oklch(0.15 0.01 285)",
-                    "--sidebar-border": "oklch(0.85 0.02 285)",
-                    "--sidebar-ring": "oklch(0.15 0.01 285)",
-                    "--shadow-sm": "0 1px 2px hsl(0 0% 0% / 0.05)",
-                    "--shadow": "0 2px 4px hsl(0 0% 0% / 0.1)",
-                    "--shadow-md": "0 4px 8px hsl(0 0% 0% / 0.15)",
-                    "--shadow-lg": "0 6px 16px hsl(0 0% 0% / 0.2)",
-                    "--shadow-xl": "0 10px 30px hsl(0 0% 0% / 0.25)"
-                },
-                "dark": {
-                    "--background": "oklch(0.05 0.01 285)",
-                    "--foreground": "oklch(0.95 0.01 285)",
-                    "--card": "oklch(0.08 0.01 285)",
-                    "--card-foreground": "oklch(0.95 0.01 285)",
-                    "--popover": "oklch(0.1 0.01 285)",
-                    "--popover-foreground": "oklch(0.95 0.01 285)",
-                    "--primary": "oklch(0.95 0.01 285)",
-                    "--primary-foreground": "oklch(0.08 0.01 285)",
-                    "--secondary": "oklch(0.18 0.02 285)",
-                    "--secondary-foreground": "oklch(0.85 0.02 285)",
-                    "--muted": "oklch(0.15 0.02 285)",
-                    "--muted-foreground": "oklch(0.6 0.02 285)",
-                    "--accent": "oklch(0.75 0.2 330)",
-                    "--accent-foreground": "oklch(0.08 0.01 285)",
-                    "--destructive": "oklch(0.6 0.22 25)",
-                    "--destructive-foreground": "oklch(0.95 0.01 285)",
-                    "--border": "oklch(0.25 0.02 285)",
-                    "--input": "oklch(0.25 0.02 285)",
-                    "--ring": "oklch(0.95 0.01 285)",
-                    "--chart-1": "oklch(0.95 0.01 285)",
-                    "--chart-2": "oklch(0.75 0.2 330)",
-                    "--chart-3": "oklch(0.65 0.18 200)",
-                    "--chart-4": "oklch(0.8 0.15 140)",
-                    "--chart-5": "oklch(0.55 0.15 260)",
-                    "--sidebar": "oklch(0.06 0.01 285)",
-                    "--sidebar-foreground": "oklch(0.95 0.01 285)",
-                    "--sidebar-primary": "oklch(0.95 0.01 285)",
-                    "--sidebar-primary-foreground": "oklch(0.08 0.01 285)",
-                    "--sidebar-accent": "oklch(0.75 0.2 330)",
-                    "--sidebar-accent-foreground": "oklch(0.08 0.01 285)",
-                    "--sidebar-border": "oklch(0.25 0.02 285)",
-                    "--sidebar-ring": "oklch(0.95 0.01 285)",
-                    "--shadow-sm": "0 1px 2px hsl(0 0% 0% / 0.3)",
-                    "--shadow": "0 2px 4px hsl(0 0% 0% / 0.4)",
-                    "--shadow-md": "0 4px 8px hsl(0 0% 0% / 0.5)",
-                    "--shadow-lg": "0 6px 16px hsl(0 0% 0% / 0.6)",
-                    "--shadow-xl": "0 10px 30px hsl(0 0% 0% / 0.7)"
-                }
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-ibm-plex-sans.json",
-                "https://ui.designbycode.co.za/r/font-ibm-plex-mono.json"
-            ]
-        },
-        {
-            "title": "Theme Void Dark",
-            "name": "theme-void-dark",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "cssVars": {
-                "theme": {
-                    "--font-sans": "'Inter', sans-serif",
-                    "--font-serif": "'Orbitron', sans-serif",
-                    "--font-mono": "'Fira Code', monospace",
-                    "--radius-sm": "0.5rem",
-                    "--radius-md": "0.5rem",
-                    "--radius-lg": "0.5rem",
-                    "--radius-xl": "0.75rem"
-                },
-                "light": {
-                    "--background": "oklch(0.98 0.01 285)",
-                    "--foreground": "oklch(0.08 0.01 285)",
-                    "--card": "oklch(0.95 0.01 285)",
-                    "--card-foreground": "oklch(0.08 0.01 285)",
-                    "--popover": "oklch(0.95 0.01 285)",
-                    "--popover-foreground": "oklch(0.08 0.01 285)",
-                    "--primary": "oklch(0.15 0.25 320)",
-                    "--primary-foreground": "oklch(0.98 0.01 285)",
-                    "--secondary": "oklch(0.9 0.02 285)",
-                    "--secondary-foreground": "oklch(0.25 0.02 285)",
-                    "--muted": "oklch(0.92 0.02 285)",
-                    "--muted-foreground": "oklch(0.5 0.02 285)",
-                    "--accent": "oklch(0.2 0.25 180)",
-                    "--accent-foreground": "oklch(0.98 0.01 285)",
-                    "--destructive": "oklch(0.6 0.25 25)",
-                    "--destructive-foreground": "oklch(0.98 0.01 285)",
-                    "--border": "oklch(0.85 0.02 285)",
-                    "--input": "oklch(0.85 0.02 285)",
-                    "--ring": "oklch(0.15 0.25 320)",
-                    "--chart-1": "oklch(0.15 0.25 320)",
-                    "--chart-2": "oklch(0.2 0.25 180)",
-                    "--chart-3": "oklch(0.8 0.22 60)",
-                    "--chart-4": "oklch(0.65 0.25 280)",
-                    "--chart-5": "oklch(0.85 0.18 140)",
-                    "--sidebar": "oklch(0.95 0.01 285)",
-                    "--sidebar-foreground": "oklch(0.08 0.01 285)",
-                    "--sidebar-primary": "oklch(0.15 0.25 320)",
-                    "--sidebar-primary-foreground": "oklch(0.98 0.01 285)",
-                    "--sidebar-accent": "oklch(0.2 0.25 180)",
-                    "--sidebar-accent-foreground": "oklch(0.98 0.01 285)",
-                    "--sidebar-border": "oklch(0.85 0.02 285)",
-                    "--sidebar-ring": "oklch(0.15 0.25 320)",
-                    "--shadow-sm": "0 1px 2px hsl(0 0% 0% / 0.05)",
-                    "--shadow": "0 2px 4px hsl(0 0% 0% / 0.1)",
-                    "--shadow-md": "0 4px 8px hsl(0 0% 0% / 0.15)",
-                    "--shadow-lg": "0 6px 16px hsl(0 0% 0% / 0.2)",
-                    "--shadow-xl": "0 10px 30px hsl(0 0% 0% / 0.25)"
-                },
-                "dark": {
-                    "--background": "oklch(0 0 0)",
-                    "--foreground": "oklch(0.98 0.01 285)",
-                    "--card": "oklch(0.03 0.01 285)",
-                    "--card-foreground": "oklch(0.98 0.01 285)",
-                    "--popover": "oklch(0.05 0.01 285)",
-                    "--popover-foreground": "oklch(0.98 0.01 285)",
-                    "--primary": "oklch(0.75 0.25 320)",
-                    "--primary-foreground": "oklch(0 0 0)",
-                    "--secondary": "oklch(0.15 0.02 285)",
-                    "--secondary-foreground": "oklch(0.9 0.02 285)",
-                    "--muted": "oklch(0.1 0.02 285)",
-                    "--muted-foreground": "oklch(0.55 0.02 285)",
-                    "--accent": "oklch(0.7 0.25 180)",
-                    "--accent-foreground": "oklch(0 0 0)",
-                    "--destructive": "oklch(0.6 0.25 25)",
-                    "--destructive-foreground": "oklch(0.98 0.01 285)",
-                    "--border": "oklch(0.18 0.02 285)",
-                    "--input": "oklch(0.18 0.02 285)",
-                    "--ring": "oklch(0.75 0.25 320)",
-                    "--chart-1": "oklch(0.75 0.25 320)",
-                    "--chart-2": "oklch(0.7 0.25 180)",
-                    "--chart-3": "oklch(0.8 0.22 60)",
-                    "--chart-4": "oklch(0.65 0.25 280)",
-                    "--chart-5": "oklch(0.85 0.18 140)",
-                    "--sidebar": "oklch(0.02 0.01 285)",
-                    "--sidebar-foreground": "oklch(0.98 0.01 285)",
-                    "--sidebar-primary": "oklch(0.75 0.25 320)",
-                    "--sidebar-primary-foreground": "oklch(0 0 0)",
-                    "--sidebar-accent": "oklch(0.7 0.25 180)",
-                    "--sidebar-accent-foreground": "oklch(0 0 0)",
-                    "--sidebar-border": "oklch(0.18 0.02 285)",
-                    "--sidebar-ring": "oklch(0.75 0.25 320)",
-                    "--shadow-sm": "0 0 8px oklch(0.75 0.25 320 / 0.4)",
-                    "--shadow": "0 0 16px oklch(0.75 0.25 320 / 0.5)",
-                    "--shadow-md": "0 0 24px oklch(0.75 0.25 320 / 0.6)",
-                    "--shadow-lg": "0 0 40px oklch(0.75 0.25 320 / 0.7)",
-                    "--shadow-xl": "0 0 60px oklch(0.75 0.25 320 / 0.8)"
-                }
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-inter.json",
-                "https://ui.designbycode.co.za/r/font-orbitron.json",
-                "https://ui.designbycode.co.za/r/font-fira-mono.json"
-            ]
-        },
-        {
-            "title": "Theme Paper Stack",
-            "name": "theme-paper-stack",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "cssVars": {
-                "theme": {
-                    "--font-sans": "'Inter', sans-serif",
-                    "--font-serif": "'Playfair Display', serif",
-                    "--font-mono": "'Fira Code', monospace",
-                    "--radius-sm": "0.25rem",
-                    "--radius-md": "0.25rem",
-                    "--radius-lg": "0.25rem",
-                    "--radius-xl": "0.5rem"
-                },
-                "light": {
-                    "--background": "oklch(0.98 0.01 60)",
-                    "--foreground": "oklch(0.25 0.04 60)",
-                    "--card": "oklch(0.99 0.01 60)",
-                    "--card-foreground": "oklch(0.25 0.04 60)",
-                    "--popover": "oklch(0.99 0.01 60)",
-                    "--popover-foreground": "oklch(0.25 0.04 60)",
-                    "--primary": "oklch(0.45 0.08 260)",
-                    "--primary-foreground": "oklch(0.98 0.01 60)",
-                    "--secondary": "oklch(0.9 0.02 60)",
-                    "--secondary-foreground": "oklch(0.35 0.04 60)",
-                    "--muted": "oklch(0.94 0.02 60)",
-                    "--muted-foreground": "oklch(0.55 0.03 60)",
-                    "--accent": "oklch(0.7 0.12 25)",
-                    "--accent-foreground": "oklch(0.98 0.01 60)",
-                    "--destructive": "oklch(0.55 0.15 25)",
-                    "--destructive-foreground": "oklch(0.98 0.01 60)",
-                    "--border": "oklch(0.88 0.02 60)",
-                    "--input": "oklch(0.88 0.02 60)",
-                    "--ring": "oklch(0.45 0.08 260)",
-                    "--chart-1": "oklch(0.45 0.08 260)",
-                    "--chart-2": "oklch(0.7 0.12 25)",
-                    "--chart-3": "oklch(0.6 0.1 140)",
-                    "--chart-4": "oklch(0.8 0.08 50)",
-                    "--chart-5": "oklch(0.5 0.08 280)",
-                    "--sidebar": "oklch(0.98 0.01 60)",
-                    "--sidebar-foreground": "oklch(0.25 0.04 60)",
-                    "--sidebar-primary": "oklch(0.45 0.08 260)",
-                    "--sidebar-primary-foreground": "oklch(0.98 0.01 60)",
-                    "--sidebar-accent": "oklch(0.7 0.12 25)",
-                    "--sidebar-accent-foreground": "oklch(0.98 0.01 60)",
-                    "--sidebar-border": "oklch(0.88 0.02 60)",
-                    "--sidebar-ring": "oklch(0.45 0.08 260)",
-                    "--shadow-sm": "0 1px 3px hsl(40 20% 85% / 0.3)",
-                    "--shadow": "0 2px 6px hsl(40 20% 85% / 0.4)",
-                    "--shadow-md": "0 4px 10px hsl(40 20% 85% / 0.5)",
-                    "--shadow-lg": "0 6px 16px hsl(40 20% 85% / 0.6)",
-                    "--shadow-xl": "0 10px 30px hsl(40 20% 85% / 0.7)"
-                },
-                "dark": {
-                    "--background": "oklch(0.15 0.03 60)",
-                    "--foreground": "oklch(0.92 0.02 60)",
-                    "--card": "oklch(0.2 0.03 60)",
-                    "--card-foreground": "oklch(0.92 0.02 60)",
-                    "--popover": "oklch(0.22 0.03 60)",
-                    "--popover-foreground": "oklch(0.92 0.02 60)",
-                    "--primary": "oklch(0.65 0.1 260)",
-                    "--primary-foreground": "oklch(0.98 0.01 60)",
-                    "--secondary": "oklch(0.28 0.04 60)",
-                    "--secondary-foreground": "oklch(0.85 0.02 60)",
-                    "--muted": "oklch(0.22 0.03 60)",
-                    "--muted-foreground": "oklch(0.7 0.03 60)",
-                    "--accent": "oklch(0.75 0.15 25)",
-                    "--accent-foreground": "oklch(0.15 0.03 60)",
-                    "--destructive": "oklch(0.55 0.15 25)",
-                    "--destructive-foreground": "oklch(0.92 0.02 60)",
-                    "--border": "oklch(0.3 0.03 60)",
-                    "--input": "oklch(0.3 0.03 60)",
-                    "--ring": "oklch(0.65 0.1 260)",
-                    "--chart-1": "oklch(0.65 0.1 260)",
-                    "--chart-2": "oklch(0.75 0.15 25)",
-                    "--chart-3": "oklch(0.7 0.1 140)",
-                    "--chart-4": "oklch(0.8 0.08 50)",
-                    "--chart-5": "oklch(0.5 0.08 280)",
-                    "--sidebar": "oklch(0.12 0.02 60)",
-                    "--sidebar-foreground": "oklch(0.92 0.02 60)",
-                    "--sidebar-primary": "oklch(0.65 0.1 260)",
-                    "--sidebar-primary-foreground": "oklch(0.98 0.01 60)",
-                    "--sidebar-accent": "oklch(0.75 0.15 25)",
-                    "--sidebar-accent-foreground": "oklch(0.15 0.03 60)",
-                    "--sidebar-border": "oklch(0.3 0.03 60)",
-                    "--sidebar-ring": "oklch(0.65 0.1 260)",
-                    "--shadow-sm": "0 1px 3px hsl(40 20% 85% / 0.5)",
-                    "--shadow": "0 2px 6px hsl(40 20% 85% / 0.6)",
-                    "--shadow-md": "0 4px 10px hsl(40 20% 85% / 0.7)",
-                    "--shadow-lg": "0 6px 16px hsl(40 20% 85% / 0.8)",
-                    "--shadow-xl": "0 10px 30px hsl(40 20% 85% / 0.9)"
-                }
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-inter.json",
-                "https://ui.designbycode.co.za/r/font-playfair-display.json",
-                "https://ui.designbycode.co.za/r/font-fira-mono.json"
-            ]
-        },
-        {
-            "title": "Theme Neon Punk",
-            "name": "theme-neon-punk",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "cssVars": {
-                "theme": {
-                    "--font-sans": "'Orbitron', sans-serif",
-                    "--font-serif": "'Orbitron', sans-serif",
-                    "--font-mono": "'IBM Plex Mono', monospace",
-                    "--radius-sm": "0.125rem",
-                    "--radius-md": "0.125rem",
-                    "--radius-lg": "0.125rem",
-                    "--radius-xl": "0.375rem"
-                },
-                "light": {
-                    "--background": "oklch(0.98 0.01 285)",
-                    "--foreground": "oklch(0.1 0.02 285)",
-                    "--card": "oklch(0.98 0.01 285)",
-                    "--card-foreground": "oklch(0.1 0.02 285)",
-                    "--popover": "oklch(0.98 0.01 285)",
-                    "--popover-foreground": "oklch(0.1 0.02 285)",
-                    "--primary": "oklch(0.55 0.28 330)",
-                    "--primary-foreground": "oklch(0.98 0.01 285)",
-                    "--secondary": "oklch(0.92 0.02 285)",
-                    "--secondary-foreground": "oklch(0.25 0.02 285)",
-                    "--muted": "oklch(0.92 0.02 285)",
-                    "--muted-foreground": "oklch(0.5 0.02 285)",
-                    "--accent": "oklch(0.45 0.28 180)",
-                    "--accent-foreground": "oklch(0.98 0.01 285)",
-                    "--destructive": "oklch(0.65 0.28 25)",
-                    "--destructive-foreground": "oklch(0.98 0.01 285)",
-                    "--border": "oklch(0.85 0.02 285)",
-                    "--input": "oklch(0.85 0.02 285)",
-                    "--ring": "oklch(0.55 0.28 330)",
-                    "--chart-1": "oklch(0.55 0.28 330)",
-                    "--chart-2": "oklch(0.45 0.28 180)",
-                    "--chart-3": "oklch(0.85 0.25 60)",
-                    "--chart-4": "oklch(0.65 0.25 280)",
-                    "--chart-5": "oklch(0.6 0.22 160)",
-                    "--sidebar": "oklch(0.95 0.01 285)",
-                    "--sidebar-foreground": "oklch(0.1 0.02 285)",
-                    "--sidebar-primary": "oklch(0.55 0.28 330)",
-                    "--sidebar-primary-foreground": "oklch(0.98 0.01 285)",
-                    "--sidebar-accent": "oklch(0.45 0.28 180)",
-                    "--sidebar-accent-foreground": "oklch(0.98 0.01 285)",
-                    "--sidebar-border": "oklch(0.85 0.02 285)",
-                    "--sidebar-ring": "oklch(0.55 0.28 330)",
-                    "--shadow-sm": "0 1px 2px hsl(0 0% 0% / 0.05)",
-                    "--shadow": "0 2px 4px hsl(0 0% 0% / 0.1)",
-                    "--shadow-md": "0 4px 8px hsl(0 0% 0% / 0.15)",
-                    "--shadow-lg": "0 6px 16px hsl(0 0% 0% / 0.2)",
-                    "--shadow-xl": "0 10px 30px hsl(0 0% 0% / 0.25)"
-                },
-                "dark": {
-                    "--background": "oklch(0.08 0.02 285)",
-                    "--foreground": "oklch(0.95 0.01 285)",
-                    "--card": "oklch(0.12 0.02 285)",
-                    "--card-foreground": "oklch(0.95 0.01 285)",
-                    "--popover": "oklch(0.15 0.02 285)",
-                    "--popover-foreground": "oklch(0.95 0.01 285)",
-                    "--primary": "oklch(0.75 0.28 330)",
-                    "--primary-foreground": "oklch(0.08 0.02 285)",
-                    "--secondary": "oklch(0.2 0.03 285)",
-                    "--secondary-foreground": "oklch(0.9 0.02 285)",
-                    "--muted": "oklch(0.15 0.02 285)",
-                    "--muted-foreground": "oklch(0.6 0.02 285)",
-                    "--accent": "oklch(0.7 0.28 180)",
-                    "--accent-foreground": "oklch(0.08 0.02 285)",
-                    "--destructive": "oklch(0.65 0.28 25)",
-                    "--destructive-foreground": "oklch(0.08 0.02 285)",
-                    "--border": "oklch(0.3 0.03 285)",
-                    "--input": "oklch(0.3 0.03 285)",
-                    "--ring": "oklch(0.75 0.28 330)",
-                    "--chart-1": "oklch(0.75 0.28 330)",
-                    "--chart-2": "oklch(0.7 0.28 180)",
-                    "--chart-3": "oklch(0.85 0.25 60)",
-                    "--chart-4": "oklch(0.65 0.25 280)",
-                    "--chart-5": "oklch(0.6 0.22 160)",
-                    "--sidebar": "oklch(0.05 0.02 285)",
-                    "--sidebar-foreground": "oklch(0.95 0.01 285)",
-                    "--sidebar-primary": "oklch(0.75 0.28 330)",
-                    "--sidebar-primary-foreground": "oklch(0.08 0.02 285)",
-                    "--sidebar-accent": "oklch(0.7 0.28 180)",
-                    "--sidebar-accent-foreground": "oklch(0.08 0.02 285)",
-                    "--sidebar-border": "oklch(0.3 0.03 285)",
-                    "--sidebar-ring": "oklch(0.75 0.28 330)",
-                    "--shadow-sm": "0 0 5px oklch(0.75 0.28 330 / 0.5)",
-                    "--shadow": "0 0 10px oklch(0.75 0.28 330 / 0.6), 0 0 20px oklch(0.7 0.28 180 / 0.3)",
-                    "--shadow-md": "0 0 20px oklch(0.75 0.28 330 / 0.7), 0 0 40px oklch(0.7 0.28 180 / 0.4)",
-                    "--shadow-lg": "0 0 40px oklch(0.75 0.28 330 / 0.8), 0 0 60px oklch(0.7 0.28 180 / 0.5)",
-                    "--shadow-xl": "0 0 60px oklch(0.75 0.28 330 / 0.9), 0 0 100px oklch(0.7 0.28 180 / 0.6)"
-                }
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-orbitron.json",
-                "https://ui.designbycode.co.za/r/font-ibm-plex-mono.json"
-            ]
-        },
-        {
-            "title": "Theme Ink Bleed",
-            "name": "theme-ink-bleed",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "cssVars": {
-                "theme": {
-                    "--font-sans": "'Roboto Slab', serif",
-                    "--font-serif": "'Roboto Slab', serif",
-                    "--font-mono": "'IBM Plex Mono', monospace",
-                    "--radius-sm": "0.125rem",
-                    "--radius-md": "0.125rem",
-                    "--radius-lg": "0.125rem",
-                    "--radius-xl": "0.375rem"
-                },
-                "light": {
-                    "--background": "oklch(0.98 0.01 285)",
-                    "--foreground": "oklch(0.12 0.04 285)",
-                    "--card": "oklch(1 0 0)",
-                    "--card-foreground": "oklch(0.12 0.04 285)",
-                    "--popover": "oklch(1 0 0)",
-                    "--popover-foreground": "oklch(0.12 0.04 285)",
-                    "--primary": "oklch(0.18 0.05 285)",
-                    "--primary-foreground": "oklch(0.98 0.01 285)",
-                    "--secondary": "oklch(0.92 0.02 285)",
-                    "--secondary-foreground": "oklch(0.28 0.04 285)",
-                    "--muted": "oklch(0.94 0.02 285)",
-                    "--muted-foreground": "oklch(0.5 0.03 285)",
-                    "--accent": "oklch(0.72 0.18 330)",
-                    "--accent-foreground": "oklch(0.98 0.01 285)",
-                    "--destructive": "oklch(0.55 0.18 25)",
-                    "--destructive-foreground": "oklch(0.98 0.01 285)",
-                    "--border": "oklch(0.8 0.03 285)",
-                    "--input": "oklch(0.8 0.03 285)",
-                    "--ring": "oklch(0.18 0.05 285)",
-                    "--chart-1": "oklch(0.18 0.05 285)",
-                    "--chart-2": "oklch(0.72 0.18 330)",
-                    "--chart-3": "oklch(0.55 0.15 200)",
-                    "--chart-4": "oklch(0.65 0.12 140)",
-                    "--chart-5": "oklch(0.45 0.1 260)",
-                    "--sidebar": "oklch(0.96 0.01 285)",
-                    "--sidebar-foreground": "oklch(0.12 0.04 285)",
-                    "--sidebar-primary": "oklch(0.18 0.05 285)",
-                    "--sidebar-primary-foreground": "oklch(0.98 0.01 285)",
-                    "--sidebar-accent": "oklch(0.72 0.18 330)",
-                    "--sidebar-accent-foreground": "oklch(0.98 0.01 285)",
-                    "--sidebar-border": "oklch(0.8 0.03 285)",
-                    "--sidebar-ring": "oklch(0.18 0.05 285)",
-                    "--shadow-sm": "0 1px 2px hsl(0 0% 0% / 0.1)",
-                    "--shadow": "0 2px 4px hsl(0 0% 0% / 0.15)",
-                    "--shadow-md": "0 4px 8px hsl(0 0% 0% / 0.2), 0 0 1px hsl(0 0% 0% / 0.3)",
-                    "--shadow-lg": "0 8px 16px hsl(0 0% 0% / 0.25), 0 0 2px hsl(0 0% 0% / 0.35)",
-                    "--shadow-xl": "0 12px 30px hsl(0 0% 0% / 0.3), 0 0 4px hsl(0 0% 0% / 0.4)"
-                },
-                "dark": {
-                    "--background": "oklch(0.12 0.04 285)",
-                    "--foreground": "oklch(0.92 0.02 285)",
-                    "--card": "oklch(0.18 0.04 285)",
-                    "--card-foreground": "oklch(0.92 0.02 285)",
-                    "--popover": "oklch(0.2 0.04 285)",
-                    "--popover-foreground": "oklch(0.92 0.02 285)",
-                    "--primary": "oklch(0.85 0.08 285)",
-                    "--primary-foreground": "oklch(0.12 0.04 285)",
-                    "--secondary": "oklch(0.25 0.04 285)",
-                    "--secondary-foreground": "oklch(0.85 0.02 285)",
-                    "--muted": "oklch(0.22 0.03 285)",
-                    "--muted-foreground": "oklch(0.65 0.03 285)",
-                    "--accent": "oklch(0.78 0.2 330)",
-                    "--accent-foreground": "oklch(0.12 0.04 285)",
-                    "--destructive": "oklch(0.55 0.18 25)",
-                    "--destructive-foreground": "oklch(0.92 0.02 285)",
-                    "--border": "oklch(0.35 0.04 285)",
-                    "--input": "oklch(0.35 0.04 285)",
-                    "--ring": "oklch(0.85 0.08 285)",
-                    "--chart-1": "oklch(0.85 0.08 285)",
-                    "--chart-2": "oklch(0.78 0.2 330)",
-                    "--chart-3": "oklch(0.55 0.15 200)",
-                    "--chart-4": "oklch(0.65 0.12 140)",
-                    "--chart-5": "oklch(0.45 0.1 260)",
-                    "--sidebar": "oklch(0.08 0.03 285)",
-                    "--sidebar-foreground": "oklch(0.92 0.02 285)",
-                    "--sidebar-primary": "oklch(0.85 0.08 285)",
-                    "--sidebar-primary-foreground": "oklch(0.12 0.04 285)",
-                    "--sidebar-accent": "oklch(0.78 0.2 330)",
-                    "--sidebar-accent-foreground": "oklch(0.12 0.04 285)",
-                    "--sidebar-border": "oklch(0.35 0.04 285)",
-                    "--sidebar-ring": "oklch(0.85 0.08 285)",
-                    "--shadow-sm": "0 1px 2px hsl(0 0% 0% / 0.3)",
-                    "--shadow": "0 2px 4px hsl(0 0% 0% / 0.4)",
-                    "--shadow-md": "0 4px 8px hsl(0 0% 0% / 0.5), 0 0 2px hsl(0 0% 0% / 0.6)",
-                    "--shadow-lg": "0 8px 16px hsl(0 0% 0% / 0.6), 0 0 4px hsl(0 0% 0% / 0.7)",
-                    "--shadow-xl": "0 12px 30px hsl(0 0% 0% / 0.7), 0 0 6px hsl(0 0% 0% / 0.8)"
-                }
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-roboto-slab.json",
-                "https://ui.designbycode.co.za/r/font-ibm-plex-mono.json"
-            ]
-        },
-        {
-            "title": "Theme Glass Frost",
-            "name": "theme-glass-frost",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "cssVars": {
-                "theme": {
-                    "--font-sans": "'Inter', sans-serif",
-                    "--font-serif": "'Playfair Display', serif",
-                    "--font-mono": "'Fira Code', monospace",
-                    "--radius-sm": "1rem",
-                    "--radius-md": "1rem",
-                    "--radius-lg": "1rem",
-                    "--radius-xl": "1.25rem"
-                },
-                "light": {
-                    "--background": "oklch(0.98 0.01 240)",
-                    "--foreground": "oklch(0.25 0.03 240)",
-                    "--card": "oklch(0.98 0.02 240 / 0.5)",
-                    "--card-foreground": "oklch(0.25 0.03 240)",
-                    "--popover": "oklch(0.99 0.02 240 / 0.6)",
-                    "--popover-foreground": "oklch(0.25 0.03 240)",
-                    "--primary": "oklch(0.65 0.15 230)",
-                    "--primary-foreground": "oklch(0.98 0.01 240)",
-                    "--secondary": "oklch(0.95 0.02 240)",
-                    "--secondary-foreground": "oklch(0.35 0.04 240)",
-                    "--muted": "oklch(0.96 0.02 240)",
-                    "--muted-foreground": "oklch(0.55 0.03 240)",
-                    "--accent": "oklch(0.8 0.12 200)",
-                    "--accent-foreground": "oklch(0.2 0.03 240)",
-                    "--destructive": "oklch(0.6 0.18 25)",
-                    "--destructive-foreground": "oklch(0.98 0.01 240)",
-                    "--border": "oklch(0.92 0.02 240 / 0.3)",
-                    "--input": "oklch(0.92 0.02 240 / 0.3)",
-                    "--ring": "oklch(0.65 0.15 230)",
-                    "--chart-1": "oklch(0.65 0.15 230)",
-                    "--chart-2": "oklch(0.8 0.12 200)",
-                    "--chart-3": "oklch(0.7 0.1 260)",
-                    "--chart-4": "oklch(0.6 0.12 150)",
-                    "--chart-5": "oklch(0.55 0.1 280)",
-                    "--sidebar": "oklch(0.97 0.02 240 / 0.6)",
-                    "--sidebar-foreground": "oklch(0.25 0.03 240)",
-                    "--sidebar-primary": "oklch(0.65 0.15 230)",
-                    "--sidebar-primary-foreground": "oklch(0.98 0.01 240)",
-                    "--sidebar-accent": "oklch(0.8 0.12 200)",
-                    "--sidebar-accent-foreground": "oklch(0.2 0.03 240)",
-                    "--sidebar-border": "oklch(0.92 0.02 240 / 0.3)",
-                    "--sidebar-ring": "oklch(0.65 0.15 230)",
-                    "--shadow-sm": "0 2px 8px hsl(200 20% 90% / 0.1)",
-                    "--shadow": "0 4px 16px hsl(200 20% 90% / 0.15)",
-                    "--shadow-md": "0 8px 24px hsl(200 20% 90% / 0.2)",
-                    "--shadow-lg": "0 12px 40px hsl(200 20% 90% / 0.25)",
-                    "--shadow-xl": "0 20px 60px hsl(200 20% 90% / 0.3)"
-                },
-                "dark": {
-                    "--background": "oklch(0.12 0.02 240)",
-                    "--foreground": "oklch(0.85 0.02 240)",
-                    "--card": "oklch(0.2 0.03 240 / 0.6)",
-                    "--card-foreground": "oklch(0.85 0.02 240)",
-                    "--popover": "oklch(0.25 0.03 240 / 0.7)",
-                    "--popover-foreground": "oklch(0.85 0.02 240)",
-                    "--primary": "oklch(0.7 0.15 230)",
-                    "--primary-foreground": "oklch(0.12 0.02 240)",
-                    "--secondary": "oklch(0.25 0.04 240)",
-                    "--secondary-foreground": "oklch(0.85 0.02 240)",
-                    "--muted": "oklch(0.22 0.03 240)",
-                    "--muted-foreground": "oklch(0.7 0.03 240)",
-                    "--accent": "oklch(0.8 0.12 200)",
-                    "--accent-foreground": "oklch(0.12 0.02 240)",
-                    "--destructive": "oklch(0.6 0.18 25)",
-                    "--destructive-foreground": "oklch(0.85 0.02 240)",
-                    "--border": "oklch(0.35 0.04 240 / 0.4)",
-                    "--input": "oklch(0.35 0.04 240 / 0.4)",
-                    "--ring": "oklch(0.7 0.15 230)",
-                    "--chart-1": "oklch(0.7 0.15 230)",
-                    "--chart-2": "oklch(0.8 0.12 200)",
-                    "--chart-3": "oklch(0.7 0.1 260)",
-                    "--chart-4": "oklch(0.6 0.12 150)",
-                    "--chart-5": "oklch(0.55 0.1 280)",
-                    "--sidebar": "oklch(0.08 0.02 240 / 0.7)",
-                    "--sidebar-foreground": "oklch(0.85 0.02 240)",
-                    "--sidebar-primary": "oklch(0.7 0.15 230)",
-                    "--sidebar-primary-foreground": "oklch(0.12 0.02 240)",
-                    "--sidebar-accent": "oklch(0.8 0.12 200)",
-                    "--sidebar-accent-foreground": "oklch(0.12 0.02 240)",
-                    "--sidebar-border": "oklch(0.35 0.04 240 / 0.4)",
-                    "--sidebar-ring": "oklch(0.7 0.15 230)",
-                    "--shadow-sm": "0 2px 8px hsl(200 20% 90% / 0.15)",
-                    "--shadow": "0 4px 16px hsl(200 20% 90% / 0.2)",
-                    "--shadow-md": "0 8px 24px hsl(200 20% 90% / 0.25)",
-                    "--shadow-lg": "0 12px 40px hsl(200 20% 90% / 0.3)",
-                    "--shadow-xl": "0 20px 60px hsl(200 20% 90% / 0.35)"
-                }
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-inter.json",
-                "https://ui.designbycode.co.za/r/font-playfair-display.json",
-                "https://ui.designbycode.co.za/r/font-fira-mono.json"
-            ]
-        },
-        {
-            "title": "Theme LoFi Chill",
-            "name": "theme-lofi-chill",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "cssVars": {
-                "theme": {
-                    "--font-sans": "'Inter', sans-serif",
-                    "--font-serif": "'Caveat', cursive",
-                    "--font-mono": "'Fira Code', monospace",
-                    "--radius-sm": "0.75rem",
-                    "--radius-md": "0.75rem",
-                    "--radius-lg": "0.75rem",
-                    "--radius-xl": "1rem"
-                },
-                "light": {
-                    "--background": "oklch(0.96 0.02 60)",
-                    "--foreground": "oklch(0.3 0.04 60)",
-                    "--card": "oklch(0.97 0.02 60)",
-                    "--card-foreground": "oklch(0.3 0.04 60)",
-                    "--popover": "oklch(0.97 0.02 60)",
-                    "--popover-foreground": "oklch(0.3 0.04 60)",
-                    "--primary": "oklch(0.55 0.1 25)",
-                    "--primary-foreground": "oklch(0.96 0.02 60)",
-                    "--secondary": "oklch(0.9 0.03 60)",
-                    "--secondary-foreground": "oklch(0.4 0.04 60)",
-                    "--muted": "oklch(0.94 0.02 60)",
-                    "--muted-foreground": "oklch(0.55 0.03 60)",
-                    "--accent": "oklch(0.65 0.12 140)",
-                    "--accent-foreground": "oklch(0.25 0.03 60)",
-                    "--destructive": "oklch(0.55 0.15 25)",
-                    "--destructive-foreground": "oklch(0.96 0.02 60)",
-                    "--border": "oklch(0.88 0.03 60)",
-                    "--input": "oklch(0.88 0.03 60)",
-                    "--ring": "oklch(0.55 0.1 25)",
-                    "--chart-1": "oklch(0.55 0.1 25)",
-                    "--chart-2": "oklch(0.65 0.12 140)",
-                    "--chart-3": "oklch(0.7 0.08 200)",
-                    "--chart-4": "oklch(0.6 0.1 50)",
-                    "--chart-5": "oklch(0.5 0.08 280)",
-                    "--sidebar": "oklch(0.95 0.02 60)",
-                    "--sidebar-foreground": "oklch(0.3 0.04 60)",
-                    "--sidebar-primary": "oklch(0.55 0.1 25)",
-                    "--sidebar-primary-foreground": "oklch(0.96 0.02 60)",
-                    "--sidebar-accent": "oklch(0.65 0.12 140)",
-                    "--sidebar-accent-foreground": "oklch(0.25 0.03 60)",
-                    "--sidebar-border": "oklch(0.88 0.03 60)",
-                    "--sidebar-ring": "oklch(0.55 0.1 25)",
-                    "--shadow-sm": "0 1px 3px hsl(30 30% 80% / 0.2)",
-                    "--shadow": "0 2px 6px hsl(30 30% 80% / 0.3)",
-                    "--shadow-md": "0 4px 10px hsl(30 30% 80% / 0.4)",
-                    "--shadow-lg": "0 6px 16px hsl(30 30% 80% / 0.5)",
-                    "--shadow-xl": "0 10px 30px hsl(30 30% 80% / 0.6)"
-                },
-                "dark": {
-                    "--background": "oklch(0.18 0.04 60)",
-                    "--foreground": "oklch(0.85 0.02 60)",
-                    "--card": "oklch(0.22 0.04 60)",
-                    "--card-foreground": "oklch(0.85 0.02 60)",
-                    "--popover": "oklch(0.25 0.04 60)",
-                    "--popover-foreground": "oklch(0.85 0.02 60)",
-                    "--primary": "oklch(0.7 0.12 25)",
-                    "--primary-foreground": "oklch(0.18 0.04 60)",
-                    "--secondary": "oklch(0.28 0.05 60)",
-                    "--secondary-foreground": "oklch(0.75 0.03 60)",
-                    "--muted": "oklch(0.25 0.04 60)",
-                    "--muted-foreground": "oklch(0.7 0.03 60)",
-                    "--accent": "oklch(0.7 0.15 140)",
-                    "--accent-foreground": "oklch(0.18 0.04 60)",
-                    "--destructive": "oklch(0.55 0.15 25)",
-                    "--destructive-foreground": "oklch(0.85 0.02 60)",
-                    "--border": "oklch(0.38 0.04 60)",
-                    "--input": "oklch(0.38 0.04 60)",
-                    "--ring": "oklch(0.7 0.12 25)",
-                    "--chart-1": "oklch(0.7 0.12 25)",
-                    "--chart-2": "oklch(0.7 0.15 140)",
-                    "--chart-3": "oklch(0.7 0.08 200)",
-                    "--chart-4": "oklch(0.6 0.1 50)",
-                    "--chart-5": "oklch(0.5 0.08 280)",
-                    "--sidebar": "oklch(0.12 0.04 60)",
-                    "--sidebar-foreground": "oklch(0.85 0.02 60)",
-                    "--sidebar-primary": "oklch(0.7 0.12 25)",
-                    "--sidebar-primary-foreground": "oklch(0.18 0.04 60)",
-                    "--sidebar-accent": "oklch(0.7 0.15 140)",
-                    "--sidebar-accent-foreground": "oklch(0.18 0.04 60)",
-                    "--sidebar-border": "oklch(0.38 0.04 60)",
-                    "--sidebar-ring": "oklch(0.7 0.12 25)",
-                    "--shadow-sm": "0 1px 3px hsl(30 30% 80% / 0.3)",
-                    "--shadow": "0 2px 6px hsl(30 30% 80% / 0.4)",
-                    "--shadow-md": "0 4px 10px hsl(30 30% 80% / 0.5)",
-                    "--shadow-lg": "0 6px 16px hsl(30 30% 80% / 0.6)",
-                    "--shadow-xl": "0 10px 30px hsl(30 30% 80% / 0.7)"
-                }
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-inter.json",
-                "https://ui.designbycode.co.za/r/font-caveat.json",
-                "https://ui.designbycode.co.za/r/font-fira-mono.json"
-            ]
-        },
-        {
-            "title": "Theme Midnight Club",
-            "name": "theme-midnight-club",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "cssVars": {
-                "theme": {
-                    "--font-sans": "'Inter', sans-serif",
-                    "--font-serif": "'Bebas Neue', sans-serif",
-                    "--font-mono": "'Fira Code', monospace",
-                    "--radius-sm": "0.75rem",
-                    "--radius-md": "0.75rem",
-                    "--radius-lg": "0.75rem",
-                    "--radius-xl": "1rem"
-                },
-                "light": {
-                    "--background": "oklch(0.98 0.01 280)",
-                    "--foreground": "oklch(0.15 0.04 280)",
-                    "--card": "oklch(0.98 0.01 280)",
-                    "--card-foreground": "oklch(0.15 0.04 280)",
-                    "--popover": "oklch(0.98 0.01 280)",
-                    "--popover-foreground": "oklch(0.15 0.04 280)",
-                    "--primary": "oklch(0.55 0.28 320)",
-                    "--primary-foreground": "oklch(0.98 0.01 280)",
-                    "--secondary": "oklch(0.92 0.02 280)",
-                    "--secondary-foreground": "oklch(0.3 0.04 280)",
-                    "--muted": "oklch(0.94 0.02 280)",
-                    "--muted-foreground": "oklch(0.5 0.03 280)",
-                    "--accent": "oklch(0.5 0.25 260)",
-                    "--accent-foreground": "oklch(0.98 0.01 280)",
-                    "--destructive": "oklch(0.6 0.25 25)",
-                    "--destructive-foreground": "oklch(0.98 0.01 280)",
-                    "--border": "oklch(0.88 0.02 280)",
-                    "--input": "oklch(0.88 0.02 280)",
-                    "--ring": "oklch(0.55 0.28 320)",
-                    "--chart-1": "oklch(0.55 0.28 320)",
-                    "--chart-2": "oklch(0.5 0.25 260)",
-                    "--chart-3": "oklch(0.65 0.22 180)",
-                    "--chart-4": "oklch(0.8 0.2 40)",
-                    "--chart-5": "oklch(0.55 0.2 300)",
-                    "--sidebar": "oklch(0.95 0.01 280)",
-                    "--sidebar-foreground": "oklch(0.15 0.04 280)",
-                    "--sidebar-primary": "oklch(0.55 0.28 320)",
-                    "--sidebar-primary-foreground": "oklch(0.98 0.01 280)",
-                    "--sidebar-accent": "oklch(0.5 0.25 260)",
-                    "--sidebar-accent-foreground": "oklch(0.98 0.01 280)",
-                    "--sidebar-border": "oklch(0.88 0.02 280)",
-                    "--sidebar-ring": "oklch(0.55 0.28 320)",
-                    "--shadow-sm": "0 1px 3px hsl(280 20% 10% / 0.1)",
-                    "--shadow": "0 2px 6px hsl(280 20% 10% / 0.15)",
-                    "--shadow-md": "0 4px 10px hsl(280 20% 10% / 0.2)",
-                    "--shadow-lg": "0 6px 16px hsl(280 20% 10% / 0.25)",
-                    "--shadow-xl": "0 10px 30px hsl(280 20% 10% / 0.3)"
-                },
-                "dark": {
-                    "--background": "oklch(0.08 0.04 280)",
-                    "--foreground": "oklch(0.92 0.02 280)",
-                    "--card": "oklch(0.12 0.04 280)",
-                    "--card-foreground": "oklch(0.92 0.02 280)",
-                    "--popover": "oklch(0.15 0.04 280)",
-                    "--popover-foreground": "oklch(0.92 0.02 280)",
-                    "--primary": "oklch(0.75 0.28 320)",
-                    "--primary-foreground": "oklch(0.08 0.04 280)",
-                    "--secondary": "oklch(0.25 0.04 280)",
-                    "--secondary-foreground": "oklch(0.85 0.02 280)",
-                    "--muted": "oklch(0.18 0.04 280)",
-                    "--muted-foreground": "oklch(0.65 0.03 280)",
-                    "--accent": "oklch(0.7 0.25 260)",
-                    "--accent-foreground": "oklch(0.92 0.02 280)",
-                    "--destructive": "oklch(0.6 0.25 25)",
-                    "--destructive-foreground": "oklch(0.92 0.02 280)",
-                    "--border": "oklch(0.28 0.04 280)",
-                    "--input": "oklch(0.28 0.04 280)",
-                    "--ring": "oklch(0.75 0.28 320)",
-                    "--chart-1": "oklch(0.75 0.28 320)",
-                    "--chart-2": "oklch(0.7 0.25 260)",
-                    "--chart-3": "oklch(0.65 0.22 180)",
-                    "--chart-4": "oklch(0.8 0.2 40)",
-                    "--chart-5": "oklch(0.55 0.2 300)",
-                    "--sidebar": "oklch(0.06 0.04 280)",
-                    "--sidebar-foreground": "oklch(0.92 0.02 280)",
-                    "--sidebar-primary": "oklch(0.75 0.28 320)",
-                    "--sidebar-primary-foreground": "oklch(0.08 0.04 280)",
-                    "--sidebar-accent": "oklch(0.7 0.25 260)",
-                    "--sidebar-accent-foreground": "oklch(0.92 0.02 280)",
-                    "--sidebar-border": "oklch(0.28 0.04 280)",
-                    "--sidebar-ring": "oklch(0.75 0.28 320)",
-                    "--shadow-sm": "0 0 10px oklch(0.75 0.28 320 / 0.4)",
-                    "--shadow": "0 0 20px oklch(0.75 0.28 320 / 0.5), 0 0 40px oklch(0.7 0.25 260 / 0.3)",
-                    "--shadow-md": "0 0 30px oklch(0.75 0.28 320 / 0.6), 0 0 60px oklch(0.7 0.25 260 / 0.4)",
-                    "--shadow-lg": "0 0 50px oklch(0.75 0.28 320 / 0.7), 0 0 100px oklch(0.7 0.25 260 / 0.5)",
-                    "--shadow-xl": "0 0 80px oklch(0.75 0.28 320 / 0.8), 0 0 150px oklch(0.7 0.25 260 / 0.6)"
-                }
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-inter.json",
-                "https://ui.designbycode.co.za/r/font-bebas-neue.json",
-                "https://ui.designbycode.co.za/r/font-fira-mono.json"
-            ]
-        },
-        {
-            "title": "Theme Retro Terminal",
-            "name": "theme-retro-terminal",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "cssVars": {
-                "theme": {
-                    "--font-sans": "'IBM Plex Mono', monospace",
-                    "--font-serif": "'IBM Plex Mono', monospace",
-                    "--font-mono": "'IBM Plex Mono', monospace",
-                    "--radius-sm": "0",
-                    "--radius-md": "0",
-                    "--radius-lg": "0",
-                    "--radius-xl": "0.25rem"
-                },
-                "light": {
-                    "--background": "oklch(0.98 0.01 140)",
-                    "--foreground": "oklch(0.25 0.08 140)",
-                    "--card": "oklch(0.98 0.01 140)",
-                    "--card-foreground": "oklch(0.25 0.08 140)",
-                    "--popover": "oklch(0.98 0.01 140)",
-                    "--popover-foreground": "oklch(0.25 0.08 140)",
-                    "--primary": "oklch(0.35 0.15 140)",
-                    "--primary-foreground": "oklch(0.98 0.01 140)",
-                    "--secondary": "oklch(0.92 0.02 140)",
-                    "--secondary-foreground": "oklch(0.4 0.06 140)",
-                    "--muted": "oklch(0.94 0.02 140)",
-                    "--muted-foreground": "oklch(0.5 0.05 140)",
-                    "--accent": "oklch(0.55 0.18 40)",
-                    "--accent-foreground": "oklch(0.98 0.01 140)",
-                    "--destructive": "oklch(0.7 0.22 25)",
-                    "--destructive-foreground": "oklch(0.98 0.01 140)",
-                    "--border": "oklch(0.85 0.03 140)",
-                    "--input": "oklch(0.85 0.03 140)",
-                    "--ring": "oklch(0.35 0.15 140)",
-                    "--chart-1": "oklch(0.35 0.15 140)",
-                    "--chart-2": "oklch(0.55 0.18 40)",
-                    "--chart-3": "oklch(0.7 0.18 200)",
-                    "--chart-4": "oklch(0.65 0.15 280)",
-                    "--chart-5": "oklch(0.6 0.15 160)",
-                    "--sidebar": "oklch(0.96 0.01 140)",
-                    "--sidebar-foreground": "oklch(0.25 0.08 140)",
-                    "--sidebar-primary": "oklch(0.35 0.15 140)",
-                    "--sidebar-primary-foreground": "oklch(0.98 0.01 140)",
-                    "--sidebar-accent": "oklch(0.55 0.18 40)",
-                    "--sidebar-accent-foreground": "oklch(0.98 0.01 140)",
-                    "--sidebar-border": "oklch(0.85 0.03 140)",
-                    "--sidebar-ring": "oklch(0.35 0.15 140)",
-                    "--shadow-sm": "0 1px 2px hsl(140 30% 60% / 0.05)",
-                    "--shadow": "0 2px 4px hsl(140 30% 60% / 0.1)",
-                    "--shadow-md": "0 4px 8px hsl(140 30% 60% / 0.15)",
-                    "--shadow-lg": "0 6px 16px hsl(140 30% 60% / 0.2)",
-                    "--shadow-xl": "0 10px 30px hsl(140 30% 60% / 0.25)"
-                },
-                "dark": {
-                    "--background": "oklch(0.05 0.02 140)",
-                    "--foreground": "oklch(0.75 0.2 140)",
-                    "--card": "oklch(0.08 0.02 140)",
-                    "--card-foreground": "oklch(0.75 0.2 140)",
-                    "--popover": "oklch(0.08 0.02 140)",
-                    "--popover-foreground": "oklch(0.75 0.2 140)",
-                    "--primary": "oklch(0.75 0.2 140)",
-                    "--primary-foreground": "oklch(0.08 0.02 140)",
-                    "--secondary": "oklch(0.25 0.04 140)",
-                    "--secondary-foreground": "oklch(0.7 0.15 140)",
-                    "--muted": "oklch(0.15 0.03 140)",
-                    "--muted-foreground": "oklch(0.55 0.1 140)",
-                    "--accent": "oklch(0.8 0.18 40)",
-                    "--accent-foreground": "oklch(0.08 0.02 140)",
-                    "--destructive": "oklch(0.7 0.22 25)",
-                    "--destructive-foreground": "oklch(0.08 0.02 140)",
-                    "--border": "oklch(0.25 0.04 140)",
-                    "--input": "oklch(0.25 0.04 140)",
-                    "--ring": "oklch(0.75 0.2 140)",
-                    "--chart-1": "oklch(0.75 0.2 140)",
-                    "--chart-2": "oklch(0.8 0.18 40)",
-                    "--chart-3": "oklch(0.7 0.18 200)",
-                    "--chart-4": "oklch(0.65 0.15 280)",
-                    "--chart-5": "oklch(0.6 0.15 160)",
-                    "--sidebar": "oklch(0.04 0.02 140)",
-                    "--sidebar-foreground": "oklch(0.75 0.2 140)",
-                    "--sidebar-primary": "oklch(0.75 0.2 140)",
-                    "--sidebar-primary-foreground": "oklch(0.08 0.02 140)",
-                    "--sidebar-accent": "oklch(0.8 0.18 40)",
-                    "--sidebar-accent-foreground": "oklch(0.08 0.02 140)",
-                    "--sidebar-border": "oklch(0.25 0.04 140)",
-                    "--sidebar-ring": "oklch(0.75 0.2 140)",
-                    "--shadow-sm": "0 0 2px oklch(0.75 0.2 140 / 0.3)",
-                    "--shadow": "0 0 4px oklch(0.75 0.2 140 / 0.4)",
-                    "--shadow-md": "0 0 8px oklch(0.75 0.2 140 / 0.5)",
-                    "--shadow-lg": "0 0 16px oklch(0.75 0.2 140 / 0.6)",
-                    "--shadow-xl": "0 0 24px oklch(0.75 0.2 140 / 0.7)"
-                }
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-ibm-plex-mono.json"
-            ]
-        },
-        {
-            "title": "Theme Crypto Labs",
-            "name": "theme-crypto-labs",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "cssVars": {
-                "theme": {
-                    "--font-sans": "'Inter', sans-serif",
-                    "--font-serif": "'Orbitron', sans-serif",
-                    "--font-mono": "'IBM Plex Mono', monospace",
-                    "--radius-sm": "0.25rem",
-                    "--radius-md": "0.25rem",
-                    "--radius-lg": "0.25rem",
-                    "--radius-xl": "0.5rem"
-                },
-                "light": {
-                    "--background": "oklch(0.98 0.01 285)",
-                    "--foreground": "oklch(0.15 0.04 285)",
-                    "--card": "oklch(0.98 0.01 285)",
-                    "--card-foreground": "oklch(0.15 0.04 285)",
-                    "--popover": "oklch(0.98 0.01 285)",
-                    "--popover-foreground": "oklch(0.15 0.04 285)",
-                    "--primary": "oklch(0.55 0.25 280)",
-                    "--primary-foreground": "oklch(0.98 0.01 285)",
-                    "--secondary": "oklch(0.92 0.02 285)",
-                    "--secondary-foreground": "oklch(0.3 0.04 285)",
-                    "--muted": "oklch(0.94 0.02 285)",
-                    "--muted-foreground": "oklch(0.5 0.03 285)",
-                    "--accent": "oklch(0.55 0.22 150)",
-                    "--accent-foreground": "oklch(0.98 0.01 285)",
-                    "--destructive": "oklch(0.65 0.25 25)",
-                    "--destructive-foreground": "oklch(0.98 0.01 285)",
-                    "--border": "oklch(0.88 0.02 285)",
-                    "--input": "oklch(0.88 0.02 285)",
-                    "--ring": "oklch(0.55 0.25 280)",
-                    "--chart-1": "oklch(0.55 0.25 280)",
-                    "--chart-2": "oklch(0.55 0.22 150)",
-                    "--chart-3": "oklch(0.8 0.2 40)",
-                    "--chart-4": "oklch(0.65 0.22 320)",
-                    "--chart-5": "oklch(0.6 0.18 200)",
-                    "--sidebar": "oklch(0.96 0.01 285)",
-                    "--sidebar-foreground": "oklch(0.15 0.04 285)",
-                    "--sidebar-primary": "oklch(0.55 0.25 280)",
-                    "--sidebar-primary-foreground": "oklch(0.98 0.01 285)",
-                    "--sidebar-accent": "oklch(0.55 0.22 150)",
-                    "--sidebar-accent-foreground": "oklch(0.98 0.01 285)",
-                    "--sidebar-border": "oklch(0.88 0.02 285)",
-                    "--sidebar-ring": "oklch(0.55 0.25 280)",
-                    "--shadow-sm": "0 1px 2px hsl(280 30% 10% / 0.05)",
-                    "--shadow": "0 2px 4px hsl(280 30% 10% / 0.1)",
-                    "--shadow-md": "0 4px 8px hsl(280 30% 10% / 0.15)",
-                    "--shadow-lg": "0 6px 16px hsl(280 30% 10% / 0.2)",
-                    "--shadow-xl": "0 10px 30px hsl(280 30% 10% / 0.25)"
-                },
-                "dark": {
-                    "--background": "oklch(0.08 0.03 285)",
-                    "--foreground": "oklch(0.92 0.02 285)",
-                    "--card": "oklch(0.12 0.03 285)",
-                    "--card-foreground": "oklch(0.92 0.02 285)",
-                    "--popover": "oklch(0.15 0.03 285)",
-                    "--popover-foreground": "oklch(0.92 0.02 285)",
-                    "--primary": "oklch(0.7 0.25 280)",
-                    "--primary-foreground": "oklch(0.08 0.03 285)",
-                    "--secondary": "oklch(0.2 0.04 285)",
-                    "--secondary-foreground": "oklch(0.85 0.02 285)",
-                    "--muted": "oklch(0.15 0.03 285)",
-                    "--muted-foreground": "oklch(0.6 0.03 285)",
-                    "--accent": "oklch(0.72 0.22 150)",
-                    "--accent-foreground": "oklch(0.08 0.03 285)",
-                    "--destructive": "oklch(0.65 0.25 25)",
-                    "--destructive-foreground": "oklch(0.92 0.02 285)",
-                    "--border": "oklch(0.25 0.04 285)",
-                    "--input": "oklch(0.25 0.04 285)",
-                    "--ring": "oklch(0.7 0.25 280)",
-                    "--chart-1": "oklch(0.7 0.25 280)",
-                    "--chart-2": "oklch(0.72 0.22 150)",
-                    "--chart-3": "oklch(0.8 0.2 40)",
-                    "--chart-4": "oklch(0.65 0.22 320)",
-                    "--chart-5": "oklch(0.6 0.18 200)",
-                    "--sidebar": "oklch(0.05 0.03 285)",
-                    "--sidebar-foreground": "oklch(0.92 0.02 285)",
-                    "--sidebar-primary": "oklch(0.7 0.25 280)",
-                    "--sidebar-primary-foreground": "oklch(0.08 0.03 285)",
-                    "--sidebar-accent": "oklch(0.72 0.22 150)",
-                    "--sidebar-accent-foreground": "oklch(0.08 0.03 285)",
-                    "--sidebar-border": "oklch(0.25 0.04 285)",
-                    "--sidebar-ring": "oklch(0.7 0.25 280)",
-                    "--shadow-sm": "0 0 10px oklch(0.7 0.25 280 / 0.3)",
-                    "--shadow": "0 0 20px oklch(0.7 0.25 280 / 0.4)",
-                    "--shadow-md": "0 0 30px oklch(0.7 0.25 280 / 0.5)",
-                    "--shadow-lg": "0 0 50px oklch(0.7 0.25 280 / 0.6)",
-                    "--shadow-xl": "0 0 80px oklch(0.7 0.25 280 / 0.7)"
-                }
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-inter.json",
-                "https://ui.designbycode.co.za/r/font-orbitron.json",
-                "https://ui.designbycode.co.za/r/font-ibm-plex-mono.json"
-            ]
-        },
-        {
-            "title": "Theme Fintech Pro",
-            "name": "theme-fintech-pro",
-            "type": "registry:theme",
-            "meta": {
-                "category": "styles",
-                "version": "1.0.0"
-            },
-            "cssVars": {
-                "theme": {
-                    "--font-sans": "'Inter', sans-serif",
-                    "--font-serif": "'Playfair Display', serif",
-                    "--font-mono": "'IBM Plex Mono', monospace",
-                    "--radius-sm": "0.25rem",
-                    "--radius-md": "0.25rem",
-                    "--radius-lg": "0.25rem",
-                    "--radius-xl": "0.5rem"
-                },
-                "light": {
-                    "--background": "oklch(0.98 0.01 265)",
-                    "--foreground": "oklch(0.2 0.04 265)",
-                    "--card": "oklch(0.98 0.01 265)",
-                    "--card-foreground": "oklch(0.2 0.04 265)",
-                    "--popover": "oklch(0.98 0.01 265)",
-                    "--popover-foreground": "oklch(0.2 0.04 265)",
-                    "--primary": "oklch(0.55 0.15 265)",
-                    "--primary-foreground": "oklch(0.98 0.01 265)",
-                    "--secondary": "oklch(0.92 0.02 265)",
-                    "--secondary-foreground": "oklch(0.35 0.03 265)",
-                    "--muted": "oklch(0.94 0.02 265)",
-                    "--muted-foreground": "oklch(0.5 0.03 265)",
-                    "--accent": "oklch(0.72 0.18 45)",
-                    "--accent-foreground": "oklch(0.08 0.02 265)",
-                    "--destructive": "oklch(0.6 0.22 25)",
-                    "--destructive-foreground": "oklch(0.98 0.01 265)",
-                    "--border": "oklch(0.88 0.02 265)",
-                    "--input": "oklch(0.88 0.02 265)",
-                    "--ring": "oklch(0.55 0.15 265)",
-                    "--chart-1": "oklch(0.55 0.15 265)",
-                    "--chart-2": "oklch(0.72 0.18 45)",
-                    "--chart-3": "oklch(0.65 0.12 140)",
-                    "--chart-4": "oklch(0.7 0.15 200)",
-                    "--chart-5": "oklch(0.5 0.1 280)",
-                    "--sidebar": "oklch(0.96 0.01 265)",
-                    "--sidebar-foreground": "oklch(0.2 0.04 265)",
-                    "--sidebar-primary": "oklch(0.55 0.15 265)",
-                    "--sidebar-primary-foreground": "oklch(0.98 0.01 265)",
-                    "--sidebar-accent": "oklch(0.72 0.18 45)",
-                    "--sidebar-accent-foreground": "oklch(0.08 0.02 265)",
-                    "--sidebar-border": "oklch(0.88 0.02 265)",
-                    "--sidebar-ring": "oklch(0.55 0.15 265)",
-                    "--shadow-sm": "0 1px 2px hsl(220 30% 10% / 0.05)",
-                    "--shadow": "0 2px 4px hsl(220 30% 10% / 0.1)",
-                    "--shadow-md": "0 4px 8px hsl(220 30% 10% / 0.15)",
-                    "--shadow-lg": "0 6px 16px hsl(220 30% 10% / 0.2)",
-                    "--shadow-xl": "0 10px 30px hsl(220 30% 10% / 0.25)"
-                },
-                "dark": {
-                    "--background": "oklch(0.08 0.02 265)",
-                    "--foreground": "oklch(0.92 0.01 265)",
-                    "--card": "oklch(0.12 0.02 265)",
-                    "--card-foreground": "oklch(0.92 0.01 265)",
-                    "--popover": "oklch(0.15 0.02 265)",
-                    "--popover-foreground": "oklch(0.92 0.01 265)",
-                    "--primary": "oklch(0.55 0.15 265)",
-                    "--primary-foreground": "oklch(0.98 0.01 265)",
-                    "--secondary": "oklch(0.25 0.03 265)",
-                    "--secondary-foreground": "oklch(0.88 0.02 265)",
-                    "--muted": "oklch(0.2 0.02 265)",
-                    "--muted-foreground": "oklch(0.65 0.02 265)",
-                    "--accent": "oklch(0.72 0.18 45)",
-                    "--accent-foreground": "oklch(0.08 0.02 265)",
-                    "--destructive": "oklch(0.6 0.22 25)",
-                    "--destructive-foreground": "oklch(0.98 0.01 265)",
-                    "--border": "oklch(0.3 0.03 265)",
-                    "--input": "oklch(0.3 0.03 265)",
-                    "--ring": "oklch(0.55 0.15 265)",
-                    "--chart-1": "oklch(0.55 0.15 265)",
-                    "--chart-2": "oklch(0.72 0.18 45)",
-                    "--chart-3": "oklch(0.65 0.12 140)",
-                    "--chart-4": "oklch(0.7 0.15 200)",
-                    "--chart-5": "oklch(0.5 0.1 280)",
-                    "--sidebar": "oklch(0.05 0.02 265)",
-                    "--sidebar-foreground": "oklch(0.92 0.01 265)",
-                    "--sidebar-primary": "oklch(0.55 0.15 265)",
-                    "--sidebar-primary-foreground": "oklch(0.98 0.01 265)",
-                    "--sidebar-accent": "oklch(0.72 0.18 45)",
-                    "--sidebar-accent-foreground": "oklch(0.08 0.02 265)",
-                    "--sidebar-border": "oklch(0.3 0.03 265)",
-                    "--sidebar-ring": "oklch(0.55 0.15 265)",
-                    "--shadow-sm": "0 2px 4px hsl(220 30% 10% / 0.3)",
-                    "--shadow": "0 4px 12px hsl(220 30% 10% / 0.4)",
-                    "--shadow-md": "0 8px 20px hsl(220 30% 10% / 0.5)",
-                    "--shadow-lg": "0 12px 30px hsl(220 30% 10% / 0.6)",
-                    "--shadow-xl": "0 20px 50px hsl(220 30% 10% / 0.7)"
-                }
-            },
-            "css": {
-                "@layer base": {
-                    "body": {
-                        "background": "var(--background)",
-                        "color": "var(--foreground)"
-                    },
-                    "*": {
-                        "border-color": "var(--border)"
-                    }
-                }
-            },
-            "author": "designbycode",
-            "registryDependencies": [
-                "https://ui.designbycode.co.za/r/font-inter.json",
-                "https://ui.designbycode.co.za/r/font-playfair-display.json",
-                "https://ui.designbycode.co.za/r/font-ibm-plex-mono.json"
-            ]
         }
     ]
 }

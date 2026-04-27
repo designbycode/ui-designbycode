@@ -1,29 +1,53 @@
 import { useEffect, useState } from 'react';
 import { Moon, Sun } from 'lucide-react';
+import { useThemeStore } from '@/store/use-theme-store';
 
 function ThemeToggle({ className }: { className?: string }) {
-    const [isDark, setIsDark] = useState(false);
+    const { appearance, setAppearance } = useThemeStore();
     const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
         setMounted(true);
-        const stored = localStorage.getItem('appearance') ?? 'system';
-        const dark =
-            stored === 'dark' ||
-            (stored === 'system' &&
+    }, []);
+
+    useEffect(() => {
+        const isDark =
+            appearance === 'dark' ||
+            (appearance === 'system' &&
                 window.matchMedia('(prefers-color-scheme: dark)').matches);
-        setIsDark(dark);
+
+        document.documentElement.classList.toggle('dark', isDark);
+    }, [appearance]);
+
+    useEffect(() => {
+        const handleAppearanceChange = () => {
+            window.dispatchEvent(new CustomEvent('theme-appearance-changed'));
+        };
+
+        window.addEventListener('theme-appearance-changed', handleAppearanceChange);
+        const interval = setInterval(handleAppearanceChange, 500);
+
+        return () => {
+            window.removeEventListener(
+                'theme-appearance-changed',
+                handleAppearanceChange,
+            );
+            clearInterval(interval);
+        };
     }, []);
 
     const toggleTheme = () => {
-        const newMode = isDark ? 'light' : 'dark';
-        localStorage.setItem('appearance', newMode);
+        const newMode = appearance === 'dark' ? 'light' : 'dark';
+        setAppearance(newMode);
         document.cookie = `appearance=${newMode};path=/;max-age=${365 * 24 * 60 * 60};SameSite=Lax`;
-        document.documentElement.classList.toggle('dark', newMode === 'dark');
-        document.documentElement.style.colorScheme =
-            newMode === 'dark' ? 'dark' : 'light';
-        setIsDark(!isDark);
+        document.documentElement.style.colorScheme = newMode === 'dark' ? 'dark' : 'light';
     };
+
+    const isDark =
+        mounted &&
+        (appearance === 'dark' ||
+            (appearance === 'system' &&
+                window.matchMedia('(prefers-color-scheme: dark)').matches));
 
     return (
         <button

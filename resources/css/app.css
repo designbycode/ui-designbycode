@@ -9,6 +9,11 @@
 @import "@fontsource/ibm-plex-mono";
 @import "@fontsource-variable/inter";
 @import "@fontsource/fira-mono";
+@import "@fontsource/dm-serif-display";
+@import "@fontsource-variable/caveat";
+@import "@fontsource/press-start-2p";
+@import "@fontsource/ibm-plex-sans";
+@import "@fontsource/roboto-slab";
 
 @source '../views';
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
@@ -262,6 +267,11 @@
     --font-ibm-plex-mono: 'IBM Plex Mono', monospace;
     --font-inter: 'Inter Variable', sans-serif;
     --font-fira-mono: 'Fira Mono', monospace;
+    --font-dm-serif-display: 'DM Serif Display', serif;
+    --font-caveat: 'Caveat Variable', cursive;
+    --font-press-start-2p: 'Press Start 2P', system-ui;
+    --font-ibm-plex-sans: 'IBM Plex Sans', sans-serif;
+    --font-roboto-slab: 'Roboto Slab', serif;
 
 }
 

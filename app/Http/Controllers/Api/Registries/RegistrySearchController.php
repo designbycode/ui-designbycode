@@ -15,16 +15,17 @@ class RegistrySearchController extends Controller
         $type = $request->query('type');
 
         $results = Registry::query()
-            ->when($query, fn($q) => $q->where('name', 'like', "%{$query}%"))
-            ->when($type, fn($q) => $q->where('type', $type))
+            ->when($query, fn ($q) => $q->where('name', 'like', "%{$query}%"))
+            ->when($type, fn ($q) => $q->where('type', $type))
             ->limit(20)
             ->get()
-            ->map(fn($item) => [
+            ->map(fn ($item) => [
                 'name' => $item->name,
                 'title' => $item->title,
                 'type' => $item->type,
                 'category' => $item->meta['category'] ?? null,
                 'description' => $item->meta['description'] ?? null,
+                'baseColor' => $item->baseColor ?? null,
             ]);
 
         return response()->json($results);

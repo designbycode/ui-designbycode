@@ -32,4 +32,12 @@ class Registry extends Model
         'envVars' => 'array',
         'categories' => 'array',
     ];
+
+
+    public function scopeThemes($query)
+    {
+        return $query->where('type', 'registry:theme');
+    }
+
+
 }

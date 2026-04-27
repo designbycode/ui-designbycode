@@ -8,6 +8,7 @@ use App\Http\Controllers\Billing\SubscriptionController;
 use App\Http\Controllers\Dashboard\DashboardIndexController;
 use App\Http\Controllers\Docs\Animations\AnimationsIndexController;
 use App\Http\Controllers\Docs\DocumentationIndexController;
+use App\Http\Controllers\Docs\Themes\ThemeIndexController;
 use App\Http\Controllers\HomePageIndexController;
 use App\Http\Controllers\WebhookController;
 use Illuminate\Support\Facades\Route;
@@ -16,6 +17,7 @@ use Spatie\Permission\Middleware\RoleMiddleware;
 Route::get('/', HomePageIndexController::class)->name('home');
 Route::get('/docs', DocumentationIndexController::class)->name('docs.index');
 Route::get('/docs/animations', AnimationsIndexController::class)->name('docs.animations.index');
+Route::get('/docs/themes', ThemeIndexController::class)->name('docs.themes.index');
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('dashboard', DashboardIndexController::class)->name('dashboard');
@@ -31,7 +33,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('billing/invoices/{invoice}', [BillingController::class, 'downloadInvoice'])->name('billing.download-invoice');
 });
 
-Route::middleware(['auth', 'verified', RoleMiddleware::class.':super-admin'])->as('admin.')->group(function () {
+Route::middleware(['auth', 'verified', RoleMiddleware::class . ':super-admin'])->as('admin.')->group(function () {
     Route::get('admin/dashboard', AdminDashboardController::class)->name('dashboard');
 
     Route::resource('admin/users', UsersController::class);
@@ -43,6 +45,6 @@ Route::middleware(['guest'])->group(function () {
     Route::get('auth/{provider}/callback', [SocialiteController::class, 'handleProviderCallback'])->name('auth.callback');
 });
 
-require __DIR__.'/settings.php';
+require __DIR__ . '/settings.php';
 
 Route::post('/paddle/webhook', WebhookController::class);

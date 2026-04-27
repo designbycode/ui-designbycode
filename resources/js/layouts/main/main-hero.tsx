@@ -99,7 +99,7 @@ export default function MainHero() {
                             <span>Premium Components</span>
                         </ButtonParticles>
                         <ButtonParticles
-                            colors={['var(--primary)', 'var(--color-muted)']}
+                            colors={['var(--secondary)', 'var(--color-muted)']}
                             className={`relative`}
                             variant="secondary"
                         >
