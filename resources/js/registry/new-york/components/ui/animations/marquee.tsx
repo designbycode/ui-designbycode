@@ -4,14 +4,10 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import type { CSSProperties, ReactNode } from 'react';
-import React, { useCallback, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { cn } from '@/lib/utils';
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
-
-// ============================================================================
-// Types
-// ============================================================================
 
 export type MarqueeDirection = 'left' | 'right';
 
@@ -47,26 +43,31 @@ export interface MarqueeProps extends MarqueeStyleProps {
     children: ReactNode;
     /** Base movement speed in px/frame at 60fps. Default: 0.5 */
     speed?: number;
-    /** @deprecated Use `speed` (px/frame). Converted automatically. */
-    velocity?: number;
     direction?: MarqueeDirection;
     pauseOnHover?: boolean;
     /**
-     * Extra px/frame added at peak scroll velocity in the row's own direction.
-     * At max scroll the strip moves `baseSpeed + scrollBoostFactor` px/frame.
-     * Default: 10.
+     * When true, the mouse wheel / trackpad controls the marquee:
+     *   - Scroll magnitude  → speed boost on top of base speed
+     *   - Scroll direction  → flips marquee direction while scrolling
+     *   - Stopping scroll   → eases back to base speed + base direction
+     * Default: true.
+     */
+    scrollEnabled?: boolean;
+    /**
+     * Extra px/frame added at peak normalised scroll input.
+     * Default: 8.
      */
     scrollBoostFactor?: number;
     /**
-     * Seconds to ease back to base speed after scrolling stops.
-     * Passed to gsap.quickTo duration. Default: 0.7.
+     * Seconds to ease back to base speed + direction after scrolling stops.
+     * Default: 0.6.
      */
     scrollDecay?: number;
     /**
-     * Scroll velocity (px/s) that maps to full boost.
-     * Default: 2500.
+     * ms of inactivity after the last wheel event before the ease-back starts.
+     * Default: 120.
      */
-    maxScrollVelocity?: number;
+    scrollTimeout?: number;
     contentClassName?: string;
     style?: CSSProperties;
 }
@@ -76,55 +77,90 @@ export interface MultiRowMarqueeProps<T = unknown> extends MarqueeStyleProps {
     speed?: number;
     direction?: MarqueeDirection;
     pauseOnHover?: boolean;
+    scrollEnabled?: boolean;
     scrollBoostFactor?: number;
     scrollDecay?: number;
-    maxScrollVelocity?: number;
+    scrollTimeout?: number;
     renderItem: (item: T, index: number, rowIndex: number) => ReactNode;
     rowGap?: number;
     contentClassName?: string;
 }
 
 // ============================================================================
-// Shared ScrollTrigger velocity bus
+// Wheel input bus
 //
-// One ScrollTrigger for the whole page, shared across every Marquee instance.
+// One 'wheel' listener shared across every mounted Marquee.
+// Normalises raw deltaY so mouse wheel and trackpad feel identical,
+// then broadcasts to all subscribers.
 // ============================================================================
 
-interface VelocitySubscriber {
-    onVelocity(vel: number): void;
+interface WheelSubscriber {
+    idleMs: number;
+
+    onWheel(normalisedDelta: number): void;
+
+    onIdle(): void;
 }
 
-const velocityBus = (() => {
-    const subs = new Set<VelocitySubscriber>();
-    let trigger: ScrollTrigger | null = null;
+const wheelBus = (() => {
+    const subs = new Set<WheelSubscriber>();
+    const timers = new WeakMap<
+        WheelSubscriber,
+        ReturnType<typeof setTimeout>
+    >();
+    let listening = false;
 
-    function boot() {
-        if (trigger) {
-return;
-}
+    /**
+     * Normalise raw deltaY to a consistent [-60, 60] range.
+     *
+     * Trackpad: sends continuous small deltas (|delta| < 30) at high frequency.
+     * Mouse wheel: sends discrete larger deltas (~100 px per notch).
+     *
+     * We scale trackpad up (×3) so both inputs land in the same perceived range,
+     * then clamp the result.
+     */
+    function normalise(deltaY: number): number {
+        const isTrackpad = Math.abs(deltaY) < 30;
+        const scaled = isTrackpad ? deltaY * 3 : deltaY;
+        return Math.max(-60, Math.min(60, scaled));
+    }
 
-        trigger = ScrollTrigger.create({
-            start: 0,
-            end: 'max',
-            onUpdate(self) {
-                const vel = self.getVelocity(); // signed px/s
-                subs.forEach((s) => s.onVelocity(vel));
-            },
+    function onWheel(e: WheelEvent) {
+        const norm = normalise(e.deltaY);
+        subs.forEach((sub) => {
+            sub.onWheel(norm);
+            // Reset this subscriber's idle timer on every wheel event
+            const prev = timers.get(sub);
+            if (prev) clearTimeout(prev);
+            timers.set(
+                sub,
+                setTimeout(() => sub.onIdle(), sub.idleMs),
+            );
         });
     }
 
+    function boot() {
+        if (listening) return;
+        listening = true;
+        window.addEventListener('wheel', onWheel, { passive: true });
+    }
+
+    function teardown() {
+        if (!listening) return;
+        listening = false;
+        window.removeEventListener('wheel', onWheel);
+    }
+
     return {
-        subscribe(sub: VelocitySubscriber): () => void {
+        subscribe(sub: WheelSubscriber): () => void {
             subs.add(sub);
             boot();
-
             return () => {
+                const t = timers.get(sub);
+                if (t) clearTimeout(t);
+                timers.delete(sub);
                 subs.delete(sub);
-
-                if (subs.size === 0 && trigger) {
-                    trigger.kill();
-                    trigger = null;
-                }
+                if (subs.size === 0) teardown();
             };
         },
     };
@@ -137,12 +173,12 @@ return;
 export function Marquee({
     children,
     speed,
-    velocity,
     direction = 'left',
     pauseOnHover = false,
-    scrollBoostFactor = 10,
-    scrollDecay = 0.7,
-    maxScrollVelocity = 2500,
+    scrollEnabled = true,
+    scrollBoostFactor = 8,
+    scrollDecay = 0.6,
+    scrollTimeout = 120,
     gap = 24,
     textColor,
     fontSize,
@@ -152,190 +188,159 @@ export function Marquee({
     contentClassName,
     style,
 }: MarqueeProps) {
-    const baseSpeed = speed ?? (velocity != null ? velocity / 60 : 0.5);
-    // left → negative x movement, right → positive x movement
-    const sign = direction === 'left' ? -1 : 1;
+    const baseSpeed = speed ?? 0.5;
+
+    // baseSign controls which axis the track moves along.
+    // direction='left'  → track moves left  → x decreases → baseSign = -1
+    // direction='right' → track moves right → x increases → baseSign = +1
+    //
+    // liveSpeed.value is always in px/frame; its sign encodes direction:
+    //   positive → forward (baseSign direction)
+    //   negative → reversed
+    // The ticker applies: xRef += liveSpeed.value * baseSign
+    const baseSign = direction === 'left' ? -1 : 1;
 
     const containerRef = useRef<HTMLDivElement>(null);
     const trackRef = useRef<HTMLDivElement>(null);
 
-    // Mutable refs that the ticker reads/writes — never trigger re-renders
     const xRef = useRef(0);
     const setWRef = useRef(0);
     const isPausedRef = useRef(false);
-    // gsap.quickTo writes into this object's `.value` every frame
-    const liveSpeed = useRef({ value: baseSpeed * sign });
-    // Stable ref to the quickTo function so the ticker closure can call it
+
+    // liveSpeed.value: positive = forward, negative = reversed
+    const liveSpeed = useRef({ value: baseSpeed });
     const quickToRef = useRef<gsap.QuickToFunc | null>(null);
-    // Stable ref to unsubscribe from the velocity bus
-    const unsubRef = useRef<(() => void) | null>(null);
 
     const [cloneCount, setCloneCount] = useState(3);
 
-    // ── All GSAP work lives inside useGSAP ───────────────────────────────────
-    // `scope: containerRef` means gsap.context() scopes all selector queries
-    // to the container. Cleanup (ticker removal, quickTo, ScrollTrigger) is
-    // handled automatically when the component unmounts or deps change.
+    // ── GSAP: ticker + measure + resize ───────────────────────────────────────
     useGSAP(
         () => {
-            if (!trackRef.current) {
-return;
-}
+            if (!trackRef.current) return;
 
-            // ── 1. Measure and build clone count ─────────────────────────
             const measure = () => {
                 const contentEl = trackRef.current!.querySelector(
                     '[data-marquee-content]',
                 ) as HTMLElement | null;
-
-                if (!contentEl) {
-return;
-}
+                if (!contentEl) return;
 
                 const singleW = contentEl.offsetWidth + gap;
-
-                if (singleW === 0) {
-return;
-}
+                if (singleW === 0) return;
 
                 setWRef.current = singleW;
 
-                const copies = Math.ceil((window.innerWidth * 3) / singleW) + 1;
-                const count = Math.max(3, copies);
-                setCloneCount(count);
+                const copies = Math.max(
+                    3,
+                    Math.ceil((window.innerWidth * 3) / singleW) + 1,
+                );
+                setCloneCount(copies);
 
-                // Right-moving rows start mid-track so content fills from frame 0
-                xRef.current =
-                    sign === 1 ? -singleW * Math.floor(count / 2) : 0;
+                // Right-moving strips start mid-track so content is visible immediately.
+                const rawStart =
+                    baseSign === 1 ? -singleW * Math.floor(copies / 2) : 0;
+                xRef.current = ((rawStart % singleW) - singleW) % singleW;
                 gsap.set(trackRef.current!, { x: xRef.current });
             };
 
-            // Double-rAF so the browser has laid out the clones before we measure
             const raf1 = requestAnimationFrame(() => {
                 const raf2 = requestAnimationFrame(() => {
                     measure();
 
-                    // ── 2. quickTo — smooth speed transitions ─────────────
-                    liveSpeed.current.value = baseSpeed * sign;
+                    // quickTo eases liveSpeed.value to any target smoothly
+                    liveSpeed.current.value = baseSpeed;
                     quickToRef.current = gsap.quickTo(
                         liveSpeed.current,
                         'value',
                         {
                             duration: scrollDecay,
-                            ease: 'power3.out',
+                            ease: 'power2.inOut',
                         },
                     );
 
-                    // ── 3. Subscribe to scroll velocity bus ───────────────
-                    if (unsubRef.current) {
-unsubRef.current();
-}
-
-                    unsubRef.current = velocityBus.subscribe({
-                        onVelocity(rawVel) {
-                            if (!quickToRef.current) {
-return;
-}
-
-                            const clamped = Math.max(
-                                -maxScrollVelocity,
-                                Math.min(maxScrollVelocity, rawVel),
-                            );
-                            const norm = clamped / maxScrollVelocity;
-                            // Base movement + velocity-proportional boost, both
-                            // multiplied by sign so each row follows its own direction.
-                            // Scrolling UP can flip sign and briefly reverse the strip.
-                            quickToRef.current(
-                                baseSpeed * sign +
-                                    norm * scrollBoostFactor * sign,
-                            );
-                        },
-                    });
-
-                    // ── 4. Resize handler ─────────────────────────────────
                     let resizeTimer: ReturnType<typeof setTimeout>;
                     const onResize = () => {
                         clearTimeout(resizeTimer);
                         resizeTimer = setTimeout(measure, 150);
                     };
                     window.addEventListener('resize', onResize);
-
-                    // Returned cleanup runs when useGSAP tears down this context
                     return () => {
                         clearTimeout(resizeTimer);
                         window.removeEventListener('resize', onResize);
                     };
                 });
-
-                // Cancel raf2 if context cleans up before it fires
                 return () => cancelAnimationFrame(raf2);
             });
 
-            // ── 5. Ticker — advances the track every frame ────────────────
-            // Registered inside useGSAP so gsap.context() removes it on cleanup.
             const tick = () => {
-                if (isPausedRef.current || setWRef.current === 0) {
-return;
-}
+                if (isPausedRef.current || setWRef.current === 0) return;
 
-                xRef.current -= liveSpeed.current.value;
+                // liveSpeed.value sign encodes direction; baseSign encodes axis.
+                xRef.current += liveSpeed.current.value * baseSign;
 
-                // Modular wrap: keep x inside [-setW, 0)
+                // True modulo wrap — never jumps regardless of speed magnitude
                 const setW = setWRef.current;
-
-                if (xRef.current <= -setW) {
-xRef.current += setW;
-}
-
-                if (xRef.current >= 0) {
-xRef.current -= setW;
-}
+                xRef.current = ((xRef.current % setW) - setW) % setW;
 
                 gsap.set(trackRef.current!, { x: xRef.current });
             };
 
             gsap.ticker.add(tick);
 
-            // Cleanup: context kills the ticker, cancels raf1, and unsubscribes
             return () => {
                 cancelAnimationFrame(raf1);
                 gsap.ticker.remove(tick);
-
-                if (unsubRef.current) {
-                    unsubRef.current();
-                    unsubRef.current = null;
-                }
             };
         },
         {
             scope: containerRef,
-            dependencies: [
-                baseSpeed,
-                sign,
-                gap,
-                scrollDecay,
-                scrollBoostFactor,
-                maxScrollVelocity,
-                // Re-run when cloneCount settles so we measure the final DOM
-                cloneCount,
-            ],
+            dependencies: [baseSpeed, baseSign, gap, scrollDecay, cloneCount],
         },
     );
 
-    // ── Hover pause (no GSAP needed — just flips a ref) ──────────────────────
+    // ── Wheel bus subscription ─────────────────────────────────────────────────
+    // Separate from the GSAP context so toggling scrollEnabled doesn't
+    // teardown and re-run the entire animation.
+    useEffect(() => {
+        if (!scrollEnabled) return;
+
+        const unsub = wheelBus.subscribe({
+            idleMs: scrollTimeout,
+
+            onWheel(norm) {
+                if (!quickToRef.current) return;
+                // norm: positive = scroll down = forward, negative = scroll up = reverse
+                // Map magnitude to a speed boost, preserve direction sign
+                const boost = (Math.abs(norm) / 60) * scrollBoostFactor;
+                const targetSpeed = (norm >= 0 ? 1 : -1) * (baseSpeed + boost);
+                quickToRef.current(targetSpeed);
+            },
+
+            onIdle() {
+                // Ease back to original speed in original (forward) direction
+                if (!quickToRef.current) return;
+                quickToRef.current(baseSpeed);
+            },
+        });
+
+        return unsub;
+    }, [
+        scrollEnabled,
+        scrollBoostFactor,
+        scrollDecay,
+        scrollTimeout,
+        baseSpeed,
+    ]);
+
+    // ── Hover pause ────────────────────────────────────────────────────────────
     const handleMouseEnter = useCallback(() => {
-        if (pauseOnHover) {
-isPausedRef.current = true;
-}
+        if (pauseOnHover) isPausedRef.current = true;
     }, [pauseOnHover]);
 
     const handleMouseLeave = useCallback(() => {
-        if (pauseOnHover) {
-isPausedRef.current = false;
-}
+        if (pauseOnHover) isPausedRef.current = false;
     }, [pauseOnHover]);
 
-    // ── Render ────────────────────────────────────────────────────────────────
+    // ── Render ─────────────────────────────────────────────────────────────────
     const contentStyle: CSSProperties = {
         gap: `${gap}px`,
         color: textColor,
@@ -388,9 +393,10 @@ export function MultiRowMarquee<T>({
     speed = 0.5,
     direction = 'left',
     pauseOnHover = false,
-    scrollBoostFactor = 10,
-    scrollDecay = 0.7,
-    maxScrollVelocity = 2500,
+    scrollEnabled = true,
+    scrollBoostFactor = 8,
+    scrollDecay = 0.6,
+    scrollTimeout = 120,
     gap = 24,
     rowGap = 16,
     textColor,
@@ -412,9 +418,10 @@ export function MultiRowMarquee<T>({
                     speed={row.speed ?? speed}
                     direction={row.direction ?? direction}
                     pauseOnHover={pauseOnHover}
+                    scrollEnabled={scrollEnabled}
                     scrollBoostFactor={scrollBoostFactor}
                     scrollDecay={scrollDecay}
-                    maxScrollVelocity={maxScrollVelocity}
+                    scrollTimeout={scrollTimeout}
                     gap={gap}
                     textColor={textColor}
                     fontSize={fontSize}

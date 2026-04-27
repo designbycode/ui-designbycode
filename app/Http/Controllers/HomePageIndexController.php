@@ -14,12 +14,11 @@ class HomePageIndexController extends Controller
      */
     public function __invoke(Request $request)
     {
-        $fonts = Registry::query()->fonts()->get();
 
 
         return Inertia::render('home', [
             'canRegister' => Features::enabled(Features::registration()),
-            'fonts' => $fonts,
+            'fonts' => Registry::query()->fonts()->get()
         ]);
     }
 }

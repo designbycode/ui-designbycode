@@ -10,7 +10,7 @@ export default function FontCard({ font }: { font: RegistryProps }) {
                     fontFamily: font.font?.family,
                 } as CSSProperties
             }
-            className={`group relative isolate overflow-hidden rounded-xl border border-border bg-linear-to-b from-muted to-background p-4 text-[clamp(2rem,3vh,4rem)] text-nowrap shadow-[inset_0_-2px_4px_rgba(0,0,0,0.6)] shadow-lg transition-all duration-100 hover:font-bold`}
+            className={`group relative isolate overflow-hidden rounded-xl border border-border bg-linear-to-b from-muted to-background p-4 px-18 text-[clamp(2rem,3vh,4rem)] text-nowrap shadow-[inset_0_-2px_4px_rgba(0,0,0,0.6)] shadow-lg transition-all duration-100 hover:font-bold`}
         >
             <span
                 aria-hidden={true}

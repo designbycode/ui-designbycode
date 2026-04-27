@@ -16,6 +16,6 @@
     "subsets": [
       "latin"
     ],
-    "dependency": "@fontsource-variable/poppins"
+    "dependency": "@fontsource/poppins"
   }
 }

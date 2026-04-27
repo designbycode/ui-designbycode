@@ -4499,8 +4499,8 @@
             ],
             "cssVars": {
                 "theme": {
-                    "font-sans": "Orbitron Variable', sans-serif",
-                    "font-serif": "'Orbitron Variable', sans-serif",
+                    "font-sans": "'Orbitron', sans-serif",
+                    "font-serif": "'Orbitron', sans-serif",
                     "font-mono": "Fira Code, monospace",
                     "radius": "0.5rem",
                     "shadow-color": "hsl(300 100% 60%)"

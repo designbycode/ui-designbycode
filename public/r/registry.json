@@ -5,6 +5,7 @@
     "items": [
         {
             "name": "font-inter",
+            "title": "Font Inter",
             "type": "registry:font",
             "meta": {
                 "category": "fonts",
@@ -18,7 +19,6 @@
                 "subsets": ["latin"],
                 "dependency": "@fontsource-variable/inter"
             },
-            "title": "Font Inter",
             "author": "designbycode"
         },
         {
@@ -34,7 +34,7 @@
                 "import": "Poppins",
                 "variable": "--font-poppins",
                 "subsets": ["latin"],
-                "dependency": "@fontsource-variable/poppins"
+                "dependency": "@fontsource/poppins"
             },
             "title": "Font Poppins",
             "author": "designbycode"
@@ -4499,8 +4499,8 @@
             ],
             "cssVars": {
                 "theme": {
-                    "font-sans": "Orbitron Variable', sans-serif",
-                    "font-serif": "'Orbitron Variable', sans-serif",
+                    "font-sans": "'Orbitron', sans-serif",
+                    "font-serif": "'Orbitron', sans-serif",
                     "font-mono": "Fira Code, monospace",
                     "radius": "0.5rem",
                     "shadow-color": "hsl(300 100% 60%)"
