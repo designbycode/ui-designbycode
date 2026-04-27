@@ -178,6 +178,18 @@
     "file": "assets/inter-vietnamese-wght-normal-CBcvBZtf.woff2",
     "src": "node_modules/@fontsource-variable/inter/files/inter-vietnamese-wght-normal.woff2"
   },
+  "node_modules/@fontsource-variable/pixelify-sans/files/pixelify-sans-cyrillic-wght-normal.woff2": {
+    "file": "assets/pixelify-sans-cyrillic-wght-normal-BfQLqnEI.woff2",
+    "src": "node_modules/@fontsource-variable/pixelify-sans/files/pixelify-sans-cyrillic-wght-normal.woff2"
+  },
+  "node_modules/@fontsource-variable/pixelify-sans/files/pixelify-sans-latin-ext-wght-normal.woff2": {
+    "file": "assets/pixelify-sans-latin-ext-wght-normal-CsF3XSp0.woff2",
+    "src": "node_modules/@fontsource-variable/pixelify-sans/files/pixelify-sans-latin-ext-wght-normal.woff2"
+  },
+  "node_modules/@fontsource-variable/pixelify-sans/files/pixelify-sans-latin-wght-normal.woff2": {
+    "file": "assets/pixelify-sans-latin-wght-normal-Cbhn5ptY.woff2",
+    "src": "node_modules/@fontsource-variable/pixelify-sans/files/pixelify-sans-latin-wght-normal.woff2"
+  },
   "node_modules/@fontsource-variable/playfair-display/files/playfair-display-cyrillic-wght-normal.woff2": {
     "file": "assets/playfair-display-cyrillic-wght-normal-5WvUvBgz.woff2",
     "src": "node_modules/@fontsource-variable/playfair-display/files/playfair-display-cyrillic-wght-normal.woff2"
@@ -435,7 +447,7 @@
     "src": "node_modules/@fontsource/roboto-slab/files/roboto-slab-vietnamese-400-normal.woff2"
   },
   "resources/css/app.css": {
-    "file": "assets/app-DDT63lz2.css",
+    "file": "assets/app-B23sfrUt.css",
     "name": "app",
     "names": [
       "app.css"
@@ -517,7 +529,10 @@
       "assets/roboto-slab-latin-ext-400-normal-AV6nsDYb.woff2",
       "assets/roboto-slab-latin-ext-400-normal-DOoLriWR.woff",
       "assets/roboto-slab-latin-400-normal-DwurWVj7.woff2",
-      "assets/roboto-slab-latin-400-normal-wzK1bUc4.woff"
+      "assets/roboto-slab-latin-400-normal-wzK1bUc4.woff",
+      "assets/pixelify-sans-cyrillic-wght-normal-BfQLqnEI.woff2",
+      "assets/pixelify-sans-latin-ext-wght-normal-CsF3XSp0.woff2",
+      "assets/pixelify-sans-latin-wght-normal-Cbhn5ptY.woff2"
     ]
   },
   "resources/js/app.tsx": {

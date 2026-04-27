@@ -5,6 +5,7 @@
     "items": [
         {
             "name": "font-inter",
+            "title": "Font Inter",
             "type": "registry:font",
             "meta": {
                 "category": "fonts",
@@ -18,7 +19,6 @@
                 "subsets": ["latin"],
                 "dependency": "@fontsource-variable/inter"
             },
-            "title": "Font Inter",
             "author": "designbycode"
         },
         {
@@ -34,7 +34,7 @@
                 "import": "Poppins",
                 "variable": "--font-poppins",
                 "subsets": ["latin"],
-                "dependency": "@fontsource-variable/poppins"
+                "dependency": "@fontsource/poppins"
             },
             "title": "Font Poppins",
             "author": "designbycode"
