@@ -202,24 +202,6 @@
             "author": "designbycode"
         },
         {
-            "name": "font-sf-pro-display",
-            "type": "registry:font",
-            "meta": {
-                "category": "fonts",
-                "version": "1.0.0"
-            },
-            "font": {
-                "family": "'SF Pro Display', serif",
-                "provider": "google",
-                "import": "SF Pro Display",
-                "variable": "--font-sf-pro-display",
-                "subsets": ["latin"],
-                "dependency": "@fontsource/sf-pro-display"
-            },
-            "title": "Font SF Pro Display",
-            "author": "designbycode"
-        },
-        {
             "name": "animate-bounce",
             "type": "registry:style",
             "meta": {
@@ -4499,8 +4481,8 @@
             ],
             "cssVars": {
                 "theme": {
-                    "font-sans": "Inter, sans-serif",
-                    "font-serif": "Orbitron, sans-serif",
+                    "font-sans": "Orbitron Variable', sans-serif",
+                    "font-serif": "'Orbitron Variable', sans-serif",
                     "font-mono": "Fira Code, monospace",
                     "radius": "0.5rem",
                     "shadow-color": "hsl(300 100% 60%)"

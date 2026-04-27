@@ -21,9 +21,9 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
     'Noto Color Emoji';
+
 
     --radius-lg: var(--radius);
     --radius-md: calc(var(--radius) - 2px);
@@ -147,13 +147,13 @@
 @layer base {
     * {
         @apply border-border;
-    border-color: var(--border);
+        border-color: var(--border);
     }
 
     body {
         @apply bg-background text-foreground selection:bg-primary/60 selection:text-primary-foreground/60;
-    background: var(--background);
-    color: var(--foreground);
+        background: var(--background);
+        color: var(--foreground);
     }
 }
 

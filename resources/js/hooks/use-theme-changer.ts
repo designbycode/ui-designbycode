@@ -176,193 +176,215 @@ const DEFAULT_THEME: DefaultThemeVars = {
 
 const loadedFonts = new Set<string>();
 
+const CSS_VAR_KEYS = [
+    'background',
+    'foreground',
+    'card',
+    'card-foreground',
+    'popover',
+    'popover-foreground',
+    'primary',
+    'primary-foreground',
+    'secondary',
+    'secondary-foreground',
+    'muted',
+    'muted-foreground',
+    'accent',
+    'accent-foreground',
+    'destructive',
+    'destructive-foreground',
+    'border',
+    'input',
+    'ring',
+    'chart-1',
+    'chart-2',
+    'chart-3',
+    'chart-4',
+    'chart-5',
+    'radius',
+    'sidebar',
+    'sidebar-foreground',
+    'sidebar-primary',
+    'sidebar-primary-foreground',
+    'sidebar-accent',
+    'sidebar-accent-foreground',
+    'sidebar-border',
+    'sidebar-ring',
+    'font-sans',
+    'font-serif',
+    'font-mono',
+    'shadow-2xs',
+    'shadow-xs',
+    'shadow-sm',
+    'shadow',
+    'shadow-md',
+    'shadow-lg',
+    'shadow-xl',
+    'shadow-2xl',
+] as const;
+
 function registerFont(fontUrl: string): void {
     const fontName = fontUrl.split('/').pop()?.replace('.json', '') ?? '';
 
-    if (!loadedFonts.has(fontName)) {
+    if (fontName && !loadedFonts.has(fontName)) {
         loadedFonts.add(fontName);
     }
 }
 
 function loadFontsForTheme(registryDependencies?: string[]): void {
-    if (!registryDependencies || registryDependencies.length === 0) {
+    if (!registryDependencies?.length) {
         return;
     }
 
-    const fontUrls = registryDependencies.filter((dep) =>
-        dep.includes('/font-'),
-    );
+    registryDependencies
+        .filter((dep) => dep.includes('/font-'))
+        .forEach(registerFont);
+}
 
-    fontUrls.forEach((fontUrl) => registerFont(fontUrl));
+function getIsDark(): boolean {
+    const { appearance } = useThemeStore.getState();
+
+    return (
+        appearance === 'dark' ||
+        (appearance === 'system' &&
+            typeof window !== 'undefined' &&
+            window.matchMedia('(prefers-color-scheme: dark)').matches)
+    );
+}
+
+function applyCssVars(cssVars: ThemeCssVars): void {
+    if (typeof document === 'undefined') {
+        return;
+    }
+
+    const root = document.documentElement;
+
+    const styleEntries: string[] = [];
+
+    for (const key of CSS_VAR_KEYS) {
+        const value = cssVars[key];
+
+        if (value) {
+            styleEntries.push(`--${key}: ${value}`);
+        }
+    }
+
+    if (styleEntries.length > 0) {
+        // Reset existing CSS vars before applying new ones to avoid accumulation
+        CSS_VAR_KEYS.forEach((key) => {
+            root.style.removeProperty(`--${key}`);
+        });
+
+        root.style.cssText += styleEntries.join('; ') + ';';
+    }
+}
+
+function resetToDefault(): void {
+    if (typeof document === 'undefined') {
+        return;
+    }
+
+    const isDark = getIsDark();
+    applyCssVars(isDark ? DEFAULT_THEME.dark : DEFAULT_THEME.light);
+    document.documentElement.classList.toggle('dark', isDark);
+}
+
+function applyThemeConfig(config: ThemeConfig): void {
+    if (typeof document === 'undefined') {
+        return;
+    }
+
+    const isDark = getIsDark();
+    const cssVars = isDark ? config.dark : config.light;
+    const themeVars = config.theme;
+
+    if (!cssVars) {
+        return;
+    }
+
+    if (themeVars) {
+        const root = document.documentElement.style;
+        Object.entries(themeVars).forEach(([key, value]) => {
+            if (value) {
+                root.setProperty(key, value);
+            }
+        });
+    }
+
+    applyCssVars(cssVars);
 }
 
 export default function useThemeChanger() {
     const { selectedTheme, setSelectedTheme } = useThemeStore();
-    const themeCache = useRef<Map<string, ThemeConfig>>(null);
+    const themeCache = useRef<Map<string, ThemeConfig>>(new Map());
 
-    if (themeCache.current === null) {
-        themeCache.current = new Map();
-    }
+    const applyTheme = async (themeName: string): Promise<void> => {
+        if (themeName === 'theme-default') {
+            resetToDefault();
 
-    const applyCssVars = (cssVars: ThemeCssVars) => {
-        const root = document.documentElement;
-
-        const cssVarsKeys = [
-            'background',
-            'foreground',
-            'card',
-            'card-foreground',
-            'popover',
-            'popover-foreground',
-            'primary',
-            'primary-foreground',
-            'secondary',
-            'secondary-foreground',
-            'muted',
-            'muted-foreground',
-            'accent',
-            'accent-foreground',
-            'destructive',
-            'destructive-foreground',
-            'border',
-            'input',
-            'ring',
-            'chart-1',
-            'chart-2',
-            'chart-3',
-            'chart-4',
-            'chart-5',
-            'radius',
-            'sidebar',
-            'sidebar-foreground',
-            'sidebar-primary',
-            'sidebar-primary-foreground',
-            'sidebar-accent',
-            'sidebar-accent-foreground',
-            'sidebar-border',
-            'sidebar-ring',
-            'font-sans',
-            'font-serif',
-            'font-mono',
-            'shadow-2xs',
-            'shadow-xs',
-            'shadow-sm',
-            'shadow',
-            'shadow-md',
-            'shadow-lg',
-            'shadow-xl',
-            'shadow-2xl',
-        ] as const;
-
-        const entries = cssVarsKeys
-            .map((key) => {
-                const value = cssVars[key];
-
-                return value ? [`--${key}`, value] : null;
-            })
-            .filter(Boolean) as [string, string][];
-
-        if (entries.length > 0) {
-            const styleString = entries
-                .map(([key, value]) => `${key}: ${value}`)
-                .join('; ');
-            root.style.cssText += styleString + ';';
-        }
-    };
-
-    const applyThemeConfig = (config: ThemeConfig) => {
-        const isDark = getIsDark();
-
-        const cssVars = isDark ? config.dark : config.light;
-        const themeVars = config.theme;
-
-        if (!cssVars) {
             return;
         }
 
-        if (themeVars) {
-            Object.entries(themeVars).forEach(([key, value]) => {
-                if (value) {
-                    document.documentElement.style.setProperty(key, value);
+        try {
+            let config = themeCache.current.get(themeName);
+
+            if (!config) {
+                const response = await fetch(`/r/${themeName}.json`);
+
+                if (!response.ok) {
+                    console.error(
+                        `Failed to load theme: ${themeName} - HTTP ${response.status}`,
+                    );
+
+                    return;
                 }
-            });
-        }
 
-        applyCssVars(cssVars);
-    };
+                config = (await response.json()) as ThemeConfig;
 
-    const getIsDark = () => {
-        const { appearance } = useThemeStore.getState();
-
-        return (
-            appearance === 'dark' ||
-            (appearance === 'system' &&
-                window.matchMedia('(prefers-color-scheme: dark)').matches)
-        );
-    };
-
-    const resetToDefault = () => {
-        const isDark = getIsDark();
-
-        applyCssVars(isDark ? DEFAULT_THEME.dark : DEFAULT_THEME.light);
-
-        document.documentElement.classList.toggle('dark', isDark);
-    };
-
-const applyTheme = async (
-    themeName: string,
-    themeCache: { current: Map<string, ThemeConfig> | null },
-) => {
-    if (themeName === 'theme-default') {
-        resetToDefault();
-
-        return;
-    }
-
-    try {
-        if (!themeCache.current) {
-            themeCache.current = new Map();
-        }
-
-        let config = themeCache.current.get(themeName);
-
-        if (!config) {
-            const response = await fetch(`/r/${themeName}.json`);
-            config = await response.json();
-
-            if (config) {
-                themeCache.current.set(themeName, config);
+                if (config) {
+                    themeCache.current.set(themeName, config);
+                }
             }
+
+            if (!config?.cssVars) {
+                console.warn(`No cssVars found for theme: ${themeName}`);
+
+                return;
+            }
+
+            loadFontsForTheme(config.registryDependencies);
+            applyThemeConfig(config.cssVars);
+        } catch (error) {
+            console.error(`Failed to apply theme: ${themeName}`, error);
         }
+    };
 
-        if (!config.cssVars) {
-            console.warn(`No cssVars found for theme: ${themeName}`);
-
-            return;
-        }
-
-        loadFontsForTheme(config.registryDependencies);
-
-        applyThemeConfig(config.cssVars);
-    } catch (error) {
-        console.error(`Failed to load theme: ${themeName}`, error);
-    }
-};
-
-useEffect(() => {
+    useEffect(() => {
         if (selectedTheme) {
-            void applyTheme(selectedTheme, themeCache);
+            void applyTheme(selectedTheme);
         }
     }, [selectedTheme]);
 
     useEffect(() => {
         const handleAppearanceChange = () => {
             if (selectedTheme) {
-                void applyTheme(selectedTheme, themeCache);
+                void applyTheme(selectedTheme);
             }
         };
 
-        window.addEventListener('theme-appearance-changed', handleAppearanceChange);
+        const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+        const storageHandler = (e: StorageEvent) => {
+            if (e.key === 'appearance') {
+                handleAppearanceChange();
+            }
+        };
+
+        window.addEventListener(
+            'theme-appearance-changed',
+            handleAppearanceChange,
+        );
+        mediaQuery.addEventListener('change', handleAppearanceChange);
+        window.addEventListener('storage', storageHandler);
 
         const observer = new MutationObserver(handleAppearanceChange);
         observer.observe(document.documentElement, {
@@ -370,22 +392,13 @@ useEffect(() => {
             attributeFilter: ['class'],
         });
 
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener(
-            'change',
-            handleAppearanceChange,
-        );
-
-        window.addEventListener('storage', (e) => {
-            if (e.key === 'appearance') {
-                handleAppearanceChange();
-            }
-        });
-
         return () => {
             window.removeEventListener(
                 'theme-appearance-changed',
                 handleAppearanceChange,
             );
+            mediaQuery.removeEventListener('change', handleAppearanceChange);
+            window.removeEventListener('storage', storageHandler);
             observer.disconnect();
         };
     }, [selectedTheme]);

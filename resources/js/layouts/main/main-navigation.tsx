@@ -1,27 +1,20 @@
 import { Link } from '@inertiajs/react';
-import { Crown } from 'lucide-react';
 import { useState } from 'react';
 import AppLogo from '@/components/app-logo';
 import PaletteButton from '@/components/palette-button';
 import ThemeSearchDialog from '@/components/theme-search-dialog';
-import ThemeToggle from '@/components/theme-toggle';
-import { Button } from '@/components/ui/button';
-import {
-    NavigationMenu,
-    NavigationMenuItem,
-    NavigationMenuList,
-} from '@/components/ui/navigation-menu';
+import { NavigationMenu, NavigationMenuItem, NavigationMenuList } from '@/components/ui/navigation-menu';
 import Wrapper from '@/components/wrapper';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { cn } from '@/lib/utils';
-import { GlowRadial } from '@/registry/new-york/components/ui/glow/glow-radial';
 import type { UseHeadroomOptions } from '@/registry/new-york/hooks/use-headroom';
 import useHeadroom from '@/registry/new-york/hooks/use-headroom';
 import { home } from '@/routes';
-import { provider } from '@/routes/auth';
+// import { provider } from '@/routes/auth';
 import { index as animationsIndex } from '@/routes/docs/animations/index';
 import { index as docs } from '@/routes/docs/index';
-import { index as themesIndex } from '@/routes/docs/themes/index';
+import { index as themesIndex } from '@/routes/docs/themes';
+import ThemeToggle from '@/components/theme-toggle';
 
 const links = [
     {
@@ -107,33 +100,33 @@ const MainNavigation = ({ className }: { className?: string }) => {
                                     <ThemeToggle className="grid size-5 place-content-center text-muted-foreground hover:text-foreground" />
                                 </NavigationMenuItem>
                                 <NavigationMenuItem>
-                                    <Button asChild className={`relative`}>
-                                        <a
-                                            href={
-                                                provider({
-                                                    provider: 'github',
-                                                }).url
-                                            }
-                                        >
-                                            <GlowRadial
-                                                size={150}
-                                                borderWidth={3}
-                                                className={`absolute -inset-1 blur-xs`}
-                                            />
-                                            <GlowRadial
-                                                size={150}
-                                                borderWidth={2}
-                                                className={`absolute -inset-0.5`}
-                                            />
-                                            <GlowRadial
-                                                size={150}
-                                                borderWidth={2}
-                                                className={`absolute -inset-1.5 mix-blend-color-dodge blur-xs`}
-                                            />
-                                            <Crown className="size-4" />
-                                            <span>Premium</span>
-                                        </a>
-                                    </Button>
+                                    {/*<Button asChild className={`relative`}>*/}
+                                    {/*    <a*/}
+                                    {/*        href={*/}
+                                    {/*            provider({*/}
+                                    {/*                provider: 'github',*/}
+                                    {/*            }).url*/}
+                                    {/*        }*/}
+                                    {/*    >*/}
+                                    {/*        <GlowRadial*/}
+                                    {/*            size={150}*/}
+                                    {/*            borderWidth={3}*/}
+                                    {/*            className={`absolute -inset-1 blur-xs`}*/}
+                                    {/*        />*/}
+                                    {/*        <GlowRadial*/}
+                                    {/*            size={150}*/}
+                                    {/*            borderWidth={2}*/}
+                                    {/*            className={`absolute -inset-0.5`}*/}
+                                    {/*        />*/}
+                                    {/*        <GlowRadial*/}
+                                    {/*            size={150}*/}
+                                    {/*            borderWidth={2}*/}
+                                    {/*            className={`absolute -inset-1.5 mix-blend-color-dodge blur-xs`}*/}
+                                    {/*        />*/}
+                                    {/*        <Crown className="size-4" />*/}
+                                    {/*        <span>Premium</span>*/}
+                                    {/*    </a>*/}
+                                    {/*</Button>*/}
                                 </NavigationMenuItem>
                             </NavigationMenuList>
                         </NavigationMenu>

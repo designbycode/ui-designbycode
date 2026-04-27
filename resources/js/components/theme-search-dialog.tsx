@@ -1,6 +1,6 @@
 'use client';
 
-import { RotateCcw } from 'lucide-react';
+import { Check, RotateCcw } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
 import {
@@ -11,7 +11,7 @@ import {
     CommandInput,
     CommandItem,
     CommandList,
-    CommandSeparator,
+    CommandSeparator
 } from '@/components/ui/command';
 import { useThemeStore } from '@/store/use-theme-store';
 
@@ -74,18 +74,6 @@ export default function ThemeSearchDialog({
         onOpenChange(false);
     };
 
-    const getColorStyle = (baseColor?: string) => {
-        if (!baseColor) {
-            return { background: 'oklch(0.5 0 0)' };
-        }
-
-        try {
-            return { background: baseColor };
-        } catch {
-            return { background: 'oklch(0.5 0 0)' };
-        }
-    };
-
     return (
         <CommandDialog
             open={open}
@@ -95,20 +83,23 @@ export default function ThemeSearchDialog({
         >
             <Command shouldFilter={false}>
                 <CommandInput placeholder="Search themes..." />
+
                 <CommandList>
                     <CommandEmpty>
                         {loading ? 'Loading...' : 'No themes found.'}
                     </CommandEmpty>
 
                     <CommandGroup heading="Theme Palette">
-                        <CommandItem onSelect={() => handleSelect('theme-default')}>
-                            <RotateCcw className="size-4" />
+                        <CommandItem
+                            onSelect={() => handleSelect('theme-default')}
+                        >
+                            <RotateCcw className="size-4 text-current" />
                             <span>{DEFAULT_THEME_OPTION.title}</span>
-                            <span className="ml-auto text-xs text-muted-foreground">
+                            <span className="ml-auto text-xs text-current">
                                 {DEFAULT_THEME_OPTION.description}
                             </span>
                             {selectedTheme === 'theme-default' && (
-                                <span className="ml-2 text-xs text-muted-foreground">
+                                <span className="ml-2 text-xs text-primary-foreground">
                                     ✓
                                 </span>
                             )}
@@ -121,19 +112,21 @@ export default function ThemeSearchDialog({
                         {themes.map((theme) => (
                             <CommandItem
                                 key={theme.name}
+                                className="flex justify-between"
                                 onSelect={() => handleSelect(theme.name)}
                             >
-                                <div
-                                    className="size-4 rounded-full border"
-                                    style={getColorStyle(theme.baseColor)}
-                                />
-                                <span>{theme.title || theme.name}</span>
-                                <span className="ml-auto text-xs text-muted-foreground">
-                                    {theme.name}
-                                </span>
+                                <div className={`flex flex-col`}>
+                                    <span className={``}>
+                                        {theme.title || theme.name}
+                                    </span>
+                                    <span className="ml-auto text-xs">
+                                        {theme.name}
+                                    </span>
+                                </div>
+
                                 {selectedTheme === theme.name && (
-                                    <span className="ml-2 text-xs text-muted-foreground">
-                                        ✓
+                                    <span className="ml-2">
+                                        <Check className="size-4 text-current" />
                                     </span>
                                 )}
                             </CommandItem>

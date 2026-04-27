@@ -42,7 +42,12 @@ const getStoredAppearance = (): Appearance => {
 };
 
 const getCookieAppearance = (): Appearance => {
+    if (typeof document === 'undefined') {
+        return 'system';
+    }
+
     const match = document.cookie.match(/appearance=([^;]+)/);
+
     return (match?.[1] as Appearance) || 'system';
 };
 
