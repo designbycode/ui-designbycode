@@ -1,0 +1,139 @@
+'use client';
+
+import { Check, RotateCcw } from 'lucide-react';
+import { useEffect, useState } from 'react';
+
+import {
+    Command,
+    CommandDialog,
+    CommandEmpty,
+    CommandGroup,
+    CommandInput,
+    CommandItem,
+    CommandList,
+    CommandSeparator
+} from '@/components/ui/command';
+import { useTheme } from '@/hooks/use-theme';
+
+interface ThemeItem {
+    name: string;
+    title: string;
+    type: string;
+    category?: string;
+    description?: string;
+    baseColor?: string;
+}
+
+interface ThemeSearchDialogProps {
+    open: boolean;
+    onOpenChange: (open: boolean) => void;
+}
+
+const DEFAULT_THEME_OPTION = {
+    name: 'theme-default',
+    title: 'Default',
+    description: 'Reset to default Laravel theme',
+};
+
+export default function ThemeSearchDialog({
+    open,
+    onOpenChange,
+}: ThemeSearchDialogProps) {
+    const { selectedThemeName, setTheme } = useTheme();
+    const [themes, setThemes] = useState<ThemeItem[]>([]);
+    const [loading, setLoading] = useState(false);
+
+    const fetchThemes = async (query: string = '') => {
+        setLoading(true);
+
+        try {
+            const response = await fetch(
+                `/api/registries/search?q=${encodeURIComponent(
+                    query,
+                )}&type=registry:theme`,
+            );
+            const data = await response.json();
+            setThemes(data);
+        } catch (error) {
+            console.error('Failed to fetch themes:', error);
+        } finally {
+            setLoading(false);
+        }
+    };
+
+    useEffect(() => {
+        if (open && themes.length === 0) {
+            void (async () => {
+                await fetchThemes('');
+            })();
+        }
+    }, [open, themes.length]);
+
+    const handleSelect = (themeName: string) => {
+        setTheme(themeName);
+        onOpenChange(false);
+    };
+
+    return (
+        <CommandDialog
+            open={open}
+            onOpenChange={onOpenChange}
+            title="Theme Palette"
+            description="Select a theme for your application"
+        >
+            <Command shouldFilter={false}>
+                <CommandInput placeholder="Search themes..." />
+
+                <CommandList>
+                    <CommandEmpty>
+                        {loading ? 'Loading...' : 'No themes found.'}
+                    </CommandEmpty>
+
+                    <CommandGroup heading="Theme Palette">
+                        <CommandItem
+                            onSelect={() => handleSelect('theme-default')}
+                        >
+                            <RotateCcw className="size-4 text-current" />
+                            <span>{DEFAULT_THEME_OPTION.title}</span>
+                            <span className="ml-auto text-xs text-current">
+                                {DEFAULT_THEME_OPTION.description}
+                            </span>
+                            {selectedThemeName === 'theme-default' && (
+                                <span className="ml-2 text-xs text-primary-foreground">
+                                    ✓
+                                </span>
+                            )}
+                        </CommandItem>
+                    </CommandGroup>
+
+                    <CommandSeparator />
+
+                    <CommandGroup heading="Themes">
+                        {themes.map((theme) => (
+                            <CommandItem
+                                key={theme.name}
+                                className="flex justify-between"
+                                onSelect={() => handleSelect(theme.name)}
+                            >
+                                <div className={`flex flex-col`}>
+                                    <span className={``}>
+                                        {theme.title || theme.name}
+                                    </span>
+                                    <span className="ml-auto text-xs">
+                                        {theme.name}
+                                    </span>
+                                </div>
+
+                                {selectedThemeName === theme.name && (
+                                    <span className="ml-2">
+                                        <Check className="size-4 text-current" />
+                                    </span>
+                                )}
+                            </CommandItem>
+                        ))}
+                    </CommandGroup>
+                </CommandList>
+            </Command>
+        </CommandDialog>
+    );
+}

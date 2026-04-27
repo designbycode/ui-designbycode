@@ -77,12 +77,12 @@ export function PackageManagerSelect({
                 </Button>
             </div>
             <div className="overflow-x-auto p-3 max-w-full min-w-0">
-<pre className="w-full min-w-0 m-0! rounded-none! bg-transparent! font-mono! text-sm leading-relaxed">
-<code
-    className={`language-${normalizedLanguage} pr-6`}
-    dangerouslySetInnerHTML={{ __html: highlightedCode }}
-/>
-</pre>  </div>
+                <pre className="w-full min-w-0 m-0! rounded-none! bg-transparent! font-mono! text-sm leading-relaxed">
+                    <code className="pr-6" data-language="bash" suppressHydrationWarning>
+                        <span dangerouslySetInnerHTML={{ __html: highlightedCode }} />
+                    </code>
+                </pre>
+            </div>
 
 
         </div>

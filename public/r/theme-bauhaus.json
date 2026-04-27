@@ -9,8 +9,8 @@
   ],
   "cssVars": {
     "theme": {
-      "font-sans": "PoppinsVariable, sans-serif",
-      "font-serif": "PoppinsVariable, sans-serif",
+      "font-sans": "'Poppins', sans-serif",
+      "font-serif": "'Poppins', sans-serif",
       "font-mono": "IBMPlexMonoVariable, monospace",
       "radius": "0.25rem",
       "tracking-tight": "-0.02em",
@@ -57,9 +57,9 @@
       "sidebar-accent-foreground": "oklch(0.2 0 0)",
       "sidebar-border": "oklch(0.85 0 0)",
       "sidebar-ring": "oklch(0.65 0.22 25)",
-      "font-sans": "PoppinsVariable, sans-serif",
-      "font-serif": "PoppinsVariable, sans-serif",
-      "font-mono": "IBMPlexMonoVariable, monospace",
+      "font-sans": "var(--font-sans)",
+      "font-serif": "var(--font-serif)",
+      "font-mono": "var(--font-mono)",
       "shadow-2xs": "0 1px 2px hsl(0 0% 0% / 0.04)",
       "shadow-xs": "0 1px 2px hsl(0 0% 0% / 0.04)",
       "shadow-sm": "0 2px 4px hsl(0 0% 0% / 0.06)",
@@ -97,9 +97,9 @@
       "sidebar-accent-foreground": "oklch(0.1 0 0)",
       "sidebar-border": "oklch(0.3 0 0)",
       "sidebar-ring": "oklch(0.7 0.22 25)",
-      "font-sans": "PoppinsVariable, sans-serif",
-      "font-serif": "PoppinsVariable, sans-serif",
-      "font-mono": "IBMPlexMonoVariable, monospace"
+      "font-sans": "var(--font-sans)",
+      "font-serif": "var(--font-serif)",
+      "font-mono": "var(--font-mono)"
     }
   },
   "css": {

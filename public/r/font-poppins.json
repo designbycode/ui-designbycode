@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "font-poppins",
+  "title": "Font Poppins",
+  "author": "designbycode",
+  "meta": {
+    "category": "fonts",
+    "version": "1.0.0"
+  },
+  "type": "registry:font",
+  "font": {
+    "family": "'Poppins', sans-serif",
+    "provider": "google",
+    "import": "Poppins",
+    "variable": "--font-poppins",
+    "subsets": [
+      "latin"
+    ],
+    "dependency": "@fontsource-variable/poppins"
+  }
+}

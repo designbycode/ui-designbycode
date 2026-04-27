@@ -4,6 +4,10 @@ function getSnapshot(): boolean {
     return document.documentElement.classList.contains('dark');
 }
 
+function getServerSnapshot(): boolean {
+    return false;
+}
+
 function subscribe(callback: () => void): () => void {
     const observer = new MutationObserver(callback);
 
@@ -18,7 +22,7 @@ function subscribe(callback: () => void): () => void {
 }
 
 function useDarkMode(): boolean {
-    return useSyncExternalStore(subscribe, getSnapshot, getSnapshot);
+    return useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
 }
 
 export default useDarkMode;

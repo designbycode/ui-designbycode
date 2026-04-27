@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "font-pixelify-sans",
+  "title": "Fonts Pixelify Sans",
+  "author": "designbycode",
+  "meta": {
+    "category": "fonts",
+    "version": "1.0.0"
+  },
+  "type": "registry:font",
+  "font": {
+    "family": "'Pixelify Sans Variable', system-ui",
+    "provider": "google",
+    "import": "Pixelify Sans",
+    "variable": "--font-pixelify-sans",
+    "subsets": [
+      "latin"
+    ],
+    "dependency": "@fontsource-variable/pixelify-sans"
+  }
+}

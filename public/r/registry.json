@@ -22,6 +22,24 @@
             "author": "designbycode"
         },
         {
+            "name": "font-poppins",
+            "type": "registry:font",
+            "meta": {
+                "category": "fonts",
+                "version": "1.0.0"
+            },
+            "font": {
+                "family": "'Poppins', sans-serif",
+                "provider": "google",
+                "import": "Poppins",
+                "variable": "--font-poppins",
+                "subsets": ["latin"],
+                "dependency": "@fontsource-variable/poppins"
+            },
+            "title": "Font Poppins",
+            "author": "designbycode"
+        },
+        {
             "name": "font-dm-serif-display",
             "type": "registry:font",
             "meta": {
@@ -31,7 +49,7 @@
             "font": {
                 "family": "'DM Serif Display', serif",
                 "provider": "google",
-                "import": "DM Serif Display",
+                "import": "DMSerifDisplay",
                 "variable": "--font-dm-serif-display",
                 "subsets": ["latin"],
                 "dependency": "@fontsource/dm-serif-display"
@@ -112,21 +130,21 @@
             "author": "designbycode"
         },
         {
-            "name": "font-press-start-2p",
+            "name": "font-pixelify-sans",
             "type": "registry:font",
             "meta": {
                 "category": "fonts",
                 "version": "1.0.0"
             },
             "font": {
-                "family": "'Press Start 2P', system-ui",
+                "family": "'Pixelify Sans Variable', system-ui",
                 "provider": "google",
-                "import": "PressStart2P",
-                "variable": "--font-press-start-2p",
+                "import": "Pixelify Sans",
+                "variable": "--font-pixelify-sans",
                 "subsets": ["latin"],
-                "dependency": "@fontsource/press-start-2p"
+                "dependency": "@fontsource-variable/pixelify-sans"
             },
-            "title": "Fonts Press Start 2p",
+            "title": "Fonts Pixelify Sans",
             "author": "designbycode"
         },
         {
@@ -3916,8 +3934,8 @@
             "cssVars": {
                 "theme": {
                     "font-sans": "Inter, sans-serif",
-                    "font-serif": "Playfair Display, serif",
-                    "font-mono": "Fira Code, monospace",
+                    "font-serif": "'Playfair Display', serif",
+                    "font-mono": "'Fira Code', monospace",
                     "radius": "1rem",
                     "shadow-color": "hsl(30 40% 40%)",
                     "shadow-opacity": "0.18",
@@ -3976,9 +3994,9 @@
                     "sidebar-border": "oklch(0.88 0.02 80)",
                     "sidebar-ring": "oklch(0.62 0.14 40)",
 
-                    "font-sans": "Inter, sans-serif",
-                    "font-serif": "Playfair Display, serif",
-                    "font-mono": "Fira Code, monospace",
+                    "font-sans": "var(--font-sans)",
+                    "font-serif": "var(--font-serif)",
+                    "font-mono": "var(--font-mono)",
 
                     "shadow-2xs": "0 2px 6px hsl(30 40% 40% / 0.15)",
                     "shadow-xs": "0 2px 6px hsl(30 40% 40% / 0.15)",
@@ -4031,9 +4049,9 @@
                     "sidebar-border": "oklch(0.35 0.02 80)",
                     "sidebar-ring": "oklch(0.70 0.14 40)",
 
-                    "font-sans": "Inter, sans-serif",
-                    "font-serif": "Playfair Display, serif",
-                    "font-mono": "Fira Code, monospace"
+                    "font-sans": "var(--font-sans)",
+                    "font-serif": "var(--font-serif)",
+                    "font-mono": "var(--font-mono)"
                 }
             },
 
@@ -4066,8 +4084,8 @@
             ],
             "cssVars": {
                 "theme": {
-                    "font-sans": "PoppinsVariable, sans-serif",
-                    "font-serif": "PoppinsVariable, sans-serif",
+                    "font-sans": "'Poppins', sans-serif",
+                    "font-serif": "'Poppins', sans-serif",
                     "font-mono": "IBMPlexMonoVariable, monospace",
                     "radius": "0.25rem",
                     "tracking-tight": "-0.02em",
@@ -4130,9 +4148,9 @@
                     "sidebar-border": "oklch(0.85 0 0)",
                     "sidebar-ring": "oklch(0.65 0.22 25)",
 
-                    "font-sans": "PoppinsVariable, sans-serif",
-                    "font-serif": "PoppinsVariable, sans-serif",
-                    "font-mono": "IBMPlexMonoVariable, monospace",
+                    "font-sans": "var(--font-sans)",
+                    "font-serif": "var(--font-serif)",
+                    "font-mono": "var(--font-mono)",
 
                     "shadow-2xs": "0 1px 2px hsl(0 0% 0% / 0.04)",
                     "shadow-xs": "0 1px 2px hsl(0 0% 0% / 0.04)",
@@ -4185,9 +4203,9 @@
                     "sidebar-border": "oklch(0.3 0 0)",
                     "sidebar-ring": "oklch(0.7 0.22 25)",
 
-                    "font-sans": "PoppinsVariable, sans-serif",
-                    "font-serif": "PoppinsVariable, sans-serif",
-                    "font-mono": "IBMPlexMonoVariable, monospace"
+                    "font-sans": "var(--font-sans)",
+                    "font-serif": "var(--font-serif)",
+                    "font-mono": "var(--font-mono)"
                 }
             },
 
@@ -4228,8 +4246,8 @@
             "cssVars": {
                 "theme": {
                     "font-sans": "Inter, sans-serif",
-                    "font-serif": "Playfair Display, serif",
-                    "font-mono": "Fira Code, monospace",
+                    "font-serif": "'Playfair Display', serif",
+                    "font-mono": "'Fira Code', monospace",
                     "radius": "1rem",
                     "shadow-color": "hsl(280 80% 50%)"
                 },
@@ -4283,9 +4301,9 @@
                     "sidebar-border": "oklch(0.88 0.01 260)",
                     "sidebar-ring": "oklch(0.65 0.20 280)",
 
-                    "font-sans": "Inter, sans-serif",
-                    "font-serif": "Playfair Display, serif",
-                    "font-mono": "Fira Code, monospace",
+                    "font-sans": "var(--font-sans)",
+                    "font-serif": "var(--font-serif)",
+                    "font-mono": "var(--font-mono)",
 
                     "shadow-sm": "0 2px 10px hsl(280 80% 50% / 0.06)",
                     "shadow": "0 8px 24px hsl(280 80% 50% / 0.10)",
@@ -4335,9 +4353,9 @@
                     "sidebar-border": "oklch(0.28 0.02 260)",
                     "sidebar-ring": "oklch(0.75 0.28 280)",
 
-                    "font-sans": "Inter, sans-serif",
-                    "font-serif": "Playfair Display, serif",
-                    "font-mono": "Fira Code, monospace"
+                    "font-sans": "var(--font-sans)",
+                    "font-serif": "var(--font-serif)",
+                    "font-mono": "var(--font-mono)"
                 }
             },
 
@@ -4408,9 +4426,9 @@
                     "sidebar-accent-foreground": "oklch(0.30 0.04 40)",
                     "sidebar-border": "oklch(0.85 0.03 40)",
                     "sidebar-ring": "oklch(0.75 0.08 30)",
-                    "font-sans": "Inter, sans-serif",
-                    "font-serif": "Playfair Display, serif",
-                    "font-mono": "Fira Code, monospace",
+                    "font-sans": "var(--font-sans)",
+                    "font-serif": "var(--font-serif)",
+                    "font-mono": "var(--font-mono)",
                     "shadow-sm": "inset 2px 2px 6px hsl(0 0% 0% / 0.10), inset -2px -2px 6px hsl(0 0% 100% / 0.5)",
                     "shadow": "inset 4px 4px 10px hsl(0 0% 0% / 0.12), inset -4px -4px 10px hsl(0 0% 100% / 0.6)",
                     "shadow-md": "inset 6px 6px 16px hsl(0 0% 0% / 0.15), inset -6px -6px 16px hsl(0 0% 100% / 0.7)",
@@ -4521,9 +4539,9 @@
                     "sidebar-accent-foreground": "oklch(1 0 0)",
                     "sidebar-border": "oklch(0.85 0.01 260)",
                     "sidebar-ring": "oklch(0.62 0.26 300)",
-                    "font-sans": "Inter, sans-serif",
-                    "font-serif": "Orbitron, sans-serif",
-                    "font-mono": "Fira Code, monospace",
+                    "font-sans": "var(--font-sans)",
+                    "font-serif": "var(--font-serif)",
+                    "font-mono": "var(--font-mono)",
                     "shadow-sm": "0 2px 8px hsl(300 100% 60% / 0.08)",
                     "shadow": "0 10px 24px hsl(300 100% 60% / 0.12)",
                     "shadow-md": "0 16px 40px hsl(200 100% 60% / 0.16)",
@@ -4595,8 +4613,8 @@
             "cssVars": {
                 "theme": {
                     "font-sans": "Inter, sans-serif",
-                    "font-serif": "Playfair Display, Georgia, serif",
-                    "font-mono": "IBM Plex Mono, monospace",
+                    "font-serif": "'Playfair Display', Georgia, serif",
+                    "font-mono": "'IBM Plex Mono', monospace",
                     "radius": "0.25rem",
                     "shadow-color": "hsl(0 0% 0%)"
                 },
@@ -4634,9 +4652,9 @@
                     "sidebar-accent-foreground": "oklch(1 0 0)",
                     "sidebar-border": "oklch(0.90 0 0)",
                     "sidebar-ring": "oklch(0.18 0 0)",
-                    "font-sans": "Inter, sans-serif",
-                    "font-serif": "Playfair Display, Georgia, serif",
-                    "font-mono": "IBM Plex Mono, monospace",
+                    "font-sans": "var(--font-sans)",
+                    "font-serif": "var(--font-serif)",
+                    "font-mono": "var(--font-mono)",
                     "shadow-sm": "0 1px 2px hsl(0 0% 0% / 0.04)",
                     "shadow": "0 2px 8px hsl(0 0% 0% / 0.06)",
                     "shadow-md": "0 4px 16px hsl(0 0% 0% / 0.08)",

@@ -11,7 +11,7 @@
   "files": [
     {
       "path": "resources/js/registry/new-york/hooks/use-dark-mode.ts",
-      "content": "import { useSyncExternalStore } from 'react';\n\nfunction getSnapshot(): boolean {\n    return document.documentElement.classList.contains('dark');\n}\n\nfunction subscribe(callback: () => void): () => void {\n    const observer = new MutationObserver(callback);\n\n    observer.observe(document.documentElement, {\n        attributes: true,\n        attributeFilter: ['class'],\n    });\n\n    return () => {\n        observer.disconnect();\n    };\n}\n\nfunction useDarkMode(): boolean {\n    return useSyncExternalStore(subscribe, getSnapshot, getSnapshot);\n}\n\nexport default useDarkMode;\n",
+      "content": "import { useSyncExternalStore } from 'react';\n\nfunction getSnapshot(): boolean {\n    return document.documentElement.classList.contains('dark');\n}\n\nfunction getServerSnapshot(): boolean {\n    return false;\n}\n\nfunction subscribe(callback: () => void): () => void {\n    const observer = new MutationObserver(callback);\n\n    observer.observe(document.documentElement, {\n        attributes: true,\n        attributeFilter: ['class'],\n    });\n\n    return () => {\n        observer.disconnect();\n    };\n}\n\nfunction useDarkMode(): boolean {\n    return useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);\n}\n\nexport default useDarkMode;\n",
       "type": "registry:hook"
     }
   ],

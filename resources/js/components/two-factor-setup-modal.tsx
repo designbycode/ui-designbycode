@@ -18,8 +18,8 @@ import {
     InputOTPSlot,
 } from '@/components/ui/input-otp';
 import { Spinner } from '@/components/ui/spinner';
-import { useAppearance } from '@/hooks/use-appearance';
 import { useClipboard } from '@/hooks/use-clipboard';
+import { useDarkMode } from '@/hooks/use-dark-mode';
 import { OTP_MAX_LENGTH } from '@/hooks/use-two-factor-auth';
 import { confirm } from '@/routes/two-factor';
 
@@ -62,7 +62,7 @@ function TwoFactorSetupStep({
     onNextStep: () => void;
     errors: string[];
 }) {
-    const { resolvedAppearance } = useAppearance();
+    const { isDark } = useDarkMode();
     const [copiedText, copy] = useClipboard();
     const IconComponent = copiedText === manualSetupKey ? Check : Copy;
 
@@ -83,7 +83,7 @@ function TwoFactorSetupStep({
                                         }}
                                         style={{
                                             filter:
-                                                resolvedAppearance === 'dark'
+                                                isDark
                                                     ? 'invert(1) brightness(1.5)'
                                                     : undefined,
                                         }}

@@ -11,7 +11,7 @@
   "font": {
     "family": "'DM Serif Display', serif",
     "provider": "google",
-    "import": "DM Serif Display",
+    "import": "DMSerifDisplay",
     "variable": "--font-dm-serif-display",
     "subsets": [
       "latin"

@@ -12,7 +12,7 @@ export default function MainLayout({
 
     return (
         <GlowStack className={`relative`}>
-            <div className="min-h-screen">
+            <div className="flex min-h-screen flex-col">
                 <PlaceholderPattern className="fixed inset-y-0 left-0 h-full w-2 border-r border-border stroke-border md:w-5" />
                 <PlaceholderPattern className="fixed inset-y-0 right-0 h-full w-2 border-l border-border stroke-border md:w-5" />
                 <MainNavigation />
@@ -46,7 +46,7 @@ export default function MainLayout({
                 {/*        )}*/}
                 {/*    </nav>*/}
                 {/*</header>*/}
-                <main>{children}</main>
+                <main className="flex-1">{children}</main>
                 <MainFooter />
             </div>
         </GlowStack>

@@ -82,15 +82,14 @@ function CodeBlock({
                 </Button>
             )}
             <div className="overflow-x-auto">
-        <pre className={cn(
-            "m-0! font-mono! text-sm leading-relaxed",
-            variant === 'default' ? "rounded-none! p-3!" : "rounded-lg! p-4!"
-        )}>
-          <code
-              className={`language-${normalizedLanguage}`}
-              dangerouslySetInnerHTML={{ __html: highlightedCode }}
-          />
-        </pre>
+                <pre className={cn(
+                    "m-0! font-mono! text-sm leading-relaxed",
+                    variant === 'default' ? "rounded-none! p-3!" : "rounded-lg! p-4!"
+                )}>
+                    <code data-language={language} suppressHydrationWarning>
+                        <span dangerouslySetInnerHTML={{ __html: highlightedCode }} />
+                    </code>
+                </pre>
             </div>
         </div>
     )

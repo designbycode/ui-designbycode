@@ -1,8 +1,8 @@
 import { createInertiaApp } from '@inertiajs/react';
 import { Toaster } from '@/components/ui/sonner';
 import { TooltipProvider } from '@/components/ui/tooltip';
-import { initializeTheme } from '@/hooks/use-appearance';
-import useThemeChanger from '@/hooks/use-theme-changer';
+import { ThemeProvider } from '@/contexts/ThemeContext';
+import { initializeDarkMode } from '@/hooks/use-dark-mode';
 import AppLayout from '@/layouts/app-layout';
 import AuthLayout from '@/layouts/auth-layout';
 import MainLayout from '@/layouts/main-layout';
@@ -25,11 +25,12 @@ createInertiaApp({
     strictMode: true,
     withApp(app) {
         return (
-            <TooltipProvider delayDuration={0}>
-                <ThemeInitializer />
-                {app}
-                <Toaster />
-            </TooltipProvider>
+            <ThemeProvider>
+                <TooltipProvider delayDuration={0}>
+                    {app}
+                    <Toaster />
+                </TooltipProvider>
+            </ThemeProvider>
         );
     },
     progress: {
@@ -37,11 +38,4 @@ createInertiaApp({
     },
 });
 
-function ThemeInitializer() {
-    useThemeChanger();
-
-    return null;
-}
-
-// This will set light / dark mode on load...
-initializeTheme();
+initializeDarkMode();

@@ -33,11 +33,33 @@ class Registry extends Model
         'categories' => 'array',
     ];
 
-
     public function scopeThemes($query)
     {
         return $query->where('type', 'registry:theme');
     }
 
+    public function scopeFonts($query)
+    {
+        return $query->where('type', 'registry:font');
+    }
 
+    public function scopeLib($query)
+    {
+        return $query->where('type', 'registry:lib');
+    }
+
+    public function scopeUi($query)
+    {
+        return $query->where('type', 'registry:ui');
+    }
+
+    public function scopeComponent($query)
+    {
+        return $query->where('type', 'registry:component');
+    }
+
+    protected function scopeSearch($query, $search)
+    {
+        return $query->where('name', 'like', "%{$search}%");
+    }
 }

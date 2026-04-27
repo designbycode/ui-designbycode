@@ -2,7 +2,8 @@ import { Link } from '@inertiajs/react';
 import { useState } from 'react';
 import AppLogo from '@/components/app-logo';
 import PaletteButton from '@/components/palette-button';
-import ThemeSearchDialog from '@/components/theme-search-dialog';
+import ThemeToggle from '@/components/theme-toggle';
+import ThemeSearchDialog from '@/components/themes/theme-search-dialog';
 import { NavigationMenu, NavigationMenuItem, NavigationMenuList } from '@/components/ui/navigation-menu';
 import Wrapper from '@/components/wrapper';
 import { useIsMobile } from '@/hooks/use-mobile';
@@ -14,7 +15,6 @@ import { home } from '@/routes';
 import { index as animationsIndex } from '@/routes/docs/animations/index';
 import { index as docs } from '@/routes/docs/index';
 import { index as themesIndex } from '@/routes/docs/themes';
-import ThemeToggle from '@/components/theme-toggle';
 
 const links = [
     {

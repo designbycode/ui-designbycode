@@ -99,7 +99,10 @@ const velocityBus = (() => {
     let trigger: ScrollTrigger | null = null;
 
     function boot() {
-        if (trigger) return;
+        if (trigger) {
+return;
+}
+
         trigger = ScrollTrigger.create({
             start: 0,
             end: 'max',
@@ -114,8 +117,10 @@ const velocityBus = (() => {
         subscribe(sub: VelocitySubscriber): () => void {
             subs.add(sub);
             boot();
+
             return () => {
                 subs.delete(sub);
+
                 if (subs.size === 0 && trigger) {
                     trigger.kill();
                     trigger = null;
@@ -173,17 +178,25 @@ export function Marquee({
     // handled automatically when the component unmounts or deps change.
     useGSAP(
         () => {
-            if (!trackRef.current) return;
+            if (!trackRef.current) {
+return;
+}
 
             // ── 1. Measure and build clone count ─────────────────────────
             const measure = () => {
                 const contentEl = trackRef.current!.querySelector(
                     '[data-marquee-content]',
                 ) as HTMLElement | null;
-                if (!contentEl) return;
+
+                if (!contentEl) {
+return;
+}
 
                 const singleW = contentEl.offsetWidth + gap;
-                if (singleW === 0) return;
+
+                if (singleW === 0) {
+return;
+}
 
                 setWRef.current = singleW;
 
@@ -214,10 +227,16 @@ export function Marquee({
                     );
 
                     // ── 3. Subscribe to scroll velocity bus ───────────────
-                    if (unsubRef.current) unsubRef.current();
+                    if (unsubRef.current) {
+unsubRef.current();
+}
+
                     unsubRef.current = velocityBus.subscribe({
                         onVelocity(rawVel) {
-                            if (!quickToRef.current) return;
+                            if (!quickToRef.current) {
+return;
+}
+
                             const clamped = Math.max(
                                 -maxScrollVelocity,
                                 Math.min(maxScrollVelocity, rawVel),
@@ -240,12 +259,14 @@ export function Marquee({
                         resizeTimer = setTimeout(measure, 150);
                     };
                     window.addEventListener('resize', onResize);
+
                     // Returned cleanup runs when useGSAP tears down this context
                     return () => {
                         clearTimeout(resizeTimer);
                         window.removeEventListener('resize', onResize);
                     };
                 });
+
                 // Cancel raf2 if context cleans up before it fires
                 return () => cancelAnimationFrame(raf2);
             });
@@ -253,14 +274,22 @@ export function Marquee({
             // ── 5. Ticker — advances the track every frame ────────────────
             // Registered inside useGSAP so gsap.context() removes it on cleanup.
             const tick = () => {
-                if (isPausedRef.current || setWRef.current === 0) return;
+                if (isPausedRef.current || setWRef.current === 0) {
+return;
+}
 
                 xRef.current -= liveSpeed.current.value;
 
                 // Modular wrap: keep x inside [-setW, 0)
                 const setW = setWRef.current;
-                if (xRef.current <= -setW) xRef.current += setW;
-                if (xRef.current >= 0) xRef.current -= setW;
+
+                if (xRef.current <= -setW) {
+xRef.current += setW;
+}
+
+                if (xRef.current >= 0) {
+xRef.current -= setW;
+}
 
                 gsap.set(trackRef.current!, { x: xRef.current });
             };
@@ -271,6 +300,7 @@ export function Marquee({
             return () => {
                 cancelAnimationFrame(raf1);
                 gsap.ticker.remove(tick);
+
                 if (unsubRef.current) {
                     unsubRef.current();
                     unsubRef.current = null;
@@ -294,11 +324,15 @@ export function Marquee({
 
     // ── Hover pause (no GSAP needed — just flips a ref) ──────────────────────
     const handleMouseEnter = useCallback(() => {
-        if (pauseOnHover) isPausedRef.current = true;
+        if (pauseOnHover) {
+isPausedRef.current = true;
+}
     }, [pauseOnHover]);
 
     const handleMouseLeave = useCallback(() => {
-        if (pauseOnHover) isPausedRef.current = false;
+        if (pauseOnHover) {
+isPausedRef.current = false;
+}
     }, [pauseOnHover]);
 
     // ── Render ────────────────────────────────────────────────────────────────
