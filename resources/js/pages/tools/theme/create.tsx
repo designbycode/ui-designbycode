@@ -9,12 +9,14 @@ import { Label } from '@/components/ui/label';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Textarea } from '@/components/ui/textarea';
 import Wrapper from '@/components/wrapper';
+import { FontSelect } from '@/components/ui/font-select';
 import type { PresetTheme } from '@/lib/preset-themes';
 import { presetThemes } from '@/lib/preset-themes';
+import ThemeController from '@/actions/App/Http/Controllers/Tools/ThemeController';
 
 type ColorVars = Record<string, string>;
 
-export default function ThemeCreate() {
+export default function ThemeCreate({ fonts = [] }: { fonts?: Array<{ name: string; title: string; description?: string }> }) {
     const { data, setData, post, processing, errors } = useForm({
         name: '',
         title: '',
@@ -130,7 +132,7 @@ export default function ThemeCreate() {
                 <form
                     onSubmit={(e) => {
                         e.preventDefault();
-                        post('/tools/themes');
+                        post(ThemeController.store.url());
                     }}
                     className="grid gap-8 lg:grid-cols-2"
                 >
@@ -318,26 +320,29 @@ export default function ThemeCreate() {
                             <div className="space-y-4">
                                 <div>
                                     <Label>Sans Font</Label>
-                                    <Input
+                                    <FontSelect
                                         value={data.font.sans}
-                                        onChange={(e) => updateFont('sans', e.target.value)}
-                                        placeholder="Inter, sans-serif"
+                                        onChange={(v) => updateFont('sans', v)}
+                                        fonts={fonts}
+                                        placeholder="Select sans font..."
                                     />
                                 </div>
                                 <div>
                                     <Label>Serif Font</Label>
-                                    <Input
+                                    <FontSelect
                                         value={data.font.serif}
-                                        onChange={(e) => updateFont('serif', e.target.value)}
-                                        placeholder="Georgia, serif"
+                                        onChange={(v) => updateFont('serif', v)}
+                                        fonts={fonts}
+                                        placeholder="Select serif font..."
                                     />
                                 </div>
                                 <div>
                                     <Label>Mono Font</Label>
-                                    <Input
+                                    <FontSelect
                                         value={data.font.mono}
-                                        onChange={(e) => updateFont('mono', e.target.value)}
-                                        placeholder="monospace"
+                                        onChange={(v) => updateFont('mono', v)}
+                                        fonts={fonts}
+                                        placeholder="Select mono font..."
                                     />
                                 </div>
                             </div>

@@ -1,9 +1,9 @@
-import React from 'react';
 import { Head, Link, router } from '@inertiajs/react';
+import { Edit, Eye, Trash2 } from 'lucide-react';
+import React from 'react';
 import ThemeController from '@/actions/App/Http/Controllers/Tools/ThemeController';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-import { Edit, Eye, Trash2 } from 'lucide-react';
 import Wrapper from '@/components/wrapper';
 
 export default function ThemeIndex({

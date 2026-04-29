@@ -1,14 +1,15 @@
+import { Head, Link, useForm } from '@inertiajs/react';
+import { ArrowLeft, Copy } from 'lucide-react';
 import React, { useMemo, useState } from 'react';
-import { Head, Link, router } from '@inertiajs/react';
-import { useForm } from '@inertiajs/react';
+import ThemeController from '@/actions/App/Http/Controllers/Tools/ThemeController';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
+import { ColorPicker } from '@/components/ui/color-picker';
+import { FontSelect } from '@/components/ui/font-select';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Textarea } from '@/components/ui/textarea';
-import { ColorPicker } from '@/components/ui/color-picker';
-import { ArrowLeft, Copy } from 'lucide-react';
 
 type ColorVars = Record<string, string>;
 
@@ -28,7 +29,13 @@ interface ThemeData {
     };
 }
 
-export default function ThemeEdit({ theme }: { theme: ThemeData }) {
+export default function ThemeEdit({
+    theme,
+    fonts = [],
+}: {
+    theme: ThemeData;
+    fonts?: Array<{ name: string; title: string; description?: string }>;
+}) {
     const { data, setData, put, processing, errors } = useForm({
         name: theme.name,
         title: theme.title,
@@ -43,7 +50,11 @@ export default function ThemeEdit({ theme }: { theme: ThemeData }) {
     const [activeTab, setActiveTab] = useState<'light' | 'dark'>('light');
     const [copied, setCopied] = useState(false);
 
-    const updateColor = (mode: 'light' | 'dark', key: string, value: string) => {
+    const updateColor = (
+        mode: 'light' | 'dark',
+        key: string,
+        value: string,
+    ) => {
         setData('css_vars', {
             ...data.css_vars,
             [mode]: {
@@ -54,7 +65,11 @@ export default function ThemeEdit({ theme }: { theme: ThemeData }) {
     };
 
     const updateFont = (key: 'sans' | 'serif' | 'mono', value: string) => {
-        const newFont = { ...data.font } as { sans: string; serif: string; mono: string };
+        const newFont = { ...data.font } as {
+            sans: string;
+            serif: string;
+            mono: string;
+        };
         newFont[key] = value;
         setData('font', newFont);
     };
@@ -67,11 +82,21 @@ export default function ThemeEdit({ theme }: { theme: ThemeData }) {
         Object.entries(data.css_vars.light).forEach(([key, val]) => {
             lines.push(`  --${key}: ${val};`);
         });
-        if (data.font.sans) lines.push(`  --font-sans: ${data.font.sans};`);
-        if (data.font.serif) lines.push(`  --font-serif: ${data.font.serif};`);
-        if (data.font.mono) lines.push(`  --font-mono: ${data.font.mono};`);
+
+        if (data.font.sans) {
+            lines.push(`  --font-sans: ${data.font.sans};`);
+        }
+
+        if (data.font.serif) {
+            lines.push(`  --font-serif: ${data.font.serif};`);
+        }
+
+        if (data.font.mono) {
+            lines.push(`  --font-mono: ${data.font.mono};`);
+        }
 
         lines.push('}');
+
         return lines.join('\n');
     }, [data.css_vars, data.font]);
 
@@ -89,13 +114,35 @@ export default function ThemeEdit({ theme }: { theme: ThemeData }) {
         { label: 'Secondary', keys: ['secondary', 'secondary-foreground'] },
         { label: 'Muted', keys: ['muted', 'muted-foreground'] },
         { label: 'Accent', keys: ['accent', 'accent-foreground'] },
-        { label: 'Destructive', keys: ['destructive', 'destructive-foreground'] },
-        { label: 'Border & Input', keys: ['border', 'input', 'ring', 'radius'] },
-        { label: 'Charts', keys: ['chart-1', 'chart-2', 'chart-3', 'chart-4', 'chart-5'] },
-        { label: 'Sidebar', keys: ['sidebar', 'sidebar-foreground', 'sidebar-primary', 'sidebar-primary-foreground', 'sidebar-accent', 'sidebar-accent-foreground', 'sidebar-border', 'sidebar-ring'] },
+        {
+            label: 'Destructive',
+            keys: ['destructive', 'destructive-foreground'],
+        },
+        {
+            label: 'Border & Input',
+            keys: ['border', 'input', 'ring', 'radius'],
+        },
+        {
+            label: 'Charts',
+            keys: ['chart-1', 'chart-2', 'chart-3', 'chart-4', 'chart-5'],
+        },
+        {
+            label: 'Sidebar',
+            keys: [
+                'sidebar',
+                'sidebar-foreground',
+                'sidebar-primary',
+                'sidebar-primary-foreground',
+                'sidebar-accent',
+                'sidebar-accent-foreground',
+                'sidebar-border',
+                'sidebar-ring',
+            ],
+        },
     ];
 
-    const currentColors = activeTab === 'light' ? data.css_vars.light : data.css_vars.dark;
+    const currentColors =
+        activeTab === 'light' ? data.css_vars.light : data.css_vars.dark;
 
     return (
         <>
@@ -114,7 +161,13 @@ export default function ThemeEdit({ theme }: { theme: ThemeData }) {
                     </div>
                 </div>
 
-                <form onSubmit={(e) => { e.preventDefault(); put(`/tools/themes/${theme.id}`); }} className="grid gap-8 lg:grid-cols-2">
+                <form
+                    onSubmit={(e) => {
+                        e.preventDefault();
+                        put(ThemeController.update.url({ theme: theme.id }));
+                    }}
+                    className="grid gap-8 lg:grid-cols-2"
+                >
                     {/* Left Panel: Controls */}
                     <div className="space-y-6">
                         {/* Basic Info */}
@@ -130,20 +183,30 @@ export default function ThemeEdit({ theme }: { theme: ThemeData }) {
                                     <Input
                                         id="name"
                                         value={data.name}
-                                        onChange={(e) => setData('name', e.target.value)}
+                                        onChange={(e) =>
+                                            setData('name', e.target.value)
+                                        }
                                     />
-                                    {errors.name && <p className="text-sm text-destructive mt-1">{errors.name}</p>}
+                                    {errors.name && (
+                                        <p className="mt-1 text-sm text-destructive">
+                                            {errors.name}
+                                        </p>
+                                    )}
                                 </div>
                                 <div>
-                                    <Label htmlFor="title">
-                                        Display Title
-                                    </Label>
+                                    <Label htmlFor="title">Display Title</Label>
                                     <Input
                                         id="title"
                                         value={data.title}
-                                        onChange={(e) => setData('title', e.target.value)}
+                                        onChange={(e) =>
+                                            setData('title', e.target.value)
+                                        }
                                     />
-                                    {errors.title && <p className="text-sm text-destructive mt-1">{errors.title}</p>}
+                                    {errors.title && (
+                                        <p className="mt-1 text-sm text-destructive">
+                                            {errors.title}
+                                        </p>
+                                    )}
                                 </div>
                                 <div>
                                     <Label htmlFor="description">
@@ -152,7 +215,12 @@ export default function ThemeEdit({ theme }: { theme: ThemeData }) {
                                     <Textarea
                                         id="description"
                                         value={data.description}
-                                        onChange={(e) => setData('description', e.target.value)}
+                                        onChange={(e) =>
+                                            setData(
+                                                'description',
+                                                e.target.value,
+                                            )
+                                        }
                                     />
                                 </div>
                             </div>
@@ -166,7 +234,9 @@ export default function ThemeEdit({ theme }: { theme: ThemeData }) {
                                 </h2>
                                 <Tabs
                                     value={activeTab}
-                                    onValueChange={(v) => setActiveTab(v as 'light' | 'dark')}
+                                    onValueChange={(v) =>
+                                        setActiveTab(v as 'light' | 'dark')
+                                    }
                                 >
                                     <TabsList>
                                         <TabsTrigger value="light">
@@ -187,27 +257,48 @@ export default function ThemeEdit({ theme }: { theme: ThemeData }) {
                                         </h3>
                                         <div className="grid gap-2">
                                             {group.keys.map((key) => (
-                                                        <div
-                                                             key={key}
-                                                             className="flex items-center gap-2"
-                                                         >
-                                                             <Label className="w-48 text-xs">
-                                                                 {key}
-                                                             </Label>
-                                                             {key === 'radius' ? (
-                                                                 <Input
-                                                                     value={currentColors[key] || '0.5rem'}
-                                                                     onChange={(e) => updateColor(activeTab, key, e.target.value)}
-                                                                     className="font-mono text-xs"
-                                                                     placeholder="0.5rem"
-                                                                 />
-                                                             ) : (
-                                                                 <ColorPicker
-                                                                     value={currentColors[key] || ''}
-                                                                     onChange={(v) => updateColor(activeTab, key, v)}
-                                                                 />
-                                                             )}
-                                                         </div>
+                                                <div
+                                                    key={key}
+                                                    className="flex items-center gap-2"
+                                                >
+                                                    <Label className="w-48 text-xs">
+                                                        {key}
+                                                    </Label>
+                                                    {key === 'radius' ? (
+                                                        <Input
+                                                            value={
+                                                                currentColors[
+                                                                    key
+                                                                ] || '0.5rem'
+                                                            }
+                                                            onChange={(e) =>
+                                                                updateColor(
+                                                                    activeTab,
+                                                                    key,
+                                                                    e.target
+                                                                        .value,
+                                                                )
+                                                            }
+                                                            className="font-mono text-xs"
+                                                            placeholder="0.5rem"
+                                                        />
+                                                    ) : (
+                                                        <ColorPicker
+                                                            value={
+                                                                currentColors[
+                                                                    key
+                                                                ] || ''
+                                                            }
+                                                            onChange={(v) =>
+                                                                updateColor(
+                                                                    activeTab,
+                                                                    key,
+                                                                    v,
+                                                                )
+                                                            }
+                                                        />
+                                                    )}
+                                                </div>
                                             ))}
                                         </div>
                                     </div>
@@ -222,36 +313,30 @@ export default function ThemeEdit({ theme }: { theme: ThemeData }) {
                             </h2>
                             <div className="space-y-4">
                                 <div>
-                                    <Label htmlFor="font-sans">
-                                        Sans Font
-                                    </Label>
-                                    <Input
-                                        id="font-sans"
-                                        value={data.font.sans || ''}
-                                        onChange={(e) => updateFont('sans', e.target.value)}
-                                        placeholder="Inter, sans-serif"
+                                    <Label>Sans Font</Label>
+                                    <FontSelect
+                                        value={data.font.sans}
+                                        onChange={(v) => updateFont('sans', v)}
+                                        fonts={fonts}
+                                        placeholder="Select sans font..."
                                     />
                                 </div>
                                 <div>
-                                    <Label htmlFor="font-serif">
-                                        Serif Font
-                                    </Label>
-                                    <Input
-                                        id="font-serif"
-                                        value={data.font.serif || ''}
-                                        onChange={(e) => updateFont('serif', e.target.value)}
-                                        placeholder="Georgia, serif"
+                                    <Label>Serif Font</Label>
+                                    <FontSelect
+                                        value={data.font.serif}
+                                        onChange={(v) => updateFont('serif', v)}
+                                        fonts={fonts}
+                                        placeholder="Select serif font..."
                                     />
                                 </div>
                                 <div>
-                                    <Label htmlFor="font-mono">
-                                        Mono Font
-                                    </Label>
-                                    <Input
-                                        id="font-mono"
-                                        value={data.font.mono || ''}
-                                        onChange={(e) => updateFont('mono', e.target.value)}
-                                        placeholder="monospace"
+                                    <Label>Mono Font</Label>
+                                    <FontSelect
+                                        value={data.font.mono}
+                                        onChange={(v) => updateFont('mono', v)}
+                                        fonts={fonts}
+                                        placeholder="Select mono font..."
                                     />
                                 </div>
                             </div>
@@ -284,20 +369,27 @@ export default function ThemeEdit({ theme }: { theme: ThemeData }) {
                             </div>
                             <div
                                 className="rounded-lg border p-6"
-                                style={{
-                                    ...Object.entries(data.css_vars.light).reduce(
-                                        (acc, [key, val]) => ({
-                                            ...acc,
-                                            [`--${key}`]: val,
-                                        }),
-                                        {},
-                                    ),
-                                    '--font-sans': data.font.sans || undefined,
-                                    '--font-serif': data.font.serif || undefined,
-                                    '--font-mono': data.font.mono || undefined,
-                                    background: 'var(--background)',
-                                    color: 'var(--foreground)',
-                                } as React.CSSProperties}
+                                style={
+                                    {
+                                        ...Object.entries(
+                                            data.css_vars.light,
+                                        ).reduce(
+                                            (acc, [key, val]) => ({
+                                                ...acc,
+                                                [`--${key}`]: val,
+                                            }),
+                                            {},
+                                        ),
+                                        '--font-sans':
+                                            data.font.sans || undefined,
+                                        '--font-serif':
+                                            data.font.serif || undefined,
+                                        '--font-mono':
+                                            data.font.mono || undefined,
+                                        background: 'var(--background)',
+                                        color: 'var(--foreground)',
+                                    } as React.CSSProperties
+                                }
                             >
                                 <div className="space-y-4">
                                     <div className="flex flex-wrap gap-2">
@@ -322,7 +414,8 @@ export default function ThemeEdit({ theme }: { theme: ThemeData }) {
                                         <button
                                             className="rounded-md px-4 py-2 text-sm"
                                             style={{
-                                                background: 'var(--destructive)',
+                                                background:
+                                                    'var(--destructive)',
                                                 color: 'var(--destructive-foreground)',
                                             }}
                                         >

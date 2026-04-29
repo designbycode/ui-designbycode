@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "font-roboto",
+  "title": "Font Roboto",
+  "author": "designbycode",
+  "meta": {
+    "category": "fonts",
+    "version": "1.0.0"
+  },
+  "type": "registry:font",
+  "font": {
+    "family": "'Roboto Variable', sans-serif",
+    "provider": "google",
+    "import": "Roboto Slab",
+    "variable": "--font-roboto",
+    "subsets": [
+      "latin"
+    ],
+    "dependency": "@fontsource-variable/roboto"
+  }
+}

@@ -25,7 +25,11 @@ class ThemeController extends Controller
 
     public function create(): Response
     {
-        return Inertia::render('tools/theme/create');
+        $fonts = \App\Models\Registry::fonts()->get(['name', 'title', 'description']);
+
+        return Inertia::render('tools/theme/create', [
+            'fonts' => $fonts,
+        ]);
     }
 
     public function store(ThemeStoreRequest $request): RedirectResponse
@@ -65,6 +69,8 @@ class ThemeController extends Controller
 
     public function edit(Theme $theme): Response
     {
+        $fonts = \App\Models\Registry::fonts()->get(['name', 'title', 'description']);
+
         return Inertia::render('tools/theme/edit', [
             'theme' => [
                 'id' => $theme->id,
@@ -76,6 +82,7 @@ class ThemeController extends Controller
                 'css' => $theme->css,
                 'meta' => $theme->meta,
             ],
+            'fonts' => $fonts,
         ]);
     }
 

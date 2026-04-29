@@ -22,6 +22,42 @@
             "author": "designbycode"
         },
         {
+            "name": "font-nerko-one",
+            "title": "Font Nerko One",
+            "type": "registry:font",
+            "meta": {
+                "category": "fonts",
+                "version": "1.0.0"
+            },
+            "font": {
+                "family": "'Nerko One', cursive",
+                "provider": "google",
+                "import": "NerkoOne",
+                "variable": "--font-nerko-one",
+                "subsets": ["latin"],
+                "dependency": "@fontsource/nerko-one"
+            },
+            "author": "designbycode"
+        },
+        {
+            "name": "font-great-vibes",
+            "title": "Font Great Vibes",
+            "type": "registry:font",
+            "meta": {
+                "category": "fonts",
+                "version": "1.0.0"
+            },
+            "font": {
+                "family": "'Great Vibes', cursive",
+                "provider": "google",
+                "import": "GreatVibes",
+                "variable": "--font-great-vibes",
+                "subsets": ["latin"],
+                "dependency": "@fontsource/great-vibes"
+            },
+            "author": "designbycode"
+        },
+        {
             "name": "font-poppins",
             "type": "registry:font",
             "meta": {
@@ -217,6 +253,42 @@
                 "dependency": "@fontsource/roboto-slab"
             },
             "title": "Font Roboto Slab",
+            "author": "designbycode"
+        },
+        {
+            "name": "font-roboto",
+            "type": "registry:font",
+            "meta": {
+                "category": "fonts",
+                "version": "1.0.0"
+            },
+            "font": {
+                "family": "'Roboto Variable', sans-serif",
+                "provider": "google",
+                "import": "Roboto Slab",
+                "variable": "--font-roboto",
+                "subsets": ["latin"],
+                "dependency": "@fontsource-variable/roboto"
+            },
+            "title": "Font Roboto",
+            "author": "designbycode"
+        },
+        {
+            "name": "font-work-sans",
+            "title": "Font Work Sans",
+            "type": "registry:font",
+            "meta": {
+                "category": "fonts",
+                "version": "1.0.0"
+            },
+            "font": {
+                "family": "'Work Sans Variable', sans-serif",
+                "provider": "google",
+                "import": "WorkSans",
+                "variable": "--font-work-sans",
+                "subsets": ["latin"],
+                "dependency": "@fontsource-variable/work-sans"
+            },
             "author": "designbycode"
         },
         {

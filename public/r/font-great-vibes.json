@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "font-great-vibes",
+  "title": "Font Great Vibes",
+  "author": "designbycode",
+  "meta": {
+    "category": "fonts",
+    "version": "1.0.0"
+  },
+  "type": "registry:font",
+  "font": {
+    "family": "'Great Vibes', cursive",
+    "provider": "google",
+    "import": "GreatVibes",
+    "variable": "--font-great-vibes",
+    "subsets": [
+      "latin"
+    ],
+    "dependency": "@fontsource/great-vibes"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "font-work-sans",
+  "title": "Font Work Sans",
+  "author": "designbycode",
+  "meta": {
+    "category": "fonts",
+    "version": "1.0.0"
+  },
+  "type": "registry:font",
+  "font": {
+    "family": "'Work Sans Variable', sans-serif",
+    "provider": "google",
+    "import": "WorkSans",
+    "variable": "--font-work-sans",
+    "subsets": [
+      "latin"
+    ],
+    "dependency": "@fontsource-variable/work-sans"
+  }
+}

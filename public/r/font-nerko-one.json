@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "font-nerko-one",
+  "title": "Font Nerko One",
+  "author": "designbycode",
+  "meta": {
+    "category": "fonts",
+    "version": "1.0.0"
+  },
+  "type": "registry:font",
+  "font": {
+    "family": "'Nerko One', cursive",
+    "provider": "google",
+    "import": "NerkoOne",
+    "variable": "--font-nerko-one",
+    "subsets": [
+      "latin"
+    ],
+    "dependency": "@fontsource/nerko-one"
+  }
+}
