@@ -451,7 +451,7 @@ export interface MarqueeTextItem {
 
 export interface MarqueeTextProps extends Omit<MarqueeProps, 'children'> {
     items: string[] | MarqueeTextItem[];
-    separator?: string;
+    separator?: string | ReactNode;
     separatorColor?: string;
 }
 

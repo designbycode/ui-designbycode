@@ -10,6 +10,7 @@ use App\Http\Controllers\Docs\Animations\AnimationsIndexController;
 use App\Http\Controllers\Docs\DocumentationIndexController;
 use App\Http\Controllers\Docs\Themes\ThemeIndexController;
 use App\Http\Controllers\HomePageIndexController;
+use App\Http\Controllers\Tools\ThemeController;
 use App\Http\Controllers\WebhookController;
 use Illuminate\Support\Facades\Route;
 use Spatie\Permission\Middleware\RoleMiddleware;
@@ -33,7 +34,13 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('billing/invoices/{invoice}', [BillingController::class, 'downloadInvoice'])->name('billing.download-invoice');
 });
 
-Route::middleware(['auth', 'verified', RoleMiddleware::class . ':super-admin'])->as('admin.')->group(function () {
+Route::middleware(['auth', 'verified'])->as('tools.')->group(function () {
+    Route::resource('tools/themes', ThemeController::class)->except(['show']);
+    Route::get('tools/themes/{theme}', [ThemeController::class, 'show'])->name('themes.show');
+    Route::get('tools/themes/{theme}/css', [ThemeController::class, 'cssPreview'])->name('themes.css');
+});
+
+Route::middleware(['auth', 'verified', RoleMiddleware::class.':super-admin'])->as('admin.')->group(function () {
     Route::get('admin/dashboard', AdminDashboardController::class)->name('dashboard');
 
     Route::resource('admin/users', UsersController::class);
@@ -45,6 +52,6 @@ Route::middleware(['guest'])->group(function () {
     Route::get('auth/{provider}/callback', [SocialiteController::class, 'handleProviderCallback'])->name('auth.callback');
 });
 
-require __DIR__ . '/settings.php';
+require __DIR__.'/settings.php';
 
 Route::post('/paddle/webhook', WebhookController::class);

@@ -6,7 +6,9 @@ import MainHero from '@/layouts/main/main-hero';
 import FontCard from '@/components/themes/font-card';
 import { ArrowRight } from 'lucide-react';
 import type { RegistryProps } from '@/types';
-import Marquee, { MarqueeText } from '@/registry/new-york/components/ui/animations/marquee';
+import Marquee, {
+    MarqueeText,
+} from '@/registry/new-york/components/ui/animations/marquee';
 
 export default function Home({ fonts }: RegistryProps[]) {
     return (
@@ -27,7 +29,7 @@ export default function Home({ fonts }: RegistryProps[]) {
                     className="my-4 mask-x-from-94% mask-x-to-100%"
                 >
                     <div className="nowrap flex gap-4">
-                        {fonts.map((font) => (
+                        {fonts.map((font: RegistryProps) => (
                             <FontCard key={font.id} font={font} />
                         ))}
                     </div>
@@ -35,7 +37,7 @@ export default function Home({ fonts }: RegistryProps[]) {
 
                 <Marquee className="my-4 mask-x-from-94% mask-x-to-100%">
                     <div className="nowrap flex gap-4">
-                        {fonts.map((font) => (
+                        {fonts.map((font: RegistryProps) => (
                             <FontCard key={font.id} font={font} />
                         ))}
                     </div>
@@ -43,7 +45,7 @@ export default function Home({ fonts }: RegistryProps[]) {
 
                 <Marquee className="my-4 mask-x-from-94% mask-x-to-100%">
                     <div className="nowrap flex gap-4">
-                        {fonts.map((font) => (
+                        {fonts.map((font: RegistryProps) => (
                             <FontCard key={font.id} font={font} />
                         ))}
                     </div>
@@ -92,7 +94,9 @@ export default function Home({ fonts }: RegistryProps[]) {
                         { label: 'Full-stack engineer' },
                         { label: 'Based in Cape Town' },
                     ]}
-                    separator={<ArrowRight className="size-4 text-white" />}
+                    separator={
+                        <ArrowRight className="size-4 text-foreground" />
+                    }
                     fontSize="1rem"
                 />
                 <MarqueeText
